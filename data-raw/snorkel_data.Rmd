@@ -52,5 +52,63 @@ snorkel_clean <- raw_snorkel_catch |>
 #checking temporal coverage
 range(snorkel_clean$date, na.rm = TRUE)
 ```
+# Data checks
+
+# Numerical variables {.tabset}
+
+The numerical variables include:
+
+
+## survey_id
+  - range 1-583
+  - numbers are not unique
+```{r}
+summary(snorkel_clean$survey_id)
+```
+
+```{r}
+round(sum(is.na(snorkel_clean$survey_id))/nrow(snorkel_clean), 3) * 100
+```
+
+## flow
+
+```{r}
+summary(snorkel_clean$flow)
+
+round(sum(is.na(snorkel_clean$flow))/nrow(snorkel_clean), 3) * 100
+```
+
+## turbidity
+
+```{r}
+summary(snorkel_clean$turbidity)
+
+#percent of NA's
+round(sum(is.na(snorkel_clean$turbidity))/nrow(snorkel_clean), 3) * 100
+```
+
+## temperature
+
+```{r}
+summary(snorkel_clean$temperature)
+
+#percent of NA's
+round(sum(is.na(snorkel_clean$temperature))/nrow(snorkel_clean), 3) * 100
+
+```
+
+
+
+# Categorical variables {.tabset}
+
+The categorical variables include:
+
+
+
+## weather_code
+
+```{r}
+table(snorkel_clean$weather_code)
+```
 
 
