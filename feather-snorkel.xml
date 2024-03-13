@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="feather-snorkel" system="EDI" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+    <allow>
+      <principal>cvpia</principal>
+      <permission>write</permission>
+    </allow>
+  </access>
+  <dataset>
+    <shortName>Feather Snorkel Survey</shortName>
+    <title>Snorkel Data Feather River</title>
+    <creator>
+      <individualName>
+        <givenName>Casey</givenName>
+        <surName>Campos</surName>
+      </individualName>
+      <organizationName>California Department of Water Resources</organizationName>
+      <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
+    </creator>
+    <pubDate>2024-03-13</pubDate>
+    <abstract>
+      <para>
+    Abstract
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword>spring run</keyword>
+      <keyword>fall run</keyword>
+      <keyword>juvenile production estimate</keyword>
+      <keyword>Oncorhynchus tshawytscha</keyword>
+      <keyword>California</keyword>
+      <keyword>Central Valley</keyword>
+    </keywordSet>
+    <intellectualRights>
+      <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.</para>
+    </intellectualRights>
+    <licensed>
+      <licenseName>Creative Commons Zero v1.0 Universal</licenseName>
+      <url>https://spdx.org/licenses/CC0-1.0.html</url>
+      <identifier>CC0-1.0</identifier>
+    </licensed>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Feather River Rotary Screw Trap</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-121.6326</westBoundingCoordinate>
+          <eastBoundingCoordinate>-121.6046</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.4621</northBoundingCoordinate>
+          <southBoundingCoordinate>39.2122</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1999-12-22</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2024-02-15</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>phylum</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>class</taxonRankName>
+              <taxonRankValue>Teleostei</taxonRankValue>
+              <taxonomicClassification>
+                <taxonRankName>order</taxonRankName>
+                <taxonRankValue>Salmoniformes</taxonRankValue>
+                <taxonomicClassification>
+                  <taxonRankName>family</taxonRankName>
+                  <taxonRankValue>Salmonidae</taxonRankValue>
+                  <taxonomicClassification>
+                    <taxonRankName>genus</taxonRankName>
+                    <taxonRankValue>Oncorhynchus</taxonRankValue>
+                    <taxonomicClassification>
+                      <taxonRankName>species</taxonRankName>
+                      <taxonRankValue>Oncorhynchus tshawytscha</taxonRankValue>
+                      <commonName>Chinook Salmon</commonName>
+                      <taxonId provider="https://itis.gov">161980</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+    </coverage>
+    <maintenance>
+      <description>ongoing</description>
+      <maintenanceUpdateFrequency>annually</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <individualName>
+        <givenName>Casey</givenName>
+        <surName>Campos</surName>
+      </individualName>
+      <organizationName>California Department of Water Resources</organizationName>
+      <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>
+    Trap equipment
+  </para>
+          <para>
+    Current trap locations
+  </para>
+          <para>
+    Historical trap locations
+  </para>
+          <para>
+    Monitoring schedule
+  </para>
+          <para>
+    Daily environmental data
+  </para>
+          <para>
+    Fish measurements
+  </para>
+          <para>
+    Fish counts
+  </para>
+          <para>
+    Trap efficiency trials
+  </para>
+          <para>
+    Trap efficiency mark rotation
+  </para>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Snorkel Data Feather River</title>
+      <personnel>
+        <individualName>
+          <givenName>Casey</givenName>
+          <surName>Campos</surName>
+        </individualName>
+        <organizationName>California Department of Water Resources</organizationName>
+        <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
+        <role>Project Lead</role>
+      </personnel>
+    </project>
+    <dataTable>
+      <entityName>combined_feather_snorkel_data.csv</entityName>
+      <entityDescription>Feather river snorkel survey data</entityDescription>
+      <physical>
+        <objectName>combined_feather_snorkel_data.csv</objectName>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/SRJPE/feather-snorkel-edi/main/datacombined_feather_snorkel_data.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>survey_id</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Identification number of survey</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain/>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>date</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Date snorkel data was collected</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">36259</minimum>
+                  <maximum exclusive="false">44099</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>flow</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Flow in cfs</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>cubicFeetPerSecond</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">9564</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>weather</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Weather conditions when data was collected (CLD, CLR, RAN)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Weather conditions when data was collected (CLD, CLR, RAN)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>turbidity</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Turbidity measured at survey</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>FNU</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">4</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>start_time</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Time when snorkel survey started</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">0.0486</minimum>
+                  <maximum exclusive="false">0.9861</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>end_time</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Time when snorkel survey started</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">0.0507</minimum>
+                  <maximum exclusive="false">0.6611</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>section_name</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Location were snorkel data was collected</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Location were snorkel data was collected</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>units_covered</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>unsure</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unsure</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>unit</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>unsure</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unsure</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>count</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Number of fish observed</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>count of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">30000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>size_class</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Fish size classification</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Fish size classification</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>est_size</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>unsure</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">950</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>substrate</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Substrate description from survey location</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Substrate description from survey location</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>instream_cover</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Instream cover at survey location</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Instream cover at survey location</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>hydrology</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Features of stream</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Features of stream</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>water_depth_m</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Depth on water in meters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.05</minimum>
+                  <maximum exclusive="false">5</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>run</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Run type of the fish counted</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run type of the fish counted</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>tagged</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>If fish was tagged or not</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>If fish was tagged or not</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>clipped</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>If fish fin is clipped</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>If fish fin is clipped</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>overhead_cover</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Overhead cover at survey location</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Overhead cover at survey location</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>location</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Location were snorkel data was collected</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Location were snorkel data was collected</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_type</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>unsure</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unsure</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>section_type</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>unsure</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unsure</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>species</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Fish species</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Fish species</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fork_length</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Fork length of juvenile</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">900</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>bank_distance</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Distance from the bank</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">10</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>unit_type</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>unsure</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unsure</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visibility</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>unsure</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>FNU</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.5</minimum>
+                  <maximum exclusive="false">9</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>section_number</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Number of map section from DMP</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>none</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">20</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>temperature</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Temperature of Water</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain/>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>6637</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="count of fish" name="count of fish" unitType="dimensionless">
+          <description>number of fish counted</description>
+        </unit>
+        <unit id="FNU" name="FNU" unitType="dimensionless">
+          <description>FNU</description>
+        </unit>
+        <unit id="none" name="none" unitType="dimensionless">
+          <description>none</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
