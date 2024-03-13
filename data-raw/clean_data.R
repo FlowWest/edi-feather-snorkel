@@ -21,8 +21,8 @@ glimpse(combined_snorkel)
 unique(combined_snorkel$weather)
 unique(combined_snorkel$section_name)
 unique(combined_snorkel$section_type)
-unique(combined_snorkel$units_covered)
-unique(combined_snorkel$unit)
+unique(combined_snorkel$units_covered) #check field meaning
+unique(combined_snorkel$unit) #check field meaning
 unique(combined_snorkel$size_class)
 unique(combined_snorkel$substrate) #decoded for fields that only had one value, those with more than 1 stayed as code
 unique(combined_snorkel$instream_cover) #decoded for fields that only had one value, those with more than 1 stayed as code
@@ -32,33 +32,34 @@ unique(combined_snorkel$tagged)
 unique(combined_snorkel$clipped)
 unique(combined_snorkel$overhead_cover)
 unique(combined_snorkel$location)
-unique(combined_snorkel$survey_type)
-unique(combined_snorkel$section_type)
+unique(combined_snorkel$survey_type) #check field meaning
+unique(combined_snorkel$section_type) #check field meaning
 unique(combined_snorkel$species)
 unique(combined_snorkel$unit_type) #check decoding system for this field since it is the same code as hydrology
 
+ggplot(combined_snorkel, aes(x = date, y = water_depth_m)) +
+  geom_point()
 
 #numeric variables
-summary(combined_snorkel$survey_id) #TODO check for metadata description
+summary(combined_snorkel$survey_id)
 range(combined_snorkel$date)
 summary(combined_snorkel$flow)
 summary(combined_snorkel$section_number)
 summary(combined_snorkel$turbidity)
-summary(combined_snorkel$temperature) #TODO check this units since min is 0 and max is 71
+summary(combined_snorkel$temperature)
 head(combined_snorkel$end_time[5:10])
 head(combined_snorkel$start_time[5:10])
 summary(combined_snorkel$count)
-summary(combined_snorkel$est_size)
-summary(combined_snorkel$water_depth_m) #check range of this variable since raw data shows range of 0-3, not 0-5
+summary(combined_snorkel$est_size) #check field meaning
+summary(combined_snorkel$water_depth_m)
 
 ggplot(combined_snorkel, aes(water_depth_m)) +
   geom_histogram()
 
 summary(combined_snorkel$fork_length)
-summary(combined_snorkel$bank_distance) #6412 of this values are NA, TODO check if we want to keep, check description on metadata
-summary(combined_snorkel$visibility) #TODO check for metadata description
-summary(combined_snorkel$section_number) #TODO check with liz decode criterion
-
+summary(combined_snorkel$bank_distance) #96.6% of this values are NA, TODO check if we want to keep, check description on metadata
+summary(combined_snorkel$visibility) #check for field meaning
+summary(combined_snorkel$section_number)
 
 
 # write files -------------------------------------------------------------
