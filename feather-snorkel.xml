@@ -26,6 +26,23 @@
       <para>
     Abstract
   </para>
+      <para>
+    From 1999 to 2001, the California Department of Water Resources
+    (DWR) conducted a multi-scale snorkel survey focusing on juvenile
+    steelhead, while also including other species and life stages (DWR
+    2004). In 2010, DWR reinstated the lower Feather River snorkeling
+    surveys in preparation for FERC license issuance. The objectives
+    were to determine the relative abundance and distribution of rearing
+    juvenile Chinook salmon and steelhead prior to habitat improvements,
+    identify habitat conditions (depth, substrate, velocity, and cover)
+    where juvenile Chinook salmon and steelhead occur, and collect
+    baseline data for future monitoring programs associated with habitat
+    restoration projects. Data from this monitoring will also inform
+    effective management of dam operations and implementation of any
+    associated restoration activities. Having a thorough understanding
+    of how river conditions and habitats affect the distribution,
+    abundance, and behavior of downstream fish communities is crucial.
+  </para>
     </abstract>
     <keywordSet>
       <keyword>spring run</keyword>
@@ -112,31 +129,25 @@
       <methodStep>
         <description>
           <para>
-    Trap equipment
-  </para>
-          <para>
-    Current trap locations
-  </para>
-          <para>
-    Historical trap locations
+    Survey locations
   </para>
           <para>
     Monitoring schedule
   </para>
           <para>
-    Daily environmental data
-  </para>
-          <para>
     Fish measurements
   </para>
           <para>
+    The accuracy of size estimates were enhanced by comparing observed
+    fishes to nearby objects: These objects were then measured using the
+    scale mounted on plastic writing slates.
+  </para>
+          <para>
+    We calibrated fish identification and size estimation by training
+    divers with tethered fishing lures in a controlled setting.
+  </para>
+          <para>
     Fish counts
-  </para>
-          <para>
-    Trap efficiency trials
-  </para>
-          <para>
-    Trap efficiency mark rotation
   </para>
         </description>
       </methodStep>
@@ -183,7 +194,14 @@
           <attributeDefinition>Identification number of survey</attributeDefinition>
           <measurementScale>
             <ordinal>
-              <nonNumericDomain/>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>Feather River Snorkel Survey</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
             </ordinal>
           </measurementScale>
         </attribute>
@@ -351,12 +369,12 @@
         <attribute>
           <attributeName>size_class</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fish size classification</attributeDefinition>
+          <attributeDefinition>Fish size classification. Levels = c("III" "I"   NA    "II"  "VI"  "IV"  "V"   "VII")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Fish size classification</definition>
+                  <definition>Fish size classification. Levels = c("III" "I"   NA    "II"  "VI"  "IV"  "V"   "VII")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -630,18 +648,16 @@
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Number of map section from DMP</attributeDefinition>
           <measurementScale>
-            <ratio>
-              <unit>
-                <customUnit>none</customUnit>
-              </unit>
-              <numericDomain>
-                <numberType>whole</numberType>
-                <bounds>
-                  <minimum exclusive="false">1</minimum>
-                  <maximum exclusive="false">20</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
+            <ordinal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>Feather River Snorkel Survey</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </ordinal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -649,9 +665,18 @@
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Temperature of Water</attributeDefinition>
           <measurementScale>
-            <ordinal>
-              <nonNumericDomain/>
-            </ordinal>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">21.67</maximum>
+                </bounds>
+              </numericDomain>
+            </interval>
           </measurementScale>
         </attribute>
       </attributeList>
