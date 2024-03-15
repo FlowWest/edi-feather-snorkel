@@ -21,7 +21,7 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-03-14</pubDate>
+    <pubDate>2024-03-15</pubDate>
     <abstract>
       <para>
     Abstract
@@ -683,9 +683,6 @@
         </unit>
         <unit id="FNU" name="FNU" unitType="dimensionless">
           <description>FNU</description>
-        </unit>
-        <unit id="none" name="none" unitType="dimensionless">
-          <description>none</description>
         </unit>
       </unitList>
     </metadata>

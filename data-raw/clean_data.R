@@ -81,4 +81,4 @@ summary(combined_snorkel$section_number)
 write.csv(combined_snorkel, here::here("data-raw", "combined_feather_snorkel_data.csv"), row.names = FALSE)
 
 # save cleaned data to `data/`
-read.csv(here::here("data-raw", "combined_feather_snorkel_data.csv")) |> glimpse()
+
