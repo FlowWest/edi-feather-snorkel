@@ -22,7 +22,7 @@ combined_snorkel <- read_csv(here::here("data-raw", "combined_feather_snorkel_da
 summary(combined_snorkel)
 glimpse(combined_snorkel)
 
-#character variables
+#character variables ----
 unique(combined_snorkel$weather)
 unique(combined_snorkel$section_name)
 unique(combined_snorkel$section_type)
@@ -42,16 +42,14 @@ unique(combined_snorkel$section_type) #check field meaning
 unique(combined_snorkel$species)
 unique(combined_snorkel$unit_type) #check decoding system for this field since it is the same code as hydrology
 
-#numeric variables
+#numeric variables ----
 summary(combined_snorkel$survey_id)
 range(combined_snorkel$date)
 summary(combined_snorkel$flow)
 ggplot(combined_snorkel, aes(flow)) +
   geom_histogram()
-#changing flow values from 0 to NA
-combined_snorkel$flow <- ifelse(combined_snorkel$flow == 0, NA, combined_snorkel$flow) |>
+combined_snorkel$flow <- ifelse(combined_snorkel$flow == 0, NA, combined_snorkel$flow) |> #changing flow values from 0 to NA
   glimpse()
-
 summary(combined_snorkel$section_number)
 summary(combined_snorkel$turbidity)
 ggplot(combined_snorkel, aes(turbidity)) +
@@ -59,6 +57,9 @@ ggplot(combined_snorkel, aes(turbidity)) +
 summary(combined_snorkel$temperature)
 ggplot(combined_snorkel, aes(x = date, y = temperature)) +
   geom_point()
+combined_snorkel$temperature <- ifelse(combined_snorkel$temperature == 0, NA, combined_snorkel$temperature) |> #changing flow values from 0 to NA since they are potential outliers
+  glimpse()
+
 head(combined_snorkel$end_time[5:10])
 head(combined_snorkel$start_time[5:10])
 summary(combined_snorkel$count)
