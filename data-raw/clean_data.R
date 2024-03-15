@@ -48,6 +48,10 @@ range(combined_snorkel$date)
 summary(combined_snorkel$flow)
 ggplot(combined_snorkel, aes(flow)) +
   geom_histogram()
+#changing flow values from 0 to NA
+combined_snorkel$flow <- ifelse(combined_snorkel$flow == 0, NA, combined_snorkel$flow) |>
+  glimpse()
+
 summary(combined_snorkel$section_number)
 summary(combined_snorkel$turbidity)
 ggplot(combined_snorkel, aes(turbidity)) +
