@@ -78,7 +78,7 @@ summary(combined_snorkel$section_number)
 
 
 # write files -------------------------------------------------------------
-write.csv(combined_snorkel, here::here("data-raw", "combined_feather_snorkel_data.csv"), row.names = FALSE)
 
 # save cleaned data to `data/`
+write.csv(combined_snorkel, here::here("data", "combined_feather_snorkel_data.csv"), row.names = FALSE)
 
