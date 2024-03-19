@@ -8,7 +8,7 @@ datatable_metadata <-
   dplyr::tibble(filepath = c("data-raw/combined_feather_snorkel_data.csv"),
                 attribute_info = c("data-raw/metadata/feather_snorkel_metadata.xlsx"),
                 datatable_description = c("Feather river snorkel survey data"),
-                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/feather-snorkel-edi/main/data", #TODO check this link
+                datatable_url = paste0("https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/data",
                                        c("combined_feather_snorkel_data.csv")))
 # save cleaned data to `data/`
 excel_path <- "data-raw/metadata/feather_metadata.xlsx" #TODO check this excel path/name

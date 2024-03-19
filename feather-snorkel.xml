@@ -21,28 +21,26 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-03-15</pubDate>
+    <pubDate>2024-03-19</pubDate>
     <abstract>
       <para>
     Abstract
   </para>
       <para>
-    From 1999 to 2001, the California Department of Water Resources
-    (DWR) conducted a multi-scale snorkel survey focusing on juvenile
-    steelhead, while also including other species and life stages (DWR
-    2004). In 2010, DWR resumed the lower Feather River snorkeling
-    surveys in preparation for FERC license issuance. The objectives
-    were to determine the relative abundance and distribution of rearing
+    This data is intended to help provide guidance to the VA Science
+    Committee as it develops recommendations for priority areas of focus
+    for additional monitoring, active experiments, decision support
+    modeling, and data analyses needed to fill knowledge gaps, assess
+    the outcomes of the suite of VA measures, and inform ongoing and
+    future decision-making. Juvenile salmon habitat use is assessed in
+    all VA tributaries, primarily through snorkeling efforts that cover
+    all in-channel habitats. The objectives of this dataset are to
+    determine the relative abundance and distribution of rearing
     juvenile Chinook salmon and steelhead prior to habitat improvements,
     identify habitat conditions (depth, substrate, velocity, and cover)
     where juvenile Chinook salmon and steelhead occur, and collect
     baseline data for future monitoring programs associated with habitat
-    restoration projects. Due to the importance of having a thorough
-    understanding of how river conditions and habitats affect the
-    distribution, abundance, and behavior of downstream fish
-    communities, data from this monitoring will inform effective
-    management of dam operations and implementation of any associated
-    restoration activities.
+    restoration projects.
   </para>
     </abstract>
     <keywordSet>
@@ -161,8 +159,8 @@
       <entityDescription>Feather river snorkel survey data</entityDescription>
       <physical>
         <objectName>combined_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <size unit="bytes">148711</size>
+        <authentication method="MD5">fc84431375ee14c3fed20bd70d6716a7</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -175,7 +173,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/SRJPE/feather-snorkel-edi/main/datacombined_feather_snorkel_data.csv</url>
+            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datacombined_feather_snorkel_data.csv</url>
           </online>
         </distribution>
       </physical>
@@ -253,7 +251,7 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>FNU</customUnit>
+                <customUnit>NTU</customUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
@@ -420,6 +418,20 @@
           </measurementScale>
         </attribute>
         <attribute>
+          <attributeName>overhead_cover</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Overhead cover at survey location</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Overhead cover at survey location</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
           <attributeName>hydrology</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Features of stream</attributeDefinition>
@@ -489,20 +501,6 @@
               <nonNumericDomain>
                 <textDomain>
                   <definition>If fish fin is clipped</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>overhead_cover</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Overhead cover at survey location</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Overhead cover at survey location</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -623,7 +621,7 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>FNU</customUnit>
+                <customUnit>NTU</customUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
@@ -681,8 +679,8 @@
         <unit id="count of fish" name="count of fish" unitType="dimensionless">
           <description>number of fish counted</description>
         </unit>
-        <unit id="FNU" name="FNU" unitType="dimensionless">
-          <description>FNU</description>
+        <unit id="NTU" name="NTU" unitType="dimensionless">
+          <description>NTU</description>
         </unit>
       </unitList>
     </metadata>
