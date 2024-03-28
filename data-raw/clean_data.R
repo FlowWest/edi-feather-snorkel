@@ -29,8 +29,7 @@ unique(combined_snorkel$section_type)
 unique(combined_snorkel$units_covered) #check field meaning
 unique(combined_snorkel$unit) #check field meaning
 unique(combined_snorkel$size_class)
-unique(combined_snorkel$substrate) #decoded for fields that only had one value, those with more than 1 stayed as code
-unique(combined_snorkel$instream_cover) #decoded for fields that only had one value, those with more than 1 stayed as code
+unique(combined_snorkel$instream_cover) #there is a code reference for this field however, it would only work for those fields that had one value. There were fields with more than 1 value. Decided to skip decode
 unique(combined_snorkel$hydrology)
 unique(combined_snorkel$run)
 unique(combined_snorkel$tagged)
@@ -75,6 +74,8 @@ ggplot(combined_snorkel, aes(fork_length)) +
 summary(combined_snorkel$bank_distance) #96.6% of this values are NA, TODO check if we want to keep, check description on metadata
 summary(combined_snorkel$visibility) #check for field meaning
 summary(combined_snorkel$section_number)
+unique(combined_snorkel$substrate) #there is a code reference for this field however, it would only work for those fields that had one value. There were fields with more than 1 value. Decided to skip decode
+#keeping substrate as character for now since numbers are refearring to code
 
 
 # write files -------------------------------------------------------------

@@ -21,26 +21,24 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-03-19</pubDate>
+    <pubDate>2024-03-28</pubDate>
     <abstract>
       <para>
     Abstract
   </para>
       <para>
-    This data is intended to help provide guidance to the VA Science
-    Committee as it develops recommendations for priority areas of focus
-    for additional monitoring, active experiments, decision support
-    modeling, and data analyses needed to fill knowledge gaps, assess
-    the outcomes of the suite of VA measures, and inform ongoing and
-    future decision-making. Juvenile salmon habitat use is assessed in
-    all VA tributaries, primarily through snorkeling efforts that cover
-    all in-channel habitats. The objectives of this dataset are to
-    determine the relative abundance and distribution of rearing
-    juvenile Chinook salmon and steelhead prior to habitat improvements,
-    identify habitat conditions (depth, substrate, velocity, and cover)
-    where juvenile Chinook salmon and steelhead occur, and collect
-    baseline data for future monitoring programs associated with habitat
-    restoration projects.
+    The objectives of this dataset are to determine the relative
+    abundance and distribution of rearing juvenile Chinook salmon and
+    steelhead prior to habitat improvements, identify habitat conditions
+    (depth, substrate, velocity, and cover) where juvenile Chinook
+    salmon and steelhead occur, and collect baseline data for future
+    monitoring programs associated with habitat restoration projects.
+  </para>
+      <para>
+    Data was collected monthly across 20 different sampling sites during
+    the months of May through August from the year 1999 to 2020,
+    however, there are some data gaps for the following years: 2006,
+    2008, 2009, 2014.
   </para>
     </abstract>
     <keywordSet>
@@ -159,8 +157,8 @@
       <entityDescription>Feather river snorkel survey data</entityDescription>
       <physical>
         <objectName>combined_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">148711</size>
-        <authentication method="MD5">fc84431375ee14c3fed20bd70d6716a7</authentication>
+        <size unit="bytes">148764</size>
+        <authentication method="MD5">9e4a98cf9d8f71d40b8223494e35b43e</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -233,12 +231,12 @@
         <attribute>
           <attributeName>weather</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Weather conditions when data was collected (CLD, CLR, RAN)</attributeDefinition>
+          <attributeDefinition>Weather conditions when data was collected. Levels = c(clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Weather conditions when data was collected (CLD, CLR, RAN)</definition>
+                  <definition>Weather conditions when data was collected. Levels = c(clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -298,12 +296,14 @@
         <attribute>
           <attributeName>section_name</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Location were snorkel data was collected</attributeDefinition>
+          <attributeDefinition>Location were snorkel data was collected. Levels = c(Hatchery Riffle, G95, Mo's Ditch, &#13;
+Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle, Big Riffle, Vance Riffle, McFarland, Junkyard Riffle, Gateway Riffle, Hatchery Ditch, Matthews Riffle, Gridley Riffle, Robinson Riffle, Kiester Riffle, Goose Riffle, Hatchery and Mo's Riffles, Auditorium Riffle, Hatchery Ditch and Mo's Ditch)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Location were snorkel data was collected</definition>
+                  <definition>Location were snorkel data was collected. Levels = c(Hatchery Riffle, G95, Mo's Ditch, &#13;
+Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle, Big Riffle, Vance Riffle, McFarland, Junkyard Riffle, Gateway Riffle, Hatchery Ditch, Matthews Riffle, Gridley Riffle, Robinson Riffle, Kiester Riffle, Goose Riffle, Hatchery and Mo's Riffles, Auditorium Riffle, Hatchery Ditch and Mo's Ditch)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -434,12 +434,12 @@
         <attribute>
           <attributeName>hydrology</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Features of stream</attributeDefinition>
+          <attributeDefinition>Features of stream. Levels = c(riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Features of stream</definition>
+                  <definition>Features of stream. Levels = c(riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -467,12 +467,12 @@
         <attribute>
           <attributeName>run</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Run type of the fish counted</attributeDefinition>
+          <attributeDefinition>Run type of the fish counted. Levels = c(unknown, spring, fall, late fall)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Run type of the fish counted</definition>
+                  <definition>Run type of the fish counted. Levels = c(unknown, spring, fall, late fall)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -481,12 +481,12 @@
         <attribute>
           <attributeName>tagged</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>If fish was tagged or not</attributeDefinition>
+          <attributeDefinition>If fish was tagged or not. Levels = c(TRUE, FALSE)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>If fish was tagged or not</definition>
+                  <definition>If fish was tagged or not. Levels = c(TRUE, FALSE)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -495,12 +495,12 @@
         <attribute>
           <attributeName>clipped</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>If fish fin is clipped</attributeDefinition>
+          <attributeDefinition>If fish fin is clipped. Levels = c(TRUE, FALSE)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>If fish fin is clipped</definition>
+                  <definition>If fish fin is clipped. Levels = c(TRUE, FALSE)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -551,12 +551,12 @@
         <attribute>
           <attributeName>species</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fish species</attributeDefinition>
+          <attributeDefinition>Fish species. Levels = c(chinook, unknown)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Fish species</definition>
+                  <definition>Fish species. Levels = c(chinook, unknown)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
