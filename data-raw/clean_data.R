@@ -75,7 +75,7 @@ summary(combined_snorkel$bank_distance) #96.6% of this values are NA, TODO check
 summary(combined_snorkel$visibility) #check for field meaning
 summary(combined_snorkel$section_number)
 unique(combined_snorkel$substrate) #there is a code reference for this field however, it would only work for those fields that had one value. There were fields with more than 1 value. Decided to skip decode
-#keeping substrate as character for now since numbers are refearring to code
+#keeping substrate as character for now since numbers are referring to code
 
 
 # write files -------------------------------------------------------------
