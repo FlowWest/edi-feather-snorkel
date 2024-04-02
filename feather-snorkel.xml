@@ -12,7 +12,7 @@
   </access>
   <dataset>
     <shortName>Feather Snorkel Survey</shortName>
-    <title>Snorkel Data Feather River</title>
+    <title>Distribution and habitat use of juvenile Feather River salmonids</title>
     <creator>
       <individualName>
         <givenName>Casey</givenName>
@@ -21,33 +21,34 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-04-01</pubDate>
+    <pubDate>2024-04-02</pubDate>
     <abstract>
       <para>
     Abstract
   </para>
       <para>
-    The objectives of this dataset are to determine the relative
+    Since 1999, DWR has conducted juvenile monitoring Snorkel surveys
+    annually on the Feather River. Crews survey 20 sampling sites on the
+    high flow and low flow channel in May through August each year and
+    collect information on species, fish size, substrate, cover, and
+    habitat type. Snorkel data is collected to determine the relative
     abundance and distribution of rearing juvenile Chinook salmon and
-    steelhead prior to habitat improvements, identify habitat conditions
-    (depth, substrate, velocity, and cover) where juvenile Chinook
-    salmon and steelhead occur, and collect baseline data for future
-    monitoring programs associated with habitat restoration projects.
-  </para>
-      <para>
-    Data was collected monthly across 20 different sampling sites during
-    the months of May through August from the year 1999 to 2020,
-    however, there are some data gaps for the following years: 2006,
-    2008, 2009, 2014.
+    steelhead. A secondary objective of this data is to collect baseline
+    data for future monitoring programs associated with habitat
+    restoration projects. The Voluntary Agreement project plans to
+    utilize this long period of record of data to identify habitat
+    conditions (depth, substrate, velocity, and cover) where juvenile
+    Chinook salmon and steelhead occur and analyze how these conditions
+    have changed throughout time.
   </para>
     </abstract>
     <keywordSet>
-      <keyword>spring run</keyword>
-      <keyword>fall run</keyword>
-      <keyword>juvenile production estimate</keyword>
+      <keyword>chinook</keyword>
+      <keyword>habitat</keyword>
       <keyword>Oncorhynchus tshawytscha</keyword>
       <keyword>California</keyword>
       <keyword>Central Valley</keyword>
+      <keyword>Feather River</keyword>
     </keywordSet>
     <intellectualRights>
       <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.</para>
@@ -109,6 +110,38 @@
           </taxonomicClassification>
         </taxonomicClassification>
       </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>phylum</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>class</taxonRankName>
+              <taxonRankValue>Teleostei</taxonRankValue>
+              <taxonomicClassification>
+                <taxonRankName>order</taxonRankName>
+                <taxonRankValue>Salmoniformes</taxonRankValue>
+                <taxonomicClassification>
+                  <taxonRankName>family</taxonRankName>
+                  <taxonRankValue>Salmonidae</taxonRankValue>
+                  <taxonomicClassification>
+                    <taxonRankName>genus</taxonRankName>
+                    <taxonRankValue>Oncorhynchus</taxonRankValue>
+                    <taxonomicClassification>
+                      <taxonRankName>species</taxonRankName>
+                      <taxonRankValue>Oncorhynchus mykiss</taxonRankValue>
+                      <commonName>Steelhead Trout</commonName>
+                      <taxonId provider="https://itis.gov">161989</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
     </coverage>
     <maintenance>
       <description>ongoing</description>
@@ -126,22 +159,34 @@
       <methodStep>
         <description>
           <para>
-    Survey Locations
+    Overview
   </para>
           <para>
-    Monitoring Schedule
+    Distribution and habitat use snorkel surveys are conducted each year
+    between May and August at 20 sampling sites along the Feather River
+    (12 in the Low Flow Channel and 8 in the High Flow Channel). Three
+    to size divers are distributed along three transects (left side of
+    river, right side of river, center of river). The center transect is
+    typically done in the downstream direction because currents are too
+    strong to swim upstream whereas the other transects along river
+    banks are done in the upstream direction. Divers use plastic slates
+    to mark observations of fish. Groups of similar sized fish that are
+    observed in a 1 m</para>
+          <para>
+            <superscript>2</superscript>
+          </para>
+          <para> or less area are
+    treated as a single observation. Effort at each site recorded in
+    terms of time sampled, area covered, number of divers.
   </para>
           <para>
-    Fish Measurements
-  </para>
-          <para>
-    Fish Counts
+    Attributes collected
   </para>
         </description>
       </methodStep>
     </methods>
     <project>
-      <title>Snorkel Data Feather River</title>
+      <title>Distribution and habitat use of juvenile Feather River salmonids</title>
       <personnel>
         <individualName>
           <givenName>Casey</givenName>
@@ -157,8 +202,8 @@
       <entityDescription>Feather river snorkel survey data</entityDescription>
       <physical>
         <objectName>combined_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">149478</size>
-        <authentication method="MD5">d69eb54a55cd4d9ef662ec632d4dc3cd</authentication>
+        <size unit="bytes">149481</size>
+        <authentication method="MD5">c5b2c10517ff4705b4c505d06120f56c</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
