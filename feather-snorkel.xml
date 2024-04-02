@@ -21,7 +21,7 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-03-28</pubDate>
+    <pubDate>2024-04-01</pubDate>
     <abstract>
       <para>
     Abstract
@@ -157,8 +157,8 @@
       <entityDescription>Feather river snorkel survey data</entityDescription>
       <physical>
         <objectName>combined_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">148764</size>
-        <authentication method="MD5">9e4a98cf9d8f71d40b8223494e35b43e</authentication>
+        <size unit="bytes">149478</size>
+        <authentication method="MD5">d69eb54a55cd4d9ef662ec632d4dc3cd</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -312,12 +312,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>units_covered</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>unsure</attributeDefinition>
+          <attributeDefinition>Units surveyed within section</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>unsure</definition>
+                  <definition>Units surveyed within section</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -373,7 +373,7 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>est_size</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>unsure</attributeDefinition>
+          <attributeDefinition>Estimated fork length of observed fish</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -392,12 +392,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>substrate</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Substrate description from survey location</attributeDefinition>
+          <attributeDefinition>Substrate code description from survey location. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Substrate description from survey location</definition>
+                  <definition>Substrate code description from survey location. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -406,12 +406,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>instream_cover</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Instream cover at survey location</attributeDefinition>
+          <attributeDefinition>Instream cover at survey location. Levels = c(G- Glide, GM- Glide Edgewater, M- Riffle Margin Eddy, P- Pool, R- Riffle, RM- Riffle Edgewater, W- Backwater)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Instream cover at survey location</definition>
+                  <definition>Instream cover at survey location. Levels = c(G- Glide, GM- Glide Edgewater, M- Riffle Margin Eddy, P- Pool, R- Riffle, RM- Riffle Edgewater, W- Backwater)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -537,12 +537,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>section_type</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>unsure</attributeDefinition>
+          <attributeDefinition>Survey site type. Levels = c(Permanent: site surveyed repetedly, Random = site surveyed as a proxy if "permanent site" not feasible to survey)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>unsure</definition>
+                  <definition>Survey site type. Levels = c(Permanent: site surveyed repetedly, Random = site surveyed as a proxy if "permanent site" not feasible to survey)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -584,7 +584,7 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>bank_distance</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Distance from the bank</attributeDefinition>
+          <attributeDefinition>Distance from the bank from observation</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -617,11 +617,11 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>visibility</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>unsure</attributeDefinition>
+          <attributeDefinition>Visibility range that allows to identify fish</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>NTU</customUnit>
+                <standardUnit>meter</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
