@@ -21,7 +21,7 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-04-02</pubDate>
+    <pubDate>2024-04-18</pubDate>
     <abstract>
       <para>
     Abstract
@@ -202,8 +202,8 @@
       <entityDescription>Feather river snorkel survey data</entityDescription>
       <physical>
         <objectName>combined_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">149481</size>
-        <authentication method="MD5">c5b2c10517ff4705b4c505d06120f56c</authentication>
+        <size unit="bytes">150502</size>
+        <authentication method="MD5">d83d2c0965551531002217fcc90aa071</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -276,12 +276,12 @@
         <attribute>
           <attributeName>weather</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Weather conditions when data was collected. Levels = c(clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast)</attributeDefinition>
+          <attributeDefinition>Weather conditions when data was collected. Weather conditions include = c("clear", "sunny", "clear and windy", "cloudy", "partly cloudy", "precipitation", "hazy", "windy", "clear and hot", "overcast")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Weather conditions when data was collected. Levels = c(clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast)</definition>
+                  <definition>Weather conditions when data was collected. Weather conditions include = c("clear", "sunny", "clear and windy", "cloudy", "partly cloudy", "precipitation", "hazy", "windy", "clear and hot", "overcast")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -341,13 +341,13 @@
         <attribute>
           <attributeName>section_name</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Location were snorkel data was collected. Levels = c(Hatchery Riffle, G95, Mo's Ditch, &#13;
+          <attributeDefinition>Location were snorkel data was collected. Sampling sites include = c(Hatchery Riffle, G95, Mo's Ditch, &#13;
 Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle, Big Riffle, Vance Riffle, McFarland, Junkyard Riffle, Gateway Riffle, Hatchery Ditch, Matthews Riffle, Gridley Riffle, Robinson Riffle, Kiester Riffle, Goose Riffle, Hatchery and Mo's Riffles, Auditorium Riffle, Hatchery Ditch and Mo's Ditch)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Location were snorkel data was collected. Levels = c(Hatchery Riffle, G95, Mo's Ditch, &#13;
+                  <definition>Location were snorkel data was collected. Sampling sites include = c(Hatchery Riffle, G95, Mo's Ditch, &#13;
 Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle, Big Riffle, Vance Riffle, McFarland, Junkyard Riffle, Gateway Riffle, Hatchery Ditch, Matthews Riffle, Gridley Riffle, Robinson Riffle, Kiester Riffle, Goose Riffle, Hatchery and Mo's Riffles, Auditorium Riffle, Hatchery Ditch and Mo's Ditch)</definition>
                 </textDomain>
               </nonNumericDomain>
@@ -383,6 +383,20 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
           </measurementScale>
         </attribute>
         <attribute>
+          <attributeName>species</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Fish species. Species include = c(chinook, unknown)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Fish species. Species include = c(chinook, unknown)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
           <attributeName>count</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Number of fish observed</attributeDefinition>
@@ -404,12 +418,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>size_class</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fish size classification. Levels = c("III" "I"   NA    "II"  "VI"  "IV"  "V"   "VII")</attributeDefinition>
+          <attributeDefinition>Fish size classification. Classification = c("III" "I"   NA    "II"  "VI"  "IV"  "V"   "VII")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Fish size classification. Levels = c("III" "I"   NA    "II"  "VI"  "IV"  "V"   "VII")</definition>
+                  <definition>Fish size classification. Classification = c("III" "I"   NA    "II"  "VI"  "IV"  "V"   "VII")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -451,12 +465,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>instream_cover</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Instream cover at survey location. Levels = c(G- Glide, GM- Glide Edgewater, M- Riffle Margin Eddy, P- Pool, R- Riffle, RM- Riffle Edgewater, W- Backwater)</attributeDefinition>
+          <attributeDefinition>Instream cover at survey location. Types of cover include = c(G- Glide, GM- Glide Edgewater, M- Riffle Margin Eddy, P- Pool, R- Riffle, RM- Riffle Edgewater, W- Backwater)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Instream cover at survey location. Levels = c(G- Glide, GM- Glide Edgewater, M- Riffle Margin Eddy, P- Pool, R- Riffle, RM- Riffle Edgewater, W- Backwater)</definition>
+                  <definition>Instream cover at survey location. Types of cover include = c(G- Glide, GM- Glide Edgewater, M- Riffle Margin Eddy, P- Pool, R- Riffle, RM- Riffle Edgewater, W- Backwater)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -479,12 +493,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>hydrology</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Features of stream. Levels = c(riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</attributeDefinition>
+          <attributeDefinition>Features of stream. Features include = c(riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Features of stream. Levels = c(riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</definition>
+                  <definition>Features of stream. Features include = c(riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -512,12 +526,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>run</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Run type of the fish counted. Levels = c(unknown, spring, fall, late fall)</attributeDefinition>
+          <attributeDefinition>Run type of the fish counted. Types of run include = c(unknown, spring, fall, late fall)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Run type of the fish counted. Levels = c(unknown, spring, fall, late fall)</definition>
+                  <definition>Run type of the fish counted. Types of run include = c(unknown, spring, fall, late fall)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -582,26 +596,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>section_type</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Survey site type. Levels = c(Permanent: site surveyed repetedly, Random = site surveyed as a proxy if "permanent site" not feasible to survey)</attributeDefinition>
+          <attributeDefinition>Survey site type. Site types include = c(Permanent: site surveyed repetedly, Random = site surveyed as a proxy if "permanent site" not feasible to survey)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Survey site type. Levels = c(Permanent: site surveyed repetedly, Random = site surveyed as a proxy if "permanent site" not feasible to survey)</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>species</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fish species. Levels = c(chinook, unknown)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Fish species. Levels = c(chinook, unknown)</definition>
+                  <definition>Survey site type. Site types include = c(Permanent: site surveyed repetedly, Random = site surveyed as a proxy if "permanent site" not feasible to survey)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -715,7 +715,7 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>6637</numberOfRecords>
+      <numberOfRecords>23525</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>
