@@ -5,7 +5,7 @@ library(readxl)
 library(EML)
 
 datatable_metadata <-
-  dplyr::tibble(filepath = c("data-raw/combined_feather_snorkel_data.csv"),
+  dplyr::tibble(filepath = c("data/combined_feather_snorkel_data.csv"),
                 attribute_info = c("data-raw/metadata/feather_snorkel_metadata.xlsx"),
                 datatable_description = c("Feather river snorkel survey data"),
                 datatable_url = paste0("https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/data",

@@ -21,7 +21,7 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-04-18</pubDate>
+    <pubDate>2024-04-19</pubDate>
     <abstract>
       <para>
     Abstract
@@ -170,17 +170,20 @@
     typically done in the downstream direction because currents are too
     strong to swim upstream whereas the other transects along river
     banks are done in the upstream direction. Divers use plastic slates
-    to mark observations of fish. Groups of similar sized fish that are
-    observed in a 1 m</para>
-          <para>
-            <superscript>2</superscript>
-          </para>
-          <para> or less area are
-    treated as a single observation. Effort at each site recorded in
-    terms of time sampled, area covered, number of divers.
+    to mark observations of fish. Effort at each site recorded in terms
+    of time sampled, area covered, number of divers.
   </para>
           <para>
-    Attributes collected
+    Attributes collected include: species, number of fish of a given
+    size - groups of similar sized fish that were observed in a 1 square
+    meter or less are treated as a single observation, substrate type -
+    presence of every type of substrate is recorded, cover - presence of
+    every type of cover is recorded, habitat type, approximate fork
+    length in mm - fish identification and size estimation are
+    calibrated by training divers with tethered fishing lures in a
+    controlled setting. The accuracy of size estimates is enhanced by
+    comparing observed fish to nearby objects. These objects are then
+    measured using the scale mounted on plastic writing slates.
   </para>
         </description>
       </methodStep>
@@ -202,8 +205,8 @@
       <entityDescription>Feather river snorkel survey data</entityDescription>
       <physical>
         <objectName>combined_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">150502</size>
-        <authentication method="MD5">d83d2c0965551531002217fcc90aa071</authentication>
+        <size unit="bytes">150501</size>
+        <authentication method="MD5">f73ecc5d01e9600b5d166bb015eaac2e</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -228,12 +231,9 @@
           <measurementScale>
             <ordinal>
               <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Feather River Snorkel Survey</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
+                <textDomain>
+                  <definition>Identification number of survey</definition>
+                </textDomain>
               </nonNumericDomain>
             </ordinal>
           </measurementScale>
@@ -257,7 +257,7 @@
         <attribute>
           <attributeName>flow</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Flow in cfs</attributeDefinition>
+          <attributeDefinition>Flow in cubic feet per seccond (cfs)</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -276,12 +276,12 @@
         <attribute>
           <attributeName>weather</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Weather conditions when data was collected. Weather conditions include = c("clear", "sunny", "clear and windy", "cloudy", "partly cloudy", "precipitation", "hazy", "windy", "clear and hot", "overcast")</attributeDefinition>
+          <attributeDefinition>Weather conditions when data was collected. Weather conditions include: clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Weather conditions when data was collected. Weather conditions include = c("clear", "sunny", "clear and windy", "cloudy", "partly cloudy", "precipitation", "hazy", "windy", "clear and hot", "overcast")</definition>
+                  <definition>Weather conditions when data was collected. Weather conditions include: clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -325,7 +325,7 @@
         <attribute>
           <attributeName>end_time</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Time when snorkel survey started</attributeDefinition>
+          <attributeDefinition>Time when snorkel survey ended</attributeDefinition>
           <measurementScale>
             <dateTime>
               <formatString>hh:mm:ss</formatString>
@@ -341,14 +341,12 @@
         <attribute>
           <attributeName>section_name</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Location were snorkel data was collected. Sampling sites include = c(Hatchery Riffle, G95, Mo's Ditch, &#13;
-Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle, Big Riffle, Vance Riffle, McFarland, Junkyard Riffle, Gateway Riffle, Hatchery Ditch, Matthews Riffle, Gridley Riffle, Robinson Riffle, Kiester Riffle, Goose Riffle, Hatchery and Mo's Riffles, Auditorium Riffle, Hatchery Ditch and Mo's Ditch)</attributeDefinition>
+          <attributeDefinition>Location were snorkel data was collected.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Location were snorkel data was collected. Sampling sites include = c(Hatchery Riffle, G95, Mo's Ditch, &#13;
-Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle, Big Riffle, Vance Riffle, McFarland, Junkyard Riffle, Gateway Riffle, Hatchery Ditch, Matthews Riffle, Gridley Riffle, Robinson Riffle, Kiester Riffle, Goose Riffle, Hatchery and Mo's Riffles, Auditorium Riffle, Hatchery Ditch and Mo's Ditch)</definition>
+                  <definition>Location were snorkel data was collected.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -357,12 +355,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>units_covered</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Units surveyed within section</attributeDefinition>
+          <attributeDefinition>Units surveyed on a given snorkel suvey</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Units surveyed within section</definition>
+                  <definition>Units surveyed on a given snorkel suvey</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -371,26 +369,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>unit</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>unsure</attributeDefinition>
+          <attributeDefinition>Unit associated with specific reccord observed</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>unsure</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>species</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fish species. Species include = c(chinook, unknown)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Fish species. Species include = c(chinook, unknown)</definition>
+                  <definition>Unit associated with specific reccord observed</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -418,12 +402,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>size_class</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fish size classification. Classification = c("III" "I"   NA    "II"  "VI"  "IV"  "V"   "VII")</attributeDefinition>
+          <attributeDefinition>Fish size classification. Classification types include: III, I,  NA , II, VI, IV, V, VII</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Fish size classification. Classification = c("III" "I"   NA    "II"  "VI"  "IV"  "V"   "VII")</definition>
+                  <definition>Fish size classification. Classification types include: III, I,  NA , II, VI, IV, V, VII</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -451,12 +435,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>substrate</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Substrate code description from survey location. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement)</attributeDefinition>
+          <attributeDefinition>Substrate code description from survey location. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Substrate code description from survey location. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement)</definition>
+                  <definition>Substrate code description from survey location. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -465,12 +449,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>instream_cover</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Instream cover at survey location. Types of cover include = c(G- Glide, GM- Glide Edgewater, M- Riffle Margin Eddy, P- Pool, R- Riffle, RM- Riffle Edgewater, W- Backwater)</attributeDefinition>
+          <attributeDefinition>Instream cover at survey location. If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Instream cover at survey location. Types of cover include = c(G- Glide, GM- Glide Edgewater, M- Riffle Margin Eddy, P- Pool, R- Riffle, RM- Riffle Edgewater, W- Backwater)</definition>
+                  <definition>Instream cover at survey location. If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -479,12 +463,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>overhead_cover</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Overhead cover at survey location</attributeDefinition>
+          <attributeDefinition>Overhead cover at survey location.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Overhead cover at survey location</definition>
+                  <definition>Overhead cover at survey location.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -493,12 +477,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>hydrology</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Features of stream. Features include = c(riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</attributeDefinition>
+          <attributeDefinition>Hydological features at study site. Features include: riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Features of stream. Features include = c(riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</definition>
+                  <definition>Hydological features at study site. Features include: riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -507,7 +491,7 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>water_depth_m</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Depth on water in meters</attributeDefinition>
+          <attributeDefinition>Depth of water in meters</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -526,12 +510,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>run</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Run type of the fish counted. Types of run include = c(unknown, spring, fall, late fall)</attributeDefinition>
+          <attributeDefinition>Run type of the fish counted. Types of run include: unknown, spring, fall, late fall</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Run type of the fish counted. Types of run include = c(unknown, spring, fall, late fall)</definition>
+                  <definition>Run type of the fish counted. Types of run include: unknown, spring, fall, late fall</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -540,12 +524,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>tagged</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>If fish was tagged or not. Levels = c(TRUE, FALSE)</attributeDefinition>
+          <attributeDefinition>If fish was tagged or not (TRUE, FALSE)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>If fish was tagged or not. Levels = c(TRUE, FALSE)</definition>
+                  <definition>If fish was tagged or not (TRUE, FALSE)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -554,12 +538,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>clipped</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>If fish fin is clipped. Levels = c(TRUE, FALSE)</attributeDefinition>
+          <attributeDefinition>If adipose fin is clipped (TRUE, FALSE)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>If fish fin is clipped. Levels = c(TRUE, FALSE)</definition>
+                  <definition>If adipose fin is clipped (TRUE, FALSE)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -568,12 +552,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>location</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Location were snorkel data was collected</attributeDefinition>
+          <attributeDefinition>Location where snorkel data is collected</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Location were snorkel data was collected</definition>
+                  <definition>Location where snorkel data is collected</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -582,12 +566,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>survey_type</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>unsure</attributeDefinition>
+          <attributeDefinition>Type of survey conducted</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>unsure</definition>
+                  <definition>Type of survey conducted</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -596,12 +580,12 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>section_type</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Survey site type. Site types include = c(Permanent: site surveyed repetedly, Random = site surveyed as a proxy if "permanent site" not feasible to survey)</attributeDefinition>
+          <attributeDefinition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Survey site type. Site types include = c(Permanent: site surveyed repetedly, Random = site surveyed as a proxy if "permanent site" not feasible to survey)</definition>
+                  <definition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -610,7 +594,7 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>fork_length</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fork length of juvenile</attributeDefinition>
+          <attributeDefinition>Fork length of observed fish</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -629,7 +613,7 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>bank_distance</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Distance from the bank from observation</attributeDefinition>
+          <attributeDefinition>Distance of the bank from observed species</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -646,23 +630,9 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>unit_type</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>unsure</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>unsure</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>visibility</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Visibility range that allows to identify fish</attributeDefinition>
+          <attributeDefinition>Distance under current conditions of how far you can see/identify a fish. Recorded in meters.</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -681,16 +651,13 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
         <attribute>
           <attributeName>section_number</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Number of map section from DMP</attributeDefinition>
+          <attributeDefinition>Number corresponding to section name.</attributeDefinition>
           <measurementScale>
             <ordinal>
               <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Feather River Snorkel Survey</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
+                <textDomain>
+                  <definition>Number corresponding to section name.</definition>
+                </textDomain>
               </nonNumericDomain>
             </ordinal>
           </measurementScale>
@@ -712,6 +679,20 @@ Bedrock Park Riffle, Trailer Park Riffle, Aleck Riffle, Steep Riffle, Eye Riffle
                 </bounds>
               </numericDomain>
             </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>species</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Fish species observed</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Fish species observed</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
           </measurementScale>
         </attribute>
       </attributeList>

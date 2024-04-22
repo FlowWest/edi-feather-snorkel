@@ -187,6 +187,7 @@ summary(combined_snorkel$est_size)
 ggplot(combined_snorkel, aes(est_size, fill = species)) +
   geom_histogram()
 
+
 # Fork length --------------------------------------------------------------------------
 summary(combined_snorkel$fork_length)
 ggplot(combined_snorkel, aes(fork_length, fill = species)) +
@@ -238,13 +239,39 @@ cleaned_combined_snorkel <- combined_snorkel |>
                              TRUE ~ species))) |> glimpse()
 
 cleaned_combined_snorkel$species |> unique()
+# TODO - Badhia, additional updates
+# discussed with Casey, remove the following from final tables: size_class, est_size, bank_dist (more than 95% na, no longer used), run
+# clean up the following columns: hydrology - w: backwater, g: glide
+# decision to split data into 3 tables: survey_characteristics, site_lookup, fish_observations
 
-# consider additionally removing survey_type, est_size, units_covered, location, bank_dist (more than 95% na, no longer used)
-# TODO Questions: Additional spatial considerations - Is there a location table that would map units to sections/section type, ect?
+# characteristics
+# Each survey id coresponds to a single section_name so including section name in this table
+survey_characteristics <- cleaned_combined_snorkel |>
+  select(survey_id, date, flow, weather, turbidity, start_time, end_time,
+         section_name, units_covered, unit, visibility, temperature, survey_type) |>
+  distinct() |>
+  glimpse()
 
+# TODO / concerns
+# Lots of section_name NA especially in early reccord. Not sure how to figure out location of these surveys
+# For now, adding unit to ensure we can keep spatial info, plan to try and remove and keep this info but allow spatial linking through location table
+
+# site_lookup
+# Goal of site lookup is to have a location lookup table. There should be 1 row for each "unit".
+# We want the following columns: section_name, section_number, unit, unit_type, section_type (permanent or random)
+# we can assign section_type based on the metadata we have about each section. If section number 1-20, assign section_type = "permanent" else assign "random"
+# If "random" is there a way we can figure out where these units are located
+site_lookup <- cleaned_combined_snorkel |>
+  select(section_name, section_number, unit, hydrology, location) |>
+  distinct() |>
+  glimpse()
+
+# fish_observations
+fish_observations <- cleaned_combined_snorkel |>
+  select(survey_id, date, unit, species, count, fork_length, substrate, instream_cover, overhead_cover, water_depth_m, tagged, clipped) |> glimpse()
 
 # write files -------------------------------------------------------------
 
 # save cleaned data to `data/`
-write_csv(combined_snorkel, here::here("data", "combined_feather_snorkel_data.csv"))
+write_csv(cleaned_combined_snorkel, here::here("data", "combined_feather_snorkel_data.csv"))
 
