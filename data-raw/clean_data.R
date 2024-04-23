@@ -244,7 +244,7 @@ cleaned_combined_snorkel$species |> unique()
 # clean up the following columns: hydrology - w: backwater, g: glide
 # decision to split data into 3 tables: survey_characteristics, site_lookup, fish_observations
 
-# characteristics
+# characteristics ----
 # Each survey id coresponds to a single section_name so including section name in this table
 survey_characteristics <- cleaned_combined_snorkel |>
   select(survey_id, date, flow, weather, turbidity, start_time, end_time,
@@ -256,7 +256,7 @@ survey_characteristics <- cleaned_combined_snorkel |>
 # Lots of section_name NA especially in early reccord. Not sure how to figure out location of these surveys
 # For now, adding unit to ensure we can keep spatial info, plan to try and remove and keep this info but allow spatial linking through location table
 
-# site_lookup
+# site_lookup -----
 # Goal of site lookup is to have a location lookup table. There should be 1 row for each "unit".
 # We want the following columns: section_name, section_number, unit, unit_type, section_type (permanent or random)
 # we can assign section_type based on the metadata we have about each section. If section number 1-20, assign section_type = "permanent" else assign "random"
@@ -279,13 +279,17 @@ consolidated_site_lookup <- site_lookup |>
     hydrology = ifelse(all(is.na(hydrology)), NA_character_, paste(na.omit(hydrology), collapse = ", ")), # Combining non-NA hydrology values, or NA if all NA
     location = ifelse(all(is.na(location)), NA_character_, paste(na.omit(location), collapse = ", ")), # Combining non-NA location values, or NA if all NA
     section_type = ifelse(all(section_type %in% c("random", "permanent")), paste(unique(section_type), collapse = "/"), first(na.omit(section_type)))) # Combining "random" and "permanent" if both are present, otherwise keeping the first value
-
 # Print the consolidated data
 print(consolidated_site_lookup)
 
+#trying another lookup table format
+site_lookup_test <- site_lookup |>
+  select(c(unit, section_name, section_type)) |>
+  distinct() |>
+  glimpse()
 
 
-# fish_observations
+# fish_observations -----
 fish_observations <- cleaned_combined_snorkel |>
   select(survey_id, date, unit, species, count, fork_length, substrate, instream_cover, overhead_cover, water_depth_m, tagged, clipped) |> glimpse()
 
