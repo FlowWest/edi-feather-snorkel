@@ -269,6 +269,20 @@ site_lookup <- cleaned_combined_snorkel |>
   glimpse()
 
 #facts: there are 499 different units and 39 different section_names
+#keeping one row per "unit", and collapsing the other variables
+
+consolidated_site_lookup <- site_lookup |>
+  group_by(unit) |>
+  summarise(
+    section_name = ifelse(all(is.na(section_name)), NA_character_, first(na.omit(section_name))), # Taking the first non-NA value of section_name, or NA if all NA
+    section_number = ifelse(all(section_number %in% c("random", "permanent")), paste(unique(section_number), collapse = "/"), first(na.omit(section_number))), # Combining "random" and "permanent" if both are present, otherwise keeping the first value
+    hydrology = ifelse(all(is.na(hydrology)), NA_character_, paste(na.omit(hydrology), collapse = ", ")), # Combining non-NA hydrology values, or NA if all NA
+    location = ifelse(all(is.na(location)), NA_character_, paste(na.omit(location), collapse = ", "))) # Combining non-NA location values, or NA if all NA
+
+# Print the consolidated data
+print(consolidated_site_lookup)
+
+
 
 # fish_observations
 fish_observations <- cleaned_combined_snorkel |>
