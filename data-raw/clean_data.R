@@ -209,7 +209,7 @@ summary(combined_snorkel$visibility)
 
 cleaned_combined_snorkel <- combined_snorkel |>
   mutate(instream_cover = toupper(instream_cover),
-         hydrology = ifelse(year(date) > 2005, unit_type, hydrology)) |>
+         hydrology = ifelse(year(date) > 2005, hydrology, unit_type)) |> #switched the oder of if else, please check
   select(-unit_type) |>
   left_join(species_lookup, by = c("species" = "OrganismCode")) |>
   select(-species) |>
@@ -264,7 +264,11 @@ survey_characteristics <- cleaned_combined_snorkel |>
 site_lookup <- cleaned_combined_snorkel |>
   select(section_name, section_number, unit, hydrology, location) |>
   distinct() |>
+  mutate(section_number = case_when(between(section_number, 1, 20) ~ "permanent", TRUE ~ "random")) |>
+  mutate(hydrology = recode(hydrology, "g" = "glide", "w" = "backwater")) |>
   glimpse()
+
+#facts: there are 499 different units and 39 different section_names
 
 # fish_observations
 fish_observations <- cleaned_combined_snorkel |>
