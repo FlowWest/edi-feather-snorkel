@@ -1,5 +1,6 @@
 library(tidyverse)
 library(googleCloudStorageR)
+library(sf)
 source("data-raw/metadata/species_lookup.R")
 
 
@@ -77,7 +78,6 @@ unique(combined_snorkel$size_class)
 # instream cover -----------------------------------------------------------------
 unique(combined_snorkel$instream_cover) # confirm metadata has code lookup
 
-# hydrology & unit type -----------------------------------------------------------------
 unique(combined_snorkel$hydrology)
 # TODO used unit type pre 2005 and hydrology post, called them hydrology
 unique(combined_snorkel$unit_type) #still unsure about different between this field and hydrology
@@ -261,6 +261,16 @@ survey_characteristics <- cleaned_combined_snorkel |>
 # We want the following columns: section_name, section_number, unit, unit_type, section_type (permanent or random)
 # we can assign section_type based on the metadata we have about each section. If section number 1-20, assign section_type = "permanent" else assign "random"
 # If "random" is there a way we can figure out where these units are located
+
+#reading in KMZ file
+lat_long_file <- st_read("data-raw/Snorkel_Survey_Locations.kml")
+
+coords <- st_coordinates(lat_long_file$geometry)
+# Convert the coordinates to a data frame
+coords_df <- as.data.frame(coords)
+colnames(coords_df) <- c("longitude", "latitude")
+
+#creating lookup table
 site_lookup <- cleaned_combined_snorkel |>
   select(section_name, section_number, unit, hydrology, location) |>
   distinct() |>
@@ -269,7 +279,7 @@ site_lookup <- cleaned_combined_snorkel |>
   glimpse()
 
 #facts: there are 499 different units and 39 different section_names
-#keeping one row per "unit", and collapsing the other variables
+#approach 1 - keeping one row per "unit", and collapsing the other variables
 
 consolidated_site_lookup <- site_lookup |>
   group_by(unit) |>
@@ -282,11 +292,12 @@ consolidated_site_lookup <- site_lookup |>
 # Print the consolidated data
 print(consolidated_site_lookup)
 
-#trying another lookup table format
+#approach 2 - trying another lookup table format
 site_lookup_test <- site_lookup |>
   select(c(unit, section_name, section_type)) |>
   distinct() |>
   glimpse()
+
 
 
 # fish_observations -----
