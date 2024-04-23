@@ -264,7 +264,7 @@ survey_characteristics <- cleaned_combined_snorkel |>
 site_lookup <- cleaned_combined_snorkel |>
   select(section_name, section_number, unit, hydrology, location) |>
   distinct() |>
-  mutate(section_number = case_when(between(section_number, 1, 20) ~ "permanent", TRUE ~ "random")) |>
+  mutate(section_type = case_when(between(section_number, 1, 20) ~ "permanent", TRUE ~ "random")) |>
   mutate(hydrology = recode(hydrology, "g" = "glide", "w" = "backwater")) |>
   glimpse()
 
@@ -275,9 +275,10 @@ consolidated_site_lookup <- site_lookup |>
   group_by(unit) |>
   summarise(
     section_name = ifelse(all(is.na(section_name)), NA_character_, first(na.omit(section_name))), # Taking the first non-NA value of section_name, or NA if all NA
-    section_number = ifelse(all(section_number %in% c("random", "permanent")), paste(unique(section_number), collapse = "/"), first(na.omit(section_number))), # Combining "random" and "permanent" if both are present, otherwise keeping the first value
+    section_number = ifelse(all(is.na(section_number)), NA_character_, paste(na.omit(section_number), collapse = ", ")),
     hydrology = ifelse(all(is.na(hydrology)), NA_character_, paste(na.omit(hydrology), collapse = ", ")), # Combining non-NA hydrology values, or NA if all NA
-    location = ifelse(all(is.na(location)), NA_character_, paste(na.omit(location), collapse = ", "))) # Combining non-NA location values, or NA if all NA
+    location = ifelse(all(is.na(location)), NA_character_, paste(na.omit(location), collapse = ", ")), # Combining non-NA location values, or NA if all NA
+    section_type = ifelse(all(section_type %in% c("random", "permanent")), paste(unique(section_type), collapse = "/"), first(na.omit(section_type)))) # Combining "random" and "permanent" if both are present, otherwise keeping the first value
 
 # Print the consolidated data
 print(consolidated_site_lookup)
