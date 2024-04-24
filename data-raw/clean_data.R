@@ -289,7 +289,7 @@ lookup_1 <- lookup_1 |>
   glimpse()
 
 #creating lookup table
-site_lookup <- cleaned_combined_snorkel |>
+site_lookup_raw <- cleaned_combined_snorkel |>
   select(section_name, section_number, unit) |>
   distinct() |>
   mutate(section_type = case_when(between(section_number, 1, 20) ~ "permanent", TRUE ~ "random"),
@@ -307,20 +307,27 @@ site_lookup <- cleaned_combined_snorkel |>
                                                                            section_name == "Hatchery And Moes Ditches", "Hatchery Ditch", section_name))))))))|>
   glimpse()
 
-#facts: there are 499 different units and 39 different section_names
 
-not_listed <- anti_join(site_lookup, lookup_1, by = "unit") #finding those "unit" that are not in the lookup_1 table
+not_listed <- anti_join(site_lookup_raw, lookup_1, by = "unit") #finding those "unit" that are not in the lookup_1 table
 not_listed |>
   select(c(unit, section_name, section_type)) |> #showing only fields of interest
   glimpse()
 
 #joining both tables by "unit"
-lookup_join <- inner_join(site_lookup, lookup_1, by = "unit") |>
-  # mutate(section_name.x = ifelse(section_name.x == section_name.y & section_number.x == section_number.y, NA, section_name.x),
-  #        section_number.x = ifelse(section_name.x == section_name.y & section_number.x == section_number.y, NA, section_number.x)) |>
-  filter(!is.na(section_name.x) | !is.na(section_number.x)) |>  #deleting those that are NA
+lookup_join <- inner_join(site_lookup_raw, lookup_1, by = "unit") |>
+  mutate(section_name.x = ifelse(section_name.x == section_name.y & section_number.x == section_number.y, NA, section_name.x),
+         section_number.x = ifelse(section_name.x == section_name.y & section_number.x == section_number.y, NA, section_number.x)) |> #setting to NA those section_name, section_number that are consistent
   glimpse()
 
+#identifying inconsistencies between data given and created built lookup table based on map and slides
+inconsistent <- lookup_join |>
+  filter(!is.na(section_number.x)) |>  #deleting those that are NA (since those are consistent)
+  glimpse()
+#since they have a unit number that does not match section_name/section_number. I am using "unit" as priority to then match to correct section_name/section_number
+site_lookup <- lookup_join |>
+  select(3, 5:7) |>
+  distinct() |>
+  glimpse()
 
 
 # fish_observations -----
