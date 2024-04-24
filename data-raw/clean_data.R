@@ -209,7 +209,8 @@ summary(combined_snorkel$visibility)
 
 cleaned_combined_snorkel <- combined_snorkel |>
   mutate(instream_cover = toupper(instream_cover),
-         hydrology = ifelse(year(date) > 2005, hydrology, unit_type)) |> #switched the oder of if else, please check
+         hydrology = ifelse(year(date) > 2005, hydrology, unit_type),
+         hydrology = recode(hydrology, "g" = "glide", "w" = "backwater")) |>
   select(-unit_type) |>
   left_join(species_lookup, by = c("species" = "OrganismCode")) |>
   select(-species) |>
@@ -248,7 +249,7 @@ cleaned_combined_snorkel$species |> unique()
 # Each survey id coresponds to a single section_name so including section name in this table
 survey_characteristics <- cleaned_combined_snorkel |>
   select(survey_id, date, flow, weather, turbidity, start_time, end_time,
-         section_name, units_covered, unit, visibility, temperature, survey_type) |>
+         section_name, units_covered, unit, visibility, temperature, survey_type, hydrology) |>
   distinct() |>
   glimpse()
 
@@ -270,27 +271,20 @@ coords <- st_coordinates(lat_long_file$geometry)
 coords_df <- as.data.frame(coords)
 colnames(coords_df) <- c("longitude", "latitude")
 
+class(coords_df)
+str(coords_df)
+
+
 #creating lookup table
 site_lookup <- cleaned_combined_snorkel |>
-  select(section_name, section_number, unit, hydrology, location) |>
+  select(section_name, section_number, unit) |>
   distinct() |>
   mutate(section_type = case_when(between(section_number, 1, 20) ~ "permanent", TRUE ~ "random")) |>
-  mutate(hydrology = recode(hydrology, "g" = "glide", "w" = "backwater")) |>
   glimpse()
 
 #facts: there are 499 different units and 39 different section_names
-#approach 1 - keeping one row per "unit", and collapsing the other variables
 
-consolidated_site_lookup <- site_lookup |>
-  group_by(unit) |>
-  summarise(
-    section_name = ifelse(all(is.na(section_name)), NA_character_, first(na.omit(section_name))), # Taking the first non-NA value of section_name, or NA if all NA
-    section_number = ifelse(all(is.na(section_number)), NA_character_, paste(na.omit(section_number), collapse = ", ")),
-    hydrology = ifelse(all(is.na(hydrology)), NA_character_, paste(na.omit(hydrology), collapse = ", ")), # Combining non-NA hydrology values, or NA if all NA
-    location = ifelse(all(is.na(location)), NA_character_, paste(na.omit(location), collapse = ", ")), # Combining non-NA location values, or NA if all NA
-    section_type = ifelse(all(section_type %in% c("random", "permanent")), paste(unique(section_type), collapse = "/"), first(na.omit(section_type)))) # Combining "random" and "permanent" if both are present, otherwise keeping the first value
-# Print the consolidated data
-print(consolidated_site_lookup)
+#TODO create a "first lookup" with section_name section_number, unit (add sample_type == permanent)
 
 #approach 2 - trying another lookup table format
 site_lookup_test <- site_lookup |>
