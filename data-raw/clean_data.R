@@ -2,7 +2,7 @@ library(tidyverse)
 library(googleCloudStorageR)
 library(sf)
 source("data-raw/metadata/species_lookup.R")
-
+library(readxl)
 
 # google cloud set up
 gcs_auth(json_file = Sys.getenv("GCS_AUTH_FILE"))
@@ -265,29 +265,26 @@ survey_characteristics <- cleaned_combined_snorkel |>
 
 #reading in KMZ file
 lat_long_file <- st_read("data-raw/Snorkel_Survey_Locations.kml")
-
 coords <- st_coordinates(lat_long_file$geometry)
-# Convert the coordinates to a data frame
-coords_df <- as.data.frame(coords)
+coords_df <- as.data.frame(coords) # Convert the coordinates to a data frame
 colnames(coords_df) <- c("longitude", "latitude")
 
-class(coords_df)
-str(coords_df)
+
+#reading in xlsx created based on slides and dmp
+#section names: bedrock riffle might show as bedrock park riffle. Upper/Lower McFarland are both same section_number so keeping it ad "McFarland"
+lookup_1 <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx") #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
 
 
+#figuring out different section_names with inconsistencies
 #filtering to find if same unit
-common_unit <- cleaned_combined_snorkel |>
-  filter(section_name %in% c("Mo's Ditch", "Hatchery Ditch",  "Hatchery And Mo's Riffles", "Hatchery Riffle", "Hatchery Ditch And Mo's Ditch", "Upper Hatchery Ditch", "Moes Side Channel", "Hatchery And Moes Ditches"))
+common_unit <- cleaned_combined_snorkel |> #TODO find out why unit 29, that corresponds to section_name of Auditorium Riffle (according to slides), and it is "Hatchery Ditch And Mo's Ditch"
+  filter(section_name %in% c("Mo's Ditch", "Hatchery Ditch",  "Hatchery And Mo's Riffles", "Hatchery Ditch And Mo's Ditch", "Upper Hatchery Ditch", "Moes Side Channel", "Hatchery And Moes Ditches"))
 
-
-common_sect_num <- cleaned_combined_snorkel |>
+#exploring where Mo's Ditch belongs to
+sect_3 <- cleaned_combined_snorkel |>
+  select(c(section_name, section_number, unit)) |>
   filter(section_number == 3) |>  #all units are 28
   glimpse()
-
-common_sect_unit <- cleaned_combined_snorkel |>
-  filter(unit == 28) |>
-  glimpse()
-
 
 #creating lookup table
 site_lookup <- cleaned_combined_snorkel |>
@@ -297,7 +294,7 @@ site_lookup <- cleaned_combined_snorkel |>
   glimpse()
 
 #facts: there are 499 different units and 39 different section_names
-#section names: bedrock riffle might show as bedrock park riffle. Upper/Lower McFarland are both same section_number
+
 #TODO create a "first lookup" with section_name section_number, unit (add sample_type == permanent)
 
 #approach 2 - trying another lookup table format
