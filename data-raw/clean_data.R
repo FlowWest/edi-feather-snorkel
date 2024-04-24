@@ -270,11 +270,6 @@ coords_df <- as.data.frame(coords) # Convert the coordinates to a data frame
 colnames(coords_df) <- c("longitude", "latitude")
 
 
-#reading in xlsx created based on slides and dmp
-#section names: bedrock riffle might show as bedrock park riffle. Upper/Lower McFarland are both same section_number so keeping it ad "McFarland"
-lookup_1 <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx") #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
-
-
 #figuring out different section_names with inconsistencies
 #filtering to find if same unit
 common_unit <- cleaned_combined_snorkel |> #TODO find out why unit 29, that corresponds to section_name of Auditorium Riffle (according to slides), and it is "Hatchery Ditch And Mo's Ditch"
@@ -286,21 +281,44 @@ sect_3 <- cleaned_combined_snorkel |>
   filter(section_number == 3) |>  #all units are 28
   glimpse()
 
+#reading in xlsx created based on slides and dmp
+#section names: bedrock riffle might show as bedrock park riffle. Upper/Lower McFarland are both same section_number so keeping it ad "McFarland"
+lookup_1 <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx")
+lookup_1 <- lookup_1 |>
+  mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
+  glimpse()
+
 #creating lookup table
 site_lookup <- cleaned_combined_snorkel |>
   select(section_name, section_number, unit) |>
   distinct() |>
-  mutate(section_type = case_when(between(section_number, 1, 20) ~ "permanent", TRUE ~ "random")) |>
+  mutate(section_type = case_when(between(section_number, 1, 20) ~ "permanent", TRUE ~ "random"),
+         section_name = ifelse(section_name == "Bedrock Park Riffle", "Bedrock Riffle",
+                               ifelse(section_name == "Mcfarland", "McFarland",
+                                      ifelse(section_name == "Trailer Parkk", "Trailer Park Riffle",
+                                             ifelse(section_name == "Gridley S C Riffle", "Gridley Riffle",
+                                                    ifelse(section_name == "Vance", "Vance Riffle",
+                                                           ifelse(section_name == "Big Riffle Downstream Rl" | section_name == "Bigriffle", "Big Riffle",
+                                                                  ifelse(section_name == "Mo's Ditch"|
+                                                                           section_name == "Moes Side Channel" |
+                                                                           section_name == "Hatchery And Mo's Riffles" |
+                                                                           section_name == "Hatchery Ditch And Mo's Ditch"|
+                                                                           section_name == "Upper Hatchery Ditch"|
+                                                                           section_name == "Hatchery And Moes Ditches", "Hatchery Ditch", section_name))))))))|>
   glimpse()
 
 #facts: there are 499 different units and 39 different section_names
 
-#TODO create a "first lookup" with section_name section_number, unit (add sample_type == permanent)
+not_listed <- anti_join(site_lookup, lookup_1, by = "unit") #finding those "unit" that are not in the lookup_1 table
+not_listed |>
+  select(c(unit, section_name, section_type)) |> #showing only fields of interest
+  glimpse()
 
-#approach 2 - trying another lookup table format
-site_lookup_test <- site_lookup |>
-  select(c(unit, section_name, section_type)) |>
-  distinct() |>
+#joining both tables by "unit"
+lookup_join <- inner_join(site_lookup, lookup_1, by = "unit") |>
+  # mutate(section_name.x = ifelse(section_name.x == section_name.y & section_number.x == section_number.y, NA, section_name.x),
+  #        section_number.x = ifelse(section_name.x == section_name.y & section_number.x == section_number.y, NA, section_number.x)) |>
+  filter(!is.na(section_name.x) | !is.na(section_number.x)) |>  #deleting those that are NA
   glimpse()
 
 
