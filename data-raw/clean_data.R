@@ -275,6 +275,20 @@ class(coords_df)
 str(coords_df)
 
 
+#filtering to find if same unit
+common_unit <- cleaned_combined_snorkel |>
+  filter(section_name %in% c("Mo's Ditch", "Hatchery Ditch",  "Hatchery And Mo's Riffles", "Hatchery Riffle", "Hatchery Ditch And Mo's Ditch", "Upper Hatchery Ditch", "Moes Side Channel", "Hatchery And Moes Ditches"))
+
+
+common_sect_num <- cleaned_combined_snorkel |>
+  filter(section_number == 3) |>  #all units are 28
+  glimpse()
+
+common_sect_unit <- cleaned_combined_snorkel |>
+  filter(unit == 28) |>
+  glimpse()
+
+
 #creating lookup table
 site_lookup <- cleaned_combined_snorkel |>
   select(section_name, section_number, unit) |>
@@ -283,7 +297,7 @@ site_lookup <- cleaned_combined_snorkel |>
   glimpse()
 
 #facts: there are 499 different units and 39 different section_names
-
+#section names: bedrock riffle might show as bedrock park riffle. Upper/Lower McFarland are both same section_number
 #TODO create a "first lookup" with section_name section_number, unit (add sample_type == permanent)
 
 #approach 2 - trying another lookup table format
