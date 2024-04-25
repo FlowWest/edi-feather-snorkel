@@ -283,12 +283,12 @@ sect_3 <- cleaned_combined_snorkel |>
 
 #reading in xlsx created based on slides and dmp
 #section names: bedrock riffle might show as bedrock park riffle. Upper/Lower McFarland are both same section_number so keeping it ad "McFarland"
-lookup_1 <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx")
-lookup_1 <- lookup_1 |>
+created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx")
+created_lookup <- created_lookup |>
   mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
   glimpse()
 
-#creating lookup table
+#cleaning up to have consistent section_names
 site_lookup_raw <- cleaned_combined_snorkel |>
   select(section_name, section_number, unit) |>
   distinct() |>
@@ -308,27 +308,34 @@ site_lookup_raw <- cleaned_combined_snorkel |>
   glimpse()
 
 
-not_listed <- anti_join(site_lookup_raw, lookup_1, by = "unit") #finding those "unit" that are not in the lookup_1 table
+not_listed <- anti_join(site_lookup_raw, created_lookup, by = "unit") #finding those "unit" that are not in the created_lookup table
 not_listed |>
   select(c(unit, section_name, section_type)) |> #showing only fields of interest
   glimpse()
 
 #joining both tables by "unit"
-lookup_join <- inner_join(site_lookup_raw, lookup_1, by = "unit") |>
-  mutate(section_name.x = ifelse(section_name.x == section_name.y & section_number.x == section_number.y, NA, section_name.x),
-         section_number.x = ifelse(section_name.x == section_name.y & section_number.x == section_number.y, NA, section_number.x)) |> #setting to NA those section_name, section_number that are consistent
+#changing names to identify source of field clearly. created lookup_table are known data
+created_lookup <- created_lookup |>
+  rename(known_section_name = section_name,
+         known_section_number = section_number)
+
+site_lookup_raw <- site_lookup_raw |>
+  rename(unknown_section_name = section_name,
+         unknown_section_number = section_number) |>
+  glimpse()
+
+lookup_join <- inner_join(site_lookup_raw, created_lookup, by = "unit") |>
+  mutate(unknown_section_name = ifelse(unknown_section_name == known_section_name & unknown_section_number == known_section_number, NA, unknown_section_name),
+         unknown_section_number = ifelse(unknown_section_name == known_section_name & unknown_section_number == known_section_number, NA, unknown_section_number)) |> #setting to NA those section_name, section_number that are consistent
   glimpse()
 
 #identifying inconsistencies between data given and created built lookup table based on map and slides
 inconsistent <- lookup_join |>
-  filter(!is.na(section_number.x)) |>  #deleting those that are NA (since those are consistent)
-  glimpse()
-#since they have a unit number that does not match section_name/section_number. I am using "unit" as priority to then match to correct section_name/section_number
-site_lookup <- lookup_join |>
-  select(3, 5:7) |>
-  distinct() |>
+  filter(!is.na(unknown_section_number)) |>  #deleting those that are NA (since those are consistent)
   glimpse()
 
+
+#filter out those units that are not on the created_lookup, those will be sample_type "random". group by unit (tally, if n > 1 then look further)
 
 # fish_observations -----
 fish_observations <- cleaned_combined_snorkel |>
