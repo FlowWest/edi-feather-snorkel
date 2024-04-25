@@ -29,17 +29,12 @@ glimpse(combined_snorkel)
 unique(combined_snorkel$weather) # fine as is
 
 # SECTION NAME -----------------------------------------------------------------
-# TODO Section name updates/questions
 unique(combined_snorkel$section_name)
-# - we updated Bigriffle to be Big Riffle, is that accurate?)
-# - ? what to do about the section names that include multiple "hatchery and mo's riffles"
-# - do you have a list of ones you currently use? Do you have a map of sites?
+# still some messy section names but we address with a Lookup Table Below
 
 # SECTION TYPE -----------------------------------------------------------------
-# TODO ?
-unique(combined_snorkel$section_type) # what does this mean? Do we need to keep? should we only use permanant sections for analysis
-# all permanent and random sectin types have NA section names and numbers...not useful
-# Suggest that we remove
+unique(combined_snorkel$section_type)
+# Suggest that we remove, will add a new section_type into lookup
 combined_snorkel |> filter(section_type == "permanent") |> pull(section_name) |> unique()
 combined_snorkel |> filter(section_type == "permanent") |> pull(section_number) |> unique()
 
@@ -50,10 +45,7 @@ combined_snorkel |> filter(section_type == "random") |> pull(section_number) |> 
 combined_snorkel |> filter(is.na(section_type)) |> pull(section_name) |> unique()
 combined_snorkel |> filter(is.na(section_type)) |> pull(section_number) |> unique()
 
-# UNITS COVERED -----------------------------------------------------------------
-# TODO can we remove? seems more like metadata then data for a given reccord
-# # are these ones covered in a survey? do we need both this and unit"
-# Suggest removing
+# UNITS COVERED ----------------------------------------------------------------
 unique(combined_snorkel$units_covered)
 
 combined_snorkel |>
@@ -62,7 +54,6 @@ combined_snorkel |>
   geom_point()
 
 # UNIT -----------------------------------------------------------------
-# TODO What is the definition of this?
 unique(combined_snorkel$unit) #check field meaning, why can there be two units?
 
 combined_snorkel |>
@@ -71,16 +62,16 @@ combined_snorkel |>
   geom_point()
 
 # size class -----------------------------------------------------------------
-# TODO ?
-#  What is this? Fish or other size class? do you have the lookup for this? What do these correspond to?
+# Remove size class
 unique(combined_snorkel$size_class)
 
 # instream cover -----------------------------------------------------------------
 unique(combined_snorkel$instream_cover) # confirm metadata has code lookup
 
+# hydrology & unit_type --------------------------------------------------------
 unique(combined_snorkel$hydrology)
-# TODO used unit type pre 2005 and hydrology post, called them hydrology
-unique(combined_snorkel$unit_type) #still unsure about different between this field and hydrology
+# Combined below, since they are the same just collected at different times (see plot below)
+unique(combined_snorkel$unit_type)
 sum(combined_snorkel$unit_type == combined_snorkel$hydrology, na.rm = TRUE)
 
 combined_snorkel |> ggplot(aes(x = date, y = hydrology, color = hydrology)) +
@@ -95,15 +86,13 @@ unique(combined_snorkel$run)
 unique(combined_snorkel$tagged)
 
 # clipped -----------------------------------------------------------------
-# TODO - are there clipped trout? If so is this RBTC? Assumed that but can remove?
 unique(combined_snorkel$clipped)
 
 # overhead cover -----------------------------------------------------------------
 unique(combined_snorkel$overhead_cover)
 
 # location -----------------------------------------------------------------
-# TODO questions?
-# how is this different from section name, seems maybe like it is more specific
+# removed location, messy and not providing additional helpful context
 unique(combined_snorkel$location)
 
 # survey_type -----------------------------------------------------------------
@@ -113,17 +102,15 @@ unique(combined_snorkel$survey_type) #check field meaning, no response in email 
 # Mapping to lookup codes from database in cleaned table below
 unique(combined_snorkel$species)
 
-
 # substrate --------------------------------------------------------------------------
 unique(combined_snorkel$substrate) #keeping substrate as character since numbers are referring to code, multiple codes at once in some fields
 
 # survey_id --------------------------------------------------------------------------
-
 #numeric variables ----
 summary(combined_snorkel$survey_id)
 
 # Date --------------------------------------------------------------------------
-# TODO questions
+# TODO Update with new database from Casey
 # we are missing 2021 - 2024, should we get this data to add in?
 range(combined_snorkel$date)
 
@@ -181,8 +168,7 @@ ggplot(combined_snorkel, aes(count)) +
   geom_histogram()
 
 # Est size --------------------------------------------------------------------------
-# TODO - size and fork length? do we need to keep them both, which one should we keep
-# they do not have quite the same distribution
+# Remove est size
 summary(combined_snorkel$est_size)
 ggplot(combined_snorkel, aes(est_size, fill = species)) +
   geom_histogram()
@@ -199,7 +185,7 @@ ggplot(combined_snorkel, aes(water_depth_m)) +
   geom_histogram()
 
 # Bank distance  --------------------------------------------------------------------------
-# TODO what are the units here?
+# remove, no longer collected
 summary(combined_snorkel$bank_distance)
 
 # visibility --------------------------------------------------------------------------
@@ -237,7 +223,8 @@ cleaned_combined_snorkel <- combined_snorkel |>
                              species == "Unid Juvenile non-Micropterus Sunfish" ~ "Unidentified Juvenile non-Micropterus Sunfish",
                              species == "Unid Juvenile Fish" ~ "Unidentified Juvenile Fish",
                              species == "NO FISH CAUGHT" ~ NA,
-                             TRUE ~ species))) |> glimpse()
+                             TRUE ~ species))) |>
+  select(-c(bank_distance, est_size, size_class, location, survey_type)) |> glimpse()
 
 cleaned_combined_snorkel$species |> unique()
 
@@ -245,15 +232,14 @@ cleaned_combined_snorkel$species |> unique()
 
 # characteristics ----
 # Each survey id corresponds to a single section_name so including section name in this table
+# TODO - erin to check with Ashley on structure here
+# # Lots of section_name NA especially in early reccord. Not sure how to figure out location of these surveys
+# For now, adding unit to ensure we can keep spatial info, plan to try and remove and keep this info but allow spatial linking through location table
 survey_characteristics <- cleaned_combined_snorkel |>
   select(survey_id, date, flow, weather, turbidity, start_time, end_time,
-         section_name, units_covered, unit, visibility, temperature, survey_type, hydrology) |>
+         section_name, units_covered, unit, visibility, temperature, hydrology) |>
   distinct() |>
   glimpse()
-
-# TODO / concerns
-# Lots of section_name NA especially in early reccord. Not sure how to figure out location of these surveys
-# For now, adding unit to ensure we can keep spatial info, plan to try and remove and keep this info but allow spatial linking through location table
 
 # site_lookup -----
 
