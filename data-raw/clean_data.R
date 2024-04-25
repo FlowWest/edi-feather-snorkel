@@ -356,5 +356,6 @@ fish_observations <- cleaned_combined_snorkel |>
 # write files -------------------------------------------------------------
 
 # save cleaned data to `data/`
-write_csv(cleaned_combined_snorkel, here::here("data", "combined_feather_snorkel_data.csv"))
-
+write_csv(survey_characteristics, here::here("data", "survey_characteristics_feather_snorkel_data.csv"))
+write_csv(lookup_table, here::here("data", "lookup_table_feather_snorkel_data.csv"))
+write_csv(fish_observations, here::here("data", "fish_observations_feather_snorkel_data.csv"))
