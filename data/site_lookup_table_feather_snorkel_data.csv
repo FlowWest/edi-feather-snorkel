@@ -1,0 +1,478 @@
+section_name,section_number,unit,section_type
+NA,NA,172,random
+NA,NA,31A,random
+NA,NA,32A,random
+NA,NA,29A,random
+NA,NA,177,random
+NA,NA,183,random
+NA,NA,176,random
+NA,NA,200,random
+NA,NA,215,random
+NA,NA,267,random
+NA,NA,328,random
+NA,NA,27,random
+NA,NA,22,random
+NA,NA,21,random
+NA,NA,20,random
+NA,NA,352,random
+NA,NA,351,random
+NA,NA,368,random
+NA,NA,355,random
+NA,NA,356,random
+NA,NA,358,random
+NA,NA,364,random
+NA,NA,362,random
+NA,NA,370,random
+NA,NA,367,random
+NA,NA,365,random
+NA,NA,359,random
+NA,NA,361,random
+NA,NA,405,random
+NA,NA,406,random
+NA,NA,407,random
+NA,NA,409,random
+NA,NA,410,random
+NA,NA,454,random
+NA,NA,446,random
+NA,NA,448,random
+NA,NA,449,random
+NA,NA,451,random
+NA,NA,452,random
+NA,NA,121,random
+NA,NA,124,random
+NA,NA,123,random
+NA,NA,126,random
+NA,NA,127,random
+NA,NA,122,random
+NA,NA,224,random
+NA,NA,413,random
+NA,NA,412,random
+NA,NA,411,random
+NA,NA,453,random
+NA,NA,205,random
+NA,NA,100,random
+NA,NA,178,random
+NA,NA,121A,random
+NA,NA,54,random
+NA,NA,165,random
+NA,NA,164,random
+NA,NA,166,random
+NA,NA,167,random
+NA,NA,161,random
+NA,NA,162,random
+NA,NA,163,random
+NA,NA,192,random
+NA,NA,191,random
+NA,NA,193,random
+NA,NA,297,random
+NA,NA,306,random
+NA,NA,308,random
+NA,NA,299,random
+NA,NA,329B,random
+NA,NA,335,random
+NA,NA,337,random
+NA,NA,331,random
+NA,NA,330,random
+NA,NA,336,random
+NA,NA,334,random
+NA,NA,102,random
+NA,NA,108,random
+NA,NA,197,random
+NA,NA,213,random
+NA,NA,198,random
+NA,NA,207,random
+NA,NA,199,random
+NA,NA,208,random
+NA,NA,233,random
+NA,NA,236,random
+NA,NA,237,random
+NA,NA,241,random
+NA,NA,269,random
+NA,NA,270,random
+NA,NA,271,random
+NA,NA,272B,random
+NA,NA,273B,random
+NA,NA,274B,random
+NA,NA,275,random
+NA,NA,276,random
+NA,NA,278,random
+NA,NA,282,random
+NA,NA,283,random
+NA,NA,284,random
+NA,NA,288,random
+NA,NA,289,random
+NA,NA,290,random
+NA,NA,294,random
+NA,NA,295,random
+NA,NA,296,random
+NA,NA,303,random
+NA,NA,304,random
+NA,NA,305,random
+NA,NA,309,random
+NA,NA,310,random
+NA,NA,311,random
+NA,NA,180,random
+NA,NA,179,random
+NA,NA,46,random
+NA,NA,52,random
+NA,NA,39,random
+NA,NA,42,random
+NA,NA,59,random
+NA,NA,37,random
+NA,NA,12,random
+NA,NA,1,random
+NA,NA,5,random
+NA,NA,10,random
+NA,NA,8,random
+NA,NA,11,random
+NA,NA,35,random
+NA,NA,34,random
+NA,NA,38,random
+NA,NA,36,random
+NA,NA,6,random
+NA,NA,7,random
+NA,NA,9,random
+NA,NA,51,random
+NA,NA,50,random
+NA,NA,125,random
+NA,NA,484,random
+NA,NA,485,random
+NA,NA,483,random
+NA,NA,387,random
+NA,NA,388,random
+NA,NA,235,random
+NA,NA,500,random
+NA,NA,107,random
+NA,NA,106,random
+Hidden Gridley Side Channel,NA,HGSC,random
+Herringer Pond Rl,NA,HPRL,random
+Cox Flat,NA,CF,random
+Big Riffle Bayou Rl,NA,BRB,random
+Hour To Palm Side Rl,NA,HTPSC,random
+Upper Hour Side Channel Rl,NA,UHSC,random
+Section 2,NA,SEC2,random
+River Bend Upstream Beach,NA,RBUB,random
+Gridley Riffle,NA,487B,random
+NA,NA,301,random
+NA,NA,300,random
+NA,NA,421,random
+NA,NA,423,random
+NA,NA,353,random
+NA,NA,220,random
+NA,NA,149,random
+NA,NA,151,random
+NA,NA,458,random
+NA,NA,461,random
+NA,NA,463,random
+NA,NA,440,random
+NA,NA,439,random
+NA,NA,444,random
+NA,NA,460,random
+NA,NA,419,random
+NA,NA,417,random
+NA,NA,425,random
+NA,NA,427,random
+NA,NA,430,random
+NA,NA,432,random
+NA,NA,436,random
+NA,NA,433,random
+NA,NA,437,random
+NA,NA,378,random
+NA,NA,380,random
+NA,NA,385,random
+NA,NA,384,random
+NA,NA,392,random
+NA,NA,389,random
+NA,NA,394,random
+NA,NA,395,random
+NA,NA,398,random
+NA,NA,400,random
+NA,NA,396,random
+NA,NA,333,random
+NA,NA,340,random
+NA,NA,329.5,random
+NA,NA,327,random
+NA,NA,332,random
+NA,NA,344,random
+NA,NA,338,random
+NA,NA,342,random
+NA,NA,339,random
+NA,NA,343,random
+NA,NA,350,random
+NA,NA,347,random
+NA,NA,349,random
+NA,NA,346,random
+NA,NA,345,random
+NA,NA,348,random
+NA,NA,354,random
+NA,NA,360,random
+NA,NA,366,random
+NA,NA,363,random
+NA,NA,374,random
+NA,NA,376,random
+NA,NA,375,random
+NA,NA,277,random
+NA,NA,274A,random
+NA,NA,285,random
+NA,NA,287,random
+NA,NA,293,random
+NA,NA,279,random
+NA,NA,307,random
+NA,NA,313,random
+NA,NA,318,random
+NA,NA,315,random
+NA,NA,316,random
+NA,NA,322,random
+NA,NA,320,random
+NA,NA,258,random
+NA,NA,252,random
+NA,NA,255A,random
+NA,NA,260,random
+NA,NA,264,random
+NA,NA,266A,random
+NA,NA,232,random
+NA,NA,231,random
+NA,NA,230,random
+NA,NA,234,random
+NA,NA,238,random
+NA,NA,240,random
+NA,NA,242,random
+NA,NA,243,random
+NA,NA,239,random
+NA,NA,218,random
+NA,NA,184,random
+NA,NA,182,random
+NA,NA,187,random
+NA,NA,186,random
+NA,NA,190,random
+NA,NA,48,random
+NA,NA,44,random
+NA,NA,47,random
+NA,NA,57,random
+NA,NA,63,random
+NA,NA,60,random
+NA,NA,64,random
+NA,NA,68,random
+NA,NA,71,random
+NA,NA,73,random
+NA,NA,76,random
+NA,NA,79,random
+NA,NA,74,random
+NA,NA,80,random
+NA,NA,91,random
+NA,NA,111,random
+NA,NA,114,random
+NA,NA,118,random
+NA,NA,110,random
+NA,NA,113,random
+NA,NA,152,random
+NA,NA,155,random
+NA,NA,150,random
+NA,NA,153,random
+NA,NA,154,random
+NA,NA,156,random
+NA,NA,159,random
+NA,NA,158,random
+NA,NA,160,random
+NA,NA,168,random
+NA,NA,140,random
+NA,NA,129,random
+NA,NA,133,random
+NA,NA,137,random
+NA,NA,131,random
+NA,NA,139,random
+NA,NA,141,random
+NA,NA,143,random
+NA,NA,144,random
+NA,NA,142,random
+NA,NA,145,random
+NA,NA,147,random
+NA,NA,146,random
+NA,NA,130,random
+NA,NA,134,random
+NA,NA,138,random
+NA,NA,128,random
+NA,NA,135,random
+NA,NA,132,random
+NA,NA,136,random
+NA,NA,17,random
+NA,NA,13,random
+NA,NA,77,random
+NA,NA,78,random
+NA,NA,281,random
+NA,NA,468,random
+NA,NA,465,random
+NA,NA,435,random
+NA,NA,434,random
+NA,NA,115,random
+NA,NA,101,random
+NA,NA,94,random
+NA,NA,95,random
+NA,NA,92,random
+NA,NA,93,random
+NA,NA,298,random
+NA,NA,172B,random
+NA,NA,16,random
+NA,NA,40,random
+NA,NA,88,random
+NA,NA,112,random
+NA,NA,99,random
+NA,NA,41,random
+NA,NA,26A,random
+NA,NA,53,random
+NA,NA,262,random
+NA,NA,263,random
+NA,NA,261,random
+NA,NA,265,random
+NA,NA,535,random
+NA,NA,536,random
+NA,NA,537,random
+NA,NA,538,random
+NA,NA,492,random
+NA,NA,2,random
+NA,NA,4,random
+NA,NA,14,random
+NA,NA,15,random
+NA,NA,3,random
+NA,NA,83,random
+NA,NA,81,random
+NA,NA,84,random
+NA,NA,61,random
+NA,NA,62,random
+NA,NA,65,random
+NA,NA,66,random
+NA,NA,69,random
+NA,NA,72,random
+NA,NA,75,random
+NA,NA,86,random
+NA,NA,67,random
+NA,NA,70,random
+NA,NA,82,random
+NA,NA,90,random
+NA,NA,111A,random
+NA,NA,89,random
+NA,NA,109,random
+NA,NA,117,random
+NA,NA,118A,random
+NA,NA,148,random
+NA,NA,157,random
+NA,NA,219,random
+NA,NA,272,random
+NA,NA,291,random
+NA,NA,317,random
+NA,NA,312,random
+NA,NA,319,random
+NA,NA,324,random
+NA,NA,321,random
+NA,NA,329,random
+NA,NA,229B,random
+NA,NA,373,random
+NA,NA,391,random
+NA,NA,371,random
+NA,NA,381,random
+NA,NA,399,random
+NA,NA,404,random
+NA,NA,420,random
+NA,NA,429,random
+NA,NA,448A,random
+NA,NA,443,random
+NA,NA,457,random
+NA,NA,455,random
+NA,NA,464,random
+NA,NA,466,random
+NA,NA,501,random
+NA,NA,513,random
+NA,NA,534,random
+NA,NA,482,random
+NA,NA,488,random
+NA,NA,540,random
+NA,NA,541,random
+NA,NA,543,random
+NA,NA,401,random
+NA,NA,18,random
+NA,NA,456,random
+NA,NA,428,random
+NA,NA,431,random
+NA,NA,256,random
+NA,NA,377,random
+NA,NA,271B,random
+NA,NA,326,random
+NA,NA,272A,random
+NA,NA,323,random
+NA,NA,447,random
+NA,NA,525,random
+NA,NA,523,random
+NA,NA,491,random
+NA,NA,489,random
+NA,NA,459,random
+NA,NA,341,random
+NA,NA,87,random
+NA,NA,85,random
+NA,NA,116,random
+NA,NA,335B,random
+NA,NA,438,random
+NA,NA,442,random
+NA,NA,223,random
+NA,NA,357,random
+NA,NA,379,random
+NA,NA,383,random
+NA,NA,372,random
+NA,NA,194,random
+NA,NA,58,random
+NA,NA,49,random
+Hatchery Riffle,1,23,permanent
+Hatchery Riffle,1,24,permanent
+Hatchery Riffle,1,25,permanent
+Hatchery Riffle,1,19,permanent
+Hatchery Ditch,2,26,permanent
+Hatchery Ditch,3,28,permanent
+Hatchery Ditch,2,33,permanent
+Auditorium Riffle,4,29,permanent
+Auditorium Riffle,4,30,permanent
+Auditorium Riffle,4,31,permanent
+Auditorium Riffle,4,32,permanent
+Bedrock Riffle,5,55,permanent
+Bedrock Riffle,5,56,permanent
+Trailer Park Riffle,6,96,permanent
+Trailer Park Riffle,6,97,permanent
+Trailer Park Riffle,6,98,permanent
+Matthews Riffle,7,103,permanent
+Matthews Riffle,7,104,permanent
+Matthews Riffle,7,105,permanent
+Aleck Riffle,8,119,permanent
+Aleck Riffle,8,120,permanent
+Robinson Riffle,9,169,permanent
+Robinson Riffle,9,170,permanent
+Robinson Riffle,9,171,permanent
+Robinson Riffle,9,173,permanent
+Robinson Riffle,9,174,permanent
+Robinson Riffle,9,175,permanent
+Steep Riffle,10,185,permanent
+Steep Riffle,10,189,permanent
+Eye Riffle,11,215A,permanent
+Eye Riffle,11,216,permanent
+Eye Riffle,11,215B,permanent
+Eye Riffle,11,217,permanent
+Eye Riffle,11,210,permanent
+Gateway Riffle,12,221,permanent
+Gateway Riffle,12,225,permanent
+Gateway Riffle,12,226,permanent
+Gateway Riffle,12,229,permanent
+Gateway Riffle,12,228,permanent
+Vance Riffle,13,268,permanent
+Vance Riffle,13,266,permanent
+G95,14,323A,permanent
+G95,14,323B,permanent
+Kiester Riffle,15,402,permanent
+Kiester Riffle,15,403,permanent
+Kiester Riffle,15,397,permanent
+Goose Riffle,16,408,permanent
+Big Riffle,17,424,permanent
+Big Riffle,17,426,permanent
+McFarland,18,441,permanent
+McFarland,18,445,permanent
+McFarland,18,450,permanent
+Gridley Riffle,19,486,permanent
+Gridley Riffle,19,487,permanent
+Junkyard Riffle,20,499,permanent
+Junkyard Riffle,20,502,permanent

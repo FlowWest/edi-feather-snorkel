@@ -224,7 +224,27 @@ cleaned_combined_snorkel <- combined_snorkel |>
                              species == "Unid Juvenile Fish" ~ "Unidentified Juvenile Fish",
                              species == "NO FISH CAUGHT" ~ NA,
                              TRUE ~ species))) |>
-  select(-c(bank_distance, est_size, size_class, location, survey_type)) |> glimpse()
+  select(-c(bank_distance, est_size, size_class, location, survey_type)) |>
+   filter(!unit %in% c("77-80", "86-89",
+                    "104, 106, 112", "104 106  112",
+                    "104 106 112", "446/449", "323b                          323b"
+                    )) |> # remove all duplicates
+  mutate(
+    # unit = as.numeric(gsub("([0-9]+).*$", "\\1", unit)),
+         unit = toupper(unit),
+         section_name = case_when(
+           section_name == "Bedrock Park Riffle" ~ "Bedrock Riffle",
+           section_name == "Mcfarland" ~ "McFarland",
+           section_name == "Trailer Parkk" ~ "Trailer Park Riffle",
+           section_name == "Gridley S C Riffle" ~ "Gridley Riffle",
+           section_name == "Vance" ~ "Vance Riffle",
+           section_name %in% c("Big Riffle Downstream Rl", "Bigriffle") ~ "Big Riffle",
+           section_name %in% c("Mo's Ditch", "Moes Side Channel", "Hatchery And Mo's Riffles",
+                               "Hatchery Ditch And Mo's Ditch", "Upper Hatchery Ditch",
+                               "Hatchery And Moes Ditches") ~ "Hatchery Ditch", TRUE ~ section_name),
+         section_type = ifelse(section_number %in% c(1:20), "permanent", "random")) |>
+  filter(!is.na(unit)) |> glimpse() # this filter and the filter to remove multiple units looses 560 reccods,
+# TODO allowing for now given thoes values cannot be spatially linked anywhere, but confirm and check
 
 cleaned_combined_snorkel$species |> unique()
 
@@ -235,111 +255,116 @@ cleaned_combined_snorkel$species |> unique()
 # TODO - erin to check with Ashley on structure here
 # # Lots of section_name NA especially in early reccord. Not sure how to figure out location of these surveys
 # For now, adding unit to ensure we can keep spatial info, plan to try and remove and keep this info but allow spatial linking through location table
+# Basically looks like 2015 and beyond, the data is good, before lots of NAs
+# Lots of obs where 1 unit is assigned 2 hydrology designations on the same day...
 survey_characteristics <- cleaned_combined_snorkel |>
   select(survey_id, date, flow, weather, turbidity, start_time, end_time,
          section_name, units_covered, unit, visibility, temperature, hydrology) |>
   distinct() |>
   glimpse()
 
-# site_lookup -----
-
-#reading in KMZ file with coordinates
-lat_long_file <- st_read("data-raw/Snorkel_Survey_Locations.kml")
-coords <- st_coordinates(lat_long_file$geometry)
-coords_df <- as.data.frame(coords) # Convert the coordinates to a data frame
-colnames(coords_df) <- c("longitude", "latitude")
-
-
-#figuring out different section_names with inconsistencies
-#filtering to find if same unit
-common_unit |> filter(unit == 29) |> view() #there is a unit 29, that does not corresponds to section_name of Auditorium Riffle (according to slides), and it is "Hatchery Ditch And Mo's Ditch", so changing to correct name. Maybe check that this is ok
-
-common_unit <- cleaned_combined_snorkel |>
-  section_name <- ifelse(unit == 29, "Auditorium Riffle", section_name) |>
-  filter(section_name %in% c("Mo's Ditch", "Hatchery Ditch",  "Hatchery And Mo's Riffles", "Hatchery Ditch And Mo's Ditch", "Upper Hatchery Ditch", "Moes Side Channel", "Hatchery And Moes Ditches"))
-
-
-#exploring where Mo's Ditch belongs to
-sect_3 <- cleaned_combined_snorkel |>
-  select(c(section_name, section_number, unit)) |>
-  filter(section_number == 3) |>  #all units are 28
-  glimpse()
+# site_lookup ------------------------------------------------------------------
 
 #reading in xlsx created based on slides and dmp
 #section names: bedrock riffle might show as bedrock park riffle. Upper/Lower McFarland are both same section_number so keeping it ad "McFarland"
-raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx")
-raw_created_lookup <- raw_created_lookup |>
+raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx") |>
   mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
   glimpse()
 
-#cleaning up to have consistent section_names
-site_lookup_fields <- cleaned_combined_snorkel |>
-  select(section_name, section_number, unit) |>
-  distinct() |>
-  mutate(section_type = ifelse(between(section_number, 1, 20), "permanent", "random"),
-         section_name = case_when(
-           section_name == "Bedrock Park Riffle" ~ "Bedrock Riffle",
-           section_name == "Mcfarland" ~ "McFarland",
-           section_name == "Trailer Parkk" ~ "Trailer Park Riffle",
-           section_name == "Gridley S C Riffle" ~ "Gridley Riffle",
-           section_name == "Vance" ~ "Vance Riffle",
-           section_name %in% c("Big Riffle Downstream Rl", "Bigriffle") ~ "Big Riffle",
-           section_name %in% c("Mo's Ditch", "Moes Side Channel", "Hatchery And Mo's Riffles",
-                               "Hatchery Ditch And Mo's Ditch", "Upper Hatchery Ditch",
-                               "Hatchery And Moes Ditches") ~ "Hatchery Ditch", TRUE ~ section_name)) |>
-  glimpse()
-
-
-not_listed <- anti_join(site_lookup_fields, raw_created_lookup, by = "unit") #finding those "unit" that are not in the raw_created_lookup table
-not_listed |>
-  select(c(unit, section_name, section_type)) |> #showing only fields of interest
-  glimpse()
+# not_listed <- anti_join(site_lookup_fields, raw_created_lookup, by = "unit") #finding those "unit" that are not in the raw_created_lookup table
+# not_listed |>
+#   select(c(unit, section_name, section_type)) |> #showing only fields of interest
+#   glimpse()
 
 #joining both tables by "unit"
 #changing names to identify source of field clearly. created lookup_table are known data
-created_lookup <- raw_created_lookup |>
-  rename(known_section_name = section_name,
-         known_section_number = section_number)
+# created_lookup <- raw_created_lookup |>
+#   rename(known_section_name = section_name,
+#          known_section_number = section_number)
+#
+# site_lookup_raw <- site_lookup_fields |>
+#   rename(unknown_section_name = section_name,
+#          unknown_section_number = section_number) |>
+#   glimpse()
+#
+# lookup_join <- inner_join(site_lookup_raw, created_lookup, by = "unit") |>
+#   mutate(unknown_section_name = ifelse(unknown_section_name == known_section_name & unknown_section_number == known_section_number, NA, unknown_section_name),
+#          unknown_section_number = ifelse(unknown_section_name == known_section_name & unknown_section_number == known_section_number, NA, unknown_section_number)) |> #setting to NA those section_name, section_number that are consistent
+#   glimpse()
+#
+# #identifying inconsistencies between data given and created built lookup table based on map and slides
+# # six reccords that are inconsistant, filter out of the "raw site lookup table)
+# inconsistent <- lookup_join |>
+#   filter(!is.na(unknown_section_number)) |>  #deleting those that are NA (since those are consistent)
+#   filter(unknown_section_name != "Hatchery Ditch") |>  #keeping this one out since we identified the issue
+#   glimpse()
 
-site_lookup_raw <- site_lookup_fields |>
-  rename(unknown_section_name = section_name,
-         unknown_section_number = section_number) |>
-  glimpse()
 
-lookup_join <- inner_join(site_lookup_raw, created_lookup, by = "unit") |>
-  mutate(unknown_section_name = ifelse(unknown_section_name == known_section_name & unknown_section_number == known_section_number, NA, unknown_section_name),
-         unknown_section_number = ifelse(unknown_section_name == known_section_name & unknown_section_number == known_section_number, NA, unknown_section_number)) |> #setting to NA those section_name, section_number that are consistent
-  glimpse()
+# filter out permanant units from raw survey data to provide only the "random" units that are inconsistently sampled
+random_sampling_units <- cleaned_combined_snorkel |>
+  select(section_name, section_number, unit, section_type) |>
+  distinct() |>
+  filter(!unit %in% c(raw_created_lookup$unit)) |>
+  # filter(section_type == "random") |>
+  distinct() |> glimpse()
 
-#identifying inconsistencies between data given and created built lookup table based on map and slides
-inconsistent <- lookup_join |>
-  filter(!is.na(unknown_section_number)) |>  #deleting those that are NA (since those are consistent)
-  filter(unknown_section_name != "Hatchery Ditch") |>  #keeping this one out since we identified the issue
-  glimpse()
+# One row in test showing up as random, update or fix metadata table
+random_sampling_units |>
+  filter(!unit %in% c(raw_created_lookup$unit)) |>
+  filter(section_type == "permanent") |> glimpse()
+# according to map, no 227 in "Gateway Riffle" remove below
+raw_created_lookup |> filter(section_number == 12) |> glimpse()
 
+clean_random_sampling_units <- random_sampling_units |>
+  filter(unit != "227") |> glimpse()
 
-#filter out those units that are not on the created_lookup, those will be section_type "random"
-random_sample <- anti_join(site_lookup_fields, created_lookup, by = "unit")
-#checking if there is more than one row with the same unit
-random_sample |>
-  group_by(unit) |>
-  filter(!is.na(unit)) |>
-  tally() |>
-  view()
-random_sample <- random_sample |>
-  mutate(section_type = "random")
+# ALL random now so that looks good
+clean_random_sampling_units$section_type |> unique()
 
 #final lookup table with all units
-lookup_table <- bind_rows(random_sample, raw_created_lookup) |>
+# TODO/Note - the majority of these (88%) are still "orphaned" units that have no grounding in space currently...
+lookup_table <- bind_rows(clean_random_sampling_units, raw_created_lookup) |>
   glimpse()
 
-# fish_observations -----
+# fish_observations ------------------------------------------------------------
+# TODO EXISTING TODOS
+# Database does not give definition for cover = D, figure out what that is
+# Database does not give definition for substrate = 6, figure out what that is
 fish_observations <- cleaned_combined_snorkel |>
   select(survey_id, date, unit, species, count, fork_length, substrate, instream_cover, overhead_cover, water_depth_m, tagged, clipped) |> glimpse()
+
+# explore fish obs for issues
+fish_observations |> filter(is.na(count)) |> View()
+
+# big gap where they did not collect substrate/cover data between 2004 - 2011
+fish_observations |> ggplot(aes(x=date, y = instream_cover, color = instream_cover)) +
+  geom_point()
+
+# what is D? Assuming R and G are typos and will remove below
+fish_observations$instream_cover |> table()
+
+fish_observations$substrate |> table()
+
+# overhead cover codes go from 0 - 3, removing codes above that have other numbers in them
+fish_observations |> ggplot(aes(x=date, y = overhead_cover, color = overhead_cover)) +
+  geom_point()
+
+fish_observations$overhead_cover |> table()
+
+# create clean version of table
+cleaned_fish_observations <- fish_observations |>
+  filter(!is.na(count)) |> # there are a few of these associated with chinook salmon, but these do not have any habitat data associated with them
+  mutate(overhead_cover = ifelse(overhead_cover == 4, NA, overhead_cover),
+         instream_cover = case_when(instream_cover == "R" ~ NA,
+                                    instream_cover == "0" ~ "A", # Assuming by 0 they mean "No Apparent Cover - A"
+                                    instream_cover == "BG" ~ NA,
+                                    TRUE ~ instream_cover)) |>
+  glimpse()
+
 
 # write files -------------------------------------------------------------
 
 # save cleaned data to `data/`
 write_csv(survey_characteristics, here::here("data", "survey_characteristics_feather_snorkel_data.csv"))
-write_csv(lookup_table, here::here("data", "lookup_table_feather_snorkel_data.csv"))
-write_csv(fish_observations, here::here("data", "fish_observations_feather_snorkel_data.csv"))
+write_csv(lookup_table, here::here("data", "site_lookup_table_feather_snorkel_data.csv"))
+write_csv(cleaned_fish_observations, here::here("data", "fish_observations_feather_snorkel_data.csv"))

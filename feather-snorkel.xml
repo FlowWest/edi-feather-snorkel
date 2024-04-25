@@ -21,7 +21,7 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-04-24</pubDate>
+    <pubDate>2024-04-25</pubDate>
     <abstract>
       <para>
     Abstract
@@ -182,8 +182,10 @@
     length in mm - fish identification and size estimation are
     calibrated by training divers with tethered fishing lures in a
     controlled setting. The accuracy of size estimates is enhanced by
-    comparing observed fish to nearby objects. These objects are then
-    measured using the scale mounted on plastic writing slates.
+    comparing observed fish to nearby objects whose dimensions are
+    measured using the scales mounted on plastic writing slates. At each
+    site, snorkeling units were identified by aerial maps and transects
+    were assigned to each snorkeler.
   </para>
         </description>
       </methodStep>
@@ -205,8 +207,8 @@
       <entityDescription>Survey characteristics from feather river snorkel survey data</entityDescription>
       <physical>
         <objectName>survey_characteristics_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">150368</size>
-        <authentication method="MD5">876f1e3ecd44597d590be7d638625fbd</authentication>
+        <size unit="bytes">150719</size>
+        <authentication method="MD5">ee78a0ca10ab1416e48e566664017e3f</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -419,20 +421,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>survey_type</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Type of survey conducted</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Type of survey conducted</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>hydrology</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Hydological features at study site. Features include: riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</attributeDefinition>
@@ -447,15 +435,15 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>6858</numberOfRecords>
+      <numberOfRecords>6731</numberOfRecords>
     </dataTable>
     <dataTable>
-      <entityName>lookup_table_feather_snorkel_data.csv</entityName>
+      <entityName>site_lookup_table_feather_snorkel_data.csv</entityName>
       <entityDescription>Location lookup feather river snorkel survey data</entityDescription>
       <physical>
-        <objectName>lookup_table_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">150243</size>
-        <authentication method="MD5">864d9609f0a08b33c63b9e27c23cb090</authentication>
+        <objectName>site_lookup_table_feather_snorkel_data.csv</objectName>
+        <size unit="bytes">153673</size>
+        <authentication method="MD5">2687922b8e25ef49e57c28b8271f6937</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -530,15 +518,15 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>500</numberOfRecords>
+      <numberOfRecords>477</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>fish_observations_feather_snorkel_data.csv</entityName>
       <entityDescription>Fish observations from feather river snorkel survey data</entityDescription>
       <physical>
         <objectName>fish_observations_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">150314</size>
-        <authentication method="MD5">e3fdb4f2b066c3017ce624a94370768f</authentication>
+        <size unit="bytes">153738</size>
+        <authentication method="MD5">deceac28764b581526e944ab6855a401</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -742,7 +730,7 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>23525</numberOfRecords>
+      <numberOfRecords>22382</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>
