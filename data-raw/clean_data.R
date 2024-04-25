@@ -240,13 +240,13 @@ cleaned_combined_snorkel <- combined_snorkel |>
                              TRUE ~ species))) |> glimpse()
 
 cleaned_combined_snorkel$species |> unique()
-# TODO - Badhia, additional updates
+
 # discussed with Casey, remove the following from final tables: size_class, est_size, bank_dist (more than 95% na, no longer used), run
 # clean up the following columns: hydrology - w: backwater, g: glide
 # decision to split data into 3 tables: survey_characteristics, site_lookup, fish_observations
 
 # characteristics ----
-# Each survey id coresponds to a single section_name so including section name in this table
+# Each survey id corresponds to a single section_name so including section name in this table
 survey_characteristics <- cleaned_combined_snorkel |>
   select(survey_id, date, flow, weather, turbidity, start_time, end_time,
          section_name, units_covered, unit, visibility, temperature, survey_type, hydrology) |>
@@ -346,7 +346,8 @@ random_sample <- random_sample |>
   mutate(sample_type = "random")
 
 #final lookup table with all units
-lookup_table <- bind_rows(random_sample, raw_created_lookup)
+lookup_table <- bind_rows(random_sample, raw_created_lookup) |>
+  glimpse()
 
 # fish_observations -----
 fish_observations <- cleaned_combined_snorkel |>
