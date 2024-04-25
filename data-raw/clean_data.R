@@ -334,7 +334,7 @@ inconsistent <- lookup_join |>
   glimpse()
 
 
-#filter out those units that are not on the created_lookup, those will be sample_type "random"
+#filter out those units that are not on the created_lookup, those will be section_type "random"
 random_sample <- anti_join(site_lookup_fields, created_lookup, by = "unit")
 #checking if there is more than one row with the same unit
 random_sample |>
@@ -343,7 +343,7 @@ random_sample |>
   tally() |>
   view()
 random_sample <- random_sample |>
-  mutate(sample_type = "random")
+  mutate(section_type = "random")
 
 #final lookup table with all units
 lookup_table <- bind_rows(random_sample, raw_created_lookup) |>
@@ -359,3 +359,4 @@ fish_observations <- cleaned_combined_snorkel |>
 write_csv(survey_characteristics, here::here("data", "survey_characteristics_feather_snorkel_data.csv"))
 write_csv(lookup_table, here::here("data", "lookup_table_feather_snorkel_data.csv"))
 write_csv(fish_observations, here::here("data", "fish_observations_feather_snorkel_data.csv"))
+

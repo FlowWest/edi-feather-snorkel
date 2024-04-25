@@ -21,7 +21,7 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-04-19</pubDate>
+    <pubDate>2024-04-24</pubDate>
     <abstract>
       <para>
     Abstract
@@ -163,12 +163,12 @@
   </para>
           <para>
     Distribution and habitat use snorkel surveys are conducted each year
-    between May and August at 20 sampling sites along the Feather River
-    (12 in the Low Flow Channel and 8 in the High Flow Channel). Three
-    to size divers are distributed along three transects (left side of
-    river, right side of river, center of river). The center transect is
-    typically done in the downstream direction because currents are too
-    strong to swim upstream whereas the other transects along river
+    between January and September at 20 sampling sites along the Feather
+    River (12 in the Low Flow Channel and 8 in the High Flow Channel).
+    Three to six divers are distributed along three transects (left side
+    of river, right side of river, center of river). The center transect
+    is typically done in the downstream direction because currents are
+    too strong to swim upstream whereas the other transects along river
     banks are done in the upstream direction. Divers use plastic slates
     to mark observations of fish. Effort at each site recorded in terms
     of time sampled, area covered, number of divers.
@@ -201,12 +201,12 @@
       </personnel>
     </project>
     <dataTable>
-      <entityName>combined_feather_snorkel_data.csv</entityName>
-      <entityDescription>Feather river snorkel survey data</entityDescription>
+      <entityName>survey_characteristics_feather_snorkel_data.csv</entityName>
+      <entityDescription>Survey characteristics from feather river snorkel survey data</entityDescription>
       <physical>
-        <objectName>combined_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">150501</size>
-        <authentication method="MD5">f73ecc5d01e9600b5d166bb015eaac2e</authentication>
+        <objectName>survey_characteristics_feather_snorkel_data.csv</objectName>
+        <size unit="bytes">150371</size>
+        <authentication method="MD5">92b2e4386aa7a97750defdcb41c16b7a</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -219,7 +219,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datacombined_feather_snorkel_data.csv</url>
+            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datasurvey_characteristics_feather_snorkel_data.csv</url>
           </online>
         </distribution>
       </physical>
@@ -381,6 +381,240 @@
           </measurementScale>
         </attribute>
         <attribute>
+          <attributeName>visibility</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Distance under current conditions of how far you can see/identify a fish. Recorded in meters.</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.5</minimum>
+                  <maximum exclusive="false">9</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>temperature</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Temperature of Water</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">21.67</maximum>
+                </bounds>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_type</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Type of survey conducted</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Type of survey conducted</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>hydrology</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Hydological features at study site. Features include: riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Hydological features at study site. Features include: riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>6858</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>lookup_table_feather_snorkel_data.csv</entityName>
+      <entityDescription>Location lookup feather river snorkel survey data</entityDescription>
+      <physical>
+        <objectName>lookup_table_feather_snorkel_data.csv</objectName>
+        <size unit="bytes">150225</size>
+        <authentication method="MD5">882f1e789153fc9eae8ec50650ef98ef</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datalookup_table_feather_snorkel_data.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>section_name</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Location were snorkel data was collected.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Location were snorkel data was collected.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>section_number</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Number corresponding to section name.</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Number corresponding to section name.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>unit</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Unit associated with specific reccord observed</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unit associated with specific reccord observed</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>section_type</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>500</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>fish_observations_feather_snorkel_data.csv</entityName>
+      <entityDescription>Fish observations from feather river snorkel survey data</entityDescription>
+      <physical>
+        <objectName>fish_observations_feather_snorkel_data.csv</objectName>
+        <size unit="bytes">150329</size>
+        <authentication method="MD5">945f850ce8491a46401080e1bb9b419b</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datafish_observations_feather_snorkel_data.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>survey_id</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Identification number of survey</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Identification number of survey</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>date</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Date snorkel data was collected</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">36259</minimum>
+                  <maximum exclusive="false">44099</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>unit</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Unit associated with specific reccord observed</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unit associated with specific reccord observed</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>species</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Fish species observed</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Fish species observed</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
           <attributeName>count</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Number of fish observed</attributeDefinition>
@@ -400,33 +634,19 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>size_class</attributeName>
+          <attributeName>fork_length</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fish size classification. Classification types include: III, I,  NA , II, VI, IV, V, VII</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Fish size classification. Classification types include: III, I,  NA , II, VI, IV, V, VII</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>est_size</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Estimated fork length of observed fish</attributeDefinition>
+          <attributeDefinition>Fork length of observed fish</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
                 <standardUnit>millimeter</standardUnit>
               </unit>
               <numericDomain>
-                <numberType>real</numberType>
+                <numberType>whole</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">950</maximum>
+                  <maximum exclusive="false">900</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -475,20 +695,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>hydrology</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Hydological features at study site. Features include: riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Hydological features at study site. Features include: riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>water_depth_m</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Depth of water in meters</attributeDefinition>
@@ -505,20 +711,6 @@
                 </bounds>
               </numericDomain>
             </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>run</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Run type of the fish counted. Types of run include: unknown, spring, fall, late fall</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Run type of the fish counted. Types of run include: unknown, spring, fall, late fall</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -544,152 +736,6 @@
               <nonNumericDomain>
                 <textDomain>
                   <definition>If adipose fin is clipped (TRUE, FALSE)</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>location</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Location where snorkel data is collected</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Location where snorkel data is collected</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>survey_type</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Type of survey conducted</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Type of survey conducted</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>section_type</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>fork_length</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fork length of observed fish</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>millimeter</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>whole</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">900</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>bank_distance</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Distance of the bank from observed species</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>meter</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">10</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>visibility</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Distance under current conditions of how far you can see/identify a fish. Recorded in meters.</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>meter</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0.5</minimum>
-                  <maximum exclusive="false">9</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>section_number</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Number corresponding to section name.</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Number corresponding to section name.</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>temperature</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Temperature of Water</attributeDefinition>
-          <measurementScale>
-            <interval>
-              <unit>
-                <standardUnit>celsius</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">21.67</maximum>
-                </bounds>
-              </numericDomain>
-            </interval>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>species</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fish species observed</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Fish species observed</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
