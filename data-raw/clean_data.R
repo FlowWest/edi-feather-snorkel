@@ -259,9 +259,6 @@ survey_characteristics <- cleaned_combined_snorkel |>
 
 # site_lookup -----
 # Goal of site lookup is to have a location lookup table. There should be 1 row for each "unit".
-# We want the following columns: section_name, section_number, unit, unit_type, section_type (permanent or random)
-# we can assign section_type based on the metadata we have about each section. If section number 1-20, assign section_type = "permanent" else assign "random"
-# If "random" is there a way we can figure out where these units are located
 
 #reading in KMZ file
 lat_long_file <- st_read("data-raw/Snorkel_Survey_Locations.kml")
@@ -272,8 +269,12 @@ colnames(coords_df) <- c("longitude", "latitude")
 
 #figuring out different section_names with inconsistencies
 #filtering to find if same unit
-common_unit <- cleaned_combined_snorkel |> #TODO find out why unit 29, that corresponds to section_name of Auditorium Riffle (according to slides), and it is "Hatchery Ditch And Mo's Ditch"
+common_unit |> filter(unit == 29) |> view() #there is a unit 29, that does not corresponds to section_name of Auditorium Riffle (according to slides), and it is "Hatchery Ditch And Mo's Ditch", so changing to correct name. Maybe check that this is ok
+
+common_unit <- cleaned_combined_snorkel |>
+  section_name <- ifelse(unit == 29, "Auditorium Riffle", section_name) |>
   filter(section_name %in% c("Mo's Ditch", "Hatchery Ditch",  "Hatchery And Mo's Riffles", "Hatchery Ditch And Mo's Ditch", "Upper Hatchery Ditch", "Moes Side Channel", "Hatchery And Moes Ditches"))
+
 
 #exploring where Mo's Ditch belongs to
 sect_3 <- cleaned_combined_snorkel |>

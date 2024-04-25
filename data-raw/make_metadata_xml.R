@@ -63,6 +63,3 @@ eml <- list(packageId = edi_number,
 edi_number
 EML::write_eml(eml, paste0(edi_number, ".xml"))
 EML::eml_validate(paste0(edi_number, ".xml"))
-
-
-# save cleaned data to `data/`

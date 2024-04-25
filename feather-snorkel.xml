@@ -205,8 +205,8 @@
       <entityDescription>Survey characteristics from feather river snorkel survey data</entityDescription>
       <physical>
         <objectName>survey_characteristics_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">150371</size>
-        <authentication method="MD5">92b2e4386aa7a97750defdcb41c16b7a</authentication>
+        <size unit="bytes">150368</size>
+        <authentication method="MD5">876f1e3ecd44597d590be7d638625fbd</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -454,8 +454,8 @@
       <entityDescription>Location lookup feather river snorkel survey data</entityDescription>
       <physical>
         <objectName>lookup_table_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">150225</size>
-        <authentication method="MD5">882f1e789153fc9eae8ec50650ef98ef</authentication>
+        <size unit="bytes">150243</size>
+        <authentication method="MD5">864d9609f0a08b33c63b9e27c23cb090</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -537,8 +537,8 @@
       <entityDescription>Fish observations from feather river snorkel survey data</entityDescription>
       <physical>
         <objectName>fish_observations_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">150329</size>
-        <authentication method="MD5">945f850ce8491a46401080e1bb9b419b</authentication>
+        <size unit="bytes">150314</size>
+        <authentication method="MD5">e3fdb4f2b066c3017ce624a94370768f</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
