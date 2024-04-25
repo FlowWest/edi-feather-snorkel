@@ -266,25 +266,17 @@ colnames(coords_df) <- c("longitude", "latitude")
 
 #figuring out different section_names with inconsistencies
 #filtering to find if same unit
-common_unit |> filter(unit == 29) |> view() #there is a unit 29, that does not corresponds to section_name of Auditorium Riffle (according to slides), and it is "Hatchery Ditch And Mo's Ditch", so changing to correct name. Maybe check that this is ok
 
-common_unit <- cleaned_combined_snorkel |>
-  section_name <- ifelse(unit == 29, "Auditorium Riffle", section_name) |>
+common_unit <- cleaned_combined_snorkel|>  filter(unit == 29)  #there are unit 29 rows that do not have section_name of Auditorium Riffle (according to slides), and it is "Hatchery Ditch And Mo's Ditch" or "Hatchery Riffle", so changing to correct name. Maybe check that this is ok
+table(common_unit$section_name)
+#fixing unit 29 names
+cleaned_combined_snorkel <- cleaned_combined_snorkel |>
+  mutate(section_name = ifelse(unit == 29, "Auditorium Riffle", section_name))
+
+#checking for name inconsistency
+name_check <- cleaned_combined_snorkel |>
   filter(section_name %in% c("Mo's Ditch", "Hatchery Ditch",  "Hatchery And Mo's Riffles", "Hatchery Ditch And Mo's Ditch", "Upper Hatchery Ditch", "Moes Side Channel", "Hatchery And Moes Ditches"))
-
-
-#exploring where Mo's Ditch belongs to
-sect_3 <- cleaned_combined_snorkel |>
-  select(c(section_name, section_number, unit)) |>
-  filter(section_number == 3) |>  #all units are 28
-  glimpse()
-
-#reading in xlsx created based on slides and dmp
-#section names: bedrock riffle might show as bedrock park riffle. Upper/Lower McFarland are both same section_number so keeping it ad "McFarland"
-raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx")
-raw_created_lookup <- raw_created_lookup |>
-  mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
-  glimpse()
+table(name_check$unit) #these units all correspond to "Hatchery Ditch"
 
 #cleaning up to have consistent section_names
 site_lookup_fields <- cleaned_combined_snorkel |>
@@ -301,6 +293,13 @@ site_lookup_fields <- cleaned_combined_snorkel |>
            section_name %in% c("Mo's Ditch", "Moes Side Channel", "Hatchery And Mo's Riffles",
                                "Hatchery Ditch And Mo's Ditch", "Upper Hatchery Ditch",
                                "Hatchery And Moes Ditches") ~ "Hatchery Ditch", TRUE ~ section_name)) |>
+  glimpse()
+
+#reading in xlsx created based on slides and dmp
+#section names: bedrock riffle might show as bedrock park riffle. Upper/Lower McFarland are both same section_number so keeping it ad "McFarland"
+raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx")
+raw_created_lookup <- raw_created_lookup |>
+  mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
   glimpse()
 
 
