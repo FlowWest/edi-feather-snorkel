@@ -241,8 +241,6 @@ cleaned_combined_snorkel <- combined_snorkel |>
 
 cleaned_combined_snorkel$species |> unique()
 
-# discussed with Casey, remove the following from final tables: size_class, est_size, bank_dist (more than 95% na, no longer used), run
-# clean up the following columns: hydrology - w: backwater, g: glide
 # decision to split data into 3 tables: survey_characteristics, site_lookup, fish_observations
 
 # characteristics ----
@@ -258,9 +256,8 @@ survey_characteristics <- cleaned_combined_snorkel |>
 # For now, adding unit to ensure we can keep spatial info, plan to try and remove and keep this info but allow spatial linking through location table
 
 # site_lookup -----
-# Goal of site lookup is to have a location lookup table. There should be 1 row for each "unit".
 
-#reading in KMZ file
+#reading in KMZ file with coordinates
 lat_long_file <- st_read("data-raw/Snorkel_Survey_Locations.kml")
 coords <- st_coordinates(lat_long_file$geometry)
 coords_df <- as.data.frame(coords) # Convert the coordinates to a data frame
@@ -360,4 +357,3 @@ fish_observations <- cleaned_combined_snorkel |>
 write_csv(survey_characteristics, here::here("data", "survey_characteristics_feather_snorkel_data.csv"))
 write_csv(lookup_table, here::here("data", "lookup_table_feather_snorkel_data.csv"))
 write_csv(fish_observations, here::here("data", "fish_observations_feather_snorkel_data.csv"))
-
