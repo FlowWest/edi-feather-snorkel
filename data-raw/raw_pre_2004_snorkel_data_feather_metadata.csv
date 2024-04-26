@@ -1,0 +1,418 @@
+SurveyID,Date,SnorkelCrew,ShoreCrew,Recorder,RiverFlow,Weather,VisibilityComments,TempTime,Location,SnorkelTimeStart,SnorkelTimeStop,Comments,SurveyType,SectionType,Units,X..of.Divers,X..of.Center.Passes,Pass.width,Visibility,Temperature
+3,1999-06-30,PH DG,TV,TV,7788,CLR,,1999-12-30,G95,1999-12-30,1999-12-30,Units 323 A+B,Unit,Permanent,,NA,NA,NA,NA,64
+4,1999-06-30,PH DG,TV,TV,7788,CLR,,1999-12-30,Big Hole Island,1999-12-30,1999-12-30,"Units 300, 301, 303, 305",Unit,Permanent,,NA,NA,NA,NA,64
+5,1999-07-01,PH JK TS,BC,BC,8050,CLR,,1999-12-30,McFarland Bend,1999-12-30,1999-12-30,"Units 449,452,451,453      Flows swift",Unit,Permanent,,NA,NA,NA,1.5,65
+6,1999-07-01,"PH, TS, JK",BC,BC,8050,CLR,,1999-12-30,BIG RIFFLE,1999-12-30,1999-12-30,"UNITS 421,423,424",Unit,Random,,NA,NA,NA,1.5,64
+7,1999-07-01,TS PH JK,BC,BC,8050,CLR,,1999-12-30,Lower  Hour Riffle,1999-12-30,1999-12-30,"Units 353,355,356,358",Unit,Random,,NA,NA,NA,NA,64.5
+10,1999-06-28,"DG, TV",PH,PH,621,CLR,,1999-12-30,ROBINSON RIFFLE,1999-12-30,1999-12-30," Units 173-177, 179,",Unit,Permanent,,NA,NA,NA,3.5,61.5
+11,1999-06-28,TV  DG,PH,PH,621,CLR,,1999-12-30,BELOW GREAT WESTERN RIFFLE,1999-12-30,1999-12-30," Units 149, 151",Unit,Random,,NA,NA,NA,3.5,60.5
+12,1999-06-25,TS  PH  BC,JK,JK,628,CLR,EXCELLENT VIS.,1999-12-30,ALECK RIFFLE,1999-12-30,1999-12-30,"RM 119, 121A",Unit,Permanent,,NA,NA,NA,4.09999990463257,62
+13,1999-06-25,TS  BC  PH,JK,JK,628,CLR,GOOD VIS,1999-12-30,BEDROCK PARK,1999-12-30,1999-12-30,"Units 50,52, 54, 55, 56",Unit,Random,,NA,NA,NA,4.09999990463257,58.5
+14,1999-06-23,PH  TV,BC,BC,650,CLR,VERY CLEAR,1999-12-30,MOES DITCH,1999-12-30,1999-12-30,"26, FROM HATCHERY ROAD UP",Unit,Permanent,,NA,NA,NA,NA,56
+15,1999-06-22,JK PH EE,BC,BC,661,CLR,EXCELLENT VIS.,1999-12-30,HATCHERY RIFFLE,1999-12-30,1999-12-30,"19, 23, 24",Unit,Permanent,,NA,NA,NA,NA,56.5
+17,1999-06-04,TS PH EE,JK,JK,1876,CLD,,1999-12-30,MCFARLAND TO SWAMPY BEND,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,1.70000004768372,64.5
+18,1999-06-03,JK EE TV DG,PH,PH,1752,CLD,POOR VISIBILITY,1999-12-30,GOOSE TO MCFARLAND,1999-12-30,NA,"408-411,413,417,424-429 ,430 432,433,435-437, 439",Unit,Random,,NA,NA,NA,1,63
+19,1999-06-01,DG PH JK,BC,BC,1870,CLD,,1999-12-30,HOUR GLIDE,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,1.5,67
+21,1999-05-25,TV EE BC JK,PH,PH,1886,CLR,,1999-12-30,VANCE AVE BOATRAMP TO BIG HOLE BOATRAMP,1999-12-30,1999-12-30,,Comp,,,NA,NA,NA,NA,64
+22,1999-05-25,BC JK EE TV,PH,PH,1886,CLR,,1999-12-30,BH BOATRAMP TO G95,1999-12-30,1999-12-30,,Comp,,,NA,NA,NA,NA,66
+23,1999-05-24,TV SG DG PH,JK,JK,1886,CLR,EXREMELY POOR VISIBILITY,1999-12-30,THERMALITO BAR TO VANCE AVE RIFFLE,1999-12-30,1999-12-30,,Comp,,,NA,NA,NA,0.600000023841858,65
+25,1999-05-20,JK PH SG TV,EE,EE,627,CLR,,1999-12-30,LOWER EYE TO GATEWAY,1999-12-30,1999-12-30,,Comp,,,NA,NA,NA,3.5,58
+26,1999-05-20,JK PH SG TV,EE,EE,627,CLD,,1999-12-30,STEEP RIFFLE,1999-12-30,1999-12-30,,Comp,,,NA,NA,NA,2.79999995231628,56.5
+28,1999-05-20,JK TV PH SG,EE,EE,627,CLR,,1999-12-30,WEIR TO EYE RIFFLE,1999-12-30,1999-12-30,,Comp,,,NA,NA,NA,2.59999990463257,57.5
+29,1999-04-09,ph sg ts,ph,ph,3297,CLR,,NA,Big Hole Island to G95,1999-12-30,NA,Rm 58.6-57.35,Comp,,,NA,NA,NA,NA,51
+31,1999-04-12,,ph,,600,,,NA,Table Mtn Bridge to Hatchery Riffle,NA,NA, Rm 66.7-66.9,Comp,,,NA,NA,NA,NA,NA
+32,1999-04-12,,ph,,600,,,NA,Hatchery Riffle to  Upper Bedrock Pool,NA,NA,Rm 66.1-66.7,Comp,,,NA,NA,NA,NA,NA
+34,1999-04-13,,ph,,600,,,NA,Matthews to Aleck,NA,NA,63.6-64,Comp,,,NA,NA,NA,NA,NA
+35,1999-04-13,,,,600,,,NA,Robinson to Steep,NA,NA,rm 61-61.8,Comp,,,NA,NA,NA,NA,NA
+36,1999-04-14,PH SG TV DG,PH,PH,4019,,,NA,G95 to Hour Glide,NA,NA,RM 56.6-57.25,Comp,,,NA,NA,NA,NA,NA
+37,1999-04-14,PH SG TV DG,PH,PH,4019,,,NA,G95 to Hour Glide,NA,NA,56.6-57.25,Comp,,,NA,NA,NA,NA,NA
+40,1999-04-27,DG SG PH TV,DG,DG,621,,,NA,Table Mtn Bridge to Hatchery Riffle,1999-12-30,1999-12-30,66.7-67,Comp,,,NA,NA,NA,NA,51
+41,1999-04-27,PH SG DG TV,DG,DG,621,,,NA,Hatchery Riffle,1999-12-30,1999-12-30,RM 66.6-66.7,Comp,,,NA,NA,NA,NA,52
+42,1999-04-27,PH SG TV DG,PH,PH,621,,,NA,AUDITORIUM RIFLE,1999-12-30,1999-12-30,RM 66.4-66.6,Comp,,,NA,NA,NA,NA,52
+43,1999-04-27,PH SG TV DG,PH,PH,621,,,NA,Lower Auditorium to Upper Bedrock Pool,1999-12-30,1999-12-30,RM 66.1-66.4,Comp,,,NA,NA,NA,NA,53
+44,1999-04-27,PH SG TV DG,PH,PH,621,,,NA,Upper Bedrock Pool to H70 Bridge,1999-12-30,1999-12-30,66.1-65.7,Comp,,,NA,NA,NA,NA,53
+47,1999-04-29,PH SG EE,PH,PH,621,,,NA,STEEP TO EYE,1999-12-30,1999-12-30,RM 60.3-61,Comp,,,NA,NA,NA,NA,52.5
+49,1999-04-29,PH EE SG,PH,PH,621,,,NA,Eye to Gateway,1999-12-30,1999-12-30,RM 59.7-60.3,Comp,,,NA,NA,NA,NA,55.5
+51,1999-04-30,TV DG PH,DG,DG,614,,,NA,Trailer park to Aleck,1999-12-30,1999-12-30,63.6-64.45,Comp,,,NA,NA,NA,NA,53
+52,1999-04-30,DG PH TV,PH,PH,614,,,NA,ALECK RIFFLE,1999-12-30,1999-12-30,RM 63-63.5,Comp,,,NA,NA,NA,NA,55
+53,1999-04-30,PH TV DG EE SG,SG,SG,614,,,NA,ROBINSON,1999-12-30,1999-12-30,61.5-62,Comp,,,NA,NA,NA,NA,NA
+56,1999-05-03,ph tv dg,ph,ph,5025,,,NA,island @ bottom of big hole island,1999-12-30,1999-12-30,rm 57.8-57.6,Comp,,,NA,NA,NA,NA,56.5
+58,1999-05-04,ph tv dg,dg,dg,4293,,poor visibility,NA,Keister riffle,1999-12-30,1999-12-30,rm 55.2 - 54.9,Comp,,,NA,NA,NA,NA,57
+60,1999-05-04,ph tv dg,dg,dg,4293,,poor visibility,NA,lower hour,1999-12-30,1999-12-30,rm 56.3 - 56,Comp,,,NA,NA,NA,NA,56
+61,1999-05-04,tv ph dg,dg,dg,4293,,poor visibity,NA,hour glide,1999-12-30,1999-12-30,rm 56.7 -m 56.5,Comp,,,NA,NA,NA,NA,56
+62,1999-05-05,JK EE BC,PH,PH,620,,excellent,NA,66.75-67,1999-12-30,1999-12-30,TABLE MTN BRIDGE TO HATCHERY RIFFLE,Comp,,,NA,NA,NA,NA,50.5
+63,1999-05-05,EE BC JK,PH,PH,620,,Excellent,NA,66.6-66.75,1999-12-30,1999-12-30,Hatchery Riffle to Auditorium,Comp,,,NA,NA,NA,NA,52
+64,1999-05-05,JK BC,JK,JK,620,,excellent,NA,Auditorium,1999-12-30,1999-12-30,rm 66.6-66.6,Comp,,,NA,NA,NA,NA,52
+65,1999-05-13,PH TS EE,BC,BC,620,CLR,,1999-12-30,Hatchery Riffle,1999-12-30,1999-12-30,RM 66.6,Unit,Permanent,,NA,NA,NA,NA,52
+67,1999-05-17,TV SG DG PH,JK,JK,615,CLR,excellent,1999-12-30,Auditorium TO bedrock,1999-12-30,NA,,Comp,,,NA,NA,NA,NA,55
+69,1999-05-17,TV PH DG SG,JK,JK,615,CLR,EXCELLENT,1999-12-30,Hatchery  to Auditorium,1999-12-30,1999-12-30,,Comp,,,NA,NA,NA,NA,54.5
+70,1999-05-18,PH EE SG JK TV BC,DG,DG,620,CLR,EXCELLENT!,NA,BEDROCK TO MONTGOMERY,1999-12-30,NA,,Unit,Permanent,,NA,NA,NA,NA,NA
+71,1999-05-18,PH JK EE BC SG TV,DG,DG,620,CLR,EXELLENT,NA,MONTGOMERY ST ACCESS TO MATHEWS RIFFLE,NA,NA,,Unit,Permanent,,NA,NA,NA,NA,NA
+72,1999-05-18,PH TV SG EE,JK DG,JK DG,620,CLR,EXCELLENT,NA,MATTHEWS TO ALEC,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+73,1999-05-19,TV TS PH JK BC,SG,SG,622,CLR,,1999-12-30,Gravel Mine to N. Robinson Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,57
+74,1999-05-19,PH TV TS JK BC,SG,SG,622,CLR,,1999-12-30,Great Western to Gravel Mine,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,3.5,63
+76,1999-05-20,SG PH JK TV EE,EE,EE,627,CLR,,NA,ROBINSONS RIFFLE TO ROBINSONS POOL,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,56
+77,1999-06-22,PH JK EE,BC,BC,661,CLR,EXCELLENT,1999-12-30,Auditrium Riffle,1999-12-30,1999-12-30,Units 29- 32,Unit,Permanent,,NA,NA,NA,NA,57
+78,1999-07-21,PH BC TV KM,JK EE,EE,627,CLR,EXCELLENT,1999-12-30,Hatchery riffle,1999-12-30,1999-12-30,"units 19, 24-25, 32",Unit,Permanent,,NA,NA,NA,NA,59
+79,1999-07-21,BC TV PH KM,JK EE,EE,627,CLR,EXCELLENT,1999-12-30,HATCHERY  RIFFLE,1999-12-30,1999-12-30,"UNITS 5, 17, 24-25, 30-32A,",Unit,Permanent,,NA,NA,NA,NA,59
+80,1999-07-21,BC PH KM  TV,JK EE,JK,627,CLR,EXCELLENT,1999-12-30,AUDITORIUM,1999-12-30,1999-12-30,UNITS 29-29A,Unit,Permanent,,NA,NA,NA,NA,61
+82,1999-07-22,DG TV EE,PH,PH,624,CLR,,1999-12-30,"hatchery riffle, bottom moes ditch to middle moes",1999-12-30,1999-12-30,"UNITS 8,12,13,33",Unit,Permanent,,NA,NA,NA,NA,60
+84,1999-06-24,jk dg tv,ph,ph,663,CLR,,1999-12-30,Lower end Moe's ditch,1999-12-30,1999-12-30,unit 33,Unit,Permanent,,NA,NA,NA,2,57.5
+85,1999-06-24,jk tv dg,ph,ph dg,663,CLR,,1999-12-30,middle of moe's ditch,1999-12-30,1999-12-30,unit 33,Unit,Permanent,,NA,NA,NA,2,56
+86,1999-07-26,tv jk dg,km,km,623,CLR,,1999-12-30,montgomery street,1999-12-30,1999-12-30,unit 77 - 79,Unit,Random,,NA,NA,NA,NA,61
+89,1999-07-28,jk km dg,ee,ee,9564,CLR,,1999-12-30,below G95,1999-12-30,1999-12-30,"units 332, 334",Unit,Random,,NA,NA,NA,NA,63
+91,1999-07-28,jk km dg,ee,ee,9564,CLR,,1999-12-30,above big hole boat launch,1999-12-30,1999-12-30,"units 279, 281",Comp,,,NA,NA,NA,2.40000009536743,63
+92,1999-07-28,jk km dg,ee,ee,9564,CLR,,1999-12-30,g95,1999-12-30,1999-12-30,"units 323A, 323B",Unit,Permanent,,NA,NA,NA,NA,62.5
+93,1999-07-29,jk ee km,dg,dg,9315,CLR,,1999-12-30,mcfarland riffle,1999-12-30,1999-12-30,"units 446,449, 451, 453",Unit,Permanent,,NA,NA,NA,3.09999990463257,63
+94,1999-07-29,ee jk km,dg,dg,9315,CLR,"poor visibility in 468 , 0.75m",1999-12-30,swampy bend to gridley bridge,1999-12-30,1999-12-30,"units 465, 468",Unit,Random,,NA,NA,NA,3.09999990463257,64
+95,1999-08-23,tv ph km,dg,dg/km,600,CLR,,1999-12-30,"Hatchery riffle,  Auditorium riffle",1999-12-30,1999-12-30,"units 19, 24, 25, 29, 31, 31a, 29a",Unit,Permanent,,NA,NA,NA,NA,55
+97,1999-08-26,ph ee,tv,tv,4500,CLD,,1999-12-30,g95,1999-12-30,1999-12-30,units 323a 323b weather was smoky,Unit,Permanent,,NA,NA,NA,NA,63
+98,1999-08-30,TV PH,JK,JK,5500,CLR,,1999-12-30,"BIG BAR, MCFARLAND",1999-12-30,1999-12-30,"433-435;449,452-453; McFarland=random",Unit,Permanent,,NA,NA,NA,2.90000009536743,65
+99,1999-08-26,PH EE,TV,TV,4500,CLD,,1999-12-30,GOOSE RIFFLE,1999-12-30,1999-12-30,"SMOKEY; UNITS 409-410, 411, 413",Unit,Permanent,,NA,NA,NA,NA,64
+100,1999-08-26,EE PH,TV,TV,4500,CLD,,1999-12-30,HOUR RIFFLE,1999-12-30,1999-12-30,CLD WITH SMOKE;UNITS 345 AND 347,Unit,Random,,NA,NA,NA,NA,64
+102,1999-08-25,PH KM EE,DG,DG,NA,CLD,,1999-12-30,EYE RIFFLE,1999-12-30,1999-12-30,"UNITS 215A, 215B, 216",Unit,Permanent,,NA,NA,NA,NA,61
+103,1999-08-25,PH KM EE,DG,DG,NA,CLD,,1999-12-30,ABOVE EYE RIFFLE,1999-12-30,1999-12-30,UNITS 197-199; SMOKEY,Unit,Random,,NA,NA,NA,NA,58
+104,1999-08-25,PH KM EE,DG,DG,NA,CLD,,1999-12-30,EYE SIDE CHANNELS,1999-12-30,1999-12-30,"UNITS 205, 210, 217",Unit,Permanent,,NA,NA,NA,NA,58
+105,1999-08-24,tv ee km,ph,ph,600,CLD,,1999-12-30,Above Hatchery,1999-12-30,1999-12-30,Units 5-6,Unit,Random,,NA,NA,NA,NA,56
+106,1999-08-24,TV EE KM,PH,PH,600,CLD,,1999-12-30,ALECK RIFFLE,1999-12-30,1999-12-30,"UNITS 120, 121, 115, 119 Anglers hampered snorklin",Unit,Permanent,,NA,NA,NA,NA,58
+107,1999-08-24,KM TV EE,PH,PH,600,CLD,,1999-12-30,Robinson Riffle,1999-12-30,1999-12-30,"UNITS 169, 170, 171, 173, 174, 175, 176, 177, 178",Unit,Permanent,,NA,NA,NA,NA,59
+110,1999-10-06,JK EE TV,KM,KM,600,CLD,,1999-12-30,Steep Riffle,1999-12-30,1999-12-30,Units 185 & 189,Unit,Random,,NA,NA,NA,NA,60
+111,1999-10-06,JK EE TV,KM,KM,600,CLR,,1999-12-30,"Weir, Eye  Riffle",1999-12-30,1999-12-30,"Weir units 192, 198 Eye 205,210, 216, 217",Unit,Permanent,,NA,NA,NA,NA,58
+112,1999-10-06,JK EE TV,KM,KM,600,CLD,,1999-12-30,Robinson riffle,1999-12-30,1999-12-30,"UNITS 170, 173, 175,177",Unit,Permanent,,NA,NA,NA,NA,56.5
+113,1999-10-06,JK EE TV,KM,KM,600,CLR,,1999-12-30,ALECK RIFFLE,1999-12-30,1999-12-30,"UNITS 119, 120, 121",Unit,Permanent,,NA,NA,NA,NA,61
+114,1999-10-27,ee ph,tv,tv,2450,RAN,,1999-12-30,g-95,1999-12-30,1999-12-30,,Comp,,,NA,NA,NA,NA,56
+116,1999-10-27,ph ee,tv,tv,2450,CLD,hit bottom,1999-12-30,eye riffle main channel,1999-12-30,1999-12-30,"units: 215a, 215b, 216",Comp,,,NA,NA,NA,4.80000019073486,54
+117,1999-10-27,ee ph,tv,tv,2450,RAN,,NA,Big Hole boat launch,1999-12-30,1999-12-30,"Units: 297, 298, 299",Comp,,,NA,NA,NA,NA,NA
+119,1999-10-27,ph ee,tv,tv,2450,RAN,,NA,Vance Avenue boat launch,1999-12-30,1999-12-30,"Units: 266, 267, 268",Comp,,,NA,NA,NA,NA,NA
+120,1999-10-26,ph zh jk,dg,dg,600,CLD,,1999-12-30,eye side channels,1999-12-30,1999-12-30,"Units: 205, 210",Comp,,,NA,NA,NA,NA,55
+121,1999-10-26,ph jk zh,dg,dg,600,CLD,,1999-12-30,steep side channel,1999-12-30,1999-12-30,"Units: 189, 192",Comp,,,NA,NA,NA,NA,58.5
+122,1999-10-26,zh jk ph,dg,dg,600,CLR,,1999-12-30,Robinson,1999-12-30,1999-12-30,"Units 170,173,174",Comp,,,NA,NA,NA,NA,58
+123,1999-10-26,ph jk zh,dg,dg,600,CLD,,NA,"Robinson pond side channels, steep side channel",1999-12-30,1999-12-30,"Units: 190, 189, 172B",Comp,,,NA,NA,NA,NA,NA
+124,1999-09-27,ee ph,km,km,3500,CLR,very poor visibility,NA,McFarland Bend,1999-12-30,1999-12-30,units: 451-453,Unit,Permanent,,NA,NA,NA,1,NA
+125,1999-09-27,ee ph,km,km,3500,CLR,very poor visibility,NA,Big Bar Riffle,1999-12-30,1999-12-30,Units: 434-435,Unit,Random,,NA,NA,NA,1,NA
+128,1999-10-07,ph tv,ee,ee,600,CLR,,1999-12-30,Mathews Riffle,1999-12-30,NA,Unit: 103-105,Comp,,,NA,NA,NA,NA,53.5
+129,1999-10-07,tv ph,ee,ee,600,CLR,,1999-12-30,Trailer Park Riffle,1999-12-30,1999-12-30,"Units: 92-98, 100, 101",Comp,,,NA,NA,NA,NA,53.5
+130,1999-10-07,ph tv,ee,ee,3900,CLR,"very poor, ,1.3m",1999-12-30,riffle below Vance Avenue boat launch,1999-12-30,NA,"Units: 266, 267",Comp,,,NA,NA,NA,NA,58.5
+131,1999-10-25,ee ph dg,km,km,600,CLR,,NA,Hatchery Riffle,1999-12-30,1999-12-30,"Units: 19, 23, 24, 25",Comp,,,NA,NA,NA,NA,NA
+133,1999-10-25,ee ph dg,km,km,600,CLR,,NA,Bedrock Park,1999-12-30,1999-12-30,"Units: 54, 55, 56",Comp,Random,,NA,NA,NA,NA,NA
+134,1999-10-25,ee ph dg,km,km,600,CLR,,NA,Trailer Park,1999-12-30,1999-12-30,"Units: 96, 97, 98",Comp,Random,,NA,NA,NA,NA,NA
+247,2000-06-05,JK EE RK SI,PH,PH,600,CLR,,1999-12-30,Fish Barrier Dam to Hatchery Riffle,1999-12-30,1999-12-30,EE - Units 1 and 5  had 5000 plus WAG fry.,Comp,NA,,NA,NA,NA,NA,56
+248,2000-06-05, JK RK SI EE,PH,PH,600,CLR,,1999-12-30,Hatchery Riffle to Auditorium,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,57
+249,2000-06-05,JK RK SI EE,PH,PH,600,CLR,,1999-12-30,Auditorium Riffle to Bedrock,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,58
+251,2000-06-06,EE JW PH SI ZM,KM,KM,600,CLR,good,1999-12-30,Hwy 162 bridge to Aleck Riffle,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,2.5,60.5
+252,2000-06-07,JK BC TV PH JW,RK,RK,600,CLR,good,1999-12-30,Robinson to Steep Riffle,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,63
+254,2000-06-08,JK TV EE KM PH,JW,JW,600,CLD,fair,1999-12-30,Steep Riffle to Eye Riffle,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,60
+255,2000-06-08,JK TV PH EE KM,JW,JW,600,CLD,fair,1999-12-30,Lower Eye Riffle to Gateway Riffle,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,60
+256,2000-06-12,JK BC RK PH,KM,KM,4000,CLR,POOR,1999-12-30,VANCE AVE TO BIG HOLE BOAT LAUNCH,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,1,65
+257,2000-06-13,JK EE TV PH,TS,TS,4000,CLR,,1999-12-30,G-95 TO KEISTER BACKWATER,1999-12-30,NA,,Comp,NA,,NA,NA,NA,NA,68
+258,2000-06-14,TV JW ES,PH,PH,4000,CLR,,1999-12-30,UPPER HATCHERY DITCH,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,55.5
+259,2000-06-19,JK TV,JW,JW,NA,CLR,EXCELLENT,1999-12-30,HATCHERY DITCH,1999-12-30,1999-12-30,Temperature taken at mouth of Hatchery Ditch (downstream).  Temp at Seep #7 was 56 @ 15:00.,Comp,NA,,NA,NA,NA,NA,57
+260,1999-12-16,BC JK PH,DG TV,DG,600,CLR,,NA,Robinson Riffle/Steep Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+261,1999-12-16,BC JK TV PH,DG,DG,600,CLR,,NA,Trailer Park to Mathew's Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+262,1999-12-16,BC JK TV PH,DG,DG,600,CLR,,NA,Hatchery Riffle to Lower Auditorium,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+263,2000-01-06,BC JK EE,BC,BC,NA,CLD,,1999-12-30,Hatchery Ditch,1999-12-30,1999-12-30,Three likely steelhead redds observed in unit 26.,Unit,Permanent,,NA,NA,NA,NA,50
+264,2000-01-19,JK EE BC KM,,BC,600,CLD,not good,NA,Robinson side channel,1999-12-30,1999-12-30,"many CHN along margins, most not recorded",Unit,Permanent,,NA,NA,NA,1.5,NA
+265,2000-01-19,BC JK EE KM,,BC,600,CLD,poor,NA,Eye Riffle,1999-12-30,1999-12-30,"many CHN along margins, most not recorded",Unit,Permanent,,NA,NA,NA,1.5,NA
+268,2000-02-29,JK BC,,JK,NA,RAN,good,NA,Hatchery Ditch,1999-12-30,1999-12-30,"many CHN observed but not recorded,5-7k",Unit,Permanent,,NA,NA,NA,NA,NA
+269,2000-03-02,TV EE,PH,PH,NA,RAN,,1999-12-30,Hatchery Ditch,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,46.5
+270,2000-03-02,TV EE,PH,PH,NA,CLD,,1999-12-30,Moes Ditch,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,47.5
+271,2000-03-21,JK PH KM EE,,EE KM JK,NA,CLR,okay,1999-12-30,Hatchery Ditch,1999-12-30,1999-12-30,staff gauge=14cm,Unit,Permanent,,NA,NA,NA,NA,48.5
+272,2000-03-21,KM EE,,KM EE,NA,CLR,,NA,Moes Ditch,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+274,2000-03-22,PH TV EE,,KM,600,CLR,,1999-12-30,"river mile 66.9; units 5,6,7,8",1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,49.5
+276,2000-03-22,"PH, TV, EE",,KM,600,CLR,,1999-12-30,Upper Auditorium,1999-12-30,1999-12-30,"Poor visibility - suspended particles and lots of algae, about 0.5 m visibility.",Unit,Random,,NA,NA,NA,NA,51
+277,2000-03-22,"PH, TV, EE",,KM,600,CLR,,1999-12-30,Bedrock Riffle,1999-12-30,1999-12-30,Poor visibility.,Unit,Random,,NA,NA,NA,NA,52.5
+282,2000-04-04,"JK, EE, DG",,EE,600,CLR,good,NA,Robinson Side Channel,1999-12-30,1999-12-30,secchi: 3.7m,Unit,Random,,NA,NA,NA,NA,NA
+283,2000-04-04,"JK, DG, EE",,JK,600,CLR,good visability,NA,Robinson Pond Outlet Channel,1999-12-30,1999-12-30,secchi: 3.7m,Unit,Random,,NA,NA,NA,NA,NA
+284,2000-04-04,"JK, DG, EE",,EE,600,CLR,,NA,Steep Side Channels,1999-12-30,1999-12-30,"secchi: 3.7m.  All these sites are random except for one: unit 210, eye riffle (A.T. 5-1-01).",Unit,Random,,NA,NA,NA,NA,NA
+285,2000-04-04,"JK, DG, EE",,EE,600,CLR,good vis.,NA,Eye Riffle,NA,NA,"secchi: 3.7m.  All these sites are permanent except unit 205, eye side (A.T. 5-1-01).",Unit,Permanent,,NA,NA,NA,NA,NA
+287,2000-04-06,"DG, TV, KM",JK,JK,2500,CLR,,1999-12-30,"Big Hole Islands, 1/4 mile below R.M 58",1999-12-30,1999-12-30,At unit 300 JK walked back beyond the backwater into the middle of the island and found 3 isolated pools. One contained 3 dead CHNF (40-60mm) and one contained approx 50 SASQ/HH and SASU.,Unit,Random,,NA,NA,NA,NA,58
+288,2000-04-06,"DG, TV, KM",JK,JK,2500,CLR,,1999-12-30,Big Hole Islands @ R.M 57,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,58
+289,2000-04-06,"BC, EE, PH",PH,PH,NA,CLR,,1999-12-30,Vance Ave. Boat Ramp,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,58
+290,2000-04-06,"BC, EE, PH",PH,PH,NA,CLR,,1999-12-30,G-95,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,58
+291,2000-04-06,"BC, EE, PH",PH,PH,NA,CLR,,1999-12-30,Keister,1999-12-30,1999-12-30,Keister Riffle - 61 degrees at 1400.,Unit,Random,,NA,NA,NA,NA,58
+293,2000-04-06,"TV, KM, DG",JK,JK,2500,CLR,,1999-12-30,Hour Riffle,1999-12-30,1999-12-30,"Two isolated pools had about 10,000 CHN (@ goose riffle).  Will seine Monday.",Unit,Random,,NA,NA,NA,NA,60
+294,2000-04-26,"TV, PH, SI",DG,DG,600,CLR,,1999-12-30,Hatchery Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,53.5
+296,2000-04-26,"TV, PH, SI",DG,DG,600,CLR,,NA,Bedrock,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+297,2000-04-27,"TV, PH",EE,EE,NA,CLD,,1999-12-30,Hatchery Ditch,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,55
+298,2000-04-27,"TV, PH",EE,EE,NA,CLD,,1999-12-30,Hatchery Ditch,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,54
+299,2000-05-02,"PH, DG",KM,KM,NA,CLR,,1999-12-30,Moe's Ditch,1999-12-30,1999-12-30,"Walked banks of ditch; down the sides, up the middle.",Unit,Random,,NA,NA,NA,NA,57
+300,2000-05-02,"PH, DG",KM,KM,NA,CLR,,1999-12-30,Hatchery Ditch - Upper Half,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,54.5
+303,2000-05-03,"TV, PH",DG,DG,600,CLR,,1999-12-30,Aleck Riffle,1999-12-30,1999-12-30,approx. 100 adult suckers.,Unit,Permanent,,NA,NA,NA,NA,56.5
+304,2000-05-03,"TV, PH",DG,DG,600,CLR,,1999-12-30,Robinson Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,58.5
+305,2000-05-04,"TV, EE",,KM,600,CLR,,1999-12-30,Steep Riffle,1999-12-30,1999-12-30,186 - many areas too shallow to snorkel.,Unit,Random,,NA,NA,NA,NA,59
+306,2000-05-04,"TV, EE",,KM,600,CLR,,1999-12-30,Steep Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,59
+307,2000-05-04,"TV, EE",,KM,600,CLR,,1999-12-30,Eye Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,60.5
+308,2000-05-04,"TV, EE",,KM,600,CLD,,1999-12-30,Gateway Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,60.5
+309,2000-05-15,"JK, BC, TV, RK",,"JK, BC",2500,RAN,good visibility,1999-12-30,Herringer side channel/Main Channel,1999-12-30,1999-12-30,Exploratory Snorkel.,Unit,Random,,NA,NA,NA,NA,59
+311,2000-05-15,"JK, BC, TV, RK",,"JK, BC",2500,RAN,excellent vision,1999-12-30,Gridley Riffle Side Channel (see comments),1999-12-30,1999-12-30,"Location:  Second side channel on left bank downstream of boat launch pool.  Also, this is Exploratory survey.",Unit,Random,,NA,NA,NA,NA,59
+312,2000-05-16,"JK, RK, TV, DG, KM",,KM,2500,CLD,,1999-12-30,G95,1999-12-30,1999-12-30,sections 330 and 331 are random.  323a and 323b are  permanent.,Unit,Permanent,,NA,NA,NA,NA,58
+314,2000-05-16,"JK, RK, TV, DG, KM",,,2500,CLD,,1999-12-30,MacFarland,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,57.5
+315,2000-05-17,"JK, TV, DG",,JK,600,CLR,EXCELLENT VIS.,1999-12-30,Fish Barrier Dam to Bedrock,NA,NA,No unit numbers between FBD and Table Mtn. Bridge.,Comp,Permanent,,NA,NA,NA,NA,54
+316,2000-05-24,"JK, EE, RK, TV",,JK,600,CLR,GOOD VIS.,NA,Bedrock Park,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+317,2000-05-24,"TV, JK, RK, EE",,JK,600,CLR,GOOD VIS.,NA,Bedrock and Trailer Park,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+318,2000-05-24,"JK, TV, EE, RK",,JK,600,CLR,GOOD VIS.,NA,Aleck,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+320,2000-05-25,"JK, RK, TV, EE",,JK,600,CLR,OK VIS..,1999-12-30,STEEP MAIN AND SIDE,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,61.5
+321,2000-05-25,"JK, RK, EE, TV",,JK,600,CLR,OK VIS.,1999-12-30,STEEP MAIN AND SIDE,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,61.5
+323,2000-06-08,"TV, JK, PH",JW,JW,600,RAN,FAIR,1999-12-30,Gateway Pool - Thermalito Pool,1999-12-30,1999-12-30,"Units 232, 233, 234, 235, 236, 237, 238, 239",Comp,n/a,,NA,NA,NA,NA,61
+324,2000-06-12,"JK, BC, RK, PH",KM,KM,4000,CLR,POOR VISIBILITY,1999-12-30,BIG HOLE BOAT LAUNCH TO G95,1999-12-30,1999-12-30,,Comp,Random,,NA,NA,NA,NA,66
+326,2000-06-15,"TV, PH, JW",EE,EE,NA,CLR,,1999-12-30,Goose Backwater to Big Bar Riffle,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,71
+327,2000-06-20,"JW, TV, JK, EE",,PH,4000,CLR,,1999-12-30,Big Riffle to McFarland Riffle,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,68
+328,2000-06-20,"JK, JW, EE, TV",,PH,4000,CLR,,1999-12-30,Below MacFarland To Upstream,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,71
+329,2000-06-21,"SI, PH, JW, ZM",JW,JW,NA,CLR,FAIR,1999-12-30,Below MacFarland Riffle - Gridley Bridge,1999-12-30,1999-12-30,Temp taken in unit 461.,Comp,NA,,NA,NA,NA,NA,70
+330,2000-06-22,"PH, ZM",,SI,4000,CLR,,1999-12-30,Gridley Riffle,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,67
+332,2000-06-22,"PH, ZM",,SI,4000,CLR,,1999-12-30,"Cox Riffle, Upper Herringer",1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,69
+333,2000-07-17,"TV, JK",,PH,NA,CLR,,NA,Hatchery Ditch - Lower Half,1999-12-30,1999-12-30,Water Temp Lower End: 66 Degrees. Temp at Staff Gauge: 62.5 Degrees.  Staff Gauge = 20 cm.  Water Temp 63 Degrees @ 1100?,Unit,Permanent,,NA,NA,NA,NA,66
+335,2000-07-17,"JK, TV",,PH,NA,CLR,,1999-12-30,Auditorium Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,64.5
+336,2000-07-17,"TV, JK",,PH,NA,,,1999-12-30,Hatchery Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,64
+338,2000-07-18,"JK, TV, RK, PH",,JK,600,CLR,GOOD,NA,Robinson,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+339,2000-07-18,"JK, PH, RK, TV",,JK,600,CLR,GREAT VIS. FOR SIDE CHANNEL; O.K. VIS. FOR MAIN,NA,Steep,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+340,2000-07-18,"JK, TV, PH, RK",,JK,600,CLR,GOOD VISIBILITY,1999-12-30,Eye Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,67
+341,2000-07-19,"PH, TV, KM, JW",,,7000,CLR,"POOR - MURKY, LOW VISIBILITY",1999-12-30,G95,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,65.5
+344,2000-08-14,"JL, JK, TV, JW",JW,JW,NA,CLR,POOR,1999-12-30,Lower Hatchery Ditch,1999-12-30,1999-12-30,Staff Gage = 19 cm.,Unit,Permanent,,NA,NA,NA,NA,64
+345,2000-08-14,"JL, JK, TV, JW",JW,JW,NA,CLR,POOR,1999-12-30,Upper Hatchery Ditch,1999-12-30,1999-12-30,STAFF GAGE = 19 cm.,Unit,Permanent,,NA,NA,NA,NA,62.5
+346,2000-08-14,"JL, JK, TV, JW",JW,JW,600,CLR,GOOD,NA,Hatchery Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+347,2000-08-15,"PH, TV, JW, JL, CD",,PH,600,CLR,,NA,Auditorium,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+348,2000-08-15,"PH, TV, JW, JL, CD",,PH,600,CLR,,NA,Bedrock Riffle,1999-12-30,1999-12-30,Confrontation with fishermen over areas snorkeled @ Bedrock Riffle.,Unit,Random,,NA,NA,NA,NA,NA
+349,2000-08-15,"PH, JW, CD, JL",TV,TV,600,CLR,,1999-12-30,Trailer Park,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,64
+351,2000-08-15,"JL, CD, PH, TV, JW",TV,JW,6000,CLR,FAIR,NA,Aleck Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+352,2000-08-16,"TV, CD, PH",JL,JL,600,CLR,FAIR,1999-12-30,Robinson Side Channel,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,64
+353,2000-08-16,"JK, CD, TV",JL,JL,600,CLR,,1999-12-30,Steep Riffle,1999-12-30,1999-12-30,Secchi =  1.24 m,Unit,Random,,NA,NA,NA,1.20000004768372,66
+355,2000-08-16,"TV, PH",JL,JL,600,CLR,,1999-12-30,EYE RIFFLE,1999-12-30,1999-12-30,secchi = 1.09 m.,Unit,Permanent,,NA,NA,NA,1.10000002384186,65
+357,2000-08-17,"JL, TV, PH, CD",,CD,NA,CLD,,NA,Goose Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+358,2000-08-17,"JL, TV, PH, CD",,CD,NA,CLD,,1999-12-30,G95,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,66.5
+360,2000-08-21,"PH, CD, JW, JL",,TV,NA,CLR,,1999-12-30,Gridley Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,65
+361,2000-08-21,"PH, CD, JW, JL",,JL,NA,CLR,,1999-12-30,Gridely Riffle Side Channel,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,65
+362,2000-08-21,"JW, JL, PH, CD",TV,TV,NA,CLR,,1999-12-30,Herringer Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,66.5
+363,2000-08-21,"JL, JW, CD, PH",,JL,NA,CLR,,1999-12-30,Herringer Side Channel,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,65
+364,2000-09-11,"JL, CD, TV, DO, PH",,JL,600,CLR,,NA,Bedrock Park Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+367,2000-09-11,"JL, DO, TV, PH, CD",,JL,600,CLR,,NA,Hatchery Riffle and Auditorium Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+368,2000-09-11,"JK, RK",,JK,600,CLR,OK,NA,Hatchery Riffle and Auditorium Riffle,1999-12-30,1999-12-30,all sections mid-channel unless otherwise noted.,Unit,Permanent,,NA,NA,NA,NA,NA
+369,2000-09-11,"JK, RK",,JK,600,CLR,OK,NA,Trailer Park Riffle and Robinson Riffle,1999-12-30,1999-12-30,all sections mid-channel,Unit,Random,,NA,NA,NA,NA,NA
+370,2000-09-11,"JK, RK",,JK,600,CLR,OK,NA,Robinson Riffle,1999-12-30,1999-12-30,mid-channel and island sections,Unit,Permanent,,NA,NA,NA,NA,NA
+371,2000-09-11,"JK, RK",,JK,600,CLR,OK,NA,Steep Side Channel,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+372,2001-03-06,"TV, CD, DO",JL,JL,NA,CLR,,1999-12-30,Hatchery Ditch,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,44
+373,2001-03-06,"CD, TV, DO",JL,JL,NA,CLR,,1999-12-30,Hatchery Ditch,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,44
+374,2001-03-07,"AT, SM, RK, CD",CD,CD,600,CLR,3.86 NTU,1999-12-30,Trailer Park Riffle and Matthews Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,1,51
+375,2001-03-07,"AT, SM, RK, CD",CD,CD,600,CLR,,1999-12-30,Aleck Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,51
+377,2001-03-07,"JK, TV, AS, JR",,JK,600,CLR,2.71 NTU,1999-12-30,Hatchery to Auditorium,1999-12-30,1999-12-30,BOTH PERMANENT AND RANDOM SECTIONS COMPLETED.,Unit,Permanent,,NA,NA,NA,1.5,48.5
+379,2001-03-08,"JK, SM",,JK,1700,CLD,,NA,Goose Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+380,2001-03-08,"SM, JK",,SM,NA,CLD,1 meter visibility,1999-12-30,MacFarland,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,54
+381,2001-03-08,"RK, JR, CD, JL",,JL,600,CLD,TURB. = 2.14,1999-12-30,Robinson to Eye,1999-12-30,1999-12-30,Some random sites included.,Unit,Permanent,,NA,NA,NA,NA,50
+382,2001-04-02,"RK, JK, JR, PH",RK,,NA,CLR,,NA,Hatchery Ditch,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+385,2001-04-03,"PH, JR, CD",JL,JL,600,CLR,,NA,Hatchery Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+386,2001-04-03,"CD, JR, PH",JL,JL,600,CLR,,NA,Aleck Riffle,NA,NA,,Unit,Permanent,,NA,NA,NA,NA,NA
+387,2001-04-04,"PH, TV, CD, JR, AT",,PH,600,CLR,,NA,Robinson Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+388,2001-04-04,"PH, TV, CD, JR, AT",,PH,600,CLR,,NA,Steep Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+389,2001-04-04,"PH, CD, TV, AT, JR",,PH,600,CLR,,NA,Eye Riffle,1999-12-30,1999-12-30,Do not know if sections 216 or 217 were snorkeled or not (AT 5-25-01).,Unit,Permanent,,NA,NA,NA,NA,NA
+390,2001-07-03,"jr,sm,gl,br,cr",tv,tv,600,CLR,,NA,aleck riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+391,2001-07-03,"jr,gl,cr,sm,br",tv,tv,600,CLR,,NA,eye riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+393,2001-04-05,"PH,TV,JR,DO",,ph,1550,CLR,,NA,macfarland riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+394,2001-04-05,"tv,ph,do,jr",,ph,1550,CLR,,NA,G'95,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+396,2001-05-02,"do, cd, sm, rk, at",do,do,600,CLR,,NA,Bedrock Riffle to Hwy 70 Bridge,1999-12-30,1999-12-30,,Comp,Random,,NA,NA,NA,NA,52
+397,2001-07-09,"sm, tv, jr, br, gl, cr",,sm,1900,CLR,,1999-12-30,Goose Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+398,2001-07-09,"sm, gl, jr, tv, cr",,sm,NA,CLR,,NA,Keister,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+399,2001-07-09,"sm, tv",,sm,NA,CLR,,NA,g95,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+402,2001-07-02,"JK,JR,SM,TV,ETC",,jk,600,CLR,,NA,steep riffle and side channel,1999-12-30,1999-12-30,"185,189",Unit,Random,,NA,NA,NA,NA,NA
+403,2001-06-06,"PH, DO, AT",,PH,NA,CLR,,NA,G'95,1999-12-30,1999-12-30,323 A&B,Unit,Permanent,,NA,NA,NA,NA,NA
+404,2001-06-06,"AT, DO, PH",,"DO, PH",600,CLR,,NA,Steep Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+405,2001-06-06,"PH, AT, DO",,PH,600,CLR,,NA,Eye Riffle,1999-12-30,1999-12-30,"215 A&B, 216, 200, 210",Unit,Permanent,,NA,NA,NA,NA,NA
+407,2001-06-05,"SM, JR, TV, AT",,SM,600,CLR,,NA,,1999-12-30,1999-12-30,119-124,Unit,Permanent,,NA,NA,NA,NA,NA
+408,2001-06-05,"SM, TV, JR, AT",,SM,600,CLR,,NA,AUDITORIUM RIFFLE,1999-12-30,1999-12-30,"29, 30, 31, 32",Unit,Permanent,,NA,NA,NA,NA,NA
+409,2001-06-05,"JR, SM, TV, AT",,JR,600,CLR,,NA,Hatchery Riffle,1999-12-30,1999-12-30,"19,23,24,25",Unit,Permanent,,NA,NA,NA,NA,NA
+410,2001-05-30,"TV, AT",DO,DO,NA,CLR,,NA,HATCHERY DITCH (UPPER),1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+411,2001-07-10,"gl, sm",,gl,NA,CLR,,NA,Hatchery Ditch,1999-12-30,1999-12-30,,Comp,Permanent,,NA,NA,NA,NA,59
+414,2001-05-09,"cd,sm,rk",jk,jk,1300,CLR,,1999-12-30,big riffle to big bar,1999-12-30,1999-12-30,,Comp,Random,,NA,NA,NA,NA,62
+415,2001-07-10,"jr, tv",,jr,600,CLR,,NA,Hatchery Riffle,1999-12-30,1999-12-30,,Comp,Permanent,,NA,NA,NA,NA,60
+416,2001-07-10,"sm,cr,gl",,sm,600,CLR,,1999-12-30,auditoreum riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,57
+417,2001-05-08,"jr,do,at",,sm,NA,CLR,,1999-12-30,338,1999-12-30,1999-12-30,,Comp,Random,,NA,NA,NA,NA,65
+418,2001-05-07,"rk,cd,do,jr",,,1350,CLR,less than 1 meter,1999-12-30,vance to g95,1999-12-30,1999-12-30,visibility very poor,Comp,Random,,NA,NA,NA,1,63.5
+419,2001-05-02,"do,cd,sm,rk,at",,,600,CLR,,1999-12-30,trailer park to mathews,1999-12-30,1999-12-30,,Comp,Permanent,,NA,NA,NA,NA,52.5
+420,2001-05-03,"cd,sm,rk,jk,tv",do,do,600,CLR,,1999-12-30,robinson to gateway,1999-12-30,1999-12-30,,Comp,Random,,NA,NA,NA,NA,53
+421,2001-05-09,"cd,rk,sm",jk,jk,1300,CLR,poor vis,1999-12-30,big bar to mcfarland,1999-12-30,1999-12-30,did not do units 438.444.447.450.456.448a.,Comp,Random,,NA,NA,NA,NA,63
+424,2001-05-30,"tv,do,at",,at,NA,CLR,,1999-12-30,hatchery ditch,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,55
+426,2001-06-05,"sm, tv, at, jr",,sm,600,CLR,,NA,robinson riffle,1999-12-30,1999-12-30,the only data sheet was numbered 2 of 2.  Page 1 of 2 is missing.,Comp,Permanent,,NA,NA,NA,NA,NA
+427,2001-07-30,"gl,cr.,jr",,jr,600,CLR,,NA,"robinson , steep, eye",NA,NA,"169,170,171,173,174,175,178,185,189,215a.215b,216,217,210",Unit,Permanent,,NA,NA,NA,NA,NA
+428,2001-07-31,"sm, gl,br",,sm,1900,CLR,,1999-12-30,macfarland riffle,1999-12-30,1999-12-30,446.447.448.449.451.452.453,Unit,Permanent,,NA,NA,NA,NA,69
+429,2001-07-31,"sm, br, gl",,sm,1900,CLR,,1999-12-30,goose riffle,1999-12-30,1999-12-30,405.406.407.408.409.410,Unit,Permanent,,NA,NA,NA,NA,69
+430,2001-07-31,"sm, br, gl",,sm,1900,CLR,,1999-12-30,g-95,1999-12-30,1999-12-30,323a.323b,Unit,Permanent,,NA,NA,NA,NA,67
+433,2001-07-26,"sm,ph,br,gl",,jm,600,CLR,,1999-12-30,hatchery riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,60
+434,2001-07-26,"sm,ph,br,gl.",,sm,600,CLR,,1999-12-30,bedrock park riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,60
+436,2001-07-27,"ph,br",,br,600,CLR,,NA,mathews riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+437,2001-08-13,jk tv do gl,,jk,5,CLR,excellent,1999-12-30,hatchery ditch,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,60
+438,2001-08-13,"do tv jk,gl",,do,700,CLR,,NA,table mt bridge to hatchery riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+440,2001-09-11,"tv,ph",,ph,NA,CLD,,NA,goose rifflle,1999-12-30,1999-12-30,408 409 410,Unit,,,NA,NA,NA,NA,NA
+441,2001-09-11,tv ph,,ph,NA,CLD,,NA,g-95  east channel,1999-12-30,1999-12-30,,Unit,,,NA,NA,NA,NA,NA
+442,2001-09-11,tv ph,,ph,NA,CLD,,NA,g-95,1999-12-30,1999-12-30,323a  323b,Unit,,,NA,NA,NA,NA,NA
+443,2001-09-10,ph br,,br/ph,NA,CLD,,NA,hatchery ditch,1999-12-30,1999-12-30,33  26       all fish found in uppermost 3 pools of ditch,Unit,,,NA,NA,NA,NA,NA
+444,2001-09-10,br ph,,br/ph,NA,CLR,,NA,auditoreum riffle,1999-12-30,1999-12-30,29 29a 30 31 31a 32 32a,Unit,Permanent,,NA,NA,NA,NA,NA
+447,2001-09-10,br ph,,ph,NA,CLR,,NA,"steep riffle, steep side",1999-12-30,1999-12-30,185  189,Unit,Permanent,,NA,NA,NA,NA,NA
+448,2001-08-16,tv jr gl,,tv,NA,CLR,,NA,herringer riffle,1999-12-30,1999-12-30,537-541,Unit,Random,,NA,NA,NA,NA,NA
+449,2001-08-16,tv jr gl,,tv,NA,CLR,,NA,shallow riffle,1999-12-30,1999-12-30,523-525,Unit,Random,,NA,NA,NA,NA,NA
+450,2001-08-16,tv gl jr,,tv,NA,CLR,,NA,gridley riffle,1999-12-30,1999-12-30,486-491,Unit,Random,,NA,NA,NA,NA,NA
+451,2001-08-15,jr tv do,,jr,NA,CLR,,NA,vance,1999-12-30,1999-12-30,266  267  268,Unit,Permanent,,NA,NA,NA,NA,NA
+452,2001-08-15,jr  tv  do,,jr,NA,CLR,,NA,g-95  g-95E,1999-12-30,1999-12-30,323a 323b  327  328  329,Unit,Permanent,,NA,NA,NA,NA,NA
+454,2001-08-15,jr do tv,,jr,NA,CLR,,NA,keister,1999-12-30,1999-12-30,396-404,Unit,Permanent,,NA,NA,NA,NA,NA
+456,2001-08-14,sm tv at,,sm,600,CLR,,NA,robinson riffle,1999-12-30,1999-12-30,169  170  173  177 174  176,Unit,Permanent,,NA,NA,NA,NA,NA
+457,2001-08-14,sm tv  at,,sm,700,CLR,,1999-12-30,steep riffle/steep side,1999-12-30,1999-12-30,"185-186, 189",Unit,Random,,NA,NA,NA,NA,62
+458,2001-08-14,sm tv at,,sm,600,CLR,,NA,robinson side,1999-12-30,1999-12-30,172,Unit,Random,,NA,NA,NA,NA,NA
+459,2001-08-14,sm tv at,,sm,600,CLR,,NA,robinson side channel,1999-12-30,1999-12-30,172,Unit,Random,,NA,NA,NA,NA,NA
+460,2001-08-15,gl ph at,,ph,NA,CLR,,NA,hour riffle,1999-12-30,1999-12-30,353 354 355,Unit,,,NA,NA,NA,NA,NA
+462,2001-08-15,phg gl at,,ph,600,CLR,,NA,eye riffle,1999-12-30,1999-12-30,215a  215b  216  200 205 210 215,Unit,,,NA,NA,NA,NA,NA
+2,1999-06-30,DG PH.,TV,TV,7788,CLR,,1999-12-30,East Channel G95 Lower Section,1999-12-30,1999-12-30,"Units  335-337, 340",Unit,Random,,NA,NA,NA,NA,65
+9,1999-06-29,"BC, JK, PH, TV",DG,DG,600,CLR,,1999-12-30,Lower Eye-Pool,1999-12-30,1999-12-30,"Units 218, 220",Unit,Random,,NA,NA,NA,3.5,64.5
+16,1999-06-04,TS EE PH,JK,JK,1876,CLD,,NA,SWAMPY BEND,NA,NA,,Unit,Random,,NA,NA,NA,1.70000004768372,65
+20,1999-05-26,PH EE TV TS SG DG,BC,BC,1884,CLR,,1999-12-30,G95 TO HOUR GLIDE,1999-12-30,1999-12-30,THOUSANDS OF LARVAL FISH,Comp,,,NA,NA,NA,NA,66.5
+27,1999-05-20,TV PH JK SG,EE,EE,627,CLD,,1999-12-30,STEEP TO WEIR,1999-12-30,1999-12-30,,Comp,,,NA,NA,NA,NA,57
+33,1999-04-12,,,,600,,,NA,Upper Bedrock pool to H70 bridge,NA,NA,RM 66.1-65.6,Comp,,,NA,NA,NA,NA,NA
+38,1999-04-14,PH SG TV DG,PH,PH,4019,,,NA,Palm Ave. Access,NA,NA,RM 55.7,Comp,,,NA,NA,NA,NA,NA
+46,1999-04-29,EE SG PH,PH,PH,621,,,NA,Montgomery St. Park to Trailer Park Riffle,1999-12-30,1999-12-30,64.4-64.95,Comp,,,NA,NA,NA,NA,49.5
+55,1999-05-03,PH TV DG,PH,PH,5025,,visibility is poor (0.3-0.6m to id fish),NA,vance ave to big hole bw,1999-12-30,1999-12-30,rm 58.45-58.75,Comp,,,NA,NA,NA,1.29999995231628,55
+59,1999-05-04,tv ph dg,dg,dg,4293,,poor visibility,NA,hour bar pool,1999-12-30,1999-12-30,rm 56-55.7,Comp,,,NA,NA,NA,NA,56
+66,1999-05-13,TS PH EE,BC,BC,620,CLR,good,1999-12-30,Tble Mountain Bridge to Hatchery  Riffle,1999-12-30,1999-12-30,RM 67-66.75,Comp,,,NA,NA,NA,NA,52
+75,1999-05-19,PH TV TS JK BC,SG,SG,622,CLR,,1999-12-30,Alec Riffle to Great Western,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,53.5
+81,1999-07-22,DG EE,PH TV,TV,624,CLR,,1999-12-30,HATCHERY DITCH,1999-12-30,1999-12-30,UNIT 26,Unit,Permanent,,NA,NA,NA,NA,60.5
+87,1999-07-26,jk dg tv,km,km,623,CLR,,1999-12-30,aleck riffle,1999-12-30,1999-12-30,"units 119,121",Unit,Permanent,,NA,NA,NA,NA,61
+90,1999-07-28,jk km dg,ee,ee,9564,CLR,,1999-12-30,Goose Riffle,1999-12-30,1999-12-30,"units 408,410",Unit,Permanent,,NA,NA,NA,NA,65
+109,1999-08-23,TV PH,DG KM,KM,600,CLR,,NA,Hatchery Ditch (top),1999-12-30,1999-12-30,unit 26,Unit,Permanent,,NA,NA,NA,NA,NA
+115,1999-10-27,ph ee,tv,tv,2450,CLD,,1999-12-30,Gateway riffle,1999-12-30,1999-12-30,"units 225, 228,229",Comp,,,NA,NA,NA,NA,54
+118,1999-10-27,ph ee,tv,tv,2450,RAN,poor visibility,NA,Across from Big Hole boat launch,1999-12-30,1999-12-30,"Units: 303, 304, 305",Comp,,,NA,NA,NA,NA,NA
+126,1999-09-28,ph ee dg,tv,tv,600,CLR,,NA,Bedrock Park Riffle,1999-12-30,1999-12-30,"Units: 51,55,56",Comp,,,NA,NA,NA,NA,NA
+132,1999-10-25,ee ph dg,km,km,600,CLR,,NA,Auditorium Riffle,1999-12-30,1999-12-30,"Units: 29, 29a, 30, 31, 32, 32a",Comp,,,NA,NA,NA,NA,NA
+135,1999-10-25,ee ph dg,km,km,600,CLR,poor visibility,NA,Mathews Riffle,1999-12-30,1999-12-30,"Units: 103, 104, 105",Comp,NA,,NA,NA,NA,NA,NA
+253,2000-06-07,JK BC PH TV JW,RK,RK,600,CLR,good,1999-12-30,Aleck Riffle to Great Western,1999-12-30,1999-12-30,Start and Stop times vary on this sheet.  See comments.,Comp,NA,,NA,NA,NA,NA,57
+273,2000-03-21,PH JK KM EE,PH KM,PH KM,NA,CLR,,NA,Hatchery Ditch,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+275,2000-03-22,PH TV EE,,KM,600,CLD,Poor: lots of algae and floating particles,1999-12-30,Hatchery Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,50
+286,2000-04-06,"DG, TV, KM",JK,JK,2500,CLR,,1999-12-30,Vance Ave. Boat Ramp,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,58
+295,2000-04-26,"PH, TV, SI",DG,DG,600,CLR,,1999-12-30,Auditorium,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,55
+301,2000-05-03,"TV, PH",DG,DG,600,CLR,,1999-12-30,Trailer Park Riffle,1999-12-30,1999-12-30,Approx. 250 Adult Suckers,Unit,Random,,NA,NA,NA,NA,55
+313,2000-05-16,"JK, RK, TV, DG, KM",,KM,2500,CLD,,1999-12-30,GOOSE RIFFLE,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,57.5
+310,2000-05-15,"JK, BC, TV, RK",,"JK, BC",2500,RAN,,1999-12-30,Herring Side/Main Channel,1999-12-30,1999-12-30,Exploratory Snorkel.,Unit,Random,,NA,NA,NA,NA,59
+319,2000-05-25,"JK, TV. RK, EE",,,600,CLR,,1999-12-30,EYE RIFFLE,1999-12-30,1999-12-30,"In 217, temperature was 63 degrees F at 1400.  Section 205 is random.  The rest are permanent.",Unit,Permanent,,NA,NA,NA,NA,62
+331,2000-06-22,"PH, ZM",,SI,4000,CLR,,1999-12-30,Junkyard,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,68
+337,2000-07-18,"RK, PH","JK, TV",JK,600,CLR,GOOD,1999-12-30,Aleck,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,62
+342,2000-07-19,"TV, KM, JW",,PH,7000,CLR,"POOR - MURKY, LOW VISIBILITY",1999-12-30,Goose Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,66
+350,2000-08-15,"TV, PH, CD, JW, JL",,PH,600,CLR,,NA,Robinson,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,66
+354,2000-08-16,"JK, TV",JL,JL,600,CLR,FAIR,1999-12-30,Steep Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,67
+359,2000-08-21,"PH, JW, CD, JL",TV,TV,NA,CLR,,1999-12-30,MacFarland,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,65
+365,2000-09-11,"TV, DO, CD","JL, PH",JL,600,CLR,,NA,Steep Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+378,2001-03-08,"JK, SM",,JK,1700,CLD,about 1 meter,1999-12-30,G95,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,52
+383,2001-04-02,"PH, JK, RK",JR,JR,NA,CLR,,NA,HATCHERY DITCH,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+395,2001-05-01,"jr,jk,cd,do",rk,rk,600,CLR,,NA,,1999-12-30,1999-12-30,,Comp,Random,,NA,NA,NA,NA,NA
+400,2001-07-02,"gl,br,tv",jk,jk,600,CLR,,NA,Robinson Main and Side Channel,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,2,NA
+401,2001-07-02,"jk,jr,sm,tv,cr,gl,br",jk,600,NA,CLR,good,NA,Steep Riffle & Side Channel,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,2,NA
+406,2001-06-06,"DO, AT, PH",,PH,NA,CLR,,NA,Goose riffle,1999-12-30,1999-12-30,408-415,Unit,Permanent,,NA,NA,NA,NA,NA
+412,2001-05-01,"jk,kr,do,cd,rk",,jk,600,CLD,,1999-12-30,sections 1-25,1999-12-30,1999-12-30,,Comp,Random,,NA,NA,NA,NA,50
+422,2001-05-09,"CD,RK,SM",JK,JK,1300,CLR,POOR,1999-12-30,GOOSE RIFFLE TO BIG RIFFLE,1999-12-30,1999-12-30,VIS TO POOR TO DO 412.417.418.422.421.423,Comp,Random,,NA,NA,NA,0.5,61.5
+431,2001-07-27,"br, ph",,br,600,CLR,,NA,aleck riffle,1999-12-30,1999-12-30,115.119.120.,Unit,Permanent,,NA,NA,NA,NA,NA
+439,2001-09-11,"ph,tv",,ph,NA,CLD,,NA,"eye riffle,eye side",1999-12-30,1999-12-30,215a 215b 216 217 205 210,Unit,,,NA,NA,NA,NA,NA
+446,2001-09-10,br/ph,,ph,NA,CLR,,NA,robinson riffle,1999-12-30,1999-12-30,169  173  174,Unit,Permanent,,NA,NA,NA,NA,NA
+455,2001-08-14,sm tv at,,sm,700,CLR,,1999-12-30,MATHEWS`,1999-12-30,1999-12-30,"119-121a, 123",Unit,Permanent,,NA,NA,NA,NA,61.5
+461,2001-08-15,PH GL AT,,PH,NA,CLR,,NA,gateway riffle,1999-12-30,1999-12-30,221 225 226 228,Unit,,,NA,NA,NA,NA,NA
+8,1999-06-29,TV PH JK BC,DG,DG,620,CLR,,1999-12-30,Eye Riffle,1999-12-30,1999-12-30,"Units 210,215A,215B,216,217",Unit,Permanent,,NA,NA,NA,3.5,64.5
+24,1999-05-24,JK SG PH DG,TV,TV,626,CLR,EXTREMELY POOR VISIBILITY,1999-12-30,GATEWAY TO OUTLET,1999-12-30,1999-12-30,,Comp,,,NA,NA,NA,NA,60
+48,1999-04-29,PH SG EE,PH,PH,621,,,NA,Steep to Eye,1999-12-30,1999-12-30,RM 60.3-61,Comp,,,NA,NA,NA,NA,52.5
+57,1999-05-03,ph tv dg,ph,ph,5025,,poor visibility,NA,G95,1999-12-30,1999-12-30,rm 57.3 - 56.9,Comp,,,NA,NA,NA,NA,56
+68,1999-05-17,SG TV PH DG,JK,JK,615,CLD,EXCELLENT,NA,Auditorium to bedrock,1999-12-30,NA,,Comp,,,NA,NA,NA,NA,55.5
+83,1999-07-27,TV TS JK EE,TV,TV,624,CLR,,1999-12-30,EYE RIFFLE -GATEWAY TO OUTLET,1999-12-30,1999-12-30,"UNIT 205,210,213,215-217,221,225-6,228-9,231,",Unit,Permanent,,NA,NA,NA,4.90000009536743,64
+88,1999-07-26,jk tv dg,km,km,623,CLR,,1999-12-30,robinson riffle,1999-12-30,1999-12-30,"units 169-171, 173-174,176-177, 183",Unit,Permanent,,NA,NA,NA,NA,61
+96,1999-08-23,tv ph,dg km,dg km,600,CLR,,1999-12-30,Hatchery Ditch (bottom),1999-12-30,1999-12-30,units 33,Unit,Permanent,,NA,NA,NA,NA,55
+101,1999-08-25,PH KM EE,DG,DG,NA,CLR,,1999-12-30,BIG HOLE ISLAND,1999-12-30,1999-12-30,A BIT SMOKEY STILL UNITS 288-290,Unit,Random,,NA,NA,NA,2.90000009536743,63
+108,1999-08-24,TV KM EE,PH,PH,600,CLD,,1999-12-30,Trailer Park to Matthews,1999-12-30,1999-12-30,Units 100-102,Unit,Random,,NA,NA,NA,NA,59
+127,1999-09-28,ph ee dg,tv,tv,600,CLR,,NA,Hatchery Riffle,1999-12-30,1999-12-30,"Units: 24,25,29,30,31",Comp,,,NA,NA,NA,NA,NA
+250,2000-06-06,EE JW SI PH ZM,KM,KM,600,CLR,good,1999-12-30,Hwy 70 bridge to Hwy 162 bridge,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,61
+266,2000-02-29,JK BC,,JK,600,RAN,,NA,Hatchery Riffle,1999-12-30,1999-12-30,many YOY CHN observed but most not recorded,Unit,Permanent,,NA,NA,NA,1.5,NA
+267,2000-02-29,JK BC,,JK,600,RAN,,NA,Auditorium Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+278,2000-03-23,"JK, TV, PH, EE","PH, EE",EE,600,CLR,,1999-12-30,"Trailer Park, Aleck, Robinson, Mathews",1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,49
+292,2000-04-06,"BC, EE, PH",PH,PH,NA,CLR,,1999-12-30,MacFarland,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,58
+302,2000-05-03,"TV, PH",DG,DG,600,CLR,,1999-12-30,Matthews Riffle,1999-12-30,1999-12-30,approx. 250 adult suckers.,Unit,Random,,NA,NA,NA,NA,56
+322,2000-05-25,"JK, RK, TV, EE",,JK,600,CLR,GOOD VIS.- OK,1999-12-30,Robinson Main and Side,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,61.5
+325,2000-06-15,"PH, JW, TV",EE,EE,NA,CLR,,1999-12-30,Keister Riffle - Before Goose Backwater,1999-12-30,1999-12-30,,Comp,NA,,NA,NA,NA,NA,69
+334,2000-07-17,"JK, TV",,PH,NA,CLR,,1999-12-30,Hatchery Ditch - Upper Half,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,63
+343,2000-07-19,"PH, TV, JW, KM",,PH,7000,CLR,"POOR - MURKY, LOW VISIBILITY",1999-12-30,MacFarland Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,66.5
+356,2000-08-16,"CD, TV, PH",JL,JL,600,CLR,,1999-12-30,Gateway Riffle,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,1.10000002384186,NA
+366,2000-09-11,"JL, TV, DO, CD, PH",,JL,600,CLR,,NA,Robinson Riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+376,2001-03-07,"JK, TV, AS, JR",,JK,600,CLR,,NA,Auditorium to Bedrock,1999-12-30,1999-12-30,,Unit,Random,,NA,NA,NA,NA,NA
+384,2001-04-03,"JR, PH, CD",JL,JL,600,CLR,,NA,Auditorium Riffle,1999-12-30,1999-12-30,Data entered slightly out of order as compared to the original field datasheets (AT 5-25-01).,Unit,Permanent,,NA,NA,NA,NA,NA
+392,2001-04-05,"ph,jr.tv,do",,,1550,CLR,,NA,goose riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+413,2001-05-09,"cd,sm,rk",jk,jk,1300,CLR,,1999-12-30,mcfarland to swampy bend,1999-12-30,1999-12-30,455-460,Comp,Random,,NA,NA,NA,NA,64.5
+423,2001-05-10,"SM,BC,CD",CD,CD,NA,CLR,,1999-12-30,HATCHERY DITCH,1999-12-30,1999-12-30,,Comp,Random,,NA,NA,NA,NA,55
+435,2001-07-27,"br,ph",,br,600,CLR,,NA,trailer park riffle,1999-12-30,1999-12-30,,Unit,Permanent,,NA,NA,NA,NA,NA
+445,2001-09-10,br ph,,br/ph,NA,CLR,,NA,hatchery riffle,1999-12-30,1999-12-30,19  24  25,Unit,Permanent,,NA,NA,NA,NA,NA
+453,2001-08-15,jr do tv,,jr,NA,CLR,,NA,goose,1999-12-30,1999-12-30,408-413,Unit,Permanent,,NA,NA,NA,NA,NA
+468,2003-04-23,RB MK AT,,RB,600,CLD,,1999-12-30,Robinson Riffle,1999-12-30,1999-12-30,,,,169-175,3,1,4,2,55.4
+469,2003-04-23,RB MK AT,,RB MK AT,600,CLD,,NA,Aleck Riffle,1999-12-30,1999-12-30,,,,"119, 120, 121A",3,2,8,2,NA
+471,2003-04-28,"mk,kh,gk",,mk,600,RAN,,1999-12-30,eye riffle,1999-12-30,1999-12-30,,,,"205,210,215a,215b,216,215,217",3,3,1.2,0.5,54
+472,NA,"mk,gk.kh",,mk,600,RAN,,1999-12-30,"robinson riffle,steep",1999-12-30,1999-12-30,,,,"172.,185.189",3,3,1.5,0.5,54
+473,2003-04-30,"km,dg",,km,NA,CLR,,1999-12-30,macfarland riffle,1999-12-30,1999-12-30,,,,449-452,2,2,3,0.7,59
+474,2003-04-30,"km,dg",,km,NA,CLR,,1999-12-30,goose riffle,1999-12-30,1999-12-30,,,,"408,409,410",2,2,3,0.7,58
+475,2003-04-30,"km,dg",,dg,NA,CLR,,1999-12-30,g-95,1999-12-30,1999-12-30,,,,323a-323b,2,2,3,0.7,58
+476,2003-04-22,"mk,ph,dg",,dg,NA,CLR,,NA,hatchery ditch,1999-12-30,1999-12-30,,,,26,3,1,0,NA,NA
+477,2003-04-22,"MKPH,DG",,DG,NA,CLD,,NA,hatchery ditch,1999-12-30,1999-12-30,,,,26,3,1,0,NA,NA
+478,2003-04-22,"mkdg,ph",,mk,NA,CLD,,NA,hatchery ditch,1999-12-30,1999-12-30,,,,26,3,1,0,NA,NA
+479,2003-04-20,"mk,dg,ph",,dg,1,CLD,,NA,hatchery ditch,1999-12-30,1999-12-30,,,,26,3,1,NA,NA,NA
+480,2003-04-22,"mk,dg,ph",,dg,600,CLD,,NA,auditorium,1999-12-30,1999-12-30,,,,"30,32",1,1,12,2,NA
+481,2003-04-22,mk,ph,dg,600,CLD,,NA,auditorium,1999-12-30,1999-12-30,,,,"32a,31,31a,30",3,1,1.5,2,NA
+482,2003-04-22,"MK,PH,DG",,DG,600,CLD,,NA,auditorium,1999-12-30,1999-12-30,,,,"30,29.29a",3,1,1.5,2,NA
+483,2003-04-22,"mk,dg,ph",,dg,600,CLD,,NA,auditorium,1999-12-30,1999-12-30,,,,30.29a,3,1,1.5,2,NA
+484,2003-04-22,mkdgph,,dg,600,CLD,,NA,Auditorium Riffle,1999-12-30,1999-12-30,,,,"30,29",1,1,12,2,NA
+485,2003-04-21,"rb,kh,dg",,rb,NA,CLD,,1999-12-30,hatchery riffle,1999-12-30,1999-12-30,"lots of SASU in 25--adult spawners in deeper flowing H2O, 1 lamprey nest in section 19",,,19.23.24.25.,3,1,0,1.5,53.4
+486,2003-04-21,"rb.kh,dg",,rb,NA,CLD,,1999-12-30,hatchery ditch,1999-12-30,1999-12-30,,,,"25,33",3,1,0,1.5,53.6
+487,2003-04-21,"rb,kh,dg",,dg,NA,CLD,,1999-12-30,hatchery ditch,1999-12-30,1999-12-30,,,,33,3,1,0,1.5,53.6
+488,2003-04-21,"dg,rb.kh",,dg,NA,RAN,,1999-12-30,hatchery ditch,1999-12-30,1999-12-30,,,,33,3,1,0,2,53.6
+489,2003-04-21,rb.dg.kh,,dg,NA,RAN,,1999-12-30,hatchery ditch,1999-12-30,1999-12-30,,,,33,3,1,0,2,53.6
+490,2002-08-12,"nd.gk,mk.",,nd,5000,CLR,,1999-12-30,goose riffle,1999-12-30,1999-12-30,,,,409.412,2,2,1.5,NA,62
+491,2002-08-12,nd gk mk,,nd,5000,CLR,,1999-12-30,goose,1999-12-30,1999-12-30,,,,408 410 411 413,2,2,1.5,3,62
+492,2003-08-12,nd gk mk,,nd,5000,CLR,,1999-12-30,macfarland,1999-12-30,1999-12-30,451 was not snorkelable due to high flow -- danger will robinson!,,,449 450 451 452 453,2,2,1,1,62
+493,2002-07-25,kh rb jr,,nd,NA,CLR,,1999-12-30,aleck,1999-12-30,1999-12-30,,,,119-127,3,1,3,2,50
+494,2002-07-15,jr kh rb,,nd,NA,CLR,,1999-12-30,robinson,1999-12-30,1999-12-30,,,,169-171  173-177  179  183,3,1,3,2,58
+495,2002-07-15,JR RB KH ND,JR,JR,700,CLR,,NA,auditorium,1999-12-30,1999-12-30,,,,29-32,3,1,3,2,NA
+496,2002-07-09,tv gk nd,,tv,5500,CLR,,1999-12-30,g-95,1999-12-30,1999-12-30,,,,323a-323b,2,1,0.5,0.5,66
+497,2002-07-09,tv nd gk,,tv,5500,CLR,,1999-12-30,goose,1999-12-30,1999-12-30,409&412 not snorkeled,,,408-413,2,0,0,0.3,65
+498,2002-07-09,tv nd gk,,tv,5500,CLR,,1999-12-30,mcfarland,1999-12-30,1999-12-30,,,,449-453,3,0,0,0.3,65
+499,2002-08-08,Jr mk kh,,M Koenig,600,CLR,,NA,Eye Riffle,1999-12-30,1999-12-30,,,,"217,210,215,215b, 216",3,2,3,4,60
+500,2002-08-08,jr mk kh,,MK,600,CLR,,NA,Eye Riffle,1999-12-30,1999-12-30,,,,"217, 210, 215,215b,216",3,2,3,4,60
+501,2002-08-07,tv km nd md,,km,600,CLR,,NA,Steep,1999-12-30,1999-12-30,,,,185 189,4,1,3,9,64
+502,2002-08-06,mk tv ph,,,600,CLR,,1999-12-30,Hatchery Riffle,1999-12-30,1999-12-30,,,,"19, 23, 24, 25",3,2,3,9,60.5
+503,2002-08-06,ph tv mk,,ph,600,CLR,,1999-12-30,aleck,1999-12-30,1999-12-30,,,,"119, 120 121a",3,3,4,NA,63
+504,2002-08-06,tv km nd md,,km,600,CLR,,NA,Robinson Riffle,1999-12-30,1999-12-30,,,,"169-171, 173-177, 179, 183",4,1,3,9,62
+505,2003-08-05,dg gk rb,,dg gk rb,600,CLR,,NA,Hatchery riffle,1999-12-30,1999-12-30,,,,29-33,2,2,5,3,NA
+506,2002-08-05,dg gk rb,,dg rb gk,600,CLR,,1999-12-30,Auditorium,1999-12-30,1999-12-30,,,,"26, 33,29-32",3,1,5,3,NA
+507,2002-07-15,rb kh nd,jr,jr,NA,CLR,,NA,Hatchery Ditch,1999-12-30,1999-12-30,,,,33 26,3,1,0,NA,57
+508,2002-08-05,DG GK RB,,DG RB RB,600,CLR,,NA,Hatchery Ditch,1999-12-30,1999-12-30,1000+ Sucker fry in section 33,,,"26, 33",3,1,5,3,NA
+509,2002-08-05,DG GK RB,,DG GK RB,600,CLR,,NA,Auditorium,1999-12-30,1999-12-30,,,,29-32,3,1,5,3,NA
+510,2002-08-06,TV KM ND MD,,KM,600,CLR,,1999-12-30,ROBINSON RIFFLE,1999-12-30,1999-12-30,,,,"169-171, 173-177, 179, 183",4,1,3,NA,62
+511,2002-08-06,MK TV PH,,,600,CLR,,1999-12-30,HATCHERY RIFFLE,1999-12-30,1999-12-30,,,,"19, 23, 24, 25",3,2,3,NA,60.5
+512,2002-08-06,PH MK TV,,PH,600,CLR,,1999-12-30,ALECK RIFFLE,1999-12-30,1999-12-30,,,,"119, 120, 121A",3,3,4,NA,63
+513,2002-08-07,TV KM ND MK,,KM,600,CLR,,1999-12-30,STEEP RIFFLE,1999-12-30,1999-12-30,,,,"185, 189",4,1,3,NA,64
+514,2002-08-08,KH MK JR,,KH,600,CLR,,1999-12-30,EYE RIFFLE,1999-12-30,1999-12-30,,,,"200, 210, 215-217",3,2,3,4,60
+515,2002-07-15,RB KH ND,JR,JR,NA,CLR,,NA,Hatchery Ditch,1999-12-30,1999-12-30,,,,"33, 26",3,1,0,NA,57
+516,2002-07-11,jr rb at,none,at,700,CLR,,1999-12-30,Steep Riffle,1999-12-30,1999-12-30,,,,185,3,3,3,3,67
+517,2002-07-15,jr kh rb,nd,nd,600,CLR,,1999-12-30,Steep Side Channel,1999-12-30,1999-12-30,,,,189,3,0,0,NA,NA
+518,2002-02-10,tv km rb,,,700,CLR,,1999-12-30,Eye Riffle,1999-12-30,1999-12-30,,,,"200, 210, 215, 216, 217",3,3,3,3,62
+519,2002-07-10,tv km gk,,,700,CLR,,1999-12-30,Eye Riffle,1999-12-30,1999-12-30,,,,"200, 210, 215, 216, 217",3,3,3,3,62
+520,2002-07-10,tv km rb,,,700,CLR,,NA,Eye Riffle,1999-12-30,1999-12-30,,,,"215, 210",3,3,3,3,64.5
+521,2002-06-17,kh km,jr,jr,4000,CLR,,NA,,NA,NA,,,,"424, 430, 433, 437, 429, 435",2,0,0,0.5,NA
+522,2002-06-17,"rb, gl",jr,rb,4000,CLR,,NA,COMP,1999-12-30,1999-12-30,,,,"410, 413, 419, 420, 423, 444, 448A, 452, 451, 457",2,0,0,1,NA
+523,2002-06-17,"gk, gl",jr,gk,4000,CLR,,NA,COMP,1999-12-30,1999-12-30,"Also sections 453, 460, 463",,,"425, 428, 431, 434, 436, 438, 440, 445, 447, 450+",2,0,0,1,NA
+524,2002-06-17,,,,NA,,,NA,COMP,1999-12-30,1999-12-30,,,,"442, 443, 444, 447, 450, 456, 458, 461, 464",0,0,0,NA,NA
+525,2002-06-15,"jr,tv,nd,rb,dg,km",,jr,NA,CLR,,NA,Hour,1999-12-30,1999-12-30,COMP pg 1 of 3,,,"338-370, 374",6,0,0,0.5,NA
+526,2002-06-13,"km, dg, etc.",,,NA,,,NA,Lower Hour,1999-12-30,1999-12-30,COMP  pg 2 of 3,,,376-394,6,0,0,NA,NA
+527,2002-06-13,,,,NA,,,NA,,NA,NA,COMP  pg 3 of 3,,,,0,0,0,NA,NA
+528,2002-06-12,"rk, km, dg, at, rb, jr",,,3500,CLR,,NA,,1999-12-30,1999-12-30,COMPREHENSIVE,,,,0,0,0,0.5,NA
+529,2002-06-11,"tv, kh, km, dg, rb",,,NA,CLR,,1999-12-30,eye riffle,1999-12-30,1999-12-30,COMPREHENSIVE,,,"215A, 215B, 205, 217, 215",5,2,0,NA,58
+530,2002-06-11,"tv, kh, km, dg, rb",,,NA,CLR,,1999-12-30,,1999-12-30,1999-12-30,COMPREHENSIVE,,,"200, 218, 220, 215",0,0,0,NA,59
+531,2002-06-11,"tv, kh, km, dg, rb",,,NA,CLR,,1999-12-30,Thermalito Pool,1999-12-30,1999-12-30,COMPREHENSIVE,,,231,0,0,0,NA,61
+532,2002-06-10,"JK, DG, KH, KM, GK",,ND,600,,,NA,Lower Robinson,1999-12-30,1999-12-30,COMPREHENSIVE,,,"183, 176, 179, 180, 177, 172",5,0,0,NA,NA
+533,2002-06-10,"km, dg, gk, kh, jk",,nd,600,CLR,,NA,Steep Riffle,NA,NA,COMPREHENSIVE,,,"185, 182, 190, 189, 191, 192, 193",5,0,0,NA,NA
+534,2002-06-06,"ND, GK, JR, KM, KH, PH, DG",RK,RK,600,CLR,,1999-12-30,,1999-12-30,NA,COMPREHENSIVE,,,,0,0,0,2,55
+535,2002-06-05,"RYAN, DAVE",JASON,DAVE,600,CLR,,NA,AUDITORIUM TO BEDROCK,1999-12-30,NA,COMPREHENSIVE,,,"37-38, 40, 46, 54",2,1,0,NA,NA
+536,2002-06-05,"TV, DG",,,600,CLR,,NA,,1999-12-30,1999-12-30,COMPREHENSIVE,,,"56, 59, 51, 92, 96, 100",0,0,0,NA,NA
+537,2002-06-05,"TIM, DAVE",,DAVE,600,CLR,,NA,,1999-12-30,1999-12-30,COMPREHENSIVE,,,"57, 92, 96, 100",0,0,0,NA,NA
+538,2002-06-05,JK,,JK,600,CLR,,NA,AUDITORIUM TO BEDROCK,1999-12-30,1999-12-30,COMPREHENSIVE,,,"38, 42, 44, 49, 51, 52, 55",1,1,0,NA,NA
+539,2002-06-05,ND,,ND,600,CLR,,NA,,NA,NA,COMPREHENSIVE,,,"56, 94",1,0,0,NA,NA
+540,2002-06-05,JK,,JK,600,CLR,,NA,MATTHEWS,1999-12-30,1999-12-30,COMPREHENSIVE,,,"102, 104, 105",1,2,0,NA,NA
+541,2002-06-05,"ND, TV",,ND,600,CLR,,NA,HATCHERY DITCH,1999-12-30,1999-12-30,COMPREHENSIVE,,,26,2,0,0,NA,NA
+542,2002-06-04,"TV, RK, JR, GK, KM, DG, KH, ND",JK,JK,600,CLR,,1999-12-30,TBL MOUNTN BRIDGE TO COTTONWD RD,1999-12-30,1999-12-30,COMPREHENSIVE,,,1-22,8,0,0,NA,55
+543,2001-03-07,"BR,CR,RK,JK",,BR,600,RAN,,NA,Aleck,1999-12-30,1999-12-30,,,,"119, 120, 121A",4,0,0,NA,NA
+544,2001-03-07,"CR,BR,RK,JK,",,BR,600,RAN,,NA,ROBINSON,1999-12-30,1999-12-30,,,,"169,170,171,173,174,175",4,0,0,NA,NA
+545,2001-03-07,"BR, CR, RK, JK",,BR,600,RAN,,NA,"STEEP, STEEP SIDE",1999-12-30,1999-12-30,"ok vis for juv fish, poor vis for adults, almost all chn near bank",,,"185, 189",3,0,0,NA,NA

@@ -264,6 +264,7 @@ survey_characteristics <- cleaned_combined_snorkel |>
   glimpse()
 
 # site_lookup ------------------------------------------------------------------
+# TODO add in river mile from updated snorkel revised, this will map unit to a river mile
 
 #reading in xlsx created based on slides and dmp
 #section names: bedrock riffle might show as bedrock park riffle. Upper/Lower McFarland are both same section_number so keeping it ad "McFarland"
@@ -324,6 +325,11 @@ clean_random_sampling_units$section_type |> unique()
 #final lookup table with all units
 # TODO/Note - the majority of these (88%) are still "orphaned" units that have no grounding in space currently...
 lookup_table <- bind_rows(clean_random_sampling_units, raw_created_lookup) |>
+  glimpse()
+
+river_mile_lookup <- read_csv("data-raw/river_miles_lookup.csv") |> glimpse()
+
+sites_with_river_miles <- left_join(lookup_table, river_mile_lookup, by = c("unit" = "Snorkel.Sections")) |>
   glimpse()
 
 # fish_observations ------------------------------------------------------------
