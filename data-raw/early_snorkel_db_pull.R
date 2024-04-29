@@ -77,7 +77,7 @@ cleaner_snorkel_data_early <- snorkel_raw_early |>
 cleaner_snorkel_data_early$overhead_cover |> unique()
 cleaner_snorkel_data_early$hydrology |> unique()
 
-cleaner_snorkel_metadata_early <- snorkel_metadata_raw |>
+cleaner_snorkel_metadata_early <- snorkel_metadata_raw_early |>
   janitor::clean_names() |>
   left_join(lookup_weather, by = c("weather" = "WeatherCode")) |>
   select(-c(visibility_comments, x_of_divers, x_of_center_passes, pass_width, comments,

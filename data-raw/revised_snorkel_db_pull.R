@@ -96,7 +96,7 @@ cleaner_snorkel_observations <- raw_snorkel_observations |>
                                     instream_cover == "BG" ~ "B", # G is not an instream cover code, remove
                                     instream_cover == "0" ~ "A", # Assuming by 0 they mean "No Apparent Cover - A"
                                     TRUE ~ instream_cover),
-         mutate(unit = case_when(unit == "32A" ~ "32", # cleaning up these units because they are not in the snorkel_section_river_miles table
+         unit = case_when(unit == "32A" ~ "32", # cleaning up these units because they are not in the snorkel_section_river_miles table
                                  unit == "329.5" ~ "329",
                                  unit == "255A" ~ "255",
                                  unit == "266A" ~ "266",
@@ -111,7 +111,7 @@ cleaner_snorkel_observations <- raw_snorkel_observations |>
                                  unit == "118A" ~ "118",
                                  unit == "335B" ~ "335",
                                  unit == "487B" ~ "487",
-                                 TRUE  ~ unit))) |>  glimpse()
+                                 TRUE  ~ unit)) |>  glimpse()
 
 # Clean snorkel survey metadata
 # TODO are mos and hatchery ditches the same thing? There is no slide for Mos riffle but it is on the map, making mos hatchery for now
