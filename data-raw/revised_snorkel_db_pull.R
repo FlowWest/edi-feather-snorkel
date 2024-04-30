@@ -30,7 +30,7 @@ detach(package:Hmisc) # detach
 raw_snorkel_observations <- read_csv("data-raw/snorkel_observations.csv")
 raw_snorkel_survey_metadata <- read_csv("data-raw/snorkel_survey_metadata.csv")
 
-river_miles_lookup <- read_csv("data-raw/river_miles_lookup.csv")
+river_mile_lookup <- read_csv("data-raw/river_miles_lookup.csv")
 
 # Create helper function -------------------------------------------------------
 # str_arrange created to arrange instream cover in alphabetical order
@@ -195,7 +195,7 @@ raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xl
   glimpse()
 
 # add in existing missing units
-random_sampling_units <- cleaned_fish_observations |>
+random_sampling_units <- cleaner_snorkel_observations |>
   select(unit) |>
   distinct() |>
   filter(!unit %in% c(raw_created_lookup$unit)) |>

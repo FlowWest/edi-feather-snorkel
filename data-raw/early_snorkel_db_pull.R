@@ -1,6 +1,6 @@
 library(tidyverse)
 library(Hmisc)
-
+library(stringr)
 # pull database tables ---------------------------------------------------------
 db_filepath <- here::here("data-raw", "feather-river-db.mdb")
 
@@ -26,6 +26,26 @@ write_csv(snorkel_survey_metadata_early, here::here("data-raw", "raw_pre_2004_sn
 snorkel_raw_early <- read_csv(here::here("data-raw", "raw_pre_2004_snorkel_data_feather.csv"))
 snorkel_metadata_raw_early <- read_csv(here::here("data-raw","raw_pre_2004_snorkel_data_feather_metadata.csv"))
 
+# Create helper function -------------------------------------------------------
+# str_arrange created to arrange instream cover in alphabetical order
+# reduces duplicates that are arranged differently
+str_arrange <- function(x){
+  x %>%
+    stringr::str_split("") %>% # Split string into letters
+    purrr::map(~sort(.) %>% paste(collapse = "")) %>% # Sort and re-combine
+    as_vector() # Convert list into vector
+}
+
+# initial clean of site names
+format_site_name <- function(string) {
+  clean <-
+    str_replace_all(string, "'", "") %>%
+    str_replace_all("G-95", "G95") %>%
+    str_replace_all("[^[:alnum:]]", " ") %>%
+    trimws() %>%
+    stringr::str_squish() %>%
+    stringr::str_to_title()
+}
 
 # Join tables to lookup and & clean --------------------------------------------
 # Clean snorkel observations
