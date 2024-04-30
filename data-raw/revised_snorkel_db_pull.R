@@ -57,10 +57,12 @@ format_site_name <- function(string) {
 # Clean snorkel observations
 cleaner_snorkel_observations <- raw_snorkel_observations |>
   janitor::clean_names() |>
-  select(-size_class, -est_size, -lwd, -comments) |> # Remove size because post processing, duplication of FL, TODO check on lwd, remove comments
+  select(-size_class, -lwd, -comments) |> # Remove size because post processing, duplication of FL, TODO check on lwd, remove comments
   left_join(species_lookup, by = c("species" = "SpeciesCode")) |>
   select(-species, -observer) |>
-  rename(species = Species, observation_id = obs_id, survey_id = sid, hydrology = hydrology_code) |>
+  rename(species = Species, observation_id = obs_id, survey_id = sid,
+         hydrology = hydrology_code, fork_length = est_size,
+         depth = water_depth_m) |>
   mutate(clipped = case_when(species == "O. mykiss (not clipped)" ~ FALSE,
                              species == "O. Mykiss (clipped)" ~ TRUE,
                              species == "Chinook Salmon - Clipped" ~ TRUE,
@@ -210,7 +212,7 @@ sampling_unit_lookup <- bind_rows(raw_created_lookup, random_sampling_units) |>
 messy_units <- sampling_unit_lookup |>
   filter(is.na(river_mile)) |> pull(unit)
 
-cleaned_fish_observations |> filter(unit %in% messy_units) |> View()
+cleaner_snorkel_observations |> filter(unit %in% messy_units) |> View()
 
 # Write clean CSVS -------------------------------------------------------------
 

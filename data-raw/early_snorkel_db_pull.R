@@ -57,7 +57,9 @@ cleaner_snorkel_data_early <- snorkel_raw_early |>
   rename(species = CommonName, observation_id = obs_id,  hydrology = hu_cunit,
          instream_cover = huc_icover,
          overhead_cover = huc_ocover,
-         substrate = hu_csubstrate) |>
+         substrate = hu_csubstrate,
+         fork_length = fl,
+         count = number) |>
   select(-c(Order1, Family, Genus, Species)) |>
   mutate(run = case_when(species == "Chinook Salmon- Fall" ~ "fall",
                          species == "Chinook Salmon- Late Fall" ~ "late fall",
@@ -92,21 +94,50 @@ cleaner_snorkel_data_early <- snorkel_raw_early |>
                                hydrology == "P" ~ "Pool",
                                hydrology == "M" ~ "Riffle Margin Eddy",
                                TRUE ~ hydrology)) |>
-  filter(species != "Sacramento Squafish") |> glimpse()
+  select(-run, -fish_depth, -adj_velocity) |>
+  filter(species != "Sacramento Squawfish") |> glimpse()
 
 cleaner_snorkel_data_early$overhead_cover |> unique()
 cleaner_snorkel_data_early$hydrology |> unique()
 
+# TODO, major issue with location / section_name. does not appear to be following any standard section naming conventions here
+# use unit lookup table and above units to clean up as we can
+# Pull in cleaned name lookup table
+raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx") |>
+  mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
+  glimpse()
+
+units_per_survey  <- cleaner_snorkel_data_early |>
+  select(survey_id, unit) |>
+  left_join(raw_created_lookup) |>
+  select(survey_id, updated_section_name = section_name, section_number) |>
+  filter(!is.na(updated_section_name)) |>
+  distinct() |>
+  glimpse()
+
+# clean snorkel metadat
 cleaner_snorkel_metadata_early <- snorkel_metadata_raw_early |>
   janitor::clean_names() |>
   left_join(lookup_weather, by = c("weather" = "WeatherCode")) |>
   select(-c(visibility_comments, x_of_divers, x_of_center_passes, pass_width, comments,
             temp_time, snorkel_time_start, snorkel_time_stop, weather,
-            snorkel_crew, shore_crew, recorder)) |> # doesn't seem like time information is being read in from mdb.get - TODO
+            snorkel_crew, shore_crew, recorder, survey_type, section_type)) |>
   mutate(location = str_to_title(location),
-         survey_type = str_to_lower(survey_type),
-         section_type = str_to_lower(section_type),
-         weather = str_to_lower(Weather)) |>
-  select(-c(Weather)) |>
+         Weather = str_to_lower(Weather)) |>
+  rename(flow = river_flow, units_covered = units,
+         section_name = location,
+         turbidity = visibility, # TODO confirm that this is okay
+         weather = Weather) |>
+  left_join(units_per_survey) |>
+  mutate(section_name = ifelse(!is.na(updated_section_name), updated_section_name, section_name)) |>
+  select(-updated_section_name) |>
+  # update additional section_names, concern with manual update is that section_names will be associated with units not contained within that section...
+  # mutate(section_name = case_when())
   glimpse()
+
+# still more clean up to do
+# Initially ~ 200 unique section names, after join with units_per_survey table we get down to ~100
+cleaner_snorkel_metadata_early$section_name |> unique() |> sort()
+
+
 
