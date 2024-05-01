@@ -94,10 +94,17 @@ cleaner_snorkel_observations <- raw_snorkel_observations |>
                                TRUE ~ hydrology),
          instream_cover = ifelse(is.na(instream_cover), NA, str_arrange(toupper(instream_cover))),
          instream_cover = case_when(instream_cover == "VCDE" ~ "CDE", # V is not an instream cover code, remove
+                                    instream_cover == "BEV" ~ "BE", # V is not an instream cover code, remove
+                                    instream_cover == "CDEV" ~ "CDE", # V is not an instream cover code, remove
+                                    instream_cover == "CC" ~ "C", # Duplicative, make just one
                                     instream_cover == "R" ~ NA, # R is not an instream cover code, remove
                                     instream_cover == "BG" ~ "B", # G is not an instream cover code, remove
                                     instream_cover == "0" ~ "A", # Assuming by 0 they mean "No Apparent Cover - A"
                                     TRUE ~ instream_cover),
+         substrate = ifelse(is.na(substrate), NA, str_arrange(substrate)),
+         substrate = as.numeric(case_when(substrate == "2344" ~ "234",
+                               substrate == "350" ~ "35",
+                               TRUE ~ substrate)),
          unit = case_when(unit == "32A" ~ "32", # cleaning up these units because they are not in the snorkel_section_river_miles table
                                  unit == "329.5" ~ "329",
                                  unit == "255A" ~ "255",
@@ -110,6 +117,7 @@ cleaner_snorkel_observations <- raw_snorkel_observations |>
                                  unit == "448A" ~ "448",
                                  unit == "271B" ~ "271",
                                  unit %in% c("272A", "272B") ~ "272",
+                                 unit == "273B" ~ "273",
                                  unit == "118A" ~ "118",
                                  unit == "335B" ~ "335",
                                  unit == "487B" ~ "487",
@@ -191,6 +199,7 @@ cleaner_snorkel_survey_metadata <- raw_snorkel_survey_metadata |>
 
   glimpse()
 
+
 # Pull in cleaned name lookup table
 raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx") |>
   mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
@@ -205,14 +214,16 @@ random_sampling_units <- cleaner_snorkel_observations |>
 
 # create location lookup table
 sampling_unit_lookup <- bind_rows(raw_created_lookup, random_sampling_units) |>
-  left_join(river_mile_lookup, by = c("unit" = "Snorkel.Sections")) |>
-  rename(river_mile = River.Mile, channel = Channel) |> glimpse()
+  full_join(river_mile_lookup, by = c("unit" = "Snorkel.Sections")) |>
+  rename(river_mile = River.Mile, channel = Channel) |>
+  filter(!is.na(unit)) |> glimpse()
 
 # look at ones that are missing info on location, there are 171 of these, a lot are "HGSC, maybe Hatchery Glide Side Channel, but that is a section not a unit..."
 messy_units <- sampling_unit_lookup |>
   filter(is.na(river_mile)) |> pull(unit)
 
-cleaner_snorkel_observations |> filter(unit %in% messy_units) |> View()
+# look at messy units
+cleaner_snorkel_observations |> filter(unit %in% messy_units)
 
 # Write clean CSVS -------------------------------------------------------------
 

@@ -5,19 +5,19 @@ library(readxl)
 library(EML)
 
 datatable_metadata <-
-  dplyr::tibble(filepath = c("data/survey_characteristics_feather_snorkel_data.csv",
-                             "data/site_lookup_table_feather_snorkel_data.csv",
-                             "data/fish_observations_feather_snorkel_data.csv"),
+  dplyr::tibble(filepath = c("data/feather_snorkel_metadata.csv",
+                             "data/feather_location_lookup.csv",
+                             "data/feather_snorkel_observations.csv"),
                 attribute_info = c("data-raw/metadata/feather_snorkel_survey_charachteristics_metadata.xlsx",
                                    "data-raw/metadata/feather_snorkel_lookup_metadata.xlsx",
                                    "data-raw/metadata/feather_snorkel_fish_observations_metadata.xlsx"),
-                datatable_description = c("Survey characteristics from feather river snorkel survey data",
+                datatable_description = c("Survey metadata from feather river snorkel survey data",
                                           "Location lookup feather river snorkel survey data",
                                           "Fish observations from feather river snorkel survey data"),
                 datatable_url = paste0("https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/data",
-                                       c("survey_characteristics_feather_snorkel_data.csv",
-                                         "lookup_table_feather_snorkel_data.csv",
-                                         "fish_observations_feather_snorkel_data.csv")))
+                                       c("feather_snorkel_metadata.csv",
+                                         "feather_location_lookup.csv",
+                                         "feather_snorkel_observations.csv")))
 
 # save cleaned data to `data/`
 excel_path <- "data-raw/metadata/feather_metadata.xlsx" #TODO check this excel path/name

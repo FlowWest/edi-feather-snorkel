@@ -21,22 +21,22 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-04-25</pubDate>
+    <pubDate>2024-05-01</pubDate>
     <abstract>
       <para>
     Abstract
   </para>
       <para>
-    Since 1999, DWR has conducted juvenile monitoring Snorkel surveys
-    annually on the Feather River. Crews survey 20 sampling sites on the
-    high flow and low flow channel in May through August each year and
-    collect information on species, fish size, substrate, cover, and
-    habitat type. Snorkel data is collected to determine the relative
-    abundance and distribution of rearing juvenile Chinook salmon and
-    steelhead. A secondary objective of this data is to collect baseline
-    data for future monitoring programs associated with habitat
-    restoration projects. The Voluntary Agreement project plans to
-    utilize this long period of record of data to identify habitat
+    Since 1999, DWR has conducted juvenile monitoring snorkel surveys
+    annually on the Feather River. Crews survey units within 20 sampling
+    sections on the high flow and low flow channel in May through August
+    each year and collect information on species, fish size, substrate,
+    cover, and habitat type. Snorkel data is collected to determine the
+    relative abundance and distribution of rearing juvenile Chinook
+    salmon and steelhead. A secondary objective of this data is to
+    collect baseline data for future monitoring programs associated with
+    habitat restoration projects. The Voluntary Agreement project plans
+    to utilize this long period of record of data to identify habitat
     conditions (depth, substrate, velocity, and cover) where juvenile
     Chinook salmon and steelhead occur and analyze how these conditions
     have changed throughout time.
@@ -170,8 +170,7 @@
     is typically done in the downstream direction because currents are
     too strong to swim upstream whereas the other transects along river
     banks are done in the upstream direction. Divers use plastic slates
-    to mark observations of fish. Effort at each site recorded in terms
-    of time sampled, area covered, number of divers.
+    to mark observations of fish.
   </para>
           <para>
     Attributes collected include: species, number of fish of a given
@@ -203,12 +202,12 @@
       </personnel>
     </project>
     <dataTable>
-      <entityName>survey_characteristics_feather_snorkel_data.csv</entityName>
-      <entityDescription>Survey characteristics from feather river snorkel survey data</entityDescription>
+      <entityName>feather_snorkel_metadata.csv</entityName>
+      <entityDescription>Survey metadata from feather river snorkel survey data</entityDescription>
       <physical>
-        <objectName>survey_characteristics_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">150719</size>
-        <authentication method="MD5">ee78a0ca10ab1416e48e566664017e3f</authentication>
+        <objectName>feather_snorkel_metadata.csv</objectName>
+        <size unit="bytes">150468</size>
+        <authentication method="MD5">0a3a64ba009003542b4a29d4942ebf08</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -221,7 +220,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datasurvey_characteristics_feather_snorkel_data.csv</url>
+            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datafeather_snorkel_metadata.csv</url>
           </online>
         </distribution>
       </physical>
@@ -276,14 +275,28 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>weather</attributeName>
+          <attributeName>section_name</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Weather conditions when data was collected. Weather conditions include: clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast</attributeDefinition>
+          <attributeDefinition>Section name describing location were snorkel data was collected.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Weather conditions when data was collected. Weather conditions include: clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast</definition>
+                  <definition>Section name describing location were snorkel data was collected.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>units_covered</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Units surveyed on a given snorkel suvey</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Units surveyed on a given snorkel suvey</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -309,99 +322,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>start_time</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Time when snorkel survey started</attributeDefinition>
-          <measurementScale>
-            <dateTime>
-              <formatString>hh:mm:ss</formatString>
-              <dateTimeDomain>
-                <bounds>
-                  <minimum exclusive="false">0.0486</minimum>
-                  <maximum exclusive="false">0.9861</maximum>
-                </bounds>
-              </dateTimeDomain>
-            </dateTime>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>end_time</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Time when snorkel survey ended</attributeDefinition>
-          <measurementScale>
-            <dateTime>
-              <formatString>hh:mm:ss</formatString>
-              <dateTimeDomain>
-                <bounds>
-                  <minimum exclusive="false">0.0507</minimum>
-                  <maximum exclusive="false">0.6611</maximum>
-                </bounds>
-              </dateTimeDomain>
-            </dateTime>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>section_name</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Location were snorkel data was collected.</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Location were snorkel data was collected.</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>units_covered</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Units surveyed on a given snorkel suvey</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Units surveyed on a given snorkel suvey</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>unit</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Unit associated with specific reccord observed</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Unit associated with specific reccord observed</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>visibility</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Distance under current conditions of how far you can see/identify a fish. Recorded in meters.</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>meter</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0.5</minimum>
-                  <maximum exclusive="false">9</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>temperature</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Temperature of Water</attributeDefinition>
@@ -421,29 +341,29 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>hydrology</attributeName>
+          <attributeName>weather</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Hydological features at study site. Features include: riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</attributeDefinition>
+          <attributeDefinition>Weather conditions when data was collected. Weather conditions include: clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Hydological features at study site. Features include: riffle, glide, glide edgewater, riffle edgewater, backwater, pool)</definition>
+                  <definition>Weather conditions when data was collected. Weather conditions include: clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>6731</numberOfRecords>
+      <numberOfRecords>1420</numberOfRecords>
     </dataTable>
     <dataTable>
-      <entityName>site_lookup_table_feather_snorkel_data.csv</entityName>
+      <entityName>feather_location_lookup.csv</entityName>
       <entityDescription>Location lookup feather river snorkel survey data</entityDescription>
       <physical>
-        <objectName>site_lookup_table_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">153673</size>
-        <authentication method="MD5">2687922b8e25ef49e57c28b8271f6937</authentication>
+        <objectName>feather_location_lookup.csv</objectName>
+        <size unit="bytes">150467</size>
+        <authentication method="MD5">993f1f01f5dab5ddc0c83a015d5d5244</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -456,11 +376,25 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datalookup_table_feather_snorkel_data.csv</url>
+            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datafeather_location_lookup.csv</url>
           </online>
         </distribution>
       </physical>
       <attributeList>
+        <attribute>
+          <attributeName>unit</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Unit associated with specific reccord observed</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unit associated with specific reccord observed</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
         <attribute>
           <attributeName>section_name</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
@@ -490,20 +424,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>unit</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Unit associated with specific reccord observed</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Unit associated with specific reccord observed</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>section_type</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey</attributeDefinition>
@@ -517,16 +437,44 @@
             </nominal>
           </measurementScale>
         </attribute>
+        <attribute>
+          <attributeName>river_mile</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>River mile associated with specific reccord observed</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>River mile associated with specific reccord observed</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>channel</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Channel associated with specific reccord observed (HFC - high flow channel, LFC - low flow channel)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Channel associated with specific reccord observed (HFC - high flow channel, LFC - low flow channel)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
       </attributeList>
-      <numberOfRecords>477</numberOfRecords>
+      <numberOfRecords>559</numberOfRecords>
     </dataTable>
     <dataTable>
-      <entityName>fish_observations_feather_snorkel_data.csv</entityName>
+      <entityName>feather_snorkel_observations.csv</entityName>
       <entityDescription>Fish observations from feather river snorkel survey data</entityDescription>
       <physical>
-        <objectName>fish_observations_feather_snorkel_data.csv</objectName>
-        <size unit="bytes">153738</size>
-        <authentication method="MD5">deceac28764b581526e944ab6855a401</authentication>
+        <objectName>feather_snorkel_observations.csv</objectName>
+        <size unit="bytes">150552</size>
+        <authentication method="MD5">fc5f0e2ecb7f8bd29d9b4e3d2bf2f6c2</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -539,13 +487,13 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datafish_observations_feather_snorkel_data.csv</url>
+            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datafeather_snorkel_observations.csv</url>
           </online>
         </distribution>
       </physical>
       <attributeList>
         <attribute>
-          <attributeName>survey_id</attributeName>
+          <attributeName>observation_id</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Identification number of survey</attributeDefinition>
           <measurementScale>
@@ -559,19 +507,17 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>date</attributeName>
+          <attributeName>survey_id</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Date snorkel data was collected</attributeDefinition>
+          <attributeDefinition>Identification number of observation</attributeDefinition>
           <measurementScale>
-            <dateTime>
-              <formatString>YYYY-MM-DD</formatString>
-              <dateTimeDomain>
-                <bounds>
-                  <minimum exclusive="false">36259</minimum>
-                  <maximum exclusive="false">44099</maximum>
-                </bounds>
-              </dateTimeDomain>
-            </dateTime>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Identification number of observation</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -583,20 +529,6 @@
               <nonNumericDomain>
                 <textDomain>
                   <definition>Unit associated with specific reccord observed</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>species</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fish species observed</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Fish species observed</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -669,6 +601,39 @@
           </measurementScale>
         </attribute>
         <attribute>
+          <attributeName>hydrology</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Hydrology reccorded for each observation</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Hydrology reccorded for each observation</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>velocity</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Velocity of water in feet per seccond</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>feetPerSecond</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.05</minimum>
+                  <maximum exclusive="false">5</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
           <attributeName>overhead_cover</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Overhead cover at survey location.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae</attributeDefinition>
@@ -683,7 +648,7 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>water_depth_m</attributeName>
+          <attributeName>depth</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Depth of water in meters</attributeDefinition>
           <measurementScale>
@@ -702,14 +667,14 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>tagged</attributeName>
+          <attributeName>species</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>If fish was tagged or not (TRUE, FALSE)</attributeDefinition>
+          <attributeDefinition>Fish species observed</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>If fish was tagged or not (TRUE, FALSE)</definition>
+                  <definition>Fish species observed</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -730,7 +695,7 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>22382</numberOfRecords>
+      <numberOfRecords>31080</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>

@@ -82,6 +82,8 @@ cleaner_snorkel_data_early <- snorkel_raw_early |>
                                           species == "Unid Juvenile non-Micropterus Sunfish" ~ "Unidentified Juvenile non-Micropterus Sunfish",
                                           species == "Unid Juvenile Fish" ~ "Unidentified Juvenile Fish",
                                           species == "NO FISH CAUGHT" ~ NA,
+                                          species == "Smallmouth Bass" ~ "Small Mouth Bass",
+                                          species == "Largemouth Bass" ~ "Large Mouth Bass",
                                           TRUE ~ species)),
          instream_cover = ifelse(is.na(instream_cover), NA, str_arrange(toupper(instream_cover))),
          instream_cover = case_when(instream_cover == "AG" ~ "A", # G is not an instream cover code, remove
@@ -93,12 +95,37 @@ cleaner_snorkel_data_early <- snorkel_raw_early |>
                                hydrology == "R" ~ "Riffle",
                                hydrology == "P" ~ "Pool",
                                hydrology == "M" ~ "Riffle Margin Eddy",
-                               TRUE ~ hydrology)) |>
+                               TRUE ~ hydrology),
+         overhead_cover = case_when(overhead_cover %in% c("e", "be", "b", "o", "O", "I") ~ NA,
+                                    TRUE ~ as.numeric(overhead_cover)),
+         unit = toupper(unit),
+         unit = case_when(unit == "32A" ~ "32", # cleaning up these units because they are not in the snorkel_section_river_miles table
+                          unit == "329.5" ~ "329",
+                          unit == "255A" ~ "255",
+                          unit ==  "229B" ~ "229",
+                          unit == "323B                          323B" ~ "323B",
+                          unit == "266A" ~ "266",
+                          unit == "172B" ~ "172",
+                          unit == "26A" ~ "26",
+                          unit == "329B" ~ "329",
+                          unit == "111A" ~ "111",
+                          unit %in% c("274B", "274A") ~ "274",
+                          unit == "448A" ~ "448",
+                          unit == "271B" ~ "271",
+                          unit == "273B" ~ "273",
+                          unit %in% c("272A", "272B") ~ "272",
+                          unit == "118A" ~ "118",
+                          unit == "335B" ~ "335",
+                          unit == "487B" ~ "487",
+                          TRUE  ~ unit)) |>
   select(-run, -fish_depth, -adj_velocity) |>
-  filter(species != "Sacramento Squawfish") |> glimpse()
+  filter(species != "Sacramento Squawfish",
+         !is.na(unit) # if there is no unit, it is not useful
+         ) |> glimpse()
 
-cleaner_snorkel_data_early$overhead_cover |> unique()
+cleaner_snorkel_data_early$substrate |> unique()
 cleaner_snorkel_data_early$hydrology |> unique()
+cleaner_snorkel_data_early$species |> table()
 
 # TODO, major issue with location / section_name. does not appear to be following any standard section naming conventions here
 # use unit lookup table and above units to clean up as we can
