@@ -38,7 +38,6 @@ combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |> mutate(
                       "104 106 112", "446/449"), # filtered out these messy units for now, alternatively we can see if casey can assign a non messy unit
          species != "Sacramento Squawfish Or Hardhead") |> glimpse()
 
-# still too many units - have river mile for only 212 of them.
 combined_snorkel_observations$unit |> unique() |> length() #395 in this
 combined_snorkel_observations$count |> summary() # 750000 is high, leaving in for now but noting
 combined_snorkel_observations$fork_length |> summary() # a few big ones here as well but could be possible
@@ -67,8 +66,6 @@ combined_snorkel_metadata$units_covered |> table() # messy but not sure if there
 combined_snorkel_metadata$turbidity |> summary()
 combined_snorkel_metadata$temperature |> summary()
 combined_snorkel_metadata$weather |> table()
-combined_snorkel_metadata$section_number |> table()
-
 
 # write csv
 write_csv(combined_snorkel_metadata, "data/feather_snorkel_metadata.csv")
