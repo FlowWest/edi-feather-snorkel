@@ -67,7 +67,7 @@ cleaner_snorkel_data_early <- snorkel_raw_early |>
                          TRUE ~ NA_character_),
          clipped = case_when(species == "Steelhead Trout (ad clipped)" ~ TRUE,
                              species == "Rainbow Trout (wild)" ~ FALSE),
-         species = str_to_title(case_when(species %in% c("Chinook Salmon- Fall",
+         species = tolower(case_when(species %in% c("Chinook Salmon- Fall",
                                                          "Chinook Salmon- Late Fall",
                                                          "Chinook Salmon- Spring",
                                                          "Chjnook Salmon- Spring") ~ "Chinook Salmon",
@@ -84,6 +84,8 @@ cleaner_snorkel_data_early <- snorkel_raw_early |>
                                           species == "NO FISH CAUGHT" ~ NA,
                                           species == "Smallmouth Bass" ~ "Small Mouth Bass",
                                           species == "Largemouth Bass" ~ "Large Mouth Bass",
+                                          species == "Sacramento Squawfish" ~ "Sacramento Pikeminnow",
+                                          species %in% c("Sacramento Squawfish or Hardhead", "Pikeminnow/Hardhead") ~ "Sacramento Pikeminnow or hardhead",
                                           TRUE ~ species)),
          instream_cover = ifelse(is.na(instream_cover), NA, str_arrange(toupper(instream_cover))),
          instream_cover = case_when(instream_cover == "AG" ~ "A", # G is not an instream cover code, remove

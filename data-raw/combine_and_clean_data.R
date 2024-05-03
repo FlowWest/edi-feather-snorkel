@@ -35,8 +35,7 @@ combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |> mutate(
                                            cleaner_snorkel_observations) |>
   filter(!unit %in% c("77-80", "86-89",
                       "104, 106, 112", "104 106  112",
-                      "104 106 112", "446/449"), # filtered out these messy units for now, alternatively we can see if casey can assign a non messy unit
-         species != "Sacramento Squawfish Or Hardhead") |> glimpse()
+                      "104 106 112", "446/449")) |> glimpse() # filtered out these messy units for now, alternatively we can see if casey can assign a non messy unit
 
 combined_snorkel_observations$unit |> unique() |> length() #395 in this
 combined_snorkel_observations$count |> summary() # 750000 is high, leaving in for now but noting
