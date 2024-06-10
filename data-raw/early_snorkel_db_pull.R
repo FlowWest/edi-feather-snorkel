@@ -130,6 +130,7 @@ cleaner_snorkel_data_early$hydrology |> unique()
 cleaner_snorkel_data_early$species |> table()
 
 # TODO, major issue with location / section_name. does not appear to be following any standard section naming conventions here
+# TODO these section names still need to be cleaned up
 # use unit lookup table and above units to clean up as we can
 # Pull in cleaned name lookup table
 raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx") |>
@@ -155,7 +156,6 @@ cleaner_snorkel_metadata_early <- snorkel_metadata_raw_early |>
          Weather = str_to_lower(Weather)) |>
   rename(flow = river_flow, units_covered = units,
          section_name = location,
-         turbidity = visibility, # TODO confirm that this is okay
          weather = Weather) |>
   left_join(units_per_survey) |>
   mutate(section_name = ifelse(!is.na(updated_section_name), updated_section_name, section_name)) |>

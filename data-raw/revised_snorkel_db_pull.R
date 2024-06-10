@@ -128,6 +128,14 @@ cleaner_snorkel_observations <- raw_snorkel_observations |>
 # Clean snorkel survey metadata
 # TODO are mos and hatchery ditches the same thing? There is no slide for Mos riffle but it is on the map, making mos hatchery for now
 # TODO existing units to clean are located in messy units object below, would be good to ask Casey
+
+names_from_ppt <- c("Hatchery Riffle", "Auditorium Riffle", "Hatchery Ditch",
+                    "Trailer Park Riffle", "Bedrock Riffle", "Mathews Riffle",
+                    "Aleck Riffle", "Robinson Riffle", "Eye Riffle", "Gateway Riffle",
+                    "Vance West Riffle", "G95 Side", "Kiester Riffle", "Goose Riffle",
+                    "Big Riffle", "Upper McFarland", "Lower McFarland", "Gridley Riffle",
+                    "Junkyard Riffle")
+
 cleaner_snorkel_survey_metadata <- raw_snorkel_survey_metadata |>
   janitor::clean_names() |>
   select(-snorkelers, -comments, -shore_crew, -time_of_temperature, -snorkel_start_ttime, -snorkel_end_time) |> # removing times because they are just dates(something lost in pull)
@@ -143,7 +151,7 @@ cleaner_snorkel_survey_metadata <- raw_snorkel_survey_metadata |>
                              weather == c("WND") ~ "windy",
                              weather == c("LT CLD/HAZE") ~ "hazy"),
          section_name = format_site_name(section_name),
-         section_name = case_when(section_name %in% c("Vance W", "Vance West") ~ "Vance Riffle",
+         section_name = case_when(section_name %in% c("Vance W", "Vance West", "Vance West Riffle", "Vance W Riffle", "Vance East", "Vance") ~ "Vance Riffle",
                                   section_name == "Eye" ~ "Eye Riffle",
                                   section_name == "Hatchery Side Ditch" ~ "Hatchery Ditch",
                                   section_name == "Hatchery Side Channel" ~ "Hatchery Riffle",
@@ -153,7 +161,6 @@ cleaner_snorkel_survey_metadata <- raw_snorkel_survey_metadata |>
                                   section_name %in% c("Auditorium", "Upper Auditorium") ~ "Auditorium Riffle",
                                   section_name %in% c("Matthews", "Mathews", "Mathews Riffle") ~ "Matthews Riffle",
                                   section_name %in% c("G95 Side Channel", "G95 Sc", "G95 West Side Channel", "G95 Side West", "G95 Side") ~ "G95",
-                                  section_name %in% c("Vance West Riffle", "Vance W Riffle", "Vance East", "Vance") ~ "Vance Riffle",
                                   section_name %in% c("Alec Riffle", "Aleck") ~ "Aleck Riffle",
                                   section_name %in% c("Lower Mcfarland", "Mcfarland", "Upper Mcfarland", "McFarland", "Mc Farland") ~ "McFarland",
                                   section_name %in% c("Bed Rock Riffle", "Bedrock Riffle", "Bedrock", "Bedrock Park") ~ "Bedrock Park Riffle",
@@ -172,14 +179,15 @@ cleaner_snorkel_survey_metadata <- raw_snorkel_survey_metadata |>
                                                       "Hatchery Side Channel And Moes Ditch",
                                                       "Mo's Ditch",
                                                       "Hatchery And Moes Ditches",
-                                                      "Hatchery Ditch Moes") ~"Hatchery Ditch",
+                                                      "Hatchery Ditch Moes") ~"Hatchery Ditch", # Because Mos is often lumped with Hatchey Ditch we can't separate these out
                                   section_name %in% c("Hatchery And Moes Side Channels","Hatchery Sc", "Moes Side Channel", "Moes Sc",  "Hatchery Side Channel Moes", "Hatchery Side Ch Moes Side Ch",
                                                       "Hatchery Side Channel And Moes", "Hatchery Side Channel And Moes Side Channel") ~ "Hatchery Riffle",
                                   .default = as.character(section_name)),
+         # section numbers come from map in 2012 report that numbers the sections
                   section_number = case_when(section_name == "Aleck Riffle" ~ 8,
                                            section_name == "Auditorium Riffle" ~ 4,
                                            section_name == "Bedrock Park Riffle" ~ 5,
-                                           section_name == "Bedrock Riffle" ~ 10,
+                                           #section_name == "Bedrock Riffle" ~ 10, not sure why we had this here
                                            section_name == "Big Riffle" ~ 17,
                                            section_name == "Eye Riffle" ~ 11,
                                            section_name == "G95" ~ 14,
@@ -192,7 +200,7 @@ cleaner_snorkel_survey_metadata <- raw_snorkel_survey_metadata |>
                                            section_name == "Kiester Riffle" ~ 15,
                                            section_name == "Matthews Riffle" ~ 7,
                                            section_name == "McFarland" ~ 18,
-                                           # section_name == "Mo's Ditch" ~ 3,
+                                           # section_name == "Mo's Ditch" ~ 3, # mos will always be lumped with hatchery ditch
                                            section_name == "Robinson Riffle" ~ 9,
                                            section_name == "Steep Riffle" ~ 10,
                                            section_name == "Trailer Park Riffle" ~ 6,
@@ -226,6 +234,9 @@ messy_units <- sampling_unit_lookup |>
 
 # look at messy units
 cleaner_snorkel_observations |> filter(unit %in% messy_units)
+
+# last step is to associate lat/long with the survey locations
+# Badhia is extracting lat/long from kmzs that Casey provided
 
 # Write clean CSVS -------------------------------------------------------------
 
