@@ -136,6 +136,13 @@ names_from_ppt <- c("Hatchery Riffle", "Auditorium Riffle", "Hatchery Ditch",
                     "Big Riffle", "Upper McFarland", "Lower McFarland", "Gridley Riffle",
                     "Junkyard Riffle")
 
+sort(names_from_ppt)
+
+# Rename ppt - G95 Side = G95; Mathews Riffle = Matthews Riffle; Vance West Riffle = Vance Riffle
+# Combine upper and lower mcfarland?
+
+# Names in data that are not in the ppt: cox flat, herringer pond Rl, Hour Side Channel, River Bend Upstream Beach,
+# Can't tell upper from lower apart - mcfarland
 cleaner_snorkel_survey_metadata <- raw_snorkel_survey_metadata |>
   janitor::clean_names() |>
   select(-snorkelers, -comments, -shore_crew, -time_of_temperature, -snorkel_start_ttime, -snorkel_end_time) |> # removing times because they are just dates(something lost in pull)
@@ -163,7 +170,7 @@ cleaner_snorkel_survey_metadata <- raw_snorkel_survey_metadata |>
                                   section_name %in% c("G95 Side Channel", "G95 Sc", "G95 West Side Channel", "G95 Side West", "G95 Side") ~ "G95",
                                   section_name %in% c("Alec Riffle", "Aleck") ~ "Aleck Riffle",
                                   section_name %in% c("Lower Mcfarland", "Mcfarland", "Upper Mcfarland", "McFarland", "Mc Farland") ~ "McFarland",
-                                  section_name %in% c("Bed Rock Riffle", "Bedrock Riffle", "Bedrock", "Bedrock Park") ~ "Bedrock Park Riffle",
+                                  section_name %in% c("Bed Rock Riffle", "Bedrock Riffle", "Bedrock", "Bedrock Park") ~ "Bedrock Riffle",
                                   section_name == "Steep" ~ "Steep Riffle",
                                   section_name %in% c("Upper Hour Side Channel Rl", "Hour To Palm Side Rl")  ~ "Hour Side Channel",
                                   section_name %in% c("Keister", "Kiester", "Keister Riffle") ~ "Kiester Riffle",
@@ -205,7 +212,7 @@ cleaner_snorkel_survey_metadata <- raw_snorkel_survey_metadata |>
                                            section_name == "Steep Riffle" ~ 10,
                                            section_name == "Trailer Park Riffle" ~ 6,
                                            section_name == "Vance Riffle" ~ 13,
-                                           TRUE ~ NA)) |>
+                                           T ~ NA)) |>
 
   glimpse()
 
@@ -237,6 +244,39 @@ cleaner_snorkel_observations |> filter(unit %in% messy_units)
 
 # last step is to associate lat/long with the survey locations
 # Badhia is extracting lat/long from kmzs that Casey provided
+kmz_coordinates_raw <- read_csv("data-raw/Coordinates_Snorkel_Survey_Locations.csv")
+# update the names so they will match with the survey location names
+kmz_coordinate <- kmz_coordinates_raw |>
+  mutate(Name = case_when(Name == "Alec Riffle" ~ "Aleck Riffle",
+                          Name == "G95 Side Channel" ~ "G95",
+                          Name == "Gridley Side Channel" ~ "Gridley Riffle",
+                          Name == "Keister Riffle" ~ "Kiester Riffle",
+                          Name %in% c("Lower McFarland", "Upper McFarland") ~ "McFarland",
+                          Name == "Vance West" ~ "Vance Riffle",
+                          T ~ Name))
+random_coordinates <- read_csv("data-raw/Coordinates_Random_Snorkel_Sites.csv") |>
+  rename(unit = Name)
+
+# Questions -
+# 1. Should we fill in all with missing section_name as "random"
+# 2. We have created lat/long based on the kmz provided. Do we have lat/long for the units?
+
+sampling_unit_lookup_coordinates <- sampling_unit_lookup |>
+  left_join(kmz_coordinate |>
+              rename(section_name = Name,
+                     longitude = Longitude,
+                     latitude = Latitude) |>
+              group_by(section_name) |>
+              summarize(longitude = mean(longitude),
+                        latitude = mean(latitude))) |>
+  left_join(random_coordinates) |>
+  mutate(longitude = ifelse(is.na(longitude) & !is.na(Longitude), Longitude, longitude),
+         latitude = ifelse(is.na(latitude) & !is.na(Latitude), Latitude, latitude)) |>
+  select(-c(Longitude, Latitude))
 
 # Write clean CSVS -------------------------------------------------------------
-
+# writing to data raw because we need to join with other years
+# observations
+write_csv(cleaner_snorkel_observations, "data-raw/clean_snorkel_observations_current.csv")
+write_csv(cleaner_snorkel_survey_metadata, "data-raw/clean_survey_metadata_current.csv")
+write_csv(sampling_unit_lookup_coordinates, "data-raw/clean_location_lookup_current.csv")
