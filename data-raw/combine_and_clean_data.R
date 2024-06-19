@@ -3,7 +3,6 @@ library(tidyverse)
 source("data-raw/early_snorkel_db_pull.R")
 source("data-raw/revised_snorkel_db_pull.R")
 
-
 # look at data early
 glimpse(cleaner_snorkel_data_early)
 glimpse(cleaner_snorkel_metadata_early)
@@ -43,7 +42,7 @@ combined_snorkel_observations$fork_length |> summary() # a few big ones here as 
 combined_snorkel_observations$substrate |> table() # still a lot of variation in substrate but ordered and removed weird values
 combined_snorkel_observations$overhead_cover |> table() # removed letterd variables because no lookup (only < 10 of these, so not a big removal, they were in the early data)
 combined_snorkel_observations$instream_cover |> table() # looks as good as we are going to get
-combined_snorkel_observations$hydrology |> table() # clean
+combined_snorkel_observations$channel_geomorhic_unit |> table() # clean
 combined_snorkel_observations$velocity |> summary() # Only exists for early data, lots of NAs
 combined_snorkel_observations$depth |> summary() # clean
 combined_snorkel_observations$species |> sort() |> unique() # still a lot of species, could potentially refine some of the unidentified ones...or get. abiologiest to imrpve, but probably fine for now
@@ -75,7 +74,33 @@ sampling_unit_lookup |> glimpse()
 
 
 # write csv
-write_csv(sampling_unit_lookup, "data/feather_location_lookup.csv")
+write_csv(sampling_unit_lookup_coordinates, "data/feather_location_lookup.csv")
 
 
+# Data checks -------------------------------------------------------------
+# Summarize the number that are missing coordinates
+combined <- read_csv("data/feather_snorkel_observations.csv")
+metadata <- read_csv("data/feather_snorkel_metadata.csv")
+ck <- combined |>
+  left_join(sampling_unit_lookup_coordinates) |>
+  left_join(metadata |>
+              select(survey_id, date))
+
+
+number_random <- ck |>
+  filter(is.na(section_name), section_type == "random") |>
+  distinct(date)
+
+number_random |>
+  group_by(year(date)) |>
+  tally()
+
+# number without river mile (filled in lat/long for some of these)
+no_river_mile <- filter(ck, is.na(river_mile)) |>
+  distinct(date, .keep_all = T)
+
+# number without coordinates
+
+no_coordinate <- filter(ck, is.na(latitude)) |>
+  distinct(date, .keep_all = T)
 

@@ -1,4 +1,4 @@
-unit,section_name,section_number,section_type,river_mile,channel,longitude,latitude
+unit,section_name,section_number,section_type,river_mile,channel_type,longitude,latitude
 23,Hatchery Riffle,1,permanent,1,LFC,-121.5551415427545,39.51589308111142
 24,Hatchery Riffle,1,permanent,1,LFC,-121.5551415427545,39.51589308111142
 25,Hatchery Riffle,1,permanent,1,LFC,-121.5551415427545,39.51589308111142

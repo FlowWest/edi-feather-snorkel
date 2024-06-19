@@ -1,1421 +1,1426 @@
-survey_id,date,flow,section_name,units_covered,visibility,temperature,weather,turbidity
-3,1999-06-30,7788,G95,NA,NA,64,sunny,NA
-4,1999-06-30,7788,Big Hole Island,NA,NA,64,sunny,NA
-5,1999-07-01,8050,Mcfarland Bend,NA,1.5,65,sunny,NA
-6,1999-07-01,8050,Big Riffle,NA,1.5,64,sunny,NA
-7,1999-07-01,8050,Lower  Hour Riffle,NA,NA,64.5,sunny,NA
-10,1999-06-28,621,Robinson Riffle,NA,3.5,61.5,sunny,NA
-11,1999-06-28,621,Below Great Western Riffle,NA,3.5,60.5,sunny,NA
-12,1999-06-25,628,Aleck Riffle,NA,4.09999990463257,62,sunny,NA
-13,1999-06-25,628,Bedrock Riffle,NA,4.09999990463257,58.5,sunny,NA
-14,1999-06-23,650,Hatchery Ditch,NA,NA,56,sunny,NA
-15,1999-06-22,661,Hatchery Riffle,NA,NA,56.5,sunny,NA
-17,1999-06-04,1876,McFarland,NA,1.70000004768372,64.5,overcast,NA
-18,1999-06-03,1752,Goose Riffle,NA,1,63,overcast,NA
-19,1999-06-01,1870,Kiester Riffle,NA,1.5,67,overcast,NA
-21,1999-05-25,1886,Vance Riffle,NA,NA,64,sunny,NA
-22,1999-05-25,1886,G95,NA,NA,66,sunny,NA
-23,1999-05-24,1886,Vance Riffle,NA,0.600000023841858,65,sunny,NA
-25,1999-05-20,627,Gateway Riffle,NA,3.5,58,sunny,NA
-26,1999-05-20,627,Steep Riffle,NA,2.79999995231628,56.5,overcast,NA
-28,1999-05-20,627,Eye Riffle,NA,2.59999990463257,57.5,sunny,NA
-29,1999-04-09,3297,Big Hole Island To G95,NA,NA,51,sunny,NA
-31,1999-04-12,600,Table Mtn Bridge To Hatchery Riffle,NA,NA,NA,NA,NA
-32,1999-04-12,600,Hatchery Riffle To  Upper Bedrock Pool,NA,NA,NA,NA,NA
-34,1999-04-13,600,Matthews To Aleck,NA,NA,NA,NA,NA
-35,1999-04-13,600,Robinson To Steep,NA,NA,NA,NA,NA
-36,1999-04-14,4019,G95 To Hour Glide,NA,NA,NA,NA,NA
-37,1999-04-14,4019,G95 To Hour Glide,NA,NA,NA,NA,NA
-40,1999-04-27,621,Table Mtn Bridge To Hatchery Riffle,NA,NA,51,NA,NA
-41,1999-04-27,621,Hatchery Riffle,NA,NA,52,NA,NA
-42,1999-04-27,621,Auditorium Rifle,NA,NA,52,NA,NA
-43,1999-04-27,621,Lower Auditorium To Upper Bedrock Pool,NA,NA,53,NA,NA
-44,1999-04-27,621,Upper Bedrock Pool To H70 Bridge,NA,NA,53,NA,NA
-47,1999-04-29,621,Steep To Eye,NA,NA,52.5,NA,NA
-49,1999-04-29,621,Eye To Gateway,NA,NA,55.5,NA,NA
-51,1999-04-30,614,Trailer Park To Aleck,NA,NA,53,NA,NA
-52,1999-04-30,614,Aleck Riffle,NA,NA,55,NA,NA
-53,1999-04-30,614,Robinson,NA,NA,NA,NA,NA
-56,1999-05-03,5025,Island @ Bottom Of Big Hole Island,NA,NA,56.5,NA,NA
-58,1999-05-04,4293,Keister Riffle,NA,NA,57,NA,NA
-60,1999-05-04,4293,Lower Hour,NA,NA,56,NA,NA
-61,1999-05-04,4293,Hour Glide,NA,NA,56,NA,NA
-62,1999-05-05,620,66.75-67,NA,NA,50.5,NA,NA
-63,1999-05-05,620,66.6-66.75,NA,NA,52,NA,NA
-64,1999-05-05,620,Auditorium,NA,NA,52,NA,NA
-65,1999-05-13,620,Hatchery Riffle,NA,NA,52,sunny,NA
-67,1999-05-17,615,Bedrock Riffle,NA,NA,55,sunny,NA
-69,1999-05-17,615,Hatchery Riffle,NA,NA,54.5,sunny,NA
-69,1999-05-17,615,Auditorium Riffle,NA,NA,54.5,sunny,NA
-69,1999-05-17,615,Hatchery Ditch,NA,NA,54.5,sunny,NA
-70,1999-05-18,620,Bedrock Riffle,NA,NA,NA,sunny,NA
-71,1999-05-18,620,Trailer Park Riffle,NA,NA,NA,sunny,NA
-71,1999-05-18,620,Matthews Riffle,NA,NA,NA,sunny,NA
-72,1999-05-18,620,Matthews Riffle,NA,NA,NA,sunny,NA
-72,1999-05-18,620,Aleck Riffle,NA,NA,NA,sunny,NA
-73,1999-05-19,622,Gravel Mine To N. Robinson Riffle,NA,NA,57,sunny,NA
-74,1999-05-19,622,Great Western To Gravel Mine,NA,3.5,63,sunny,NA
-76,1999-05-20,627,Robinson Riffle,NA,NA,56,sunny,NA
-77,1999-06-22,661,Auditorium Riffle,NA,NA,57,sunny,NA
-78,1999-07-21,627,Hatchery Riffle,NA,NA,59,sunny,NA
-79,1999-07-21,627,Auditorium Riffle,NA,NA,59,sunny,NA
-80,1999-07-21,627,Auditorium Riffle,NA,NA,61,sunny,NA
-82,1999-07-22,624,Hatchery Ditch,NA,NA,60,sunny,NA
-84,1999-06-24,663,Hatchery Ditch,NA,2,57.5,sunny,NA
-85,1999-06-24,663,Hatchery Ditch,NA,2,56,sunny,NA
-86,1999-07-26,623,Montgomery Street,NA,NA,61,sunny,NA
-89,1999-07-28,9564,Below G95,NA,NA,63,sunny,NA
-91,1999-07-28,9564,Above Big Hole Boat Launch,NA,2.40000009536743,63,sunny,NA
-92,1999-07-28,9564,G95,NA,NA,62.5,sunny,NA
-93,1999-07-29,9315,Mcfarland Riffle,NA,3.09999990463257,63,sunny,NA
-94,1999-07-29,9315,Swampy Bend To Gridley Bridge,NA,3.09999990463257,64,sunny,NA
-95,1999-08-23,600,Hatchery Riffle,NA,NA,55,sunny,NA
-95,1999-08-23,600,Auditorium Riffle,NA,NA,55,sunny,NA
-97,1999-08-26,4500,G95,NA,NA,63,overcast,NA
-98,1999-08-30,5500,"Big Bar, Mcfarland",NA,2.90000009536743,65,sunny,NA
-99,1999-08-26,4500,Goose Riffle,NA,NA,64,overcast,NA
-100,1999-08-26,4500,Hour Riffle,NA,NA,64,overcast,NA
-102,1999-08-25,NA,Eye Riffle,NA,NA,61,overcast,NA
-103,1999-08-25,NA,Above Eye Riffle,NA,NA,58,overcast,NA
-104,1999-08-25,NA,Eye Riffle,NA,NA,58,overcast,NA
-105,1999-08-24,600,Above Hatchery,NA,NA,56,overcast,NA
-106,1999-08-24,600,Aleck Riffle,NA,NA,58,overcast,NA
-107,1999-08-24,600,Robinson Riffle,NA,NA,59,overcast,NA
-110,1999-10-06,600,Steep Riffle,NA,NA,60,overcast,NA
-111,1999-10-06,600,Eye Riffle,NA,NA,58,sunny,NA
-112,1999-10-06,600,Robinson Riffle,NA,NA,56.5,overcast,NA
-113,1999-10-06,600,Aleck Riffle,NA,NA,61,sunny,NA
-114,1999-10-27,2450,G95,NA,NA,56,precipitation,NA
-116,1999-10-27,2450,Eye Riffle,NA,4.80000019073486,54,overcast,NA
-117,1999-10-27,2450,Big Hole Boat Launch,NA,NA,NA,precipitation,NA
-119,1999-10-27,2450,Vance Riffle,NA,NA,NA,precipitation,NA
-120,1999-10-26,600,Eye Riffle,NA,NA,55,overcast,NA
-121,1999-10-26,600,Steep Riffle,NA,NA,58.5,overcast,NA
-122,1999-10-26,600,Robinson Riffle,NA,NA,58,sunny,NA
-123,1999-10-26,600,Steep Riffle,NA,NA,NA,overcast,NA
-124,1999-09-27,3500,Mcfarland Bend,NA,1,NA,sunny,NA
-125,1999-09-27,3500,Big Bar Riffle,NA,1,NA,sunny,NA
-128,1999-10-07,600,Matthews Riffle,NA,NA,53.5,sunny,NA
-129,1999-10-07,600,Trailer Park Riffle,NA,NA,53.5,sunny,NA
-130,1999-10-07,3900,Riffle Below Vance Avenue Boat Launch,NA,NA,58.5,sunny,NA
-131,1999-10-25,600,Hatchery Riffle,NA,NA,NA,sunny,NA
-133,1999-10-25,600,Bedrock Riffle,NA,NA,NA,sunny,NA
-134,1999-10-25,600,Trailer Park Riffle,NA,NA,NA,sunny,NA
-247,2000-06-05,600,Fish Barrier Dam To Hatchery Riffle,NA,NA,56,sunny,NA
-248,2000-06-05,600,Hatchery Riffle,NA,NA,57,sunny,NA
-249,2000-06-05,600,Auditorium Riffle,NA,NA,58,sunny,NA
-249,2000-06-05,600,Bedrock Riffle,NA,NA,58,sunny,NA
-251,2000-06-06,600,Trailer Park Riffle,NA,2.5,60.5,sunny,NA
-251,2000-06-06,600,Matthews Riffle,NA,2.5,60.5,sunny,NA
-251,2000-06-06,600,Aleck Riffle,NA,2.5,60.5,sunny,NA
-252,2000-06-07,600,Robinson Riffle,NA,NA,63,sunny,NA
-252,2000-06-07,600,Steep Riffle,NA,NA,63,sunny,NA
-254,2000-06-08,600,Eye Riffle,NA,NA,60,overcast,NA
-255,2000-06-08,600,Gateway Riffle,NA,NA,60,overcast,NA
-256,2000-06-12,4000,Vance Riffle,NA,1,65,sunny,NA
-257,2000-06-13,4000,Gateway Riffle,NA,NA,68,sunny,NA
-258,2000-06-14,4000,Hatchery Ditch,NA,NA,55.5,sunny,NA
-259,2000-06-19,NA,Hatchery Ditch,NA,NA,57,sunny,NA
-260,1999-12-16,600,Robinson Riffle,NA,NA,NA,sunny,NA
-260,1999-12-16,600,Steep Riffle,NA,NA,NA,sunny,NA
-261,1999-12-16,600,Trailer Park Riffle,NA,NA,NA,sunny,NA
-261,1999-12-16,600,Matthews Riffle,NA,NA,NA,sunny,NA
-262,1999-12-16,600,Hatchery Riffle,NA,NA,NA,sunny,NA
-262,1999-12-16,600,Auditorium Riffle,NA,NA,NA,sunny,NA
-262,1999-12-16,600,Bedrock Riffle,NA,NA,NA,sunny,NA
-263,2000-01-06,NA,Hatchery Ditch,NA,NA,50,overcast,NA
-264,2000-01-19,600,Steep Riffle,NA,1.5,NA,overcast,NA
-265,2000-01-19,600,Eye Riffle,NA,1.5,NA,overcast,NA
-268,2000-02-29,NA,Hatchery Ditch,NA,NA,NA,precipitation,NA
-269,2000-03-02,NA,Hatchery Ditch,NA,NA,46.5,precipitation,NA
-270,2000-03-02,NA,Hatchery Ditch,NA,NA,47.5,overcast,NA
-271,2000-03-21,NA,Hatchery Ditch,NA,NA,48.5,sunny,NA
-272,2000-03-21,NA,Hatchery Ditch,NA,NA,NA,sunny,NA
-274,2000-03-22,600,"River Mile 66.9; Units 5,6,7,8",NA,NA,49.5,sunny,NA
-276,2000-03-22,600,Auditorium Riffle,NA,NA,51,sunny,NA
-276,2000-03-22,600,Bedrock Riffle,NA,NA,51,sunny,NA
-277,2000-03-22,600,Bedrock Riffle,NA,NA,52.5,sunny,NA
-282,2000-04-04,600,Robinson Side Channel,NA,NA,NA,sunny,NA
-283,2000-04-04,600,Robinson Pond Outlet Channel,NA,NA,NA,sunny,NA
-284,2000-04-04,600,Steep Riffle,NA,NA,NA,sunny,NA
-284,2000-04-04,600,Eye Riffle,NA,NA,NA,sunny,NA
-285,2000-04-04,600,Eye Riffle,NA,NA,NA,sunny,NA
-287,2000-04-06,2500,"Big Hole Islands, 1/4 Mile Below R.m 58",NA,NA,58,sunny,NA
-288,2000-04-06,2500,Big Hole Islands @ R.m 57,NA,NA,58,sunny,NA
-289,2000-04-06,NA,Vance Ave. Boat Ramp,NA,NA,58,sunny,NA
-290,2000-04-06,NA,G95,NA,NA,58,sunny,NA
-291,2000-04-06,NA,Kiester Riffle,NA,NA,58,sunny,NA
-293,2000-04-06,2500,Goose Riffle,NA,NA,60,sunny,NA
-294,2000-04-26,600,Hatchery Riffle,NA,NA,53.5,sunny,NA
-296,2000-04-26,600,Bedrock Riffle,NA,NA,NA,sunny,NA
-297,2000-04-27,NA,Hatchery Ditch,NA,NA,55,overcast,NA
-298,2000-04-27,NA,Hatchery Ditch,NA,NA,54,overcast,NA
-299,2000-05-02,NA,Hatchery Ditch,NA,NA,57,sunny,NA
-300,2000-05-02,NA,Hatchery Ditch,NA,NA,54.5,sunny,NA
-303,2000-05-03,600,Aleck Riffle,NA,NA,56.5,sunny,NA
-304,2000-05-03,600,Robinson Riffle,NA,NA,58.5,sunny,NA
-305,2000-05-04,600,Steep Riffle,NA,NA,59,sunny,NA
-306,2000-05-04,600,Steep Riffle,NA,NA,59,sunny,NA
-307,2000-05-04,600,Eye Riffle,NA,NA,60.5,sunny,NA
-308,2000-05-04,600,Gateway Riffle,NA,NA,60.5,overcast,NA
-309,2000-05-15,2500,Herringer Side Channel/Main Channel,NA,NA,59,precipitation,NA
-311,2000-05-15,2500,Gridley Riffle Side Channel (See Comments),NA,NA,59,precipitation,NA
-312,2000-05-16,2500,G95,NA,NA,58,overcast,NA
-314,2000-05-16,2500,McFarland,NA,NA,57.5,overcast,NA
-315,2000-05-17,600,Auditorium Riffle,NA,NA,54,sunny,NA
-315,2000-05-17,600,Hatchery Riffle,NA,NA,54,sunny,NA
-316,2000-05-24,600,Bedrock Riffle,NA,NA,NA,sunny,NA
-317,2000-05-24,600,Bedrock Riffle,NA,NA,NA,sunny,NA
-317,2000-05-24,600,Trailer Park Riffle,NA,NA,NA,sunny,NA
-317,2000-05-24,600,Matthews Riffle,NA,NA,NA,sunny,NA
-318,2000-05-24,600,Aleck Riffle,NA,NA,NA,sunny,NA
-320,2000-05-25,600,Steep Riffle,NA,NA,61.5,sunny,NA
-321,2000-05-25,600,Steep Riffle,NA,NA,61.5,sunny,NA
-323,2000-06-08,600,Gateway Pool - Thermalito Pool,NA,NA,61,precipitation,NA
-324,2000-06-12,4000,G95,NA,NA,66,sunny,NA
-326,2000-06-15,NA,Goose Backwater To Big Bar Riffle,NA,NA,71,sunny,NA
-327,2000-06-20,4000,McFarland,NA,NA,68,sunny,NA
-328,2000-06-20,4000,Below Macfarland To Upstream,NA,NA,71,sunny,NA
-329,2000-06-21,NA,Below Macfarland Riffle - Gridley Bridge,NA,NA,70,sunny,NA
-330,2000-06-22,4000,Gridley Riffle,NA,NA,67,sunny,NA
-332,2000-06-22,4000,"Cox Riffle, Upper Herringer",NA,NA,69,sunny,NA
-333,2000-07-17,NA,Hatchery Ditch,NA,NA,66,sunny,NA
-335,2000-07-17,NA,Auditorium Riffle,NA,NA,64.5,sunny,NA
-336,2000-07-17,NA,Hatchery Riffle,NA,NA,64,NA,NA
-338,2000-07-18,600,Robinson Riffle,NA,NA,NA,sunny,NA
-339,2000-07-18,600,Steep Riffle,NA,NA,NA,sunny,NA
-340,2000-07-18,600,Eye Riffle,NA,NA,67,sunny,NA
-341,2000-07-19,7000,G95,NA,NA,65.5,sunny,NA
-344,2000-08-14,NA,Hatchery Ditch,NA,NA,64,sunny,NA
-345,2000-08-14,NA,Hatchery Ditch,NA,NA,62.5,sunny,NA
-346,2000-08-14,600,Hatchery Riffle,NA,NA,NA,sunny,NA
-347,2000-08-15,600,Auditorium Riffle,NA,NA,NA,sunny,NA
-348,2000-08-15,600,Bedrock Riffle,NA,NA,NA,sunny,NA
-349,2000-08-15,600,Trailer Park Riffle,NA,NA,64,sunny,NA
-351,2000-08-15,6000,Aleck Riffle,NA,NA,NA,sunny,NA
-352,2000-08-16,600,Robinson Side Channel,NA,NA,64,sunny,NA
-353,2000-08-16,600,Steep Riffle,NA,1.20000004768372,66,sunny,NA
-355,2000-08-16,600,Eye Riffle,NA,1.10000002384186,65,sunny,NA
-357,2000-08-17,NA,Goose Riffle,NA,NA,NA,overcast,NA
-358,2000-08-17,NA,G95,NA,NA,66.5,overcast,NA
-360,2000-08-21,NA,Gridley Riffle,NA,NA,65,sunny,NA
-361,2000-08-21,NA,Gridely Riffle Side Channel,NA,NA,65,sunny,NA
-362,2000-08-21,NA,Herringer Riffle,NA,NA,66.5,sunny,NA
-363,2000-08-21,NA,Herringer Side Channel,NA,NA,65,sunny,NA
-364,2000-09-11,600,Bedrock Riffle,NA,NA,NA,sunny,NA
-367,2000-09-11,600,Hatchery Riffle,NA,NA,NA,sunny,NA
-367,2000-09-11,600,Auditorium Riffle,NA,NA,NA,sunny,NA
-368,2000-09-11,600,Hatchery Riffle,NA,NA,NA,sunny,NA
-368,2000-09-11,600,Auditorium Riffle,NA,NA,NA,sunny,NA
-369,2000-09-11,600,Trailer Park Riffle,NA,NA,NA,sunny,NA
-369,2000-09-11,600,Matthews Riffle,NA,NA,NA,sunny,NA
-370,2000-09-11,600,Robinson Riffle,NA,NA,NA,sunny,NA
-371,2000-09-11,600,Steep Riffle,NA,NA,NA,sunny,NA
-372,2001-03-06,NA,Hatchery Ditch,NA,NA,44,sunny,NA
-373,2001-03-06,NA,Hatchery Ditch,NA,NA,44,sunny,NA
-374,2001-03-07,600,Trailer Park Riffle,NA,1,51,sunny,NA
-374,2001-03-07,600,Matthews Riffle,NA,1,51,sunny,NA
-375,2001-03-07,600,Aleck Riffle,NA,NA,51,sunny,NA
-377,2001-03-07,600,Hatchery Riffle,NA,1.5,48.5,sunny,NA
-377,2001-03-07,600,Auditorium Riffle,NA,1.5,48.5,sunny,NA
-379,2001-03-08,1700,Goose Riffle,NA,NA,NA,overcast,NA
-380,2001-03-08,NA,Macfarland,NA,NA,54,overcast,NA
-381,2001-03-08,600,Robinson Riffle,NA,NA,50,overcast,NA
-381,2001-03-08,600,Steep Riffle,NA,NA,50,overcast,NA
-381,2001-03-08,600,Eye Riffle,NA,NA,50,overcast,NA
-382,2001-04-02,NA,Hatchery Ditch,NA,NA,NA,sunny,NA
-385,2001-04-03,600,Hatchery Riffle,NA,NA,NA,sunny,NA
-386,2001-04-03,600,Aleck Riffle,NA,NA,NA,sunny,NA
-387,2001-04-04,600,Robinson Riffle,NA,NA,NA,sunny,NA
-388,2001-04-04,600,Steep Riffle,NA,NA,NA,sunny,NA
-389,2001-04-04,600,Eye Riffle,NA,NA,NA,sunny,NA
-390,2001-07-03,600,Aleck Riffle,NA,NA,NA,sunny,NA
-391,2001-07-03,600,Eye Riffle,NA,NA,NA,sunny,NA
-393,2001-04-05,1550,Macfarland Riffle,NA,NA,NA,sunny,NA
-394,2001-04-05,1550,G95,NA,NA,NA,sunny,NA
-396,2001-05-02,600,Bedrock Riffle,NA,NA,52,sunny,NA
-396,2001-05-02,600,Matthews Riffle,NA,NA,52,sunny,NA
-397,2001-07-09,1900,Goose Riffle,NA,NA,NA,sunny,NA
-398,2001-07-09,NA,Kiester Riffle,NA,NA,NA,sunny,NA
-399,2001-07-09,NA,G95,NA,NA,NA,sunny,NA
-402,2001-07-02,600,Steep Riffle,NA,NA,NA,sunny,NA
-403,2001-06-06,NA,G95,NA,NA,NA,sunny,NA
-404,2001-06-06,600,Steep Riffle,NA,NA,NA,sunny,NA
-405,2001-06-06,600,Eye Riffle,NA,NA,NA,sunny,NA
-407,2001-06-05,600,Aleck Riffle,NA,NA,NA,sunny,NA
-408,2001-06-05,600,Auditorium Riffle,NA,NA,NA,sunny,NA
-409,2001-06-05,600,Hatchery Riffle,NA,NA,NA,sunny,NA
-410,2001-05-30,NA,Hatchery Ditch,NA,NA,NA,sunny,NA
-411,2001-07-10,NA,Hatchery Ditch,NA,NA,59,sunny,NA
-414,2001-05-09,1300,Big Riffle,NA,NA,62,sunny,NA
-415,2001-07-10,600,Hatchery Riffle,NA,NA,60,sunny,NA
-416,2001-07-10,600,Auditorium Riffle,NA,NA,57,sunny,NA
-417,2001-05-08,NA,Kiester Riffle,NA,NA,65,sunny,NA
-418,2001-05-07,1350,Vance Riffle,NA,1,63.5,sunny,NA
-419,2001-05-02,600,Aleck Riffle,NA,NA,52.5,sunny,NA
-419,2001-05-02,600,Trailer Park Riffle,NA,NA,52.5,sunny,NA
-419,2001-05-02,600,Matthews Riffle,NA,NA,52.5,sunny,NA
-420,2001-05-03,600,Robinson Riffle,NA,NA,53,sunny,NA
-420,2001-05-03,600,Steep Riffle,NA,NA,53,sunny,NA
-420,2001-05-03,600,Eye Riffle,NA,NA,53,sunny,NA
-420,2001-05-03,600,Gateway Riffle,NA,NA,53,sunny,NA
-421,2001-05-09,1300,Big Bar To Mcfarland,NA,NA,63,sunny,NA
-424,2001-05-30,NA,Hatchery Ditch,NA,NA,55,sunny,NA
-426,2001-06-05,600,Robinson Riffle,NA,NA,NA,sunny,NA
-427,2001-07-30,600,Steep Riffle,NA,NA,NA,sunny,NA
-427,2001-07-30,600,Eye Riffle,NA,NA,NA,sunny,NA
-427,2001-07-30,600,Robinson Riffle,NA,NA,NA,sunny,NA
-428,2001-07-31,1900,Macfarland Riffle,NA,NA,69,sunny,NA
-429,2001-07-31,1900,Goose Riffle,NA,NA,69,sunny,NA
-430,2001-07-31,1900,G95,NA,NA,67,sunny,NA
-433,2001-07-26,600,Hatchery Riffle,NA,NA,60,sunny,NA
-434,2001-07-26,600,Bedrock Riffle,NA,NA,60,sunny,NA
-436,2001-07-27,600,Matthews Riffle,NA,NA,NA,sunny,NA
-437,2001-08-13,5,Hatchery Ditch,NA,NA,60,sunny,NA
-438,2001-08-13,700,Hatchery Riffle,NA,NA,NA,sunny,NA
-438,2001-08-13,700,Auditorium Riffle,NA,NA,NA,sunny,NA
-440,2001-09-11,NA,Goose Riffle,NA,NA,NA,overcast,NA
-441,2001-09-11,NA,G-95  East Channel,NA,NA,NA,overcast,NA
-442,2001-09-11,NA,G95,NA,NA,NA,overcast,NA
-443,2001-09-10,NA,Hatchery Ditch,NA,NA,NA,overcast,NA
-444,2001-09-10,NA,Auditorium Riffle,NA,NA,NA,sunny,NA
-447,2001-09-10,NA,Steep Riffle,NA,NA,NA,sunny,NA
-448,2001-08-16,NA,Herringer Riffle,NA,NA,NA,sunny,NA
-449,2001-08-16,NA,Shallow Riffle,NA,NA,NA,sunny,NA
-450,2001-08-16,NA,Gridley Riffle,NA,NA,NA,sunny,NA
-451,2001-08-15,NA,Vance Riffle,NA,NA,NA,sunny,NA
-452,2001-08-15,NA,G95,NA,NA,NA,sunny,NA
-454,2001-08-15,NA,Kiester Riffle,NA,NA,NA,sunny,NA
-456,2001-08-14,600,Robinson Riffle,NA,NA,NA,sunny,NA
-457,2001-08-14,700,Steep Riffle,NA,NA,62,sunny,NA
-458,2001-08-14,600,Robinson Side,NA,NA,NA,sunny,NA
-459,2001-08-14,600,Robinson Side Channel,NA,NA,NA,sunny,NA
-460,2001-08-15,NA,Hour Riffle,NA,NA,NA,sunny,NA
-462,2001-08-15,600,Eye Riffle,NA,NA,NA,sunny,NA
-2,1999-06-30,7788,East Channel G95 Lower Section,NA,NA,65,sunny,NA
-9,1999-06-29,600,Lower Eye-Pool,NA,3.5,64.5,sunny,NA
-16,1999-06-04,1876,Swampy Bend,NA,1.70000004768372,65,overcast,NA
-20,1999-05-26,1884,G95 To Hour Glide,NA,NA,66.5,sunny,NA
-27,1999-05-20,627,Steep To Weir,NA,NA,57,overcast,NA
-33,1999-04-12,600,Upper Bedrock Pool To H70 Bridge,NA,NA,NA,NA,NA
-38,1999-04-14,4019,Palm Ave. Access,NA,NA,NA,NA,NA
-46,1999-04-29,621,Montgomery St. Park To Trailer Park Riffle,NA,NA,49.5,NA,NA
-55,1999-05-03,5025,Vance Ave To Big Hole Bw,NA,1.29999995231628,55,NA,NA
-59,1999-05-04,4293,Hour Bar Pool,NA,NA,56,NA,NA
-66,1999-05-13,620,Tble Mountain Bridge To Hatchery  Riffle,NA,NA,52,sunny,NA
-75,1999-05-19,622,Aleck Riffle,NA,NA,53.5,sunny,NA
-81,1999-07-22,624,Hatchery Ditch,NA,NA,60.5,sunny,NA
-87,1999-07-26,623,Aleck Riffle,NA,NA,61,sunny,NA
-90,1999-07-28,9564,Goose Riffle,NA,NA,65,sunny,NA
-109,1999-08-23,600,Hatchery Ditch,NA,NA,NA,sunny,NA
-115,1999-10-27,2450,Gateway Riffle,NA,NA,54,overcast,NA
-118,1999-10-27,2450,Across From Big Hole Boat Launch,NA,NA,NA,precipitation,NA
-126,1999-09-28,600,Bedrock Riffle,NA,NA,NA,sunny,NA
-132,1999-10-25,600,Auditorium Riffle,NA,NA,NA,sunny,NA
-135,1999-10-25,600,Matthews Riffle,NA,NA,NA,sunny,NA
-253,2000-06-07,600,Robinson Riffle,NA,NA,57,sunny,NA
-273,2000-03-21,NA,Hatchery Ditch,NA,NA,NA,sunny,NA
-275,2000-03-22,600,Hatchery Riffle,NA,NA,50,overcast,NA
-286,2000-04-06,2500,Vance Riffle,NA,NA,58,sunny,NA
-295,2000-04-26,600,Auditorium Riffle,NA,NA,55,sunny,NA
-301,2000-05-03,600,Trailer Park Riffle,NA,NA,55,sunny,NA
-313,2000-05-16,2500,Goose Riffle,NA,NA,57.5,overcast,NA
-310,2000-05-15,2500,Herring Side/Main Channel,NA,NA,59,precipitation,NA
-319,2000-05-25,600,Eye Riffle,NA,NA,62,sunny,NA
-331,2000-06-22,4000,Junkyard,NA,NA,68,sunny,NA
-337,2000-07-18,600,Aleck Riffle,NA,NA,62,sunny,NA
-342,2000-07-19,7000,Goose Riffle,NA,NA,66,sunny,NA
-350,2000-08-15,600,Robinson Riffle,NA,NA,66,sunny,NA
-354,2000-08-16,600,Steep Riffle,NA,NA,67,sunny,NA
-359,2000-08-21,NA,Macfarland,NA,NA,65,sunny,NA
-365,2000-09-11,600,Steep Riffle,NA,NA,NA,sunny,NA
-378,2001-03-08,1700,G95,NA,NA,52,overcast,NA
-383,2001-04-02,NA,Hatchery Ditch,NA,NA,NA,sunny,NA
-395,2001-05-01,600,Auditorium Riffle,NA,NA,NA,sunny,NA
-395,2001-05-01,600,Hatchery Ditch,NA,NA,NA,sunny,NA
-400,2001-07-02,600,Robinson Riffle,NA,2,NA,sunny,NA
-401,2001-07-02,NA,Steep Riffle,NA,2,NA,sunny,NA
-406,2001-06-06,NA,Goose Riffle,NA,NA,NA,sunny,NA
-412,2001-05-01,600,Hatchery Riffle,NA,NA,50,overcast,NA
-422,2001-05-09,1300,Goose Riffle,NA,0.5,61.5,sunny,NA
-431,2001-07-27,600,Aleck Riffle,NA,NA,NA,sunny,NA
-439,2001-09-11,NA,Eye Riffle,NA,NA,NA,overcast,NA
-446,2001-09-10,NA,Robinson Riffle,NA,NA,NA,sunny,NA
-455,2001-08-14,700,Aleck Riffle,NA,NA,61.5,sunny,NA
-461,2001-08-15,NA,Gateway Riffle,NA,NA,NA,sunny,NA
-8,1999-06-29,620,Eye Riffle,NA,3.5,64.5,sunny,NA
-24,1999-05-24,626,Gateway Riffle,NA,NA,60,sunny,NA
-48,1999-04-29,621,Steep To Eye,NA,NA,52.5,NA,NA
-57,1999-05-03,5025,G95,NA,NA,56,NA,NA
-68,1999-05-17,615,Auditorium Riffle,NA,NA,55.5,overcast,NA
-68,1999-05-17,615,Hatchery Ditch,NA,NA,55.5,overcast,NA
-83,1999-07-27,624,Eye Riffle,NA,4.90000009536743,64,sunny,NA
-83,1999-07-27,624,Gateway Riffle,NA,4.90000009536743,64,sunny,NA
-88,1999-07-26,623,Robinson Riffle,NA,NA,61,sunny,NA
-96,1999-08-23,600,Hatchery Ditch,NA,NA,55,sunny,NA
-101,1999-08-25,NA,Big Hole Island,NA,2.90000009536743,63,sunny,NA
-108,1999-08-24,600,Trailer Park To Matthews,NA,NA,59,overcast,NA
-127,1999-09-28,600,Hatchery Riffle,NA,NA,NA,sunny,NA
-127,1999-09-28,600,Auditorium Riffle,NA,NA,NA,sunny,NA
-250,2000-06-06,600,Hwy 70 Bridge To Hwy 162 Bridge,NA,NA,61,sunny,NA
-266,2000-02-29,600,Hatchery Riffle,NA,1.5,NA,precipitation,NA
-267,2000-02-29,600,Auditorium Riffle,NA,NA,NA,precipitation,NA
-278,2000-03-23,600,Trailer Park Riffle,NA,NA,49,sunny,NA
-278,2000-03-23,600,Matthews Riffle,NA,NA,49,sunny,NA
-278,2000-03-23,600,Aleck Riffle,NA,NA,49,sunny,NA
-278,2000-03-23,600,Robinson Riffle,NA,NA,49,sunny,NA
-292,2000-04-06,NA,Macfarland,NA,NA,58,sunny,NA
-302,2000-05-03,600,Matthews Riffle,NA,NA,56,sunny,NA
-322,2000-05-25,600,Robinson Riffle,NA,NA,61.5,sunny,NA
-325,2000-06-15,NA,Kiester Riffle,NA,NA,69,sunny,NA
-325,2000-06-15,NA,Goose Riffle,NA,NA,69,sunny,NA
-334,2000-07-17,NA,Hatchery Ditch,NA,NA,63,sunny,NA
-343,2000-07-19,7000,Macfarland Riffle,NA,NA,66.5,sunny,NA
-356,2000-08-16,600,Gateway Riffle,NA,1.10000002384186,NA,sunny,NA
-366,2000-09-11,600,Robinson Riffle,NA,NA,NA,sunny,NA
-376,2001-03-07,600,Bedrock Riffle,NA,NA,NA,sunny,NA
-384,2001-04-03,600,Auditorium Riffle,NA,NA,NA,sunny,NA
-392,2001-04-05,1550,Goose Riffle,NA,NA,NA,sunny,NA
-413,2001-05-09,1300,Mcfarland To Swampy Bend,NA,NA,64.5,sunny,NA
-423,2001-05-10,NA,Hatchery Ditch,NA,NA,55,sunny,NA
-435,2001-07-27,600,Trailer Park Riffle,NA,NA,NA,sunny,NA
-445,2001-09-10,NA,Hatchery Riffle,NA,NA,NA,sunny,NA
-453,2001-08-15,NA,Goose Riffle,NA,NA,NA,sunny,NA
-468,2003-04-23,600,Robinson Riffle,169-175,2,55.4,overcast,NA
-469,2003-04-23,600,Aleck Riffle,"119, 120, 121A",2,NA,overcast,NA
-471,2003-04-28,600,Eye Riffle,"205,210,215a,215b,216,215,217",0.5,54,precipitation,NA
-472,NA,600,Steep Riffle,"172.,185.189",0.5,54,precipitation,NA
-473,2003-04-30,NA,McFarland,449-452,0.7,59,sunny,NA
-474,2003-04-30,NA,Goose Riffle,"408,409,410",0.7,58,sunny,NA
-475,2003-04-30,NA,G95,323a-323b,0.7,58,sunny,NA
-476,2003-04-22,NA,Hatchery Ditch,26,NA,NA,sunny,NA
-477,2003-04-22,NA,Hatchery Ditch,26,NA,NA,overcast,NA
-478,2003-04-22,NA,Hatchery Ditch,26,NA,NA,overcast,NA
-479,2003-04-20,1,Hatchery Ditch,26,NA,NA,overcast,NA
-480,2003-04-22,600,Auditorium Riffle,"30,32",2,NA,overcast,NA
-481,2003-04-22,600,Auditorium Riffle,"32a,31,31a,30",2,NA,overcast,NA
-482,2003-04-22,600,Auditorium,"30,29.29a",2,NA,overcast,NA
-483,2003-04-22,600,Auditorium Riffle,30.29a,2,NA,overcast,NA
-484,2003-04-22,600,Auditorium Riffle,"30,29",2,NA,overcast,NA
-485,2003-04-21,NA,Hatchery Riffle,19.23.24.25.,1.5,53.4,overcast,NA
-486,2003-04-21,NA,Hatchery Riffle,"25,33",1.5,53.6,overcast,NA
-486,2003-04-21,NA,Hatchery Ditch,"25,33",1.5,53.6,overcast,NA
-487,2003-04-21,NA,Hatchery Ditch,33,1.5,53.6,overcast,NA
-488,2003-04-21,NA,Hatchery Ditch,33,2,53.6,precipitation,NA
-489,2003-04-21,NA,Hatchery Ditch,33,2,53.6,precipitation,NA
-490,2002-08-12,5000,Goose Riffle,409.412,NA,62,sunny,NA
-491,2002-08-12,5000,Goose,408 410 411 413,3,62,sunny,NA
-492,2003-08-12,5000,Macfarland,449 450 451 452 453,1,62,sunny,NA
-493,2002-07-25,NA,Aleck Riffle,119-127,2,50,sunny,NA
-494,2002-07-15,NA,Robinson Riffle,169-171  173-177  179  183,2,58,sunny,NA
-495,2002-07-15,700,Auditorium Riffle,29-32,2,NA,sunny,NA
-496,2002-07-09,5500,G95,323a-323b,0.5,66,sunny,NA
-497,2002-07-09,5500,Goose Riffle,408-413,0.3,65,sunny,NA
-498,2002-07-09,5500,Mcfarland,449-453,0.3,65,sunny,NA
-499,2002-08-08,600,Eye Riffle,"217,210,215,215b, 216",4,60,sunny,NA
-500,2002-08-08,600,Eye Riffle,"217, 210, 215,215b,216",4,60,sunny,NA
-501,2002-08-07,600,Steep Riffle,185 189,9,64,sunny,NA
-502,2002-08-06,600,Hatchery Riffle,"19, 23, 24, 25",9,60.5,sunny,NA
-503,2002-08-06,600,Aleck Riffle,"119, 120 121a",NA,63,sunny,NA
-504,2002-08-06,600,Robinson Riffle,"169-171, 173-177, 179, 183",9,62,sunny,NA
-505,2003-08-05,600,Hatchery Ditch,29-33,3,NA,sunny,NA
-505,2003-08-05,600,Auditorium Riffle,29-33,3,NA,sunny,NA
-506,2002-08-05,600,Hatchery Ditch,"26, 33,29-32",3,NA,sunny,NA
-507,2002-07-15,NA,Hatchery Ditch,33 26,NA,57,sunny,NA
-508,2002-08-05,600,Hatchery Ditch,"26, 33",3,NA,sunny,NA
-509,2002-08-05,600,Auditorium Riffle,29-32,3,NA,sunny,NA
-510,2002-08-06,600,Robinson Riffle,"169-171, 173-177, 179, 183",NA,62,sunny,NA
-511,2002-08-06,600,Hatchery Riffle,"19, 23, 24, 25",NA,60.5,sunny,NA
-512,2002-08-06,600,Aleck Riffle,"119, 120, 121A",NA,63,sunny,NA
-513,2002-08-07,600,Steep Riffle,"185, 189",NA,64,sunny,NA
-514,2002-08-08,600,Eye Riffle,"200, 210, 215-217",4,60,sunny,NA
-515,2002-07-15,NA,Hatchery Ditch,"33, 26",NA,57,sunny,NA
-516,2002-07-11,700,Steep Riffle,185,3,67,sunny,NA
-517,2002-07-15,600,Steep Riffle,189,NA,NA,sunny,NA
-518,2002-02-10,700,Eye Riffle,"200, 210, 215, 216, 217",3,62,sunny,NA
-519,2002-07-10,700,Eye Riffle,"200, 210, 215, 216, 217",3,62,sunny,NA
-520,2002-07-10,700,Eye Riffle,"215, 210",3,64.5,sunny,NA
-521,2002-06-17,4000,Big Riffle,"424, 430, 433, 437, 429, 435",0.5,NA,sunny,NA
-522,2002-06-17,4000,Goose Riffle,"410, 413, 419, 420, 423, 444, 448A, 452, 451, 457",1,NA,sunny,NA
-523,2002-06-17,4000,McFarland,"425, 428, 431, 434, 436, 438, 440, 445, 447, 450+",1,NA,sunny,NA
-524,2002-06-17,NA,McFarland,"442, 443, 444, 447, 450, 456, 458, 461, 464",NA,NA,NA,NA
-525,2002-06-15,NA,Hour,"338-370, 374",0.5,NA,sunny,NA
-526,2002-06-13,NA,Lower Hour,376-394,NA,NA,NA,NA
-527,2002-06-13,NA,Kiester Riffle,NA,NA,NA,NA,NA
-528,2002-06-12,3500,Vance Riffle,NA,0.5,NA,sunny,NA
-529,2002-06-11,NA,Eye Riffle,"215A, 215B, 205, 217, 215",NA,58,sunny,NA
-530,2002-06-11,NA,Gateway Riffle,"200, 218, 220, 215",NA,59,sunny,NA
-531,2002-06-11,NA,Thermalito Pool,231,NA,61,sunny,NA
-532,2002-06-10,600,Lower Robinson,"183, 176, 179, 180, 177, 172",NA,NA,NA,NA
-533,2002-06-10,600,Steep Riffle,"185, 182, 190, 189, 191, 192, 193",NA,NA,sunny,NA
-533,2002-06-10,600,Eye Riffle,"185, 182, 190, 189, 191, 192, 193",NA,NA,sunny,NA
-534,2002-06-06,600,Matthews Riffle,NA,2,55,sunny,NA
-534,2002-06-06,600,Aleck Riffle,NA,2,55,sunny,NA
-534,2002-06-06,600,Robinson Riffle,NA,2,55,sunny,NA
-535,2002-06-05,600,Auditorium To Bedrock,"37-38, 40, 46, 54",NA,NA,sunny,NA
-536,2002-06-05,600,Bedrock Riffle,"56, 59, 51, 92, 96, 100",NA,NA,sunny,NA
-536,2002-06-05,600,Trailer Park Riffle,"56, 59, 51, 92, 96, 100",NA,NA,sunny,NA
-537,2002-06-05,600,NA,"57, 92, 96, 100",NA,NA,sunny,NA
-538,2002-06-05,600,Bedrock Riffle,"38, 42, 44, 49, 51, 52, 55",NA,NA,sunny,NA
-539,2002-06-05,600,Bedrock Riffle,"56, 94",NA,NA,sunny,NA
-539,2002-06-05,600,Matthews Riffle,"56, 94",NA,NA,sunny,NA
-540,2002-06-05,600,Matthews Riffle,"102, 104, 105",NA,NA,sunny,NA
-541,2002-06-05,600,Hatchery Ditch,26,NA,NA,sunny,NA
-542,2002-06-04,600,Hatchery Riffle,1-22,NA,55,sunny,NA
-542,2002-06-04,600,Auditorium Riffle,1-22,NA,55,sunny,NA
-543,2001-03-07,600,Aleck Riffle,"119, 120, 121A",NA,NA,precipitation,NA
-544,2001-03-07,600,Robinson Riffle,"169,170,171,173,174,175",NA,NA,precipitation,NA
-545,2001-03-07,600,Steep Riffle,"185, 189",NA,NA,precipitation,NA
-2,2007-06-27,NA,NA,NA,NA,NA,NA,NA
-4,2007-07-17,NA,NA,NA,NA,NA,NA,NA
-5,2007-07-18,NA,NA,NA,NA,NA,NA,NA
-6,2007-07-19,NA,NA,NA,NA,NA,NA,NA
-7,2007-08-13,NA,NA,NA,NA,NA,NA,NA
-8,2007-08-14,NA,NA,NA,NA,NA,NA,NA
-9,2007-08-15,NA,NA,NA,NA,NA,NA,NA
-10,2007-08-16,NA,NA,NA,NA,NA,NA,NA
-13,2005-06-21,NA,NA,NA,NA,NA,NA,NA
-14,2005-07-12,NA,NA,NA,NA,NA,NA,NA
-16,2005-08-09,NA,NA,NA,NA,NA,NA,NA
-18,2005-04-21,NA,NA,NA,NA,NA,NA,NA
-19,2005-04-19,NA,NA,NA,NA,NA,NA,NA
-20,2005-04-14,NA,NA,NA,NA,NA,NA,NA
-22,2005-04-12,NA,NA,NA,NA,NA,NA,NA
-24,2004-08-19,NA,NA,NA,NA,NA,NA,NA
-25,2004-08-18,NA,NA,NA,NA,NA,NA,NA
-26,2004-08-17,NA,NA,NA,NA,NA,NA,NA
-27,2004-08-16,NA,NA,NA,NA,NA,NA,NA
-29,2004-07-22,NA,NA,NA,NA,NA,NA,NA
-31,2004-07-15,NA,NA,NA,NA,NA,NA,NA
-32,2004-07-13,NA,NA,NA,NA,NA,NA,NA
-35,2004-05-25,NA,NA,NA,NA,NA,NA,NA
-36,2004-05-19,NA,NA,NA,NA,NA,NA,NA
-37,2004-05-03,NA,NA,NA,NA,NA,NA,NA
-38,2004-04-29,NA,NA,NA,NA,NA,NA,NA
-40,2004-04-26,NA,NA,NA,NA,NA,NA,NA
-45,2010-08-10,620,NA,NA,NA,62.8,sunny,0
-46,2010-08-11,620,NA,NA,NA,64.8,sunny,0
-48,2010-08-17,620,NA,NA,NA,65.2,sunny,0
-49,2010-08-19,620,NA,NA,NA,60,sunny,0
-52,2010-09-15,620,NA,NA,NA,58,sunny,0
-53,2010-09-16,620,NA,NA,NA,58,clear,0
-55,2011-04-19,620,NA,NA,NA,0,cloudy,0
-56,2011-04-20,620,NA,NA,NA,0,cloudy,0.78
-11,2005-05-25,NA,NA,NA,NA,NA,NA,NA
-21,2005-04-13,NA,NA,NA,NA,NA,NA,NA
-30,2004-07-20,NA,NA,NA,NA,NA,NA,NA
-58,2011-04-25,620,NA,NA,NA,11,cloudy,0.92
-59,2011-05-02,620,NA,NA,NA,12,sunny,2.85
-61,2011-05-04,620,NA,NA,NA,13,clear,0.42
-62,2011-05-09,620,NA,NA,NA,12,clear,0
-63,2011-05-10,620,NA,NA,NA,12,clear,0.03
-65,2011-06-28,620,NA,NA,NA,58,precipitation,0.48
-66,2011-06-29,620,NA,NA,NA,59,cloudy,0.04
-68,2011-07-18,600,NA,NA,NA,15,clear,0.49
-69,2011-07-19,620,NA,NA,NA,14.5,clear,0.65
-70,2011-07-20,600,NA,NA,NA,16,clear,0
-72,2011-08-15,620,NA,NA,NA,61,clear,1.05
-73,2011-08-16,620,NA,NA,NA,18,sunny,0.55
-74,2011-08-17,620,NA,NA,NA,18,sunny,0.97
-77,2011-08-23,1350,NA,NA,NA,21,sunny,4.18
-78,2012-05-02,620,NA,NA,NA,13,sunny,1.1
-80,2012-05-03,600,NA,NA,NA,53.6,cloudy,0.67
-81,2012-05-07,620,NA,NA,NA,60,sunny,1.16
-82,2012-05-08,600,NA,NA,NA,60.8,cloudy,1.1
-83,2012-05-10,620,NA,NA,NA,56.3,windy,0
-84,2012-05-14,2000,NA,NA,NA,62.6,clear,2.55
-86,2012-06-13,620,NA,NA,NA,55.4,sunny,0
-87,2012-06-19,5000,NA,NA,NA,57.2,sunny,1.6
-88,2012-06-21,5000,NA,NA,NA,59.9,clear,2.18
-89,2012-07-03,7000,NA,NA,NA,19,sunny,3.19
-91,2012-07-11,1000,NA,NA,NA,15,sunny,0.93
-92,2012-07-11,1000,NA,NA,NA,15,sunny,0.93
-93,2012-07-12,1000,NA,NA,NA,14.5,sunny,1.26
-313,2018-02-14,1000,Eye Riffle,215A 215B 216 217 210,NA,48.2,clear,0
-316,2018-02-15,1750,G95,323A 323B,NA,49.1,clear and windy,0
-317,2018-03-19,800,Hatchery Riffle,19 23 24 25,NA,47.6,clear,0.8
-320,2018-03-20,1050,McFarland,450,NA,50.9,precipitation,0
-322,2018-03-28,800,Bedrock Park Riffle,55 56,NA,48.2,clear,0.3
-323,2018-03-28,800,Aleck Riffle,119,NA,66.2,clear,0
-324,2018-03-29,NA,Vance Riffle,268,NA,56.3,clear,0.75
-327,2018-04-10,3250,Hatchery Riffle,28,NA,50,cloudy,0
-328,2018-04-12,2500,Gateway Riffle,225 228 221 229,NA,48.2,clear,1
-329,2018-04-12,5000,Vance Riffle,268,NA,51.8,clear,1
-330,2018-04-16,5000,Junkyard Riffle,499 502,NA,50,NA,0
-333,2018-04-17,1300,Steep Riffle,189 185,NA,49.46,clear,0
-334,2018-04-17,1300,Eye Riffle,215A 215B 217 216 210,NA,50.9,clear,0
-332,2018-04-16,5000,Big Riffle,426 424,NA,0,cloudy,0
-335,2018-04-17,0,G95,323A 323B,NA,53.6,clear,0
-336,2018-04-18,0,Trailer Park Riffle,96 97 98,NA,0,cloudy,0
-337,2018-04-18,0,Robinson Riffle,169-175,NA,0,cloudy,0
-338,2018-04-18,0,Matthews Riffle,103 104 105,NA,0,cloudy,0
-339,2018-05-07,0,Junkyard Riffle,499 502,NA,64.4,clear,1.5
-340,2018-05-07,0,Gridley Riffle,486 487,NA,66.2,clear,2
-341,2018-05-07,0,McFarland,450,NA,61.1,clear,2
-342,2018-05-07,0,Big Riffle,426 424,NA,62.6,clear,2
-343,2018-05-08,750,Robinson Riffle,173 174 175 170 169 171,NA,54.9,clear,0
-344,2018-05-08,750,Aleck Riffle,120 119,NA,55.4,clear,0
-345,2018-05-08,750,Matthews Riffle,103 104 105,NA,55.4,clear,0
-346,2018-05-08,750,Trailer Park Riffle,96 97 98,NA,55.4,clear,0
-347,2018-05-09,1050,Kiester Riffle,402 403 397,NA,59,clear,2
-348,2018-05-09,1050,Goose Riffle,408,NA,60.8,clear,2
-349,2018-05-09,1050,G95,323A 323B,NA,60.8,clear,2
-350,2018-05-10,0,Steep Riffle,185 189,NA,54.5,clear,NA
-352,2018-05-10,800,Gateway Riffle,221 225 226 228 229,NA,0,cloudy,0
-354,2018-05-14,800,Hatchery Riffle,33 26 28,NA,0,clear,0
-355,2018-05-15,800,Auditorium Riffle,29 30 31 32,NA,53.6,clear,1
-356,2018-05-15,800,Bedrock Park Riffle,55 56,NA,55.4,clear,1
-357,2018-05-16,1050,Vance Riffle,266 268,NA,59,NA,2
-358,2018-06-12,0,Junkyard Riffle,502 499,NA,68,clear,0
-331,2018-04-16,5000,Gridley Riffle,486 487,NA,68,cloudy,0
-359,2018-06-12,0,Gridley Riffle,486 487,NA,71.6,clear,0
-360,2018-06-12,0,McFarland,450,NA,69.8,clear,0
-361,2018-06-12,0,Big Riffle,424 426,NA,68.9,clear,0
-362,2018-06-12,1650,Goose Riffle,408,NA,70.7,clear,0
-363,2018-06-13,1650,Kiester Riffle,397 402 403,NA,68.9,clear,1
-364,2018-06-13,1650,G95,323A 323B,NA,68,clear,0
-365,2018-06-13,1650,Vance Riffle,266 268,NA,68,clear,0
-369,2018-06-14,1400,Matthews Riffle,103 104 105,NA,60.8,clear,1
-371,2018-06-18,1450,Hatchery Riffle,19 23 24 25,NA,60.8,clear,0
-372,2018-06-18,1450,Auditorium Riffle,30 31 32 29,NA,60.8,clear,0
-373,2018-06-18,1450,Hatchery Ditch,26 33,NA,61.7,clear,0
-374,2018-06-18,1450,Hatchery Ditch,28,NA,61.5,clear,0
-375,2018-06-18,1400,Bedrock Park Riffle,55 56,NA,61.5,clear,2
-376,2018-06-19,1450,Steep Riffle,185 189,NA,62.6,clear,0
-377,2018-06-19,1450,Eye Riffle,"215 A,B 216 210 217",NA,64.4,clear,1.5
-378,2018-07-17,4500,Junkyard Riffle,499,NA,68,clear,0
-379,2018-07-17,4500,Gridley Riffle,486 487,NA,68,clear,0
-380,2018-07-17,4500,McFarland,450,NA,68,clear,0
-381,2018-07-17,4500,Big Riffle,424 426,NA,68.9,NA,1.2
-382,2018-07-18,4500,Kiester Riffle,403 397 402,NA,68,NA,1.2
-383,2018-07-18,4500,Goose Riffle,408,NA,68,NA,1.2
-302,2018-02-12,1000,Hatchery Riffle,19 23 24 25,NA,47.48,clear,1.5
-303,2018-02-12,1000,Bedrock Park Riffle,55 56,NA,47.3,clear,1.5
-304,2018-02-13,1000,Trailer Park Riffle,96 97 98,NA,47.48,clear,0
-305,2018-02-13,1000,Matthews Riffle,103 104 105,NA,48.2,clear,0
-311,2018-02-13,1000,Aleck Riffle,119 120,NA,48.56,clear,0
-15,2005-07-13,NA,NA,NA,NA,NA,NA,NA
-33,2004-05-27,NA,NA,NA,NA,NA,NA,NA
-51,2010-09-14,620,NA,NA,NA,64,clear,0
-64,2011-05-11,620,NA,NA,NA,13,cloudy,0
-75,2011-08-18,820,NA,NA,NA,17,sunny,2.52
-97,2012-08-09,1120,NA,NA,NA,14.5,clear,0.88
-105,2013-08-12,5500,NA,NA,NA,0,sunny,0
-159,2015-08-24,1500,Gridley Riffle,"486,487",NA,66.2,clear,0
-195,2016-04-26,1050,Big Riffle,424 426,NA,55.4,sunny,0
-213,2016-05-19,4500,Goose Riffle,408,NA,60.8,clear,0
-236,2016-07-26,4000,Hatchery Ditch,33 26 28,NA,59,clear,0
-245,2016-08-22,1600,Auditorium Riffle,29 30 31 32,NA,59.9,clear,0
-266,2017-07-18,0,G95,323A 323B,NA,64.4,clear,0
-288,2017-08-08,0,Aleck Riffle,119 120,NA,60.8,clear,0
-384,2018-07-18,4500,G95,323A 323B,NA,68.9,NA,1.4
-386,2018-07-19,1400,Gateway Riffle,"221,225,226,228,229",NA,62.6,clear,0
-387,2018-07-19,1400,Eye Riffle,"210, 217, 216, 215A, 215B,",NA,62.6,clear,0
-388,2018-07-19,1400,Steep Riffle,"185, 189",NA,0,NA,3
-94,2012-07-16,1000,NA,NA,NA,0,sunny,1.4
-95,2012-07-17,1000,NA,NA,NA,16,cloudy,1.53
-96,2012-08-07,1120,NA,NA,NA,16.2,sunny,2.15
-98,2012-08-13,1120,NA,NA,NA,16,sunny,1.75
-100,2012-08-15,5500,NA,NA,NA,18,clear,1.87
-101,2013-07-16,2500,NA,NA,NA,60,sunny,0
-102,2013-07-16,2500,NA,NA,NA,60,sunny,0
-104,2013-07-23,5500,NA,NA,NA,64,NA,0
-106,NA,0,NA,NA,NA,62,NA,0
-107,2013-08-13,2500,NA,NA,NA,0,NA,0
-109,2015-07-27,1898,Hatchery Ditch,"33, 26",NA,60.3,clear,0
-149,2015-08-19,1100,Steep Riffle,"185,189",NA,61.2,clear,0
-151,2015-08-19,1100,Gateway Riffle,"221,225,226,228,229",NA,62.6,clear,0
-153,2015-08-20,1500,G95,"323A,323B",NA,65.3,NA,0
-154,2015-08-20,1500,Kiester Riffle,"397,402,403",NA,66.2,NA,0
-155,2015-08-20,1500,Goose Riffle,408,NA,67.1,NA,0
-156,2015-08-24,1500,Big Riffle,"424,426",NA,64.4,clear,0
-157,2015-08-24,1500,McFarland,"441,445",NA,65.3,clear,0
-161,2015-09-08,830,Hatchery Riffle,"19,23,24,25",NA,58.1,clear,0
-162,2015-09-08,835,Auditorium Riffle,"29,30,31,32",NA,56.3,clear,0
-163,2015-09-08,830,Hatchery Ditch,"26,33,28",NA,56.3,clear,0
-164,2015-09-09,800,Bedrock Park Riffle,"55,56",NA,56.3,clear,0
-165,2015-09-09,800,Trailer Park Riffle,"96,97,98",NA,57.2,clear,0
-166,2015-09-09,800,Aleck Riffle,"119,120",NA,58.1,clear,0
-167,2015-09-09,800,Matthews Riffle,"103,104,105",NA,57.6,clear,0
-168,2015-09-10,800,Robinson Riffle,NA,NA,56.3,clear,0
-170,2015-09-10,800,Eye Riffle,"215A, 215B, 216, 217, 210",NA,59.9,clear,0
-171,2015-09-14,800,Gateway Riffle,"226, 228, 229, 221, 225",NA,54.5,cloudy,0
-172,2015-09-14,1200,Vance Riffle,"266, 268",NA,59,precipitation,0
-173,2015-09-14,1200,G95,"323A, 323B",NA,59.9,cloudy,0
-174,2015-09-14,1200,Kiester Riffle,"397, 402, 403",NA,60.4,NA,0
-176,2015-09-15,1200,Big Riffle,"424, 426",NA,59.9,cloudy,0
-71,2011-07-28,1950,NA,NA,NA,20,clear,0
-178,2015-09-15,1200,McFarland,450,NA,59.9,cloudy,0
-179,2015-09-15,1200,Junkyard Riffle,"502, 499",NA,61,NA,0
-180,2016-04-18,0,Hatchery Riffle,19 23 24 25,NA,53.6,clear,0
-181,2016-04-18,0,Auditorium Riffle,29 30 31 32,NA,53.6,clear,0
-182,2016-04-18,0,Hatchery Ditch,33 26 28,NA,53.6,clear,0
-184,2016-04-19,0,Trailer Park Riffle,96 97 98,NA,53.6,clear,0
-185,2016-04-19,0,Matthews Riffle,103 104 105,NA,56.7,clear,0
-186,2016-04-19,0,Aleck Riffle,119 120,NA,55.4,clear,0
-187,2016-04-19,0,Robinson Riffle,171 170 169 174 175 173,NA,57.2,clear,0
-188,2016-04-20,800,Steep Riffle,189 185,NA,55.4,sunny,0
-189,2016-04-20,800,Eye Riffle,210 215A 215B 216 217,NA,55.4,sunny,0
-190,2016-04-20,800,Gateway Riffle,221 225 226 228 229,NA,56.3,clear,0
-192,2016-04-21,0,G95,323A 323B,NA,60.8,clear,0
-193,2016-04-21,1070,Kiester Riffle,402 397 403,NA,59.9,clear,0
-194,2016-04-21,1070,Goose Riffle,408,NA,61.7,clear,0
-196,2016-04-26,0,McFarland,441 445,NA,55.4,clear,0
-198,2016-04-26,1050,Junkyard Riffle,499 502,NA,56.3,cloudy,0
-199,2016-05-16,1700,Hatchery Riffle,23 24 25,NA,50.9,clear,0
-200,2016-05-16,1700,Auditorium Riffle,29 30 31 32,NA,50.9,clear,0
-201,2016-05-16,1700,Hatchery Ditch,26 28 33,NA,51.3,clear,0
-76,2011-08-22,1350,NA,NA,NA,20,NA,2.93
-203,2016-05-17,1700,Trailer Park Riffle,96 97 98,NA,50.9,clear,0
-204,2016-05-17,1700,Matthews Riffle,103 104 105,NA,51.8,clear,0
-205,2016-05-17,1700,Aleck Riffle,119 120,NA,52.7,clear,0
-206,2016-05-17,1700,Robinson Riffle,169 170 171 173 174 175,NA,54.5,clear,0
-207,2016-05-18,1700,Steep Riffle,189,NA,51.8,clear,0
-209,2016-05-18,1700,Gateway Riffle,221 226 228 229,NA,53.6,clear,0
-210,2016-05-18,4500,Vance Riffle,266 268,NA,62.6,clear,0
-212,2016-05-19,4500,Kiester Riffle,397 402 403,NA,60.8,clear,0
-214,2016-05-19,4500,Big Riffle,424 426,NA,60.8,clear,0
-215,2016-05-19,4500,McFarland,441 445,NA,61.7,clear,0
-216,2016-05-26,3200,McFarland,450,NA,59.9,clear,0
-217,2016-05-26,3250,Gridley Riffle,486 487,NA,59.9,clear,0
-218,2016-05-26,3250,Junkyard Riffle,499 502,NA,58.5,clear,0
-220,2016-06-22,5500,G95,323A/B,NA,58.8,clear,0
-221,2016-06-22,5500,Kiester Riffle,397 403 402,NA,59,clear,0
-222,2016-06-22,5500,Goose Riffle,408,NA,59.9,clear,0
-223,2016-06-22,5500,Big Riffle,424 426,NA,59.9,clear,0
-224,2016-06-22,5500,McFarland,441 445,NA,60.8,clear,0
-226,2016-06-23,5500,Gridley Riffle,486 487,NA,59.9,clear,0
-227,2016-06-23,5500,Junkyard Riffle,499 502,NA,60.8,clear,0
-228,2016-07-18,0,Gridley Riffle,HGSC,NA,63.5,clear,0
-229,2016-07-18,0,Herringer Pond Rl,HPRL,NA,63.9,clear,0
-235,2016-07-26,4000,Auditorium Riffle,29 31,NA,59,clear,0
-237,2016-07-26,4000,Bedrock Park Riffle,55 56,NA,59.9,clear,0
-238,2016-07-26,4000,Trailer Park Riffle,97 98,NA,59.9,clear,0
-239,2016-07-27,4000,Robinson Riffle,170 174,NA,62.6,clear,0
-240,2016-07-27,4000,Gateway Riffle,226,NA,62.6,clear,0
-246,2016-08-22,0,Hatchery Ditch,33 26,NA,14.8,clear,0
-247,2016-08-22,0,Hatchery Ditch,28,NA,59,clear,0
-248,2016-08-22,1600,Bedrock Park Riffle,55 56,NA,59.9,clear,0
-249,2016-08-23,1600,Trailer Park Riffle,96 97 98,NA,59,clear,0
-251,2016-08-23,0,Aleck Riffle,119 120,NA,62.6,clear,0
-252,2016-08-24,0,Robinson Riffle,169 170 171 173 174 175,NA,59,clear,0
-253,2016-08-24,0,Steep Riffle,185 189,NA,60.8,NA,0
-254,2016-08-24,0,Eye Riffle,210 217 216 215A 215B,NA,62.6,clear,0
-255,2016-08-25,1600,Gateway Riffle,226 228 229 221,NA,59.9,clear,0
-79,2012-05-02,620,NA,NA,NA,13,clear,1.1
-318,2018-03-19,800,Hatchery Riffle,33 26,NA,46.4,clear,0
-389,2018-07-23,1400,Robinson Riffle,"169, 170, 171, 173, 174, 175",NA,59,clear,0
-390,2018-07-23,1400,Aleck Riffle,119 120,NA,59.9,clear,3
-391,2018-07-23,1400,Matthews Riffle,"103,104, 105",NA,61.7,clear,3
-392,2018-07-23,1400,Trailer Park Riffle,"96, 97, 98",NA,61.7,clear,2.5
-393,2018-07-24,1400,Hatchery Riffle,19 23 24 25,NA,60.35,clear,0
-394,2018-07-24,1400,Auditorium Riffle,29 30 31 32,NA,0,clear,0
-395,2018-07-24,1400,Hatchery Ditch,33 26 28,NA,62.6,clear,0
-396,2018-07-24,1400,Bedrock Park Riffle,55 56,NA,60.8,clear,3
-397,2018-08-14,6000,Junkyard Riffle,499,NA,66.2,clear,0
-398,2018-08-14,6020,Gridley Riffle,486 487,NA,65.3,clear,0
-399,2018-08-14,6020,McFarland,450,NA,65.3,clear,0
-400,2018-08-14,6000,Big Riffle,424 426,NA,65.3,clear,0
-401,2018-08-15,1200,Steep Riffle,185 189,NA,59.9,clear,0
-402,2018-08-15,1200,Eye Riffle,215A 215B 216 217 210,NA,60.8,clear,0
-403,2018-08-15,1200,Gateway Riffle,228 221 225 226 228,NA,62.6,clear,0
-404,2018-08-20,1200,Robinson Riffle,169 170 171 173 175 175,NA,57.2,clear,1.5
-405,2018-08-20,1200,Aleck Riffle,119 120,NA,59,clear,0
-406,2018-08-20,1200,Matthews Riffle,103 104 105,NA,59,clear,0
-407,2018-08-20,1200,Trailer Park Riffle,96 97 98,NA,0,clear,0
-408,2018-08-20,1200,Bedrock Park Riffle,55 56,NA,59.9,clear,0
-409,2018-08-21,6000,Vance Riffle,260,NA,62.6,NA,0
-410,2018-08-21,6020,G95,323A 323B,NA,64.4,clear,0
-411,2018-08-21,6000,Kiester Riffle,402,NA,64.4,clear,1.5
-412,2018-08-21,6000,Goose Riffle,408,NA,64.4,clear,1.5
-256,2016-08-25,0,Hatchery Riffle,All,NA,62.6,clear,0
-257,2016-08-25,1300,Bedrock Park Riffle,55 56,NA,63.5,clear,0
-258,2016-08-29,6600,Gridley Riffle,HGSC,NA,65.3,NA,0
-259,2016-08-29,0,Big Riffle,BRB,NA,65.3,NA,0
-260,2016-09-01,6300,Goose Riffle,408,NA,63.5,clear,0
-262,2017-07-17,0,Steep Riffle,"185, 189",NA,62.6,clear,0
-263,2017-07-17,0,Eye Riffle,"215A, 215B, 216, 217",NA,64.4,clear,0
-264,2017-07-17,0,Gateway Riffle,"221, 225, 226, 228, 229",NA,64.4,clear,0
-265,2017-07-17,0,Vance Riffle,266 268,NA,68,clear,0
-267,2017-07-18,0,Kiester Riffle,402 403 397,NA,68,clear,0
-269,2017-07-18,0,Big Riffle,424 426,NA,68,clear,0
-270,2017-07-20,0,Hatchery Riffle,19 23 24 25,NA,62.6,clear,0
-271,2017-07-20,0,Auditorium Riffle,29-32,NA,62.6,clear,0
-272,2017-07-20,0,Hatchery Ditch,33 26 28,NA,60.8,clear,0
-273,2017-07-24,0,Bedrock Park Riffle,55 56,NA,59,clear,0
-275,2017-07-24,0,Matthews Riffle,105 104 103,NA,60.8,clear,0
-276,2017-07-24,0,Aleck Riffle,119 120,NA,61.7,clear,0
-277,2017-07-24,0,Robinson Riffle,169 170 173 174 175,NA,64.4,clear,0
-278,2017-07-25,0,McFarland,441 445,NA,67.1,clear,0
-279,2017-07-25,0,McFarland,450,NA,68,clear,0
-281,2017-07-25,0,Junkyard Riffle,499 502,NA,69.8,clear,0
-282,2017-08-07,0,Hatchery Riffle,19 23-25,NA,59.9,clear,0
-283,2017-08-07,0,Auditorium Riffle,29-32,NA,59.9,clear,0
-250,2016-08-23,0,Matthews Riffle,103-105,NA,62.6,clear,0
-284,2017-08-07,0,Hatchery Ditch,33 28,NA,67.1,clear,1.5
-285,2017-08-07,0,Bedrock Park Riffle,55 56,NA,60.8,clear,0
-286,2017-08-08,0,Trailer Park Riffle,96 97 98,NA,58.1,clear,0
-289,2017-08-08,0,Robinson Riffle,173 174 175 171 170169,NA,60.8,clear,1.3
-290,2017-08-09,0,Steep Riffle,185 189,NA,59,clear,0
-291,2017-08-09,0,Eye Riffle,215A 215B 216 217 210,NA,60.8,clear,0
-292,2017-08-09,0,Gateway Riffle,221 225 226 228 229,NA,61.7,clear,0
-293,2017-08-09,0,Vance Riffle,268,NA,66.2,clear,0
-294,2017-08-10,0,G95,323B,NA,63.5,clear,0.9
-295,2017-08-10,0,Kiester Riffle,403,NA,66.2,clear,1.1
-297,2017-08-10,0,Big Riffle,424,NA,66.2,clear,0
-298,2017-08-14,0,Gridley Riffle,486 487,NA,65.3,clear,1.3
-299,2017-08-14,0,Junkyard Riffle,499 502,NA,65.3,clear,0
-300,2018-02-12,1000,Hatchery Ditch,33 26,NA,47.6,clear,2
-301,2018-02-12,1000,Hatchery Ditch,28,NA,46.4,clear,1.5
-1,2007-06-27,NA,NA,NA,NA,NA,NA,NA
-3,2007-07-16,NA,NA,"26,33,30,31,31a,32,32a",NA,NA,clear,NA
-12,2005-05-26,NA,NA,NA,NA,NA,NA,NA
-17,2005-05-23,NA,NA,NA,NA,NA,NA,NA
-23,2004-08-24,NA,NA,NA,NA,NA,NA,NA
-28,2004-08-12,NA,NA,NA,NA,NA,NA,NA
-34,2004-05-26,NA,NA,NA,NA,NA,NA,NA
-39,2004-04-28,NA,NA,NA,NA,NA,NA,NA
-202,2016-05-16,1700,Bedrock Park Riffle,55 56,NA,53.6,clear,0
-121,2015-07-30,0,Gateway Riffle,"221,225,226,228,229",NA,61.3,clear,0
-41,2004-04-21,NA,NA,NA,NA,NA,NA,NA
-47,2010-08-16,620,NA,NA,NA,61,clear,0
-50,2010-09-13,620,NA,NA,NA,56,sunny,0
-54,2011-04-19,620,NA,NA,NA,0,cloudy,0
-57,2011-04-26,620,NA,NA,NA,10.5,sunny,1.68
-60,2011-05-03,620,NA,NA,NA,12.5,sunny,2.56
-67,2011-06-30,620,NA,NA,NA,15,sunny,0.33
-85,2012-06-07,0,NA,NA,NA,59,clear,2.5
-90,2012-07-11,1000,NA,NA,NA,15,sunny,0.93
-99,2012-08-14,5500,NA,NA,NA,18,NA,1.08
-103,2013-07-16,2500,NA,NA,NA,60,sunny,0
-152,2015-08-20,1500,Vance Riffle,"266,268",NA,63.5,NA,0
-160,2015-08-24,1500,Junkyard Riffle,"499,502",NA,68,clear,0
-169,2015-09-10,800,Steep Riffle,"189,185",NA,58.8,clear,0
-175,2015-09-14,1200,Goose Riffle,408,NA,60.8,cloudy,0
-177,2015-09-15,1200,McFarland,"441, 445",NA,60.4,cloudy,0
-183,2016-04-18,0,Bedrock Park Riffle,55 56,NA,57.2,clear,0
-191,2016-04-20,0,Vance Riffle,266 268,NA,59,clear,0
-197,2016-04-26,0,McFarland,450,NA,55.4,clear,0
-211,2016-05-18,4500,G95,323A/B,NA,62.6,clear,0
-219,2016-06-22,5500,Vance Riffle,266 268,NA,57.2,clear,0
-225,2016-06-23,5500,McFarland,450,NA,59,clear,0
-234,2016-07-26,4000,Hatchery Riffle,23 24,NA,59,clear,0
-244,2016-08-22,1600,Hatchery Riffle,23 24 25,NA,59.9,clear,0
-122,2015-07-30,0,G95,323A/B,NA,65.3,clear,0
-261,2016-09-01,6300,G95,323A 323B,NA,64,clear,0
-268,2017-07-18,0,Goose Riffle,408,NA,66.2,clear,0
-274,2017-07-24,0,Trailer Park Riffle,96 97 98,NA,59.9,clear,0
-280,2017-07-25,0,Gridley Riffle,487 486,NA,68.9,clear,0
-287,2017-08-08,0,Matthews Riffle,103 104 105,NA,59,clear,0
-296,2017-08-10,0,Goose Riffle,408,NA,62.6,clear,0
-413,2018-08-22,0,Hatchery Riffle,19 23-25,NA,59,clear,2.2
-415,2018-08-22,1200,Hatchery Ditch,26 33 28,NA,59.9,clear,0
-416,2018-09-11,800,Robinson Riffle,169-171 173-175,NA,56.3,clear,1.8
-418,2018-09-11,800,Trailer Park Riffle,96 97 98,NA,58.1,clear,0
-420,2018-09-12,6000,Junkyard Riffle,499,NA,60.8,NA,0
-421,2018-09-12,6000,Gridley Riffle,486 487,NA,60.8,NA,NA
-426,2018-09-17,800,Gateway Riffle,221 225 226 228 229,NA,54.5,clear,0
-427,2018-09-17,800,Steep Riffle,189 185,NA,54.5,clear,0
-428,2018-09-17,800,Eye Riffle,215A 215B 216 210,NA,55.4,clear,0
-429,2018-09-17,6000,Vance Riffle,268,NA,60.8,clear,0
-430,2018-09-18,800,Hatchery Riffle,19 23 24 25,NA,52.7,clear,0
-123,2015-07-30,0,Kiester Riffle,"397,402,403",NA,67.1,clear,0
-431,2018-09-18,800,Auditorium Riffle,29 30 31 32,NA,51.8,clear,0
-432,2018-09-18,800,Hatchery Ditch,33 26 28,NA,NA,clear,0
-433,2019-03-20,1800,Aleck Riffle,119,NA,0,cloudy,2
-434,2019-03-20,0,Hatchery Ditch,26 33,NA,0,precipitation,0
-435,2019-03-21,8000,Junkyard Riffle,499,NA,0,clear,1
-436,2019-05-13,3500,Hatchery Ditch,26 33,NA,51.3,clear,0
-437,2019-05-13,3500,Hatchery Ditch,28,NA,53.6,clear,0
-440,2019-05-13,3500,Bedrock Park Riffle,"55, 56",NA,53.6,clear,0
-442,2019-05-14,3500,Matthews Riffle,"103, 104, 105",NA,52.7,NA,0
-443,2019-05-14,3500,Aleck Riffle,"119, 120",NA,53.6,cloudy,0
-444,2019-05-14,3500,Robinson Riffle,"169,170,171,173,174,175",NA,53.6,NA,0
-445,2019-05-15,3500,Gateway Riffle,"221, 225, 225, 228, 229",NA,51.8,precipitation,0
-446,2019-05-15,3500,Steep Riffle,"189, 185",NA,51.8,precipitation,0
-447,2019-05-15,3500,Eye Riffle,"210, 217, 215A, 216",NA,51.8,precipitation,0
-448,2019-05-16,0,Vance Riffle,268,NA,55.4,precipitation,0
-449,2019-05-16,7500,G95,323B,NA,53.6,cloudy,0
-450,2019-05-16,7500,Big Riffle,424,NA,55.4,cloudy,0
-124,2015-07-30,0,Goose Riffle,408,NA,67.6,clear,0
-454,2019-07-08,1400,Bedrock Park Riffle,"55,56",NA,60.8,clear,0
-455,2019-07-09,1220,Steep Riffle,"189,185",NA,62.6,clear,2
-456,2019-07-10,1200,Robinson Riffle,"169,170,171,173,174,175",NA,60.8,clear,0
-458,2019-07-10,1200,Matthews Riffle,"103,104,105",NA,62.6,clear,0
-459,2019-07-10,1200,Trailer Park Riffle,"96,97,98",NA,60.8,clear,0
-460,2019-07-15,5300,Vance Riffle,"266,268",NA,64.4,clear,0
-461,2019-07-15,5300,G95,"323A, 323B",NA,NA,clear,0
-463,2019-07-16,1800,Eye Riffle,"210,217,216,215A,215B",NA,59.9,clear,0
-464,2019-07-16,1800,Gateway Riffle,"225,2228,229,221",NA,60.8,clear,0
-465,2019-07-16,5300,Junkyard Riffle,"499,502",NA,68,clear,0
-467,2019-07-17,5800,McFarland,441,NA,66.56,clear,0
-468,2019-07-17,5300,Big Riffle,"426,424",NA,66.2,clear,0
-469,2019-07-18,5300,Goose Riffle,408,NA,66.2,NA,0
-471,2019-08-06,4850,Hatchery Ditch,33,NA,60.8,clear,3
-473,2019-08-07,4620,Auditorium Riffle,"30,31,29",NA,60.8,clear,0
-474,2019-08-07,4620,Hatchery Riffle,"23,24",NA,60.8,clear,0
-475,2019-08-07,0,Hatchery Ditch,"33,26,28",NA,61.7,clear,3
-476,2019-08-08,0,Trailer Park Riffle,"98,97",NA,60.8,clear,4
-477,2019-08-08,4100,Matthews Riffle,"103,104,105",NA,60.8,clear,4
-478,2019-08-08,4100,Robinson Riffle,"171,173,174,175",NA,61.7,clear,4
-145,2015-08-18,1100,Trailer Park Riffle,96-98,NA,59.9,clear,0
-480,2019-08-09,0,Steep Riffle,"185,189",NA,58.1,clear,0
-482,2019-08-12,7600,Vance Riffle,268,NA,62.6,clear,0
-485,2019-08-12,7600,Gridley Riffle,"486,487",NA,64.4,clear,3
-486,2019-08-13,7500,Junkyard Riffle,"499,502",NA,62.6,clear,0
-487,2019-08-13,7500,Big Riffle,"424,426",NA,66.2,clear,0
-489,2020-02-24,800,Auditorium Riffle,29-31,NA,10,clear,0
-490,2020-02-24,0,Hatchery Ditch,"33,26,28",NA,10.5,clear,0
-491,2020-02-25,800,Bedrock Park Riffle,55 56,NA,10,clear,0
-492,2020-02-25,830,Trailer Park Riffle,96 97 98,NA,10,clear,0
-493,2020-02-25,830,Aleck Riffle,119 120,NA,10.5,clear,0
-494,2020-02-25,0,Robinson Riffle,169-175,NA,11,clear,0
-495,2020-02-26,830,Eye Riffle,210 215A/B 216,NA,11,clear,0
-496,2020-02-26,830,Steep Riffle,189 185,NA,11,clear,0
-497,2020-02-26,830,Matthews Riffle,103 104 105,NA,10,clear,0
-498,2020-02-27,830,Gateway Riffle,221 225 226 228 229,NA,10.75,clear,0
-499,2020-02-27,0,G95,323A/B,NA,12,clear,0
-500,2020-02-27,2280,Kiester Riffle,403 397 402,NA,0,clear,0
-501,2020-02-27,2200,Goose Riffle,408,NA,13,clear,0
-502,2020-02-27,2200,Vance Riffle,266 268,NA,12.5,clear,0
-503,2020-02-28,2200,Junkyard Riffle,502 499,NA,12.5,clear,0
-504,2020-02-28,2200,Gridley Riffle,487 486,NA,12,clear,0
-125,2015-08-03,0,Big Riffle,"424,426",NA,66.2,clear,0
-505,2020-02-28,2200,McFarland,450,NA,12.5,clear,0
-506,2020-02-28,2200,Big Riffle,424 426,NA,12.5,clear,0
-508,2020-06-19,1100,Bedrock Park Riffle,55 56,NA,15.5,clear,NA
-509,2020-06-19,1100,Hatchery Riffle,19 23 24 25,NA,15.3,clear,0
-510,2020-06-19,1100,Auditorium Riffle,30 31 32 29,NA,15.3,clear,0
-511,2020-06-23,1240,Trailer Park Riffle,96 97 98,NA,15.3,clear,0
-512,2020-06-23,1240,Matthews Riffle,103 104 105,NA,15.5,clear,0
-513,2020-06-23,1240,Aleck Riffle,NA,NA,16,clear,0
-514,2020-06-23,1240,Robinson Riffle,169 170 171 173 174 175,NA,17.5,clear,0
-515,2020-06-24,1240,Gateway Riffle,221 225 226 228 229,NA,16.5,clear,0
-517,2020-06-24,1240,Eye Riffle,210 216 215A/B,NA,18.5,clear,0
-518,2020-06-26,3310,Vance Riffle,266 268,NA,19.5,clear,0
-519,2020-06-26,3310,G95,323A/B,NA,19,clear and hot,0
-520,2020-06-26,3310,Kiester Riffle,397 402 403,NA,21,clear,0
-521,2020-06-26,3300,Goose Riffle,408,NA,20,clear,0
-522,2020-06-26,3310,Big Riffle,424 426,NA,20,clear and hot,0
-525,2020-06-30,4250,Gridley Riffle,486 487,NA,20.5,clear,0
-526,2020-06-30,4400,McFarland,450,NA,21,clear,0
-527,2020-07-20,1250,Hatchery Riffle,NA,NA,11.5,clear,0
-528,2020-07-20,1250,Auditorium Riffle,29 30 31 32,NA,16.5,clear,0
-529,2020-07-20,1450,Hatchery Ditch,33 26 28,NA,18,clear,0
-530,2020-07-20,0,Bedrock Park Riffle,55 56,NA,19,clear,0
-126,2015-08-03,0,McFarland,"441,445",NA,66.2,clear,0
-531,2020-07-21,1250,Trailer Park Riffle,96 97 98,NA,14,clear,0
-532,2020-07-21,1100,Matthews Riffle,103 104 105,NA,15,clear,0
-533,2020-07-21,1100,Aleck Riffle,119 120,NA,15,clear,0
-534,2020-07-21,1100,Robinson Riffle,173 169 170 175,NA,16.5,clear,0
-535,2020-07-22,950,Gateway Riffle,221 226 225 228 229,NA,16,clear,0
-536,2020-07-22,950,Eye Riffle,215A/B 216 210,NA,15.8,clear,0
-537,2020-07-22,950,Steep Riffle,185 189,NA,17,clear,0
-539,2020-07-23,3010,G95,323A/B,NA,18,clear,0
-540,2020-07-23,3010,Kiester Riffle,402 397 402,NA,20,clear,0
-541,2020-07-23,3010,Goose Riffle,408,NA,20,clear,0
-542,2020-07-23,3010,Big Riffle,424 426,NA,20,clear,0
-543,2020-07-24,3010,Junkyard Riffle,502 499,NA,19.5,clear,0
-544,2020-07-23,3003,Gridley Riffle,486 487,NA,19,clear,0
-545,2020-07-24,3003,McFarland,450,NA,19,clear,0
-546,2020-08-10,1550,Hatchery Ditch,33 26 28,NA,15,clear and hot,0
-547,2020-08-10,1550,Hatchery Riffle,19 23 24 25,NA,14,clear,0
-548,2020-08-10,1550,Auditorium Riffle,29 30 31 32,NA,14.5,clear,0
-549,2020-08-10,1550,Bedrock Park Riffle,55 56,NA,15,clear,0
-550,2020-08-11,1550,Trailer Park Riffle,96 97 98,NA,15,clear and hot,NA
-551,2020-08-11,1550,Matthews Riffle,103 104 105,NA,15,clear and hot,0
-552,2020-08-11,1550,Aleck Riffle,119 120,NA,15.5,clear and hot,0
-553,2020-08-11,1550,Robinson Riffle,175 171 170 174,NA,16,clear,0
-554,2020-08-12,1550,Gateway Riffle,221 225 226 228 229,NA,15.5,clear,0
-555,2020-08-12,1550,Eye Riffle,215A 215B 216 210 217,NA,16,clear,0
-146,2015-08-18,1100,Aleck Riffle,"119,120",NA,60.8,clear,0
-556,2020-08-12,1550,Steep Riffle,189 185,NA,16.5,clear,0
-557,2020-08-13,0,Vance Riffle,266 268,NA,17,clear,0
-558,2020-08-13,2335,G95,323A 323B,NA,17,clear,0
-559,2020-08-13,2335,Kiester Riffle,397 402 403,NA,19,clear,0
-560,2020-08-13,2335,Goose Riffle,408,NA,19,clear,0
-561,2020-08-14,2300,Junkyard Riffle,499 502,NA,19,clear,0
-562,2020-08-14,NA,Gridley Riffle,486 487,NA,18,clear,0
-563,2020-08-14,2300,Big Riffle,424 426,NA,18,clear,0
-564,2020-08-14,0,McFarland,450,NA,19,clear,0
-565,2020-09-22,850,Hatchery Riffle,19 23 24 25,NA,11,clear,0
-566,2020-09-22,840,Auditorium Riffle,30 31 32 29,NA,11.5,clear,0
-567,2020-09-22,840,Hatchery Riffle,33 26 28,NA,11,clear,0
-568,2020-09-22,840,Bedrock Park Riffle,55 56,NA,13,clear,0
-569,2020-09-22,840,Trailer Park Riffle,97 98 96,NA,13,clear,0
-570,2020-09-23,800,Matthews Riffle,103 - 105,NA,11,clear,0
-571,2020-09-23,800,Aleck Riffle,119 120,NA,11.5,clear,0
-572,2020-09-23,800,Robinson Riffle,169 170 171 173 174 175,NA,11.5,clear,0
-573,2020-09-23,840,Steep Riffle,185 189,NA,13,clear,0
-574,2020-09-23,800,Eye Riffle,215 215A 215B 210 217,NA,13,clear,0
-575,2020-09-24,840,Gateway Riffle,221 225 229 226 228,NA,13,clear,0
-576,2020-09-24,2641,Vance Riffle,266 268,NA,15,clear,0
-577,2020-09-24,2641,Goose Riffle,408,NA,16,clear,0
-578,2020-09-24,2641,G95,323A 323B,NA,15,clear,0
-579,2020-09-24,2641,Kiester Riffle,402 403 397,NA,16,clear,0
-580,2020-09-25,2641,Junkyard Riffle,499 502,NA,16,clear,0
-581,2020-09-25,2641,Gridley Riffle,486 487,NA,15.5,clear,0
-127,2015-08-03,0,McFarland,450,NA,67.1,clear,0
-582,2020-09-25,2640,McFarland,450,NA,15,clear,0
-583,2020-09-25,2641,Big Riffle,424 426,NA,16,clear,0
-584,2021-03-24,800,Hatchery Riffle,26 33 28,NA,50,NA,0
-585,2021-03-24,800,Hatchery Riffle,19 23 24 25,NA,10.5,NA,0
-586,2021-03-24,800,Auditorium Riffle,29 30 31 32,NA,10.5,NA,0
-587,2021-03-25,800,Bedrock Park Riffle,55 56,NA,11.5,clear,0
-588,2021-03-25,800,Trailer Park Riffle,96 97 98,NA,11.5,clear,0
-589,2021-03-25,800,Matthews Riffle,103 104 105,NA,12,clear,0
-590,2021-03-25,800,Robinson Riffle,169 170 171 173 174 175,NA,11.5,clear,0
-591,2021-03-25,800,Aleck Riffle,119 120,NA,11.5,clear,0
-592,2021-03-26,800,Gateway Riffle,221 225 226 229 228,NA,12,clear,0
-593,2021-03-26,800,Steep Riffle,185 189,NA,12,clear,0
-594,2021-03-26,800,Eye Riffle,215A/B 216 210,NA,13,clear,0
-595,2021-03-29,1050,Vance Riffle,266 268,NA,13.5,clear,0
-596,2021-03-29,1050,G95,323A/B,NA,13.5,clear,0
-597,2021-03-29,1050,Kiester Riffle,397 402 403,NA,14,clear,0
-598,2021-03-29,1050,Goose Riffle,408,NA,14.5,NA,0
-599,2021-03-30,1050,Junkyard Riffle,499 502,NA,14.5,NA,0
-600,2021-03-30,NA,Gridley Riffle,486 487,NA,16,NA,0
-601,2021-03-30,0,McFarland,450,NA,12.5,NA,0
-602,2021-03-30,1050,Big Riffle,424 426,NA,13.5,NA,0
-603,2021-04-19,800,Robinson Riffle,169 170 171 173 174 175,NA,14,clear,0
-128,2015-08-03,0,Gridley Riffle,"486,487",NA,67.1,clear,0
-604,2021-04-19,800,Aleck Riffle,119 120,NA,13.5,clear,0
-605,2021-04-19,800,Matthews Riffle,103 104 105,NA,14,clear,0
-606,2021-04-19,800,Trailer Park Riffle,96 97 98,NA,14,clear,0
-607,2021-04-20,700,Hatchery Riffle,26 33,NA,13,clear,0
-608,2021-04-20,700,Hatchery Riffle,19 23 24 25,NA,0,clear,0
-609,2021-04-20,700,Auditorium Riffle,NA,NA,13.5,clear,0
-610,2021-04-20,700,Bedrock Park Riffle,55 56,NA,15,clear,0
-611,2021-04-26,810,Gateway Riffle,221 225 226 228 229,NA,12,clear,0
-613,2021-04-26,810,Eye Riffle,215A 215B 210,NA,13,clear,0
-614,2021-04-27,1000,Vance Riffle,266 268,NA,14,clear,0
-615,2021-04-27,0,G95,323A 323B,NA,14,clear,0
-616,2021-04-27,0,Big Riffle,NA,NA,15,clear,0
-618,2021-04-27,1000,Kiester Riffle,397 403 402,NA,16,NA,0
-619,2021-04-28,1000,Junkyard Riffle,502 499,NA,16.5,clear,0
-620,2021-04-28,1000,Gridley Riffle,486 487,NA,17.5,clear,0
-621,2021-04-28,1000,McFarland,450,NA,15.5,clear,0
-622,2021-05-18,650,Hatchery Riffle,19 23-25,NA,13,clear,0
-623,2021-05-18,650,Auditorium Riffle,29 30-32,NA,13,clear,0
-624,2021-05-18,650,Hatchery Ditch,28,NA,13,clear,0
-147,2015-08-18,1100,Robinson Riffle,"169-171,173-175",NA,62.6,clear,0
-627,2021-05-19,710,Aleck Riffle,19 20,NA,12.75,clear,0
-628,2021-05-19,710,Matthews Riffle,103 104 105,NA,13,clear,0
-629,2021-05-19,710,Trailer Park Riffle,96 97 98,NA,14,clear,0
-630,2021-05-21,710,Gateway Riffle,221 225 226 228 229,NA,13.5,NA,0
-632,2021-05-21,710,Steep Riffle,185 189,NA,15,NA,0
-634,2021-05-25,2500,G95,323A/B,NA,18,clear,0
-635,2021-05-25,2500,Kiester Riffle,397 402 403,NA,18.5,clear,0
-636,2021-05-25,2500,Goose Riffle,408,NA,19,clear,0
-637,2021-05-26,2110,Junkyard Riffle,502 499,NA,18.5,cloudy,0
-638,2021-05-26,2110,Gridley Riffle,NA,NA,18.5,cloudy,0
-639,2021-05-26,2110,McFarland,450,NA,18.5,clear,0
-640,2021-05-26,2110,Big Riffle,424 426,NA,19.5,clear,0
-643,2021-06-22,2750,Auditorium Riffle,29 30 31 32,NA,16,clear,0
-644,2021-06-22,2750,Bedrock Park Riffle,55 56,NA,16.5,clear,0
-646,2021-06-23,2400,Matthews Riffle,103 104 105,NA,16,clear,0
-647,2021-06-23,2400,Robinson Riffle,169-175,NA,17,clear,0
-648,2021-06-23,2400,Aleck Riffle,119 120,NA,17,clear,0
-649,2021-06-25,2750,Junkyard Riffle,502 499,NA,18.5,clear,0
-140,2015-08-03,0,Junkyard Riffle,"499,502",NA,68,clear,0
-651,2021-06-25,2750,McFarland,450,NA,19.5,clear,0
-652,2021-06-25,2750,Big Riffle,424 426,NA,19.5,clear,0
-653,2021-06-29,2160,Gateway Riffle,226 225 221 228 229,NA,16.5,clear,0
-654,2021-06-29,2160,Steep Riffle,185 189,NA,16,clear,0
-655,2021-06-29,2160,Eye Riffle,210 215A 215B 216,NA,17,clear,0
-656,2021-06-30,3010,Vance Riffle,268 266,NA,17,clear,0
-657,2021-06-30,3010,G95,323 A & B,NA,17,clear,0
-659,2021-06-30,3010,Goose Riffle,408,NA,18.5,clear,0
-660,2021-07-14,1550,Hatchery Riffle,19 23 24 25,NA,16.5,clear,0
-661,2021-07-14,1550,Auditorium Riffle,29-32,NA,16.5,clear,0
-663,2021-07-14,1550,Hatchery Ditch,28,NA,16.5,clear,0
-665,2021-07-15,2050,Trailer Park Riffle,96 97 98,NA,16.5,clear,0
-666,2021-07-15,2050,Matthews Riffle,103 104 105,NA,17,clear,0
-667,2021-07-15,2050,Aleck Riffle,119 120,NA,17,clear,0
-668,2021-07-15,2050,Robinson Riffle,169 170 171 173 174 175,NA,17.5,clear,0
-669,2021-07-16,2070,Gateway Riffle,221 225 226 228 229,NA,17,clear,0
-671,2021-07-16,2050,Steep Riffle,185 189,NA,17.2,clear,0
-672,2021-07-19,2990,Vance Riffle,266 268,NA,17.5,NA,2
-673,2021-07-19,2990,G95,NA,NA,17.5,cloudy,0
-141,2015-08-17,1100,Hatchery Riffle,"19,23-25",NA,59.4,clear,0
-674,2021-07-19,2050,Kiester Riffle,402 403,NA,18,clear,0
-675,2021-07-19,2050,Goose Riffle,408,NA,18.5,clear,0
-676,2021-07-19,2050,Big Riffle,424 426,NA,19,clear,2
-677,2021-07-20,2990,Junkyard Riffle,499 502,NA,18,clear,0
-678,2021-07-20,2990,Gridley Riffle,486 487,NA,18.5,clear,0
-680,2021-08-25,670,Hatchery Riffle,19 24 23 25,NA,10,NA,0
-681,2021-08-25,670,Auditorium Riffle,29 30 31 32,NA,10,NA,0
-682,2021-08-25,670,Hatchery Riffle,33 26,NA,10,NA,0
-684,2021-08-25,670,Bedrock Park Riffle,55 56,NA,10.5,clear,0
-686,2021-08-26,670,Matthews Riffle,104 105 103,NA,10,clear,0
-687,2021-08-26,650,Robinson Riffle,169 170 171 173 175 175,NA,12,clear,0
-688,2021-08-26,670,Aleck Riffle,119 120,NA,11.7,clear,0
-689,2021-08-27,0,Gateway Riffle,221 225 226 228 229,NA,13,NA,0
-690,2021-08-27,650,Steep Riffle,185 189,NA,13,clear,0
-691,2021-08-27,650,Eye Riffle,210 215A 215B 216 217,NA,12.5,NA,0
-692,2021-08-30,1320,Vance Riffle,266 268,NA,14,NA,0
-693,2021-08-30,1320,G95,323 A and B,NA,14,NA,0
-695,2021-08-30,1320,Goose Riffle,408,NA,15.5,clear,0
-148,2015-08-18,1100,Matthews Riffle,"103,104,105",NA,64.4,clear,0
-697,2021-08-31,1280,Gridley Riffle,486 487,NA,21,clear,0
-700,2021-09-13,680,Hatchery Riffle,19 23 24 25,NA,11,clear,0
-702,2021-09-13,600,Hatchery Riffle,28,NA,0,clear,0
-703,2021-09-13,0,Hatchery Riffle,26 33,NA,0,clear,0
-704,2021-09-13,680,Bedrock Park Riffle,55 56,NA,0,clear,0
-705,2021-09-14,680,Robinson Riffle,175 174 173 171 170 169,NA,11.5,clear,0
-706,2021-09-14,680,Aleck Riffle,119 120,NA,11.5,clear,0
-707,2021-09-14,680,Matthews Riffle,103 104 105,NA,11.5,clear,0
-708,2021-09-14,680,Trailer Park Riffle,96 97 98,NA,11.5,clear,0
-709,2021-09-15,600,Gateway Riffle,221 225 226 228 229,NA,12,NA,0
-710,2021-09-15,680,Eye Riffle,215A 215B 216 210 217,NA,12,clear,0
-711,2021-09-15,600,Steep Riffle,185 189,NA,12,clear,0
-712,2021-09-20,1290,Vance Riffle,268 266,NA,15,NA,0
-715,2021-09-20,1290,Kiester Riffle,397 402 403,NA,17,clear,0
-716,2021-09-21,1290,Junkyard Riffle,502 499,NA,16,clear,0
-718,2021-09-21,1290,McFarland,450,NA,16,clear,0
-142,2015-08-17,0,Auditorium Riffle,29-32,NA,59,clear,0
-720,2022-01-19,650,Bedrock Park Riffle,"55, 56",NA,8.5,clear,0.5
-721,2022-01-19,650,Trailer Park Riffle,"96, 97, 98",NA,8.5,clear,1
-722,2021-01-19,650,Matthews Riffle,"103, 104, 105",NA,9,clear,NA
-723,2022-01-19,650,Robinson Riffle,"169, 170, 171, 173, 174, 175",NA,9,clear,1
-724,2022-01-20,NA,Hatchery Ditch,"26, 33",NA,6.5,clear,1
-725,2022-01-20,0,Hatchery Riffle,"19, 23, 24, 25",NA,8.5,clear,1
-726,2022-01-20,0,Aleck Riffle,"119, 120",NA,9.5,clear,0
-727,2022-01-21,650,Gateway Riffle,"221, 225, 226, 228, 229",NA,9,NA,1
-728,2022-01-21,650,Eye Riffle,"210, 215A,B, 216",NA,9,NA,0
-729,2022-01-21,650,Steep Riffle,"189, 185",NA,9,NA,1
-730,2022-02-22,670,Hatchery Riffle,"19, 23, 24, 25",NA,9,clear,1.2
-731,2022-02-22,670,Auditorium Riffle,"29, 30, 31, 32",NA,9,clear,0
-732,2022-02-22,670,Hatchery Ditch,28,NA,9.5,clear,0
-733,2022-02-22,670,Hatchery Ditch,"26,33",NA,0,clear,0
-734,2022-02-22,670,Bedrock Park Riffle,"55, 56",NA,10,cloudy,0.5
-735,2022-02-23,670,Trailer Park Riffle,"96, 97, 98",NA,9,clear,1
-736,2022-02-23,670,Matthews Riffle,"103, 104, 105",NA,0,clear,0
-737,2022-02-23,650,Robinson Riffle,"169, 171, 173, 175",NA,10,clear,0.5
-739,2022-02-24,670,Eye Riffle,"210, 215A,B, 216",NA,9,clear,0.65
-740,2022-02-24,650,Steep Riffle,"185, 189",NA,9,clear,0.6
-741,2022-02-24,670,Gateway Riffle,"221, 225, 226, 228, 229",NA,9.5,clear,0.5
-742,2022-02-25,4560,Vance Riffle,"266, 268",NA,9.5,clear,0.5
-150,2015-08-19,1100,Eye Riffle,"210,215,217,215A/B",NA,62.6,clear,0
-743,2022-02-25,4560,G95,323AB,NA,10,clear,0
-744,2022-02-25,4560,Kiester Riffle,"397, 402, 403",NA,10,clear,0.5
-745,2022-02-25,4560,Goose Riffle,408,NA,10,clear,0.5
-746,2022-01-26,960,Vance Riffle,"266, 268",NA,9,clear,1.5
-747,2022-01-26,960,G95,323AB,NA,10,clear,0
-748,2022-01-26,960,Kiester Riffle,"397, 402",NA,10,clear,0
-749,2022-01-26,960,Goose Riffle,408,NA,10.5,clear,0
-750,2022-01-27,960,Junkyard Riffle,"499, 502",NA,9.5,clear,0
-751,2022-01-27,960,McFarland,450,NA,8.5,clear,0
-752,2022-01-27,960,Big Riffle,"424, 426",NA,9,clear,0
-753,2022-01-27,960,NA,NA,NA,0,clear,0
-754,2022-02-28,4500,Junkyard Riffle,"499, 502",NA,0,clear,0.75
-755,2022-02-28,4500,Gridley Riffle,"486, 487",NA,0,clear,0.75
-756,2022-02-28,4500,Big Riffle,"424, 426",NA,0,clear,0
-757,2022-02-28,4500,McFarland,450,NA,0,clear,0
-758,2022-03-23,650,Bedrock Park Riffle,"55, 56",NA,0,clear,2
-759,2022-03-23,650,Trailer Park Riffle,"96, 97, 98",NA,0,NA,2
-760,2022-03-23,650,Hatchery Riffle,28,NA,0,clear,2
-761,2022-03-23,0,Hatchery Ditch,"26, 33",NA,0,clear,2
-762,2022-03-23,650,Auditorium Riffle,"29, 30, 31, 32",NA,0,clear,2
-763,2022-03-24,650,Robinson Riffle,"169, 170, 171, 173, 174, 175",NA,0,clear,1.5
-764,2022-03-24,650,Matthews Riffle,"103, 104, 105",NA,0,clear,1.5
-765,2022-03-24,650,Aleck Riffle,"119, 120",NA,0,clear,1.5
-766,2022-03-24,650,Hatchery Riffle,"19, 23, 24, 25",NA,0,clear,1.5
-143,2015-08-17,1100,Hatchery Ditch,"33,26,28",NA,59.9,clear,0
-768,2022-03-25,650,Eye Riffle,"215A, 215B, 216, 210",NA,13.5,clear,0
-769,2022-03-25,650,Steep Riffle,"185, 189",NA,14.5,clear,2
-771,2022-03-28,3500,G95,"323A,B",NA,15,precipitation,1.2
-772,2022-03-28,3500,Kiester Riffle,"397, 403, 402",NA,15,precipitation,1.2
-773,2022-03-28,3500,Goose Riffle,408,NA,15,precipitation,1.2
-774,2022-03-29,3500,Junkyard Riffle,"499, 502",NA,15,clear,2
-775,2022-03-29,3500,Gridley Riffle,"486, 487",NA,15,clear,1
-777,2022-03-29,3500,Big Riffle,"424, 426",NA,0,clear,1.5
-778,2022-04-25,650,Bedrock Park Riffle,"55, 56",NA,13,clear,NA
-779,2022-04-25,650,Trailer Park Riffle,"96, 97, 98",NA,13,cloudy,2
-781,2022-04-25,650,Hatchery Ditch,"33, 26",NA,13,clear,2
-782,2022-04-25,650,Hatchery Riffle,"19, 23, 24, 25",NA,13,clear,0
-783,2022-04-25,650,Auditorium Riffle,"29, 30, 31, 32",NA,13,clear,2
-784,2022-04-26,650,Robinson Riffle,"169, 170, 171, 173, 174, 174",NA,14,clear,1.5
-785,2022-04-26,650,Aleck Riffle,"119, 120",NA,14,clear,1.5
-786,2022-04-26,650,Matthews Riffle,"103, 104, 105",NA,14,clear,1.5
-788,2022-04-27,650,Eye Riffle,"210, 215A,B, 216",NA,14.5,clear,1
-789,2022-04-27,800,Vance Riffle,"266, 268",NA,15.5,clear,1.5
-790,2022-04-27,800,G95,"323A, 323B",NA,15.5,clear,0
-791,2022-04-28,650,Steep Riffle,"189, 185",NA,14,clear,2
-144,2015-08-17,1100,Bedrock Park Riffle,"55,56",NA,61.7,clear,0
-792,2022-04-28,800,Goose Riffle,408,NA,14.5,clear,2
-794,2022-04-29,800,Big Riffle,"424, 426",NA,14.5,clear,1.2
-795,2022-04-29,800,McFarland,450,NA,14.5,clear,1.75
-796,2022-04-29,800,Junkyard Riffle,"499, 502",NA,18,clear,3
-797,2022-04-29,800,Gridley Riffle,"486, 487",NA,18.5,clear,0
-798,2022-05-03,650,Trailer Park Riffle,"96, 97, 98",NA,14,clear,2
-799,2022-05-23,650,Matthews Riffle,"103, 104, 105",NA,15,clear,1
-800,2022-05-23,650,Robinson Riffle,"169, 170, 171, 173, 174, 175",NA,15.75,clear,1
-801,2022-05-23,650,Hatchery Riffle,"19, 23, 24, 25",NA,15,clear,2
-802,2022-05-23,650,Auditorium Riffle,"29, 30, 31, 32",NA,14.5,clear,1.5
-803,2022-05-24,650,Hatchery Ditch,"26, 33",NA,0,NA,0.5
-804,2022-05-24,650,Hatchery Ditch,28,NA,0,NA,1.35
-806,2022-05-24,650,Aleck Riffle,"119, 120",NA,16,NA,0.55
-807,2022-05-25,650,Steep Riffle,"189, 185",NA,16.5,NA,0
-808,2022-05-25,600,Eye Riffle,"215AB, 216, 217",NA,16.5,clear,2
-809,2022-05-26,650,Gateway Riffle,"226, 228, 229, 221, 225",NA,17,clear,1.5
-810,2022-05-26,2200,G95,"323A,B",NA,19,cloudy,0.8
-811,2022-05-26,2200,Kiester Riffle,"397, 402, 403",NA,20,cloudy,1.5
-812,2022-05-26,2200,Vance Riffle,"266, 268",NA,19,cloudy,1.75
-813,2022-05-27,2200,Junkyard Riffle,"499, 502",NA,18.5,NA,1.25
-814,2022-05-27,2200,Gridley Riffle,"486, 487",NA,19,NA,2
-158,2015-08-24,1500,McFarland,450,NA,65.3,clear,0
-815,2022-05-27,2200,McFarland,450,NA,19.5,clear,2
-816,2022-05-27,2200,Big Riffle,"424, 426",NA,20,clear,1
-817,2022-05-27,2200,Goose Riffle,408,NA,20,NA,1
-818,2022-06-01,3500,Junkyard Riffle,"499, 502",NA,20,clear,0
-819,2022-06-21,3500,Gridley Riffle,"486, 487",NA,20,clear,2
-820,2022-06-21,3500,McFarland,450,NA,20,clear,1
-821,2022-06-22,3500,Big Riffle,"424, 426",NA,18,clear,1
-822,2022-06-22,3500,Goose Riffle,408,NA,19,clear,2
-825,2022-06-22,3500,Vance Riffle,"266, 268",NA,18.5,clear,2
-826,2022-06-23,1480,Robinson Riffle,"169, 170, 171, 173, 174, 175",NA,15,cloudy,1
-828,2022-06-23,1480,Matthews Riffle,"103, 104, 105",NA,16,clear,2
-829,2022-06-23,1480,Trailer Park Riffle,"96, 97, 98",NA,16,clear,2
-830,2022-06-23,1480,Bedrock Park Riffle,"55, 56",NA,16.5,clear,2
-831,2022-06-23,1480,Auditorium Riffle,"29, 30, 31, 32",NA,15,clear,2
-832,2022-06-23,1480,Hatchery Riffle,"19, 23, 24, 25",NA,15,clear,2
-833,2022-06-24,1480,Hatchery Ditch,28,NA,15,clear,2
-834,2022-06-24,1480,Hatchery Riffle,"33, 26",NA,15,clear,0.5
-835,2022-06-24,1480,Steep Riffle,"185, 189",NA,16,clear,1.5
-836,2022-06-24,1480,Eye Riffle,"210, 215A,B, 216",NA,17,clear,1.5
-838,2022-07-21,1500,Hatchery Ditch,"26, 33",NA,16,clear,0.5
-839,2022-07-21,1550,Hatchery Ditch,28,NA,16,clear,1.5
-108,2015-07-27,1898,Hatchery Riffle,"19, 23-25",NA,59.9,clear,0
-840,2022-07-21,1550,Hatchery Riffle,"19, 23, 24, 25",NA,16,clear,1.5
-841,2022-07-21,1550,Auditorium Riffle,"29, 30, 31, 32",NA,16,clear,2
-842,2022-07-21,1550,Bedrock Park Riffle,"55, 56",NA,17,clear,1
-843,2022-07-22,1560,Robinson Riffle,"169, 170, 171, 173, 174, 175",NA,16,clear,2.75
-844,2022-07-22,1560,Aleck Riffle,"119, 120",NA,16,clear,3
-845,2022-07-22,1550,Matthews Riffle,"103, 104, 105",NA,16,clear,3
-846,2022-07-22,1550,Trailer Park Riffle,"96, 97, 98",NA,16,clear,3
-847,2022-07-25,1300,Eye Riffle,"215A,B, 216, 210",NA,15.5,clear,2
-848,2022-07-25,1300,Steep Riffle,"189, 185",NA,16,clear,2.5
-849,2022-07-26,3740,G95,"323A,B",NA,17.5,cloudy,1
-850,2022-07-26,3740,Kiester Riffle,"397, 402, 403",NA,18,cloudy,2.5
-851,2022-07-26,3740,Vance Riffle,"266, 268",NA,18,cloudy,1
-852,2022-07-26,0,Gateway Riffle,"221, 225, 226, 228, 229",NA,16,cloudy,2
-854,2022-07-27,3750,McFarland,450,NA,18,clear,0
-855,2022-07-27,3750,Big Riffle,"424, 426",NA,18.5,NA,0
-856,2022-07-27,3750,Goose Riffle,408,NA,18.5,NA,0
-857,2022-07-28,3750,Gridley Riffle,"486, 487",NA,18.5,clear,0
-858,2022-08-22,1020,Hatchery Riffle,"26, 33",NA,17,clear,0.8
-859,2022-08-22,1020,Hatchery Ditch,28,NA,16,clear,3
-861,2022-08-22,1020,Auditorium Riffle,"29, 30, 31, 32",NA,15,clear,2
-862,2022-08-22,1020,Bedrock Park Riffle,"55, 56",NA,16,clear,1.5
-863,2022-08-24,1020,Gateway Riffle,"221, 225, 226, 228, 229",NA,0,clear,0
-864,2022-08-24,1020,Steep Riffle,"185, 189",NA,15,clear,3
-111,2015-07-27,2009,Auditorium Riffle,29-31,NA,59,clear,0
-865,2022-08-24,1020,Eye Riffle,"210, 215A,B, 216, 217",NA,16.5,clear,3
-866,2022-08-25,3010,Vance Riffle,"266, 268",NA,18.75,NA,2
-867,2022-08-25,3010,G95,"323A,B",NA,18.75,clear,2
-869,2022-08-25,3010,Goose Riffle,408,NA,19,clear,3
-870,2022-08-26,3010,Big Riffle,"424, 426",NA,19,clear,2.5
-871,2022-08-26,3010,McFarland,450,NA,19,clear,3
-874,2023-02-06,980,Junkyard Riffle,499 502,NA,10,clear,3
-875,2023-02-06,980,Gridley Riffle,486 487,NA,10.5,clear,3
-877,2023-02-06,980,Big Riffle,424 426,NA,9,clear,1
-878,2023-02-06,980,Goose Riffle,408,NA,10,clear,1.5
-879,2023-02-07,980,Kiester Riffle,"397, 402, 403",NA,9,clear,1
-880,2023-02-07,980,G95,"323A, 323B",NA,9.5,clear,0.75
-881,2023-02-07,980,Vance Riffle,"266, 268",NA,9.5,clear,0.75
-882,2023-02-08,650,Gateway Riffle,"221, 225, 226, 228, 229",NA,8.5,clear,1
-883,2023-02-08,650,Eye Riffle,"215A, 215B, 216, 210",NA,9,clear,1.5
-884,2023-02-08,650,Steep Riffle,"185, 189",NA,9,clear,1.5
-885,2023-02-09,650,Trailer Park Riffle,"96, 97, 98",NA,8.5,clear,1
-886,2023-02-09,680,Matthews Riffle,"103, 104, 105",NA,8.5,clear,1
-887,2023-02-09,680,Robinson Riffle,"169, 170, 171, 173, 174, 175",NA,8.5,clear,1
-888,2023-02-09,680,Aleck Riffle,"119, 120",NA,8.5,clear,1
-890,2023-02-10,680,Hatchery Ditch,"26, 33",NA,8.5,clear,1.5
-112,2015-07-27,2009,Bedrock Park Riffle,"55, 56",NA,NA,clear,0
-891,2023-02-10,680,Hatchery Riffle,"23, 24, 25, 19",NA,8.5,clear,0.75
-892,2023-02-10,680,Auditorium Riffle,"29, 30, 31, 32",NA,8.5,clear,0.75
-893,2023-02-10,680,Bedrock Park Riffle,"55, 56",NA,8.5,clear,0.7
-894,2023-05-26,10000,Junkyard Riffle,"499, 502",NA,15.5,clear,1.5
-896,2023-05-26,9000,McFarland,441,NA,16,clear,0
-897,2023-05-25,11000,Vance Riffle,"266, 268",NA,14.5,clear,0.2
-898,2023-05-25,11000,G95,"323A, 323B",NA,15,clear,0
-899,2023-05-25,10000,Kiester Riffle,"402, 403, 397",NA,15.5,clear,0
-901,2023-05-24,3650,Eye Riffle,"217, 215A",NA,13.5,clear,1.5
-902,2023-05-24,3650,Steep Riffle,"189,185",NA,13,clear,1.5
-903,2023-05-24,4650,Gateway Riffle,"221,225,226,228,229",NA,13,clear,1.5
-905,2023-05-23,4660,Trailer Park Riffle,99,NA,13,clear,2
-906,2023-05-23,4660,Matthews Riffle,103,NA,13,clear,1.5
-907,2023-05-23,4660,Trailer Park Riffle,98,NA,13,clear,1
-908,2023-05-23,5660,Aleck Riffle,"119,121,118",NA,12.5,clear,1
-909,2023-05-22,5650,Hatchery Ditch,"33, 26",NA,12,clear,1.5
-910,2023-05-22,5650,Hatchery Riffle,28,NA,12,clear,1
-113,2015-07-28,2000,Trailer Park Riffle,96-98,NA,59.9,clear,0
-912,2023-05-22,5650,Bedrock Park Riffle,"55, 56",NA,12.5,clear,1.5
-913,2023-06-12,8000,Junkyard Riffle,"499, 502",NA,17.5,cloudy,1.75
-914,2023-06-12,8000,Gridley Riffle,"486, 487",NA,17.5,cloudy,1
-915,2023-06-13,8000,McFarland,441,NA,17,clear,1.5
-916,2023-06-13,8000,Big Riffle,"424, 426",NA,18,clear,1.25
-917,2023-06-13,8000,Goose Riffle,408,NA,16,clear,1.2
-918,2023-06-13,8000,Kiester Riffle,"402, 403, 397",NA,17.5,clear,1
-919,2023-06-16,1000,Hatchery Riffle,"19, 23, 24, 25",NA,14,clear,2
-920,2023-06-16,1000,Auditorium Riffle,"30, 31, 32, 29",NA,14,clear,2
-921,2023-06-16,1000,Hatchery Ditch,"33, 26",NA,14.5,clear,0.5
-922,2023-06-16,1000,Hatchery Riffle,28,NA,14.5,clear,2.5
-923,2023-06-16,1000,Bedrock Park Riffle,"55, 56",NA,15,clear,0
-924,2023-06-15,1300,Steep Riffle,"185, 189",NA,15,clear,0
-925,2023-06-14,1600,Eye Riffle,"210, 216, 215A, 215B",NA,16.5,clear,1.5
-926,2023-06-14,0,Gateway Riffle,"221, 225, 226, 228, 229",NA,15,NA,0
-927,2023-06-14,7000,Vance Riffle,"266, 268",NA,18,cloudy,1
-928,2023-06-14,0,G95,"323A, 323B",NA,0,clear,0.7
-929,2023-06-15,1350,Trailer Park Riffle,"96, 97, 98",NA,14.9,clear,0
-930,2023-06-15,1350,Matthews Riffle,"103, 104, 105",NA,15,clear,0
-931,2023-06-15,1350,Aleck Riffle,"119, 120",NA,16,clear,1
-932,2023-06-15,1350,Robinson Riffle,"169,170,171,173,174,175",NA,15.5,clear,0.75
-933,2023-07-17,1500,Bedrock Park Riffle,"55,56",NA,17,clear,2
-934,2023-07-17,1500,Hatchery Riffle,28,NA,NA,clear,NA
-114,2015-07-28,2000,Matthews Riffle,103-105,NA,61.2,clear,0
-935,2023-07-17,1500,Hatchery Ditch,"33, 26",NA,17,clear,1.5
-936,2023-07-17,1500,Auditorium Riffle,"30,32,31,29",NA,15.5,clear,1.75
-938,2023-07-18,2000,Aleck Riffle,"119,120",NA,17,NA,1
-939,2023-07-18,2000,Robinson Riffle,"170,169,171,175,174,173",NA,17.5,clear,1
-940,2023-07-18,2000,Matthews Riffle,"103,104,105",NA,16.5,clear,1
-941,2023-07-18,2000,Trailer Park Riffle,"96,97,98",NA,NA,clear,NA
-942,2023-07-19,5000,Vance Riffle,NA,NA,17.5,clear,1.25
-944,2023-07-19,2000,Steep Riffle,"185,189",NA,16.5,clear,1.5
-945,2023-07-19,2000,Gateway Riffle,"221,225,226,228,229",NA,16,clear,1.5
-946,2023-07-20,5000,Big Riffle,"424,426",NA,21,clear,1.5
-949,2023-07-20,5000,G95,"323A, 323B",NA,19,clear,1.5
-950,2023-07-21,5000,McFarland,450,NA,20,clear,1.25
-951,2023-07-21,5000,Gridley Riffle,"486,487",NA,20,clear,1
-952,2023-07-21,5000,Junkyard Riffle,"499, 502",NA,19.5,clear,1.5
-953,2023-04-12,4000,Steep Riffle,"188,189",NA,10,clear,0.75
-954,2023-04-12,4000,Eye Riffle,"215A,215B,210",NA,10,clear,0.7
-955,2023-04-12,4000,Gateway Riffle,"221,225,226,228,229",NA,9.5,clear,0.75
-956,2023-04-10,1000,Hatchery Ditch,"26,33",NA,10,clear,2
-957,2023-04-10,1000,Hatchery Riffle,28,NA,10,clear,1.5
-958,2023-04-10,1000,Bedrock Park Riffle,"55,56",NA,10,clear,1
-115,2015-07-28,2000,Aleck Riffle,120 and 119,NA,61.7,clear,0
-959,2023-04-10,1000,Robinson Riffle,"169,170,171,173,174,175",NA,10,clear,1
-960,2023-04-07,1300,Aleck Riffle,"119,120",NA,10,precipitation,0.5
-961,2023-04-07,1300,Matthews Riffle,"103,104,105",NA,10,precipitation,1.75
-962,2023-04-07,1300,Trailer Park Riffle,"96,97,98",NA,NA,cloudy,NA
-963,2023-04-07,1300,Auditorium Riffle,"29,30,31,32",NA,10,precipitation,1
-964,2023-04-07,1300,Hatchery Riffle,"19,23,24,25",NA,9.5,precipitation,1.25
-965,2023-03-08,1000,Steep Riffle,"185, 189",NA,8,cloudy,0.5
-966,2023-03-08,1000,Eye Riffle,"210,215A,215B,216",NA,8.5,cloudy,0.6
-967,2023-03-08,1000,Robinson Riffle,"169,170,171,173,174,175",NA,8.5,cloudy,0.5
-968,2023-03-06,650,Hatchery Ditch,"33,26",NA,8,precipitation,1
-969,2023-03-08,1000,Gateway Riffle,"221,225,226,228,229",NA,8.5,cloudy,0.5
-970,2023-03-06,650,Hatchery Riffle,"19,23,24,25",NA,8,precipitation,NA
-971,2023-03-06,650,Hatchery Riffle,28,NA,8,precipitation,1.5
-972,2023-03-06,650,Auditorium Riffle,"29,30,31,32",NA,8,precipitation,1.25
-973,2023-03-06,650,Bedrock Park Riffle,"55,56",NA,8,precipitation,0.5
-116,2015-07-28,0,Robinson Riffle,"169, 170, 171, 173, 174, 175",NA,62.6,clear,0
-117,2015-07-29,2000,Steep Riffle,"185, 189",NA,60.8,clear,0
-118,2015-07-29,2000,Eye Riffle,"210, 217",NA,62.6,clear,0
-119,2015-07-29,2000,Eye Riffle,"215A/B, 216",NA,62.6,clear,0
-120,2015-07-29,3260,Vance Riffle,"268, 266",NA,68,clear,0
-110,2015-07-27,1898,Hatchery Ditch,28,NA,60.3,clear,0
-312,2018-02-14,1000,Steep Riffle,189 185,NA,46.4,partly cloudy,0
-208,2016-05-18,1700,Eye Riffle,216 217 210,NA,52.7,clear,0
-314,2018-02-15,1750,Gateway Riffle,221 226 229 228,NA,50,clear,0
-315,2018-02-15,1750,Vance Riffle,266 268,NA,49.1,clear and windy,0
-243,2016-07-28,4000,River Bend Upstream Beach,RBUB,NA,64.4,clear,0
-242,2016-07-28,4000,Hatchery Ditch,26,NA,61.7,clear,0
-233,2016-07-19,0,Hour Side Channel,UHSC,NA,65.3,clear,0
-232,2016-07-19,0,Hour Side Channel,HTPSC,NA,65.3,clear,0
-241,2016-07-28,4000,Hatchery Ditch,SEC2,NA,61.7,clear,0
-231,2016-07-19,0,Big Riffle,BRB,NA,63.5,clear,0
-230,2016-07-18,0,Cox Flat,CF,NA,65.3,clear,0
-351,2018-05-10,800,Eye Riffle,215A 215B 216 217 210,NA,55.4,partly cloudy,0
-325,2018-03-29,0,G95,323B 323A,NA,57.2,hazy,0.75
-326,2018-04-10,3500,Hatchery Riffle,33 26,NA,50,cloudy,0
-321,2018-03-20,1050,Big Riffle,424 426,NA,50.9,precipitation,0
-319,2018-03-20,1050,Junkyard Riffle,499 502,NA,51.8,precipitation,0
-353,2018-05-14,800,Hatchery Riffle,19 23 24 25,NA,0,clear,0
-507,2020-06-19,950,Hatchery Riffle,"33, 26, 28",NA,59.9,clear,0
-488,2020-02-24,800,Hatchery Riffle,"19, 23-25",NA,10,clear,NA
-524,2020-06-30,4250,Junkyard Riffle,499 502,NA,20.5,clear,0
-366,2018-06-13,1650,Gateway Riffle,221 225 226 228 229,NA,64.4,clear,0
-367,2018-06-14,1400,Robinson Riffle,NA,NA,16.8,clear,1
-368,2018-06-14,1400,Aleck Riffle,120 119,NA,60.8,clear,0
-370,2018-06-14,1400,Trailer Park Riffle,96 97 98,NA,61.7,clear,0
-385,2018-07-18,4500,Vance Riffle,268,NA,68.9,clear,1.4
-472,2019-08-07,4620,Bedrock Park Riffle,"55,56",NA,0,clear,0
-451,2019-07-08,1400,Hatchery Ditch,"33,26,28",NA,61.7,clear,0
-414,2018-08-22,0,Auditorium Riffle,29-32,NA,59,clear,0
-417,2018-09-11,800,Aleck Riffle,119 120,NA,58.1,clear,0
-419,2018-09-11,800,Matthews Riffle,103 104 105,NA,59,clear,0
-422,2018-09-12,6000,McFarland,450,NA,60.4,NA,0
-423,2018-09-12,6000,Big Riffle,424 426,NA,60.4,cloudy,1.1
-424,2018-09-13,6000,Goose Riffle,408,NA,60.8,clear,0
-425,2018-09-13,6000,Kiester Riffle,402,NA,60.8,clear,0
-438,2019-05-13,3500,Hatchery Riffle,"23,24,25",NA,53.6,cloudy,0
-452,2019-07-08,1400,Hatchery Riffle,"19,23,24,25",NA,60.8,clear,0
-484,2019-08-12,7600,Big Riffle,NA,NA,64.4,clear,0
-453,2019-07-08,1400,Auditorium Riffle,"29,31,32",NA,61.7,clear,0
-481,2019-08-09,4120,Eye Riffle,"210,215A,215B,216,217",NA,58.1,cloudy,0
-483,2019-08-12,7600,G95,323A,NA,62.6,clear,0
-439,2019-05-13,3500,Auditorium Riffle,"29,31,32,30",NA,53.6,cloudy,0
-457,2019-07-10,1200,Aleck Riffle,"119, 120",NA,61.7,clear,0
-516,2020-06-24,1240,Steep Riffle,189 185,NA,16.5,clear,0
-462,2019-07-15,5300,Kiester Riffle,"397,402,403",NA,68.9,clear,0
-466,2019-07-17,5300,Gridley Riffle,"486, 487A, 487B",NA,66.2,clear,NA
-470,2019-08-06,4580,Aleck Riffle,"119, 120",NA,62.6,cloudy,3
-479,2019-08-09,4120,Gateway Riffle,"221,225,226,228,229",NA,59,cloudy,0
-441,2019-05-14,3500,Trailer Park Riffle,"96,97,98",NA,51.8,cloudy,0
-612,2021-04-26,810,Steep Riffle,189 185,NA,13,partly cloudy,0
-670,2021-07-16,2070,Eye Riffle,210 215A&B 216,NA,17,clear,1.5
-633,2021-05-25,2500,Vance Riffle,266 268,NA,17,clear,0
-538,2020-07-22,0,Vance Riffle,NA,NA,19,clear,0
-617,2021-04-27,0,Goose Riffle,408,NA,16,clear,0
-625,2021-05-18,750,Hatchery Riffle,26 33,NA,13.5,clear,0
-626,2021-05-18,750,Bedrock Park Riffle,55 56,NA,14,clear,0
-641,2021-06-22,2750,Hatchery Riffle,26 33 28,NA,15.5,clear,0
-631,2021-05-21,710,Eye Riffle,210 215A/B 216,NA,14,clear,0
-642,2021-06-22,2750,Hatchery Riffle,19 23 24 25,NA,15.5,clear,0
-650,2021-06-25,2750,Gridley Riffle,486 487,NA,18.5,clear,0
-645,2021-06-23,2400,Trailer Park Riffle,NA,NA,16,clear,0
-658,2021-06-30,3010,Kiester Riffle,397 402 403,NA,18.5,clear,0
-713,2021-09-20,1290,G95,323A 323B,NA,15.5,clear,0
-714,2021-09-20,1290,Goose Riffle,408,NA,13,clear,0
-860,2022-08-22,1020,Hatchery Riffle,"19, 23, 24, 25",NA,15,clear,2
-679,2021-07-20,2990,McFarland,450,NA,18.5,clear,0
-662,2021-07-14,1550,Hatchery Riffle,26 33,NA,16.5,clear,0
-683,2021-08-25,670,Hatchery Riffle,28,NA,10,NA,0
-664,2021-07-14,1550,Bedrock Park Riffle,55 56,NA,18,clear,0
-685,2021-08-26,650,Trailer Park Riffle,96 97 98,NA,10,clear,0
-694,2021-08-30,1320,Kiester Riffle,402 397 403,NA,15.5,clear,0
-696,2021-08-31,1280,Junkyard Riffle,499 502,NA,16,clear,0
-698,2021-08-31,1320,McFarland,450,NA,15.4,clear,0
-699,2021-08-31,1320,Big Riffle,424 426,NA,15.3,clear,0
-701,2021-09-13,680,Auditorium Riffle,29 30 31 32,NA,11,clear,0
-717,2021-09-21,1290,Gridley Riffle,486 487,NA,17.5,clear,0
-719,2021-09-21,1290,Big Riffle,424 426,NA,16,clear,0
-738,2022-02-23,670,Aleck Riffle,"119, 120",NA,9.5,clear,NA
-853,2022-07-27,3750,Junkyard Riffle,"499, 502",NA,18.5,clear,0
-770,2022-03-28,3500,Vance Riffle,"226, 268",NA,14.75,precipitation,1.5
-767,2022-03-25,650,Gateway Riffle,"221, 225, 226, 228, 229",NA,13.5,clear,2
-776,2022-03-29,3500,McFarland,450,NA,0,clear,1.5
-780,2022-04-25,650,Hatchery Ditch,28,NA,13,clear,0
-787,2022-04-27,650,Gateway Riffle,"226, 228, 229, 221, 225",NA,14.5,clear,2
-793,2022-04-28,800,Kiester Riffle,"397, 403, 402",NA,0,clear,2
-823,2022-06-22,3500,Kiester Riffle,"402, 403",NA,18.5,clear,1.5
-824,2022-06-22,3500,G95,323ab,NA,19,clear,1.5
-827,2022-06-23,1480,Aleck Riffle,"119, 120",NA,16,clear,0
-837,2022-06-24,1480,Gateway Riffle,"221, 225, 226, 228, 229",NA,17.5,clear,1.5
-868,2022-08-25,3010,Kiester Riffle,"397, 402, 403",NA,19,clear,2
-872,2022-08-26,3010,Gridley Riffle,"486, 487",NA,19,clear,3.5
-805,2022-05-24,650,Bedrock Park Riffle,"55, 56",NA,15,NA,0.75
-873,2022-08-26,3010,Junkyard Riffle,"499, 502",NA,19.5,clear,3
-876,2023-02-06,980,McFarland,450,NA,9,clear,1.5
-937,2023-07-17,1500,Hatchery Riffle,"19,23,24,25",NA,15.5,clear,1.75
-889,2023-02-10,680,Hatchery Riffle,28,NA,8.5,clear,0.75
-943,2023-07-19,2000,Eye Riffle,"215A,215B,216,210",NA,17,clear,1.25
-911,2023-05-22,5650,Hatchery Riffle,"23, 25, 24, 19",NA,11,clear,1.5
-895,2023-05-26,10000,Gridley Riffle,"487, 486",NA,16,clear,1
-948,2023-07-20,5000,Kiester Riffle,"397,402,403",NA,19.5,clear,1.5
-947,2023-07-20,5000,Goose Riffle,408,NA,20,clear,1.5
-900,2023-05-25,10000,Big Riffle,"424, 426",NA,16,clear,2
-904,2023-05-23,4660,Robinson Riffle,"176,177,178(ABC),173",NA,12.5,clear,1.5
+survey_id,date,flow,section_name,survey_type,section_type,units_covered,visibility,temperature,weather,turbidity
+3,1999-06-30,7788,g95,unit,permanent,NA,NA,64,sunny,NA
+4,1999-06-30,7788,big hole,unit,permanent,NA,NA,64,sunny,NA
+5,1999-07-01,8050,mcfarland,unit,permanent,NA,1.5,65,sunny,NA
+6,1999-07-01,8050,big riffle,unit,random,NA,1.5,64,sunny,NA
+7,1999-07-01,8050,lower hour,unit,random,NA,NA,64.5,sunny,NA
+10,1999-06-28,621,robinson riffle,unit,permanent,NA,3.5,61.5,sunny,NA
+11,1999-06-28,621,below great western riffle,unit,random,NA,3.5,60.5,sunny,NA
+12,1999-06-25,628,aleck riffle,unit,permanent,NA,4.09999990463257,62,sunny,NA
+13,1999-06-25,628,bedrock riffle,unit,random,NA,4.09999990463257,58.5,sunny,NA
+14,1999-06-23,650,hatchery ditch,unit,permanent,NA,NA,56,sunny,NA
+15,1999-06-22,661,hatchery riffle,unit,permanent,NA,NA,56.5,sunny,NA
+17,1999-06-04,1876,mcfarland,unit,random,NA,1.70000004768372,64.5,overcast,NA
+18,1999-06-03,1752,goose riffle,unit,random,NA,1,63,overcast,NA
+18,1999-06-03,1752,big riffle,unit,random,NA,1,63,overcast,NA
+19,1999-06-01,1870,kiester riffle,unit,random,NA,1.5,67,overcast,NA
+21,1999-05-25,1886,vance riffle,comp,NA,NA,NA,64,sunny,NA
+22,1999-05-25,1886,g95,comp,NA,NA,NA,66,sunny,NA
+23,1999-05-24,1886,vance riffle,comp,NA,NA,0.600000023841858,65,sunny,NA
+25,1999-05-20,627,gateway riffle,comp,NA,NA,3.5,58,sunny,NA
+26,1999-05-20,627,steep riffle,comp,NA,NA,2.79999995231628,56.5,overcast,NA
+28,1999-05-20,627,eye riffle,comp,NA,NA,2.59999990463257,57.5,sunny,NA
+29,1999-04-09,3297,g95,comp,NA,NA,NA,51,sunny,NA
+31,1999-04-12,600,hatchery riffle,comp,NA,NA,NA,NA,NA,NA
+32,1999-04-12,600,hatchery riffle,comp,NA,NA,NA,NA,NA,NA
+34,1999-04-13,600,matthews riffle,comp,NA,NA,NA,NA,NA,NA
+35,1999-04-13,600,robinson riffle,comp,NA,NA,NA,NA,NA,NA
+36,1999-04-14,4019,g95,comp,NA,NA,NA,NA,NA,NA
+37,1999-04-14,4019,g95,comp,NA,NA,NA,NA,NA,NA
+40,1999-04-27,621,hatchery riffle,comp,NA,NA,NA,51,NA,NA
+41,1999-04-27,621,hatchery riffle,comp,NA,NA,NA,52,NA,NA
+42,1999-04-27,621,auditorium rifle,comp,NA,NA,NA,52,NA,NA
+43,1999-04-27,621,auditorium riffle,comp,NA,NA,NA,53,NA,NA
+44,1999-04-27,621,upper bedrock pool to h70 bridge,comp,NA,NA,NA,53,NA,NA
+47,1999-04-29,621,steep riffle,comp,NA,NA,NA,52.5,NA,NA
+49,1999-04-29,621,eye riffle,comp,NA,NA,NA,55.5,NA,NA
+51,1999-04-30,614,trailer park riffle,comp,NA,NA,NA,53,NA,NA
+52,1999-04-30,614,aleck riffle,comp,NA,NA,NA,55,NA,NA
+53,1999-04-30,614,robinson riffle,comp,NA,NA,NA,NA,NA,NA
+56,1999-05-03,5025,big hole,comp,NA,NA,NA,56.5,NA,NA
+58,1999-05-04,4293,kiester riffle,comp,NA,NA,NA,57,NA,NA
+60,1999-05-04,4293,lower hour,comp,NA,NA,NA,56,NA,NA
+61,1999-05-04,4293,hour riffle,comp,NA,NA,NA,56,NA,NA
+62,1999-05-05,620,66.75-67,comp,NA,NA,NA,50.5,NA,NA
+63,1999-05-05,620,66.6-66.75,comp,NA,NA,NA,52,NA,NA
+64,1999-05-05,620,auditorium riffle,comp,NA,NA,NA,52,NA,NA
+65,1999-05-13,620,hatchery riffle,unit,permanent,NA,NA,52,sunny,NA
+67,1999-05-17,615,bedrock riffle,comp,NA,NA,NA,55,sunny,NA
+69,1999-05-17,615,hatchery riffle,comp,NA,NA,NA,54.5,sunny,NA
+69,1999-05-17,615,auditorium riffle,comp,NA,NA,NA,54.5,sunny,NA
+69,1999-05-17,615,hatchery ditch,comp,NA,NA,NA,54.5,sunny,NA
+70,1999-05-18,620,bedrock riffle,unit,permanent,NA,NA,NA,sunny,NA
+71,1999-05-18,620,trailer park riffle,unit,permanent,NA,NA,NA,sunny,NA
+71,1999-05-18,620,matthews riffle,unit,permanent,NA,NA,NA,sunny,NA
+72,1999-05-18,620,matthews riffle,unit,permanent,NA,NA,NA,sunny,NA
+72,1999-05-18,620,aleck riffle,unit,permanent,NA,NA,NA,sunny,NA
+73,1999-05-19,622,gravel mine to n. robinson riffle,unit,permanent,NA,NA,57,sunny,NA
+74,1999-05-19,622,great western to gravel mine,unit,permanent,NA,3.5,63,sunny,NA
+76,1999-05-20,627,robinson riffle,unit,permanent,NA,NA,56,sunny,NA
+77,1999-06-22,661,auditorium riffle,unit,permanent,NA,NA,57,sunny,NA
+78,1999-07-21,627,hatchery riffle,unit,permanent,NA,NA,59,sunny,NA
+79,1999-07-21,627,auditorium riffle,unit,permanent,NA,NA,59,sunny,NA
+80,1999-07-21,627,auditorium riffle,unit,permanent,NA,NA,61,sunny,NA
+82,1999-07-22,624,hatchery ditch,unit,permanent,NA,NA,60,sunny,NA
+84,1999-06-24,663,hatchery ditch,unit,permanent,NA,2,57.5,sunny,NA
+85,1999-06-24,663,hatchery ditch,unit,permanent,NA,2,56,sunny,NA
+86,1999-07-26,623,montgomery street,unit,random,NA,NA,61,sunny,NA
+89,1999-07-28,9564,g95,unit,random,NA,NA,63,sunny,NA
+91,1999-07-28,9564,above big hole boat launch,comp,NA,NA,2.40000009536743,63,sunny,NA
+92,1999-07-28,9564,g95,unit,permanent,NA,NA,62.5,sunny,NA
+93,1999-07-29,9315,mcfarland,unit,permanent,NA,3.09999990463257,63,sunny,NA
+94,1999-07-29,9315,swampy bend to gridley bridge,unit,random,NA,3.09999990463257,64,sunny,NA
+95,1999-08-23,600,hatchery riffle,unit,permanent,NA,NA,55,sunny,NA
+95,1999-08-23,600,auditorium riffle,unit,permanent,NA,NA,55,sunny,NA
+97,1999-08-26,4500,g95,unit,permanent,NA,NA,63,overcast,NA
+98,1999-08-30,5500,mcfarland,unit,permanent,NA,2.90000009536743,65,sunny,NA
+99,1999-08-26,4500,goose riffle,unit,permanent,NA,NA,64,overcast,NA
+100,1999-08-26,4500,hour riffle,unit,random,NA,NA,64,overcast,NA
+102,1999-08-25,NA,eye riffle,unit,permanent,NA,NA,61,overcast,NA
+103,1999-08-25,NA,eye riffle,unit,random,NA,NA,58,overcast,NA
+104,1999-08-25,NA,eye riffle,unit,permanent,NA,NA,58,overcast,NA
+105,1999-08-24,600,above hatchery,unit,random,NA,NA,56,overcast,NA
+106,1999-08-24,600,aleck riffle,unit,permanent,NA,NA,58,overcast,NA
+107,1999-08-24,600,robinson riffle,unit,permanent,NA,NA,59,overcast,NA
+110,1999-10-06,600,steep riffle,unit,random,NA,NA,60,overcast,NA
+111,1999-10-06,600,eye riffle,unit,permanent,NA,NA,58,sunny,NA
+112,1999-10-06,600,robinson riffle,unit,permanent,NA,NA,56.5,overcast,NA
+113,1999-10-06,600,aleck riffle,unit,permanent,NA,NA,61,sunny,NA
+114,1999-10-27,2450,g95,comp,NA,NA,NA,56,precipitation,NA
+116,1999-10-27,2450,eye riffle,comp,NA,NA,4.80000019073486,54,overcast,NA
+117,1999-10-27,2450,big hole,comp,NA,NA,NA,NA,precipitation,NA
+119,1999-10-27,2450,vance riffle,comp,NA,NA,NA,NA,precipitation,NA
+120,1999-10-26,600,eye riffle,comp,NA,NA,NA,55,overcast,NA
+121,1999-10-26,600,steep riffle,comp,NA,NA,NA,58.5,overcast,NA
+122,1999-10-26,600,robinson riffle,comp,NA,NA,NA,58,sunny,NA
+123,1999-10-26,600,steep riffle,comp,NA,NA,NA,NA,overcast,NA
+124,1999-09-27,3500,mcfarland,unit,permanent,NA,1,NA,sunny,NA
+125,1999-09-27,3500,big bar,unit,random,NA,1,NA,sunny,NA
+128,1999-10-07,600,matthews riffle,comp,NA,NA,NA,53.5,sunny,NA
+129,1999-10-07,600,trailer park riffle,comp,NA,NA,NA,53.5,sunny,NA
+130,1999-10-07,3900,vance riffle,comp,NA,NA,NA,58.5,sunny,NA
+131,1999-10-25,600,hatchery riffle,comp,NA,NA,NA,NA,sunny,NA
+133,1999-10-25,600,bedrock riffle,comp,random,NA,NA,NA,sunny,NA
+134,1999-10-25,600,trailer park riffle,comp,random,NA,NA,NA,sunny,NA
+247,2000-06-05,600,hatchery riffle,comp,NA,NA,NA,56,sunny,NA
+248,2000-06-05,600,hatchery riffle,comp,NA,NA,NA,57,sunny,NA
+249,2000-06-05,600,auditorium riffle,comp,NA,NA,NA,58,sunny,NA
+249,2000-06-05,600,bedrock riffle,comp,NA,NA,NA,58,sunny,NA
+251,2000-06-06,600,trailer park riffle,comp,NA,NA,2.5,60.5,sunny,NA
+251,2000-06-06,600,matthews riffle,comp,NA,NA,2.5,60.5,sunny,NA
+251,2000-06-06,600,aleck riffle,comp,NA,NA,2.5,60.5,sunny,NA
+252,2000-06-07,600,robinson riffle,comp,NA,NA,NA,63,sunny,NA
+252,2000-06-07,600,steep riffle,comp,NA,NA,NA,63,sunny,NA
+254,2000-06-08,600,eye riffle,comp,NA,NA,NA,60,overcast,NA
+255,2000-06-08,600,gateway riffle,comp,NA,NA,NA,60,overcast,NA
+256,2000-06-12,4000,vance riffle,comp,NA,NA,1,65,sunny,NA
+257,2000-06-13,4000,gateway riffle,comp,NA,NA,NA,68,sunny,NA
+258,2000-06-14,4000,hatchery ditch,comp,NA,NA,NA,55.5,sunny,NA
+259,2000-06-19,NA,hatchery ditch,comp,NA,NA,NA,57,sunny,NA
+260,1999-12-16,600,robinson riffle,unit,permanent,NA,NA,NA,sunny,NA
+260,1999-12-16,600,steep riffle,unit,permanent,NA,NA,NA,sunny,NA
+261,1999-12-16,600,trailer park riffle,unit,random,NA,NA,NA,sunny,NA
+261,1999-12-16,600,matthews riffle,unit,random,NA,NA,NA,sunny,NA
+262,1999-12-16,600,hatchery riffle,unit,permanent,NA,NA,NA,sunny,NA
+262,1999-12-16,600,auditorium riffle,unit,permanent,NA,NA,NA,sunny,NA
+262,1999-12-16,600,bedrock riffle,unit,permanent,NA,NA,NA,sunny,NA
+263,2000-01-06,NA,hatchery ditch,unit,permanent,NA,NA,50,overcast,NA
+264,2000-01-19,600,robinson riffle,unit,permanent,NA,1.5,NA,overcast,NA
+264,2000-01-19,600,steep riffle,unit,permanent,NA,1.5,NA,overcast,NA
+265,2000-01-19,600,eye riffle,unit,permanent,NA,1.5,NA,overcast,NA
+268,2000-02-29,NA,hatchery ditch,unit,permanent,NA,NA,NA,precipitation,NA
+269,2000-03-02,NA,hatchery ditch,unit,permanent,NA,NA,46.5,precipitation,NA
+270,2000-03-02,NA,hatchery ditch,unit,random,NA,NA,47.5,overcast,NA
+271,2000-03-21,NA,hatchery ditch,unit,permanent,NA,NA,48.5,sunny,NA
+272,2000-03-21,NA,hatchery ditch,unit,random,NA,NA,NA,sunny,NA
+274,2000-03-22,600,"river mile 66.9; units 5,6,7,8",unit,random,NA,NA,49.5,sunny,NA
+276,2000-03-22,600,auditorium riffle,unit,random,NA,NA,51,sunny,NA
+276,2000-03-22,600,bedrock riffle,unit,random,NA,NA,51,sunny,NA
+277,2000-03-22,600,bedrock riffle,unit,random,NA,NA,52.5,sunny,NA
+282,2000-04-04,600,robinson riffle,unit,random,NA,NA,NA,sunny,NA
+283,2000-04-04,600,robinson riffle,unit,random,NA,NA,NA,sunny,NA
+284,2000-04-04,600,steep riffle,unit,random,NA,NA,NA,sunny,NA
+284,2000-04-04,600,eye riffle,unit,random,NA,NA,NA,sunny,NA
+285,2000-04-04,600,eye riffle,unit,permanent,NA,NA,NA,sunny,NA
+287,2000-04-06,2500,big hole,unit,random,NA,NA,58,sunny,NA
+288,2000-04-06,2500,big hole,unit,random,NA,NA,58,sunny,NA
+289,2000-04-06,NA,vance avenue,unit,random,NA,NA,58,sunny,NA
+290,2000-04-06,NA,g95,unit,permanent,NA,NA,58,sunny,NA
+291,2000-04-06,NA,kiester riffle,unit,random,NA,NA,58,sunny,NA
+293,2000-04-06,2500,goose riffle,unit,random,NA,NA,60,sunny,NA
+294,2000-04-26,600,hatchery riffle,unit,permanent,NA,NA,53.5,sunny,NA
+296,2000-04-26,600,bedrock riffle,unit,random,NA,NA,NA,sunny,NA
+297,2000-04-27,NA,hatchery ditch,unit,permanent,NA,NA,55,overcast,NA
+298,2000-04-27,NA,hatchery ditch,unit,permanent,NA,NA,54,overcast,NA
+299,2000-05-02,NA,hatchery ditch,unit,random,NA,NA,57,sunny,NA
+300,2000-05-02,NA,hatchery ditch,unit,permanent,NA,NA,54.5,sunny,NA
+303,2000-05-03,600,aleck riffle,unit,permanent,NA,NA,56.5,sunny,NA
+304,2000-05-03,600,robinson riffle,unit,permanent,NA,NA,58.5,sunny,NA
+305,2000-05-04,600,steep riffle,unit,random,NA,NA,59,sunny,NA
+306,2000-05-04,600,steep riffle,unit,random,NA,NA,59,sunny,NA
+307,2000-05-04,600,eye riffle,unit,permanent,NA,NA,60.5,sunny,NA
+308,2000-05-04,600,gateway riffle,unit,random,NA,NA,60.5,overcast,NA
+309,2000-05-15,2500,herringer riffle,unit,random,NA,NA,59,precipitation,NA
+311,2000-05-15,2500,gridley riffle,unit,random,NA,NA,59,precipitation,NA
+312,2000-05-16,2500,g95,unit,permanent,NA,NA,58,overcast,NA
+314,2000-05-16,2500,mcfarland,unit,permanent,NA,NA,57.5,overcast,NA
+315,2000-05-17,600,auditorium riffle,comp,permanent,NA,NA,54,sunny,NA
+315,2000-05-17,600,hatchery riffle,comp,permanent,NA,NA,54,sunny,NA
+316,2000-05-24,600,bedrock riffle,unit,random,NA,NA,NA,sunny,NA
+317,2000-05-24,600,bedrock riffle,unit,random,NA,NA,NA,sunny,NA
+317,2000-05-24,600,trailer park riffle,unit,random,NA,NA,NA,sunny,NA
+317,2000-05-24,600,matthews riffle,unit,random,NA,NA,NA,sunny,NA
+318,2000-05-24,600,aleck riffle,unit,permanent,NA,NA,NA,sunny,NA
+320,2000-05-25,600,steep riffle,unit,random,NA,NA,61.5,sunny,NA
+321,2000-05-25,600,steep riffle,unit,random,NA,NA,61.5,sunny,NA
+323,2000-06-08,600,gateway riffle,comp,n/a,NA,NA,61,precipitation,NA
+324,2000-06-12,4000,g95,comp,random,NA,NA,66,sunny,NA
+326,2000-06-15,NA,goose riffle,comp,NA,NA,NA,71,sunny,NA
+327,2000-06-20,4000,mcfarland,comp,NA,NA,NA,68,sunny,NA
+328,2000-06-20,4000,mcfarland,comp,NA,NA,NA,71,sunny,NA
+329,2000-06-21,NA,mcfarland,comp,NA,NA,NA,70,sunny,NA
+330,2000-06-22,4000,gridley riffle,comp,NA,NA,NA,67,sunny,NA
+332,2000-06-22,4000,herringer riffle,comp,NA,NA,NA,69,sunny,NA
+333,2000-07-17,NA,hatchery ditch,unit,permanent,NA,NA,66,sunny,NA
+335,2000-07-17,NA,auditorium riffle,unit,permanent,NA,NA,64.5,sunny,NA
+336,2000-07-17,NA,hatchery riffle,unit,permanent,NA,NA,64,NA,NA
+338,2000-07-18,600,robinson riffle,unit,permanent,NA,NA,NA,sunny,NA
+339,2000-07-18,600,steep riffle,unit,random,NA,NA,NA,sunny,NA
+340,2000-07-18,600,eye riffle,unit,permanent,NA,NA,67,sunny,NA
+341,2000-07-19,7000,g95,unit,permanent,NA,NA,65.5,sunny,NA
+344,2000-08-14,NA,hatchery ditch,unit,permanent,NA,NA,64,sunny,NA
+345,2000-08-14,NA,hatchery ditch,unit,permanent,NA,NA,62.5,sunny,NA
+346,2000-08-14,600,hatchery riffle,unit,permanent,NA,NA,NA,sunny,NA
+347,2000-08-15,600,auditorium riffle,unit,permanent,NA,NA,NA,sunny,NA
+348,2000-08-15,600,bedrock riffle,unit,random,NA,NA,NA,sunny,NA
+349,2000-08-15,600,trailer park riffle,unit,random,NA,NA,64,sunny,NA
+351,2000-08-15,6000,aleck riffle,unit,permanent,NA,NA,NA,sunny,NA
+352,2000-08-16,600,robinson riffle,unit,random,NA,NA,64,sunny,NA
+353,2000-08-16,600,steep riffle,unit,random,NA,1.20000004768372,66,sunny,NA
+355,2000-08-16,600,eye riffle,unit,permanent,NA,1.10000002384186,65,sunny,NA
+357,2000-08-17,NA,goose riffle,unit,permanent,NA,NA,NA,overcast,NA
+358,2000-08-17,NA,g95,unit,permanent,NA,NA,66.5,overcast,NA
+360,2000-08-21,NA,gridley riffle,unit,random,NA,NA,65,sunny,NA
+361,2000-08-21,NA,gridley riffle,unit,random,NA,NA,65,sunny,NA
+362,2000-08-21,NA,herringer riffle,unit,random,NA,NA,66.5,sunny,NA
+363,2000-08-21,NA,herringer riffle,unit,random,NA,NA,65,sunny,NA
+364,2000-09-11,600,bedrock riffle,unit,random,NA,NA,NA,sunny,NA
+367,2000-09-11,600,hatchery riffle,unit,permanent,NA,NA,NA,sunny,NA
+367,2000-09-11,600,auditorium riffle,unit,permanent,NA,NA,NA,sunny,NA
+368,2000-09-11,600,hatchery riffle,unit,permanent,NA,NA,NA,sunny,NA
+368,2000-09-11,600,auditorium riffle,unit,permanent,NA,NA,NA,sunny,NA
+369,2000-09-11,600,trailer park riffle,unit,random,NA,NA,NA,sunny,NA
+369,2000-09-11,600,matthews riffle,unit,random,NA,NA,NA,sunny,NA
+370,2000-09-11,600,robinson riffle,unit,permanent,NA,NA,NA,sunny,NA
+371,2000-09-11,600,steep riffle,unit,random,NA,NA,NA,sunny,NA
+372,2001-03-06,NA,hatchery ditch,unit,permanent,NA,NA,44,sunny,NA
+373,2001-03-06,NA,hatchery ditch,unit,permanent,NA,NA,44,sunny,NA
+374,2001-03-07,600,trailer park riffle,unit,random,NA,1,51,sunny,NA
+374,2001-03-07,600,matthews riffle,unit,random,NA,1,51,sunny,NA
+375,2001-03-07,600,aleck riffle,unit,permanent,NA,NA,51,sunny,NA
+377,2001-03-07,600,hatchery riffle,unit,permanent,NA,1.5,48.5,sunny,NA
+377,2001-03-07,600,auditorium riffle,unit,permanent,NA,1.5,48.5,sunny,NA
+377,2001-03-07,600,hatchery ditch,unit,permanent,NA,1.5,48.5,sunny,NA
+379,2001-03-08,1700,goose riffle,unit,permanent,NA,NA,NA,overcast,NA
+380,2001-03-08,NA,mcfarland,unit,permanent,NA,NA,54,overcast,NA
+381,2001-03-08,600,robinson riffle,unit,permanent,NA,NA,50,overcast,NA
+381,2001-03-08,600,steep riffle,unit,permanent,NA,NA,50,overcast,NA
+381,2001-03-08,600,eye riffle,unit,permanent,NA,NA,50,overcast,NA
+382,2001-04-02,NA,hatchery ditch,unit,permanent,NA,NA,NA,sunny,NA
+385,2001-04-03,600,hatchery riffle,unit,permanent,NA,NA,NA,sunny,NA
+386,2001-04-03,600,aleck riffle,unit,permanent,NA,NA,NA,sunny,NA
+387,2001-04-04,600,robinson riffle,unit,permanent,NA,NA,NA,sunny,NA
+388,2001-04-04,600,steep riffle,unit,random,NA,NA,NA,sunny,NA
+389,2001-04-04,600,eye riffle,unit,permanent,NA,NA,NA,sunny,NA
+390,2001-07-03,600,aleck riffle,unit,permanent,NA,NA,NA,sunny,NA
+391,2001-07-03,600,eye riffle,unit,permanent,NA,NA,NA,sunny,NA
+393,2001-04-05,1550,mcfarland,unit,permanent,NA,NA,NA,sunny,NA
+394,2001-04-05,1550,g95,unit,permanent,NA,NA,NA,sunny,NA
+396,2001-05-02,600,bedrock riffle,comp,random,NA,NA,52,sunny,NA
+396,2001-05-02,600,matthews riffle,comp,random,NA,NA,52,sunny,NA
+397,2001-07-09,1900,goose riffle,unit,permanent,NA,NA,NA,sunny,NA
+398,2001-07-09,NA,kiester riffle,unit,random,NA,NA,NA,sunny,NA
+399,2001-07-09,NA,g95,unit,permanent,NA,NA,NA,sunny,NA
+402,2001-07-02,600,steep riffle,unit,random,NA,NA,NA,sunny,NA
+403,2001-06-06,NA,g95,unit,permanent,NA,NA,NA,sunny,NA
+404,2001-06-06,600,steep riffle,unit,random,NA,NA,NA,sunny,NA
+405,2001-06-06,600,eye riffle,unit,permanent,NA,NA,NA,sunny,NA
+407,2001-06-05,600,aleck riffle,unit,permanent,NA,NA,NA,sunny,NA
+408,2001-06-05,600,auditorium riffle,unit,permanent,NA,NA,NA,sunny,NA
+409,2001-06-05,600,hatchery riffle,unit,permanent,NA,NA,NA,sunny,NA
+410,2001-05-30,NA,hatchery ditch,unit,permanent,NA,NA,NA,sunny,NA
+411,2001-07-10,NA,hatchery ditch,comp,permanent,NA,NA,59,sunny,NA
+414,2001-05-09,1300,big riffle,comp,random,NA,NA,62,sunny,NA
+415,2001-07-10,600,hatchery riffle,comp,permanent,NA,NA,60,sunny,NA
+416,2001-07-10,600,auditorium riffle,unit,permanent,NA,NA,57,sunny,NA
+417,2001-05-08,NA,kiester riffle,comp,random,NA,NA,65,sunny,NA
+418,2001-05-07,1350,vance riffle,comp,random,NA,1,63.5,sunny,NA
+418,2001-05-07,1350,g95,comp,random,NA,1,63.5,sunny,NA
+419,2001-05-02,600,aleck riffle,comp,permanent,NA,NA,52.5,sunny,NA
+419,2001-05-02,600,trailer park riffle,comp,permanent,NA,NA,52.5,sunny,NA
+419,2001-05-02,600,matthews riffle,comp,permanent,NA,NA,52.5,sunny,NA
+420,2001-05-03,600,robinson riffle,comp,random,NA,NA,53,sunny,NA
+420,2001-05-03,600,steep riffle,comp,random,NA,NA,53,sunny,NA
+420,2001-05-03,600,eye riffle,comp,random,NA,NA,53,sunny,NA
+420,2001-05-03,600,gateway riffle,comp,random,NA,NA,53,sunny,NA
+421,2001-05-09,1300,mcfarland,comp,random,NA,NA,63,sunny,NA
+424,2001-05-30,NA,hatchery ditch,unit,permanent,NA,NA,55,sunny,NA
+426,2001-06-05,600,robinson riffle,comp,permanent,NA,NA,NA,sunny,NA
+427,2001-07-30,600,robinson riffle,unit,permanent,NA,NA,NA,sunny,NA
+427,2001-07-30,600,steep riffle,unit,permanent,NA,NA,NA,sunny,NA
+427,2001-07-30,600,eye riffle,unit,permanent,NA,NA,NA,sunny,NA
+428,2001-07-31,1900,mcfarland,unit,permanent,NA,NA,69,sunny,NA
+429,2001-07-31,1900,goose riffle,unit,permanent,NA,NA,69,sunny,NA
+430,2001-07-31,1900,g95,unit,permanent,NA,NA,67,sunny,NA
+433,2001-07-26,600,hatchery riffle,unit,permanent,NA,NA,60,sunny,NA
+434,2001-07-26,600,bedrock riffle,unit,permanent,NA,NA,60,sunny,NA
+436,2001-07-27,600,matthews riffle,unit,permanent,NA,NA,NA,sunny,NA
+437,2001-08-13,5,hatchery ditch,unit,permanent,NA,NA,60,sunny,NA
+438,2001-08-13,700,hatchery riffle,unit,permanent,NA,NA,NA,sunny,NA
+438,2001-08-13,700,auditorium riffle,unit,permanent,NA,NA,NA,sunny,NA
+440,2001-09-11,NA,goose riffle,unit,NA,NA,NA,NA,overcast,NA
+441,2001-09-11,NA,g95,unit,NA,NA,NA,NA,overcast,NA
+442,2001-09-11,NA,g95,unit,NA,NA,NA,NA,overcast,NA
+443,2001-09-10,NA,hatchery ditch,unit,NA,NA,NA,NA,overcast,NA
+444,2001-09-10,NA,auditorium riffle,unit,permanent,NA,NA,NA,sunny,NA
+447,2001-09-10,NA,steep riffle,unit,permanent,NA,NA,NA,sunny,NA
+448,2001-08-16,NA,herringer riffle,unit,random,NA,NA,NA,sunny,NA
+449,2001-08-16,NA,shallow riffle,unit,random,NA,NA,NA,sunny,NA
+450,2001-08-16,NA,gridley riffle,unit,random,NA,NA,NA,sunny,NA
+451,2001-08-15,NA,vance riffle,unit,permanent,NA,NA,NA,sunny,NA
+452,2001-08-15,NA,g95,unit,permanent,NA,NA,NA,sunny,NA
+454,2001-08-15,NA,kiester riffle,unit,permanent,NA,NA,NA,sunny,NA
+456,2001-08-14,600,robinson riffle,unit,permanent,NA,NA,NA,sunny,NA
+457,2001-08-14,700,steep riffle,unit,random,NA,NA,62,sunny,NA
+458,2001-08-14,600,robinson riffle,unit,random,NA,NA,NA,sunny,NA
+459,2001-08-14,600,robinson riffle,unit,random,NA,NA,NA,sunny,NA
+460,2001-08-15,NA,hour riffle,unit,NA,NA,NA,NA,sunny,NA
+462,2001-08-15,600,eye riffle,unit,NA,NA,NA,NA,sunny,NA
+2,1999-06-30,7788,g95,unit,random,NA,NA,65,sunny,NA
+9,1999-06-29,600,eye riffle,unit,random,NA,3.5,64.5,sunny,NA
+16,1999-06-04,1876,swampy bend,unit,random,NA,1.70000004768372,65,overcast,NA
+20,1999-05-26,1884,g95,comp,NA,NA,NA,66.5,sunny,NA
+27,1999-05-20,627,steep riffle,comp,NA,NA,NA,57,overcast,NA
+33,1999-04-12,600,upper bedrock pool to h70 bridge,comp,NA,NA,NA,NA,NA,NA
+38,1999-04-14,4019,palm ave. access,comp,NA,NA,NA,NA,NA,NA
+46,1999-04-29,621,trailer park riffle,comp,NA,NA,NA,49.5,NA,NA
+55,1999-05-03,5025,vance avenue,comp,NA,NA,1.29999995231628,55,NA,NA
+59,1999-05-04,4293,hour bars,comp,NA,NA,NA,56,NA,NA
+66,1999-05-13,620,hatchery riffle,comp,NA,NA,NA,52,sunny,NA
+75,1999-05-19,622,aleck riffle,unit,random,NA,NA,53.5,sunny,NA
+81,1999-07-22,624,hatchery ditch,unit,permanent,NA,NA,60.5,sunny,NA
+87,1999-07-26,623,aleck riffle,unit,permanent,NA,NA,61,sunny,NA
+90,1999-07-28,9564,goose riffle,unit,permanent,NA,NA,65,sunny,NA
+109,1999-08-23,600,hatchery ditch,unit,permanent,NA,NA,NA,sunny,NA
+115,1999-10-27,2450,gateway riffle,comp,NA,NA,NA,54,overcast,NA
+118,1999-10-27,2450,across from big hole boat launch,comp,NA,NA,NA,NA,precipitation,NA
+126,1999-09-28,600,bedrock riffle,comp,NA,NA,NA,NA,sunny,NA
+132,1999-10-25,600,auditorium riffle,comp,NA,NA,NA,NA,sunny,NA
+135,1999-10-25,600,matthews riffle,comp,NA,NA,NA,NA,sunny,NA
+253,2000-06-07,600,robinson riffle,comp,NA,NA,NA,57,sunny,NA
+273,2000-03-21,NA,hatchery ditch,unit,permanent,NA,NA,NA,sunny,NA
+275,2000-03-22,600,hatchery riffle,unit,permanent,NA,NA,50,overcast,NA
+286,2000-04-06,2500,vance riffle,unit,random,NA,NA,58,sunny,NA
+295,2000-04-26,600,auditorium riffle,unit,permanent,NA,NA,55,sunny,NA
+301,2000-05-03,600,trailer park riffle,unit,random,NA,NA,55,sunny,NA
+313,2000-05-16,2500,goose riffle,unit,permanent,NA,NA,57.5,overcast,NA
+310,2000-05-15,2500,herringer riffle,unit,random,NA,NA,59,precipitation,NA
+319,2000-05-25,600,eye riffle,unit,permanent,NA,NA,62,sunny,NA
+331,2000-06-22,4000,junkyard riffle,comp,NA,NA,NA,68,sunny,NA
+337,2000-07-18,600,aleck riffle,unit,permanent,NA,NA,62,sunny,NA
+342,2000-07-19,7000,goose riffle,unit,permanent,NA,NA,66,sunny,NA
+350,2000-08-15,600,robinson riffle,unit,permanent,NA,NA,66,sunny,NA
+354,2000-08-16,600,steep riffle,unit,random,NA,NA,67,sunny,NA
+359,2000-08-21,NA,mcfarland,unit,permanent,NA,NA,65,sunny,NA
+365,2000-09-11,600,steep riffle,unit,random,NA,NA,NA,sunny,NA
+378,2001-03-08,1700,g95,unit,permanent,NA,NA,52,overcast,NA
+383,2001-04-02,NA,hatchery ditch,unit,permanent,NA,NA,NA,sunny,NA
+395,2001-05-01,600,auditorium riffle,comp,random,NA,NA,NA,sunny,NA
+395,2001-05-01,600,hatchery ditch,comp,random,NA,NA,NA,sunny,NA
+400,2001-07-02,600,robinson riffle,unit,permanent,NA,2,NA,sunny,NA
+401,2001-07-02,NA,steep riffle,unit,permanent,NA,2,NA,sunny,NA
+406,2001-06-06,NA,goose riffle,unit,permanent,NA,NA,NA,sunny,NA
+412,2001-05-01,600,hatchery riffle,comp,random,NA,NA,50,overcast,NA
+422,2001-05-09,1300,goose riffle,comp,random,NA,0.5,61.5,sunny,NA
+431,2001-07-27,600,aleck riffle,unit,permanent,NA,NA,NA,sunny,NA
+439,2001-09-11,NA,eye riffle,unit,NA,NA,NA,NA,overcast,NA
+446,2001-09-10,NA,robinson riffle,unit,permanent,NA,NA,NA,sunny,NA
+455,2001-08-14,700,aleck riffle,unit,permanent,NA,NA,61.5,sunny,NA
+461,2001-08-15,NA,gateway riffle,unit,NA,NA,NA,NA,sunny,NA
+8,1999-06-29,620,eye riffle,unit,permanent,NA,3.5,64.5,sunny,NA
+24,1999-05-24,626,gateway riffle,comp,NA,NA,NA,60,sunny,NA
+48,1999-04-29,621,steep riffle,comp,NA,NA,NA,52.5,NA,NA
+57,1999-05-03,5025,g95,comp,NA,NA,NA,56,NA,NA
+68,1999-05-17,615,auditorium riffle,comp,NA,NA,NA,55.5,overcast,NA
+68,1999-05-17,615,hatchery ditch,comp,NA,NA,NA,55.5,overcast,NA
+68,1999-05-17,615,hatchery ditch,comp,NA,NA,NA,55.5,overcast,NA
+83,1999-07-27,624,eye riffle,unit,permanent,NA,4.90000009536743,64,sunny,NA
+83,1999-07-27,624,gateway riffle,unit,permanent,NA,4.90000009536743,64,sunny,NA
+88,1999-07-26,623,robinson riffle,unit,permanent,NA,NA,61,sunny,NA
+96,1999-08-23,600,hatchery ditch,unit,permanent,NA,NA,55,sunny,NA
+101,1999-08-25,NA,big hole,unit,random,NA,2.90000009536743,63,sunny,NA
+108,1999-08-24,600,trailer park riffle,unit,random,NA,NA,59,overcast,NA
+127,1999-09-28,600,hatchery riffle,comp,NA,NA,NA,NA,sunny,NA
+127,1999-09-28,600,auditorium riffle,comp,NA,NA,NA,NA,sunny,NA
+250,2000-06-06,600,hwy 70 bridge to hwy 162 bridge,comp,NA,NA,NA,61,sunny,NA
+266,2000-02-29,600,hatchery riffle,unit,permanent,NA,1.5,NA,precipitation,NA
+267,2000-02-29,600,auditorium riffle,unit,permanent,NA,NA,NA,precipitation,NA
+278,2000-03-23,600,trailer park riffle,unit,random,NA,NA,49,sunny,NA
+278,2000-03-23,600,matthews riffle,unit,random,NA,NA,49,sunny,NA
+278,2000-03-23,600,aleck riffle,unit,random,NA,NA,49,sunny,NA
+278,2000-03-23,600,robinson riffle,unit,random,NA,NA,49,sunny,NA
+292,2000-04-06,NA,mcfarland,unit,permanent,NA,NA,58,sunny,NA
+302,2000-05-03,600,matthews riffle,unit,random,NA,NA,56,sunny,NA
+322,2000-05-25,600,robinson riffle,unit,random,NA,NA,61.5,sunny,NA
+325,2000-06-15,NA,kiester riffle,comp,NA,NA,NA,69,sunny,NA
+325,2000-06-15,NA,goose riffle,comp,NA,NA,NA,69,sunny,NA
+334,2000-07-17,NA,hatchery ditch,unit,permanent,NA,NA,63,sunny,NA
+343,2000-07-19,7000,mcfarland,unit,permanent,NA,NA,66.5,sunny,NA
+356,2000-08-16,600,gateway riffle,unit,random,NA,1.10000002384186,NA,sunny,NA
+366,2000-09-11,600,robinson riffle,unit,permanent,NA,NA,NA,sunny,NA
+376,2001-03-07,600,bedrock riffle,unit,random,NA,NA,NA,sunny,NA
+384,2001-04-03,600,auditorium riffle,unit,permanent,NA,NA,NA,sunny,NA
+392,2001-04-05,1550,goose riffle,unit,permanent,NA,NA,NA,sunny,NA
+413,2001-05-09,1300,mcfarland,comp,random,NA,NA,64.5,sunny,NA
+423,2001-05-10,NA,hatchery ditch,comp,random,NA,NA,55,sunny,NA
+435,2001-07-27,600,trailer park riffle,unit,permanent,NA,NA,NA,sunny,NA
+445,2001-09-10,NA,hatchery riffle,unit,permanent,NA,NA,NA,sunny,NA
+453,2001-08-15,NA,goose riffle,unit,permanent,NA,NA,NA,sunny,NA
+468,2003-04-23,600,robinson riffle,NA,NA,169-175,2,55.4,overcast,NA
+469,2003-04-23,600,aleck riffle,NA,NA,"119, 120, 121A",2,NA,overcast,NA
+471,2003-04-28,600,eye riffle,NA,NA,"205,210,215a,215b,216,215,217",0.5,54,precipitation,NA
+472,NA,600,steep riffle,NA,NA,"172.,185.189",0.5,54,precipitation,NA
+473,2003-04-30,NA,mcfarland,NA,NA,449-452,0.7,59,sunny,NA
+474,2003-04-30,NA,goose riffle,NA,NA,"408,409,410",0.7,58,sunny,NA
+475,2003-04-30,NA,g95,NA,NA,323a-323b,0.7,58,sunny,NA
+476,2003-04-22,NA,hatchery ditch,NA,NA,26,NA,NA,sunny,NA
+477,2003-04-22,NA,hatchery ditch,NA,NA,26,NA,NA,overcast,NA
+478,2003-04-22,NA,hatchery ditch,NA,NA,26,NA,NA,overcast,NA
+479,2003-04-20,1,hatchery ditch,NA,NA,26,NA,NA,overcast,NA
+480,2003-04-22,600,auditorium riffle,NA,NA,"30,32",2,NA,overcast,NA
+481,2003-04-22,600,auditorium riffle,NA,NA,"32a,31,31a,30",2,NA,overcast,NA
+482,2003-04-22,600,auditorium riffle,NA,NA,"30,29.29a",2,NA,overcast,NA
+483,2003-04-22,600,auditorium riffle,NA,NA,30.29a,2,NA,overcast,NA
+484,2003-04-22,600,auditorium riffle,NA,NA,"30,29",2,NA,overcast,NA
+485,2003-04-21,NA,hatchery riffle,NA,NA,19.23.24.25.,1.5,53.4,overcast,NA
+486,2003-04-21,NA,hatchery riffle,NA,NA,"25,33",1.5,53.6,overcast,NA
+486,2003-04-21,NA,hatchery ditch,NA,NA,"25,33",1.5,53.6,overcast,NA
+487,2003-04-21,NA,hatchery ditch,NA,NA,33,1.5,53.6,overcast,NA
+488,2003-04-21,NA,hatchery ditch,NA,NA,33,2,53.6,precipitation,NA
+489,2003-04-21,NA,hatchery ditch,NA,NA,33,2,53.6,precipitation,NA
+490,2002-08-12,5000,goose riffle,NA,NA,409.412,NA,62,sunny,NA
+491,2002-08-12,5000,goose riffle,NA,NA,408 410 411 413,3,62,sunny,NA
+492,2003-08-12,5000,mcfarland,NA,NA,449 450 451 452 453,1,62,sunny,NA
+493,2002-07-25,NA,aleck riffle,NA,NA,119-127,2,50,sunny,NA
+494,2002-07-15,NA,robinson riffle,NA,NA,169-171  173-177  179  183,2,58,sunny,NA
+495,2002-07-15,700,auditorium riffle,NA,NA,29-32,2,NA,sunny,NA
+496,2002-07-09,5500,g95,NA,NA,323a-323b,0.5,66,sunny,NA
+497,2002-07-09,5500,goose riffle,NA,NA,408-413,0.3,65,sunny,NA
+498,2002-07-09,5500,mcfarland,NA,NA,449-453,0.3,65,sunny,NA
+499,2002-08-08,600,eye riffle,NA,NA,"217,210,215,215b, 216",4,60,sunny,NA
+500,2002-08-08,600,eye riffle,NA,NA,"217, 210, 215,215b,216",4,60,sunny,NA
+501,2002-08-07,600,steep riffle,NA,NA,185 189,9,64,sunny,NA
+502,2002-08-06,600,hatchery riffle,NA,NA,"19, 23, 24, 25",9,60.5,sunny,NA
+503,2002-08-06,600,aleck riffle,NA,NA,"119, 120 121a",NA,63,sunny,NA
+504,2002-08-06,600,robinson riffle,NA,NA,"169-171, 173-177, 179, 183",9,62,sunny,NA
+505,2003-08-05,600,hatchery ditch,NA,NA,29-33,3,NA,sunny,NA
+505,2003-08-05,600,auditorium riffle,NA,NA,29-33,3,NA,sunny,NA
+506,2002-08-05,600,hatchery ditch,NA,NA,"26, 33,29-32",3,NA,sunny,NA
+507,2002-07-15,NA,hatchery ditch,NA,NA,33 26,NA,57,sunny,NA
+508,2002-08-05,600,hatchery ditch,NA,NA,"26, 33",3,NA,sunny,NA
+509,2002-08-05,600,auditorium riffle,NA,NA,29-32,3,NA,sunny,NA
+510,2002-08-06,600,robinson riffle,NA,NA,"169-171, 173-177, 179, 183",NA,62,sunny,NA
+511,2002-08-06,600,hatchery riffle,NA,NA,"19, 23, 24, 25",NA,60.5,sunny,NA
+512,2002-08-06,600,aleck riffle,NA,NA,"119, 120, 121A",NA,63,sunny,NA
+513,2002-08-07,600,steep riffle,NA,NA,"185, 189",NA,64,sunny,NA
+514,2002-08-08,600,eye riffle,NA,NA,"200, 210, 215-217",4,60,sunny,NA
+515,2002-07-15,NA,hatchery ditch,NA,NA,"33, 26",NA,57,sunny,NA
+516,2002-07-11,700,steep riffle,NA,NA,185,3,67,sunny,NA
+517,2002-07-15,600,steep riffle,NA,NA,189,NA,NA,sunny,NA
+518,2002-02-10,700,eye riffle,NA,NA,"200, 210, 215, 216, 217",3,62,sunny,NA
+519,2002-07-10,700,eye riffle,NA,NA,"200, 210, 215, 216, 217",3,62,sunny,NA
+520,2002-07-10,700,eye riffle,NA,NA,"215, 210",3,64.5,sunny,NA
+521,2002-06-17,4000,big riffle,NA,NA,"424, 430, 433, 437, 429, 435",0.5,NA,sunny,NA
+522,2002-06-17,4000,goose riffle,NA,NA,"410, 413, 419, 420, 423, 444, 448A, 452, 451, 457",1,NA,sunny,NA
+523,2002-06-17,4000,mcfarland,NA,NA,"425, 428, 431, 434, 436, 438, 440, 445, 447, 450+",1,NA,sunny,NA
+524,2002-06-17,NA,mcfarland,NA,NA,"442, 443, 444, 447, 450, 456, 458, 461, 464",NA,NA,NA,NA
+525,2002-06-15,NA,hour bars,NA,NA,"338-370, 374",0.5,NA,sunny,NA
+526,2002-06-13,NA,lower hour,NA,NA,376-394,NA,NA,NA,NA
+527,2002-06-13,NA,kiester riffle,NA,NA,NA,NA,NA,NA,NA
+528,2002-06-12,3500,vance riffle,NA,NA,NA,0.5,NA,sunny,NA
+529,2002-06-11,NA,eye riffle,NA,NA,"215A, 215B, 205, 217, 215",NA,58,sunny,NA
+530,2002-06-11,NA,gateway riffle,NA,NA,"200, 218, 220, 215",NA,59,sunny,NA
+531,2002-06-11,NA,thermalito pool,NA,NA,231,NA,61,sunny,NA
+532,2002-06-10,600,robinson riffle,NA,NA,"183, 176, 179, 180, 177, 172",NA,NA,NA,NA
+533,2002-06-10,600,steep riffle,NA,NA,"185, 182, 190, 189, 191, 192, 193",NA,NA,sunny,NA
+533,2002-06-10,600,eye riffle,NA,NA,"185, 182, 190, 189, 191, 192, 193",NA,NA,sunny,NA
+534,2002-06-06,600,matthews riffle,NA,NA,NA,2,55,sunny,NA
+534,2002-06-06,600,aleck riffle,NA,NA,NA,2,55,sunny,NA
+534,2002-06-06,600,robinson riffle,NA,NA,NA,2,55,sunny,NA
+535,2002-06-05,600,trailer park riffle,NA,NA,"37-38, 40, 46, 54",NA,NA,sunny,NA
+536,2002-06-05,600,bedrock riffle,NA,NA,"56, 59, 51, 92, 96, 100",NA,NA,sunny,NA
+536,2002-06-05,600,trailer park riffle,NA,NA,"56, 59, 51, 92, 96, 100",NA,NA,sunny,NA
+537,2002-06-05,600,trailer park riffle,NA,NA,"57, 92, 96, 100",NA,NA,sunny,NA
+538,2002-06-05,600,bedrock riffle,NA,NA,"38, 42, 44, 49, 51, 52, 55",NA,NA,sunny,NA
+539,2002-06-05,600,bedrock riffle,NA,NA,"56, 94",NA,NA,sunny,NA
+539,2002-06-05,600,matthews riffle,NA,NA,"56, 94",NA,NA,sunny,NA
+540,2002-06-05,600,matthews riffle,NA,NA,"102, 104, 105",NA,NA,sunny,NA
+541,2002-06-05,600,hatchery ditch,NA,NA,26,NA,NA,sunny,NA
+542,2002-06-04,600,hatchery riffle,NA,NA,1-22,NA,55,sunny,NA
+542,2002-06-04,600,auditorium riffle,NA,NA,1-22,NA,55,sunny,NA
+543,2001-03-07,600,aleck riffle,NA,NA,"119, 120, 121A",NA,NA,precipitation,NA
+544,2001-03-07,600,robinson riffle,NA,NA,"169,170,171,173,174,175",NA,NA,precipitation,NA
+545,2001-03-07,600,steep riffle,NA,NA,"185, 189",NA,NA,precipitation,NA
+2,2007-06-27,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,2007-07-17,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,2007-07-18,NA,NA,NA,NA,NA,NA,NA,NA,NA
+6,2007-07-19,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,2007-08-13,NA,NA,NA,NA,NA,NA,NA,NA,NA
+8,2007-08-14,NA,NA,NA,NA,NA,NA,NA,NA,NA
+9,2007-08-15,NA,NA,NA,NA,NA,NA,NA,NA,NA
+10,2007-08-16,NA,NA,NA,NA,NA,NA,NA,NA,NA
+13,2005-06-21,NA,NA,NA,NA,NA,NA,NA,NA,NA
+14,2005-07-12,NA,NA,NA,NA,NA,NA,NA,NA,NA
+16,2005-08-09,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,2005-04-21,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,2005-04-19,NA,NA,NA,NA,NA,NA,NA,NA,NA
+20,2005-04-14,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,2005-04-12,NA,NA,NA,NA,NA,NA,NA,NA,NA
+24,2004-08-19,NA,NA,NA,NA,NA,NA,NA,NA,NA
+25,2004-08-18,NA,NA,NA,NA,NA,NA,NA,NA,NA
+26,2004-08-17,NA,NA,NA,NA,NA,NA,NA,NA,NA
+27,2004-08-16,NA,NA,NA,NA,NA,NA,NA,NA,NA
+29,2004-07-22,NA,NA,NA,NA,NA,NA,NA,NA,NA
+31,2004-07-15,NA,NA,NA,NA,NA,NA,NA,NA,NA
+32,2004-07-13,NA,NA,NA,NA,NA,NA,NA,NA,NA
+35,2004-05-25,NA,NA,NA,NA,NA,NA,NA,NA,NA
+36,2004-05-19,NA,NA,NA,NA,NA,NA,NA,NA,NA
+37,2004-05-03,NA,NA,NA,NA,NA,NA,NA,NA,NA
+38,2004-04-29,NA,NA,NA,NA,NA,NA,NA,NA,NA
+40,2004-04-26,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45,2010-08-10,620,NA,NA,NA,NA,NA,62.8,sunny,0
+46,2010-08-11,620,NA,NA,NA,NA,NA,64.8,sunny,0
+48,2010-08-17,620,NA,NA,NA,NA,NA,65.2,sunny,0
+49,2010-08-19,620,NA,NA,NA,NA,NA,60,sunny,0
+52,2010-09-15,620,NA,NA,NA,NA,NA,58,sunny,0
+53,2010-09-16,620,NA,NA,NA,NA,NA,58,clear,0
+55,2011-04-19,620,NA,NA,NA,NA,NA,0,cloudy,0
+56,2011-04-20,620,NA,NA,NA,NA,NA,0,cloudy,0.78
+11,2005-05-25,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21,2005-04-13,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,2004-07-20,NA,NA,NA,NA,NA,NA,NA,NA,NA
+58,2011-04-25,620,NA,NA,NA,NA,NA,11,cloudy,0.92
+59,2011-05-02,620,NA,NA,NA,NA,NA,12,sunny,2.85
+61,2011-05-04,620,NA,NA,NA,NA,NA,13,clear,0.42
+62,2011-05-09,620,NA,NA,NA,NA,NA,12,clear,0
+63,2011-05-10,620,NA,NA,NA,NA,NA,12,clear,0.03
+65,2011-06-28,620,NA,NA,NA,NA,NA,58,precipitation,0.48
+66,2011-06-29,620,NA,NA,NA,NA,NA,59,cloudy,0.04
+68,2011-07-18,600,NA,NA,NA,NA,NA,15,clear,0.49
+69,2011-07-19,620,NA,NA,NA,NA,NA,14.5,clear,0.65
+70,2011-07-20,600,NA,NA,NA,NA,NA,16,clear,0
+72,2011-08-15,620,NA,NA,NA,NA,NA,61,clear,1.05
+73,2011-08-16,620,NA,NA,NA,NA,NA,18,sunny,0.55
+74,2011-08-17,620,NA,NA,NA,NA,NA,18,sunny,0.97
+77,2011-08-23,1350,NA,NA,NA,NA,NA,21,sunny,4.18
+78,2012-05-02,620,NA,NA,NA,NA,NA,13,sunny,1.1
+80,2012-05-03,600,NA,NA,NA,NA,NA,53.6,cloudy,0.67
+81,2012-05-07,620,NA,NA,NA,NA,NA,60,sunny,1.16
+82,2012-05-08,600,NA,NA,NA,NA,NA,60.8,cloudy,1.1
+83,2012-05-10,620,NA,NA,NA,NA,NA,56.3,windy,0
+84,2012-05-14,2000,NA,NA,NA,NA,NA,62.6,clear,2.55
+86,2012-06-13,620,NA,NA,NA,NA,NA,55.4,sunny,0
+87,2012-06-19,5000,NA,NA,NA,NA,NA,57.2,sunny,1.6
+88,2012-06-21,5000,NA,NA,NA,NA,NA,59.9,clear,2.18
+89,2012-07-03,7000,NA,NA,NA,NA,NA,19,sunny,3.19
+91,2012-07-11,1000,NA,NA,NA,NA,NA,15,sunny,0.93
+92,2012-07-11,1000,NA,NA,NA,NA,NA,15,sunny,0.93
+93,2012-07-12,1000,NA,NA,NA,NA,NA,14.5,sunny,1.26
+313,2018-02-14,1000,Eye Riffle,NA,NA,215A 215B 216 217 210,NA,48.2,clear,0
+316,2018-02-15,1750,G95,NA,NA,323A 323B,NA,49.1,clear and windy,0
+317,2018-03-19,800,Hatchery Riffle,NA,NA,19 23 24 25,NA,47.6,clear,0.8
+320,2018-03-20,1050,McFarland,NA,NA,450,NA,50.9,precipitation,0
+322,2018-03-28,800,Bedrock Riffle,NA,NA,55 56,NA,48.2,clear,0.3
+323,2018-03-28,800,Aleck Riffle,NA,NA,119,NA,66.2,clear,0
+324,2018-03-29,NA,Vance Riffle,NA,NA,268,NA,56.3,clear,0.75
+327,2018-04-10,3250,Hatchery Riffle,NA,NA,28,NA,50,cloudy,0
+328,2018-04-12,2500,Gateway Riffle,NA,NA,225 228 221 229,NA,48.2,clear,1
+329,2018-04-12,5000,Vance Riffle,NA,NA,268,NA,51.8,clear,1
+330,2018-04-16,5000,Junkyard Riffle,NA,NA,499 502,NA,50,NA,0
+333,2018-04-17,1300,Steep Riffle,NA,NA,189 185,NA,49.46,clear,0
+334,2018-04-17,1300,Eye Riffle,NA,NA,215A 215B 217 216 210,NA,50.9,clear,0
+332,2018-04-16,5000,Big Riffle,NA,NA,426 424,NA,0,cloudy,0
+335,2018-04-17,0,G95,NA,NA,323A 323B,NA,53.6,clear,0
+336,2018-04-18,0,Trailer Park Riffle,NA,NA,96 97 98,NA,0,cloudy,0
+337,2018-04-18,0,Robinson Riffle,NA,NA,169-175,NA,0,cloudy,0
+338,2018-04-18,0,Matthews Riffle,NA,NA,103 104 105,NA,0,cloudy,0
+339,2018-05-07,0,Junkyard Riffle,NA,NA,499 502,NA,64.4,clear,1.5
+340,2018-05-07,0,Gridley Riffle,NA,NA,486 487,NA,66.2,clear,2
+341,2018-05-07,0,McFarland,NA,NA,450,NA,61.1,clear,2
+342,2018-05-07,0,Big Riffle,NA,NA,426 424,NA,62.6,clear,2
+343,2018-05-08,750,Robinson Riffle,NA,NA,173 174 175 170 169 171,NA,54.9,clear,0
+344,2018-05-08,750,Aleck Riffle,NA,NA,120 119,NA,55.4,clear,0
+345,2018-05-08,750,Matthews Riffle,NA,NA,103 104 105,NA,55.4,clear,0
+346,2018-05-08,750,Trailer Park Riffle,NA,NA,96 97 98,NA,55.4,clear,0
+347,2018-05-09,1050,Kiester Riffle,NA,NA,402 403 397,NA,59,clear,2
+348,2018-05-09,1050,Goose Riffle,NA,NA,408,NA,60.8,clear,2
+349,2018-05-09,1050,G95,NA,NA,323A 323B,NA,60.8,clear,2
+350,2018-05-10,0,Steep Riffle,NA,NA,185 189,NA,54.5,clear,NA
+352,2018-05-10,800,Gateway Riffle,NA,NA,221 225 226 228 229,NA,0,cloudy,0
+354,2018-05-14,800,Hatchery Riffle,NA,NA,33 26 28,NA,0,clear,0
+355,2018-05-15,800,Auditorium Riffle,NA,NA,29 30 31 32,NA,53.6,clear,1
+356,2018-05-15,800,Bedrock Riffle,NA,NA,55 56,NA,55.4,clear,1
+357,2018-05-16,1050,Vance Riffle,NA,NA,266 268,NA,59,NA,2
+358,2018-06-12,0,Junkyard Riffle,NA,NA,502 499,NA,68,clear,0
+331,2018-04-16,5000,Gridley Riffle,NA,NA,486 487,NA,68,cloudy,0
+359,2018-06-12,0,Gridley Riffle,NA,NA,486 487,NA,71.6,clear,0
+360,2018-06-12,0,McFarland,NA,NA,450,NA,69.8,clear,0
+361,2018-06-12,0,Big Riffle,NA,NA,424 426,NA,68.9,clear,0
+362,2018-06-12,1650,Goose Riffle,NA,NA,408,NA,70.7,clear,0
+363,2018-06-13,1650,Kiester Riffle,NA,NA,397 402 403,NA,68.9,clear,1
+364,2018-06-13,1650,G95,NA,NA,323A 323B,NA,68,clear,0
+365,2018-06-13,1650,Vance Riffle,NA,NA,266 268,NA,68,clear,0
+369,2018-06-14,1400,Matthews Riffle,NA,NA,103 104 105,NA,60.8,clear,1
+371,2018-06-18,1450,Hatchery Riffle,NA,NA,19 23 24 25,NA,60.8,clear,0
+372,2018-06-18,1450,Auditorium Riffle,NA,NA,30 31 32 29,NA,60.8,clear,0
+373,2018-06-18,1450,Hatchery Ditch,NA,NA,26 33,NA,61.7,clear,0
+374,2018-06-18,1450,Hatchery Ditch,NA,NA,28,NA,61.5,clear,0
+375,2018-06-18,1400,Bedrock Riffle,NA,NA,55 56,NA,61.5,clear,2
+376,2018-06-19,1450,Steep Riffle,NA,NA,185 189,NA,62.6,clear,0
+377,2018-06-19,1450,Eye Riffle,NA,NA,"215 A,B 216 210 217",NA,64.4,clear,1.5
+378,2018-07-17,4500,Junkyard Riffle,NA,NA,499,NA,68,clear,0
+379,2018-07-17,4500,Gridley Riffle,NA,NA,486 487,NA,68,clear,0
+380,2018-07-17,4500,McFarland,NA,NA,450,NA,68,clear,0
+381,2018-07-17,4500,Big Riffle,NA,NA,424 426,NA,68.9,NA,1.2
+382,2018-07-18,4500,Kiester Riffle,NA,NA,403 397 402,NA,68,NA,1.2
+383,2018-07-18,4500,Goose Riffle,NA,NA,408,NA,68,NA,1.2
+302,2018-02-12,1000,Hatchery Riffle,NA,NA,19 23 24 25,NA,47.48,clear,1.5
+303,2018-02-12,1000,Bedrock Riffle,NA,NA,55 56,NA,47.3,clear,1.5
+304,2018-02-13,1000,Trailer Park Riffle,NA,NA,96 97 98,NA,47.48,clear,0
+305,2018-02-13,1000,Matthews Riffle,NA,NA,103 104 105,NA,48.2,clear,0
+311,2018-02-13,1000,Aleck Riffle,NA,NA,119 120,NA,48.56,clear,0
+15,2005-07-13,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,2004-05-27,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51,2010-09-14,620,NA,NA,NA,NA,NA,64,clear,0
+64,2011-05-11,620,NA,NA,NA,NA,NA,13,cloudy,0
+75,2011-08-18,820,NA,NA,NA,NA,NA,17,sunny,2.52
+97,2012-08-09,1120,NA,NA,NA,NA,NA,14.5,clear,0.88
+105,2013-08-12,5500,NA,NA,NA,NA,NA,0,sunny,0
+159,2015-08-24,1500,Gridley Riffle,NA,NA,"486,487",NA,66.2,clear,0
+195,2016-04-26,1050,Big Riffle,NA,NA,424 426,NA,55.4,sunny,0
+213,2016-05-19,4500,Goose Riffle,NA,NA,408,NA,60.8,clear,0
+236,2016-07-26,4000,Hatchery Ditch,NA,NA,33 26 28,NA,59,clear,0
+245,2016-08-22,1600,Auditorium Riffle,NA,NA,29 30 31 32,NA,59.9,clear,0
+266,2017-07-18,0,G95,NA,NA,323A 323B,NA,64.4,clear,0
+288,2017-08-08,0,Aleck Riffle,NA,NA,119 120,NA,60.8,clear,0
+384,2018-07-18,4500,G95,NA,NA,323A 323B,NA,68.9,NA,1.4
+386,2018-07-19,1400,Gateway Riffle,NA,NA,"221,225,226,228,229",NA,62.6,clear,0
+387,2018-07-19,1400,Eye Riffle,NA,NA,"210, 217, 216, 215A, 215B,",NA,62.6,clear,0
+388,2018-07-19,1400,Steep Riffle,NA,NA,"185, 189",NA,0,NA,3
+94,2012-07-16,1000,NA,NA,NA,NA,NA,0,sunny,1.4
+95,2012-07-17,1000,NA,NA,NA,NA,NA,16,cloudy,1.53
+96,2012-08-07,1120,NA,NA,NA,NA,NA,16.2,sunny,2.15
+98,2012-08-13,1120,NA,NA,NA,NA,NA,16,sunny,1.75
+100,2012-08-15,5500,NA,NA,NA,NA,NA,18,clear,1.87
+101,2013-07-16,2500,NA,NA,NA,NA,NA,60,sunny,0
+102,2013-07-16,2500,NA,NA,NA,NA,NA,60,sunny,0
+104,2013-07-23,5500,NA,NA,NA,NA,NA,64,NA,0
+106,NA,0,NA,NA,NA,NA,NA,62,NA,0
+107,2013-08-13,2500,NA,NA,NA,NA,NA,0,NA,0
+109,2015-07-27,1898,Hatchery Ditch,NA,NA,"33, 26",NA,60.3,clear,0
+149,2015-08-19,1100,Steep Riffle,NA,NA,"185,189",NA,61.2,clear,0
+151,2015-08-19,1100,Gateway Riffle,NA,NA,"221,225,226,228,229",NA,62.6,clear,0
+153,2015-08-20,1500,G95,NA,NA,"323A,323B",NA,65.3,NA,0
+154,2015-08-20,1500,Kiester Riffle,NA,NA,"397,402,403",NA,66.2,NA,0
+155,2015-08-20,1500,Goose Riffle,NA,NA,408,NA,67.1,NA,0
+156,2015-08-24,1500,Big Riffle,NA,NA,"424,426",NA,64.4,clear,0
+157,2015-08-24,1500,McFarland,NA,NA,"441,445",NA,65.3,clear,0
+161,2015-09-08,830,Hatchery Riffle,NA,NA,"19,23,24,25",NA,58.1,clear,0
+162,2015-09-08,835,Auditorium Riffle,NA,NA,"29,30,31,32",NA,56.3,clear,0
+163,2015-09-08,830,Hatchery Ditch,NA,NA,"26,33,28",NA,56.3,clear,0
+164,2015-09-09,800,Bedrock Riffle,NA,NA,"55,56",NA,56.3,clear,0
+165,2015-09-09,800,Trailer Park Riffle,NA,NA,"96,97,98",NA,57.2,clear,0
+166,2015-09-09,800,Aleck Riffle,NA,NA,"119,120",NA,58.1,clear,0
+167,2015-09-09,800,Matthews Riffle,NA,NA,"103,104,105",NA,57.6,clear,0
+168,2015-09-10,800,Robinson Riffle,NA,NA,NA,NA,56.3,clear,0
+170,2015-09-10,800,Eye Riffle,NA,NA,"215A, 215B, 216, 217, 210",NA,59.9,clear,0
+171,2015-09-14,800,Gateway Riffle,NA,NA,"226, 228, 229, 221, 225",NA,54.5,cloudy,0
+172,2015-09-14,1200,Vance Riffle,NA,NA,"266, 268",NA,59,precipitation,0
+173,2015-09-14,1200,G95,NA,NA,"323A, 323B",NA,59.9,cloudy,0
+174,2015-09-14,1200,Kiester Riffle,NA,NA,"397, 402, 403",NA,60.4,NA,0
+176,2015-09-15,1200,Big Riffle,NA,NA,"424, 426",NA,59.9,cloudy,0
+71,2011-07-28,1950,NA,NA,NA,NA,NA,20,clear,0
+178,2015-09-15,1200,McFarland,NA,NA,450,NA,59.9,cloudy,0
+179,2015-09-15,1200,Junkyard Riffle,NA,NA,"502, 499",NA,61,NA,0
+180,2016-04-18,0,Hatchery Riffle,NA,NA,19 23 24 25,NA,53.6,clear,0
+181,2016-04-18,0,Auditorium Riffle,NA,NA,29 30 31 32,NA,53.6,clear,0
+182,2016-04-18,0,Hatchery Ditch,NA,NA,33 26 28,NA,53.6,clear,0
+184,2016-04-19,0,Trailer Park Riffle,NA,NA,96 97 98,NA,53.6,clear,0
+185,2016-04-19,0,Matthews Riffle,NA,NA,103 104 105,NA,56.7,clear,0
+186,2016-04-19,0,Aleck Riffle,NA,NA,119 120,NA,55.4,clear,0
+187,2016-04-19,0,Robinson Riffle,NA,NA,171 170 169 174 175 173,NA,57.2,clear,0
+188,2016-04-20,800,Steep Riffle,NA,NA,189 185,NA,55.4,sunny,0
+189,2016-04-20,800,Eye Riffle,NA,NA,210 215A 215B 216 217,NA,55.4,sunny,0
+190,2016-04-20,800,Gateway Riffle,NA,NA,221 225 226 228 229,NA,56.3,clear,0
+192,2016-04-21,0,G95,NA,NA,323A 323B,NA,60.8,clear,0
+193,2016-04-21,1070,Kiester Riffle,NA,NA,402 397 403,NA,59.9,clear,0
+194,2016-04-21,1070,Goose Riffle,NA,NA,408,NA,61.7,clear,0
+196,2016-04-26,0,McFarland,NA,NA,441 445,NA,55.4,clear,0
+198,2016-04-26,1050,Junkyard Riffle,NA,NA,499 502,NA,56.3,cloudy,0
+199,2016-05-16,1700,Hatchery Riffle,NA,NA,23 24 25,NA,50.9,clear,0
+200,2016-05-16,1700,Auditorium Riffle,NA,NA,29 30 31 32,NA,50.9,clear,0
+201,2016-05-16,1700,Hatchery Ditch,NA,NA,26 28 33,NA,51.3,clear,0
+76,2011-08-22,1350,NA,NA,NA,NA,NA,20,NA,2.93
+203,2016-05-17,1700,Trailer Park Riffle,NA,NA,96 97 98,NA,50.9,clear,0
+204,2016-05-17,1700,Matthews Riffle,NA,NA,103 104 105,NA,51.8,clear,0
+205,2016-05-17,1700,Aleck Riffle,NA,NA,119 120,NA,52.7,clear,0
+206,2016-05-17,1700,Robinson Riffle,NA,NA,169 170 171 173 174 175,NA,54.5,clear,0
+207,2016-05-18,1700,Steep Riffle,NA,NA,189,NA,51.8,clear,0
+209,2016-05-18,1700,Gateway Riffle,NA,NA,221 226 228 229,NA,53.6,clear,0
+210,2016-05-18,4500,Vance Riffle,NA,NA,266 268,NA,62.6,clear,0
+212,2016-05-19,4500,Kiester Riffle,NA,NA,397 402 403,NA,60.8,clear,0
+214,2016-05-19,4500,Big Riffle,NA,NA,424 426,NA,60.8,clear,0
+215,2016-05-19,4500,McFarland,NA,NA,441 445,NA,61.7,clear,0
+216,2016-05-26,3200,McFarland,NA,NA,450,NA,59.9,clear,0
+217,2016-05-26,3250,Gridley Riffle,NA,NA,486 487,NA,59.9,clear,0
+218,2016-05-26,3250,Junkyard Riffle,NA,NA,499 502,NA,58.5,clear,0
+220,2016-06-22,5500,G95,NA,NA,323A/B,NA,58.8,clear,0
+221,2016-06-22,5500,Kiester Riffle,NA,NA,397 403 402,NA,59,clear,0
+222,2016-06-22,5500,Goose Riffle,NA,NA,408,NA,59.9,clear,0
+223,2016-06-22,5500,Big Riffle,NA,NA,424 426,NA,59.9,clear,0
+224,2016-06-22,5500,McFarland,NA,NA,441 445,NA,60.8,clear,0
+226,2016-06-23,5500,Gridley Riffle,NA,NA,486 487,NA,59.9,clear,0
+227,2016-06-23,5500,Junkyard Riffle,NA,NA,499 502,NA,60.8,clear,0
+228,2016-07-18,0,Gridley Riffle,NA,NA,HGSC,NA,63.5,clear,0
+229,2016-07-18,0,Herringer Pond Rl,NA,NA,HPRL,NA,63.9,clear,0
+235,2016-07-26,4000,Auditorium Riffle,NA,NA,29 31,NA,59,clear,0
+237,2016-07-26,4000,Bedrock Riffle,NA,NA,55 56,NA,59.9,clear,0
+238,2016-07-26,4000,Trailer Park Riffle,NA,NA,97 98,NA,59.9,clear,0
+239,2016-07-27,4000,Robinson Riffle,NA,NA,170 174,NA,62.6,clear,0
+240,2016-07-27,4000,Gateway Riffle,NA,NA,226,NA,62.6,clear,0
+246,2016-08-22,0,Hatchery Ditch,NA,NA,33 26,NA,14.8,clear,0
+247,2016-08-22,0,Hatchery Ditch,NA,NA,28,NA,59,clear,0
+248,2016-08-22,1600,Bedrock Riffle,NA,NA,55 56,NA,59.9,clear,0
+249,2016-08-23,1600,Trailer Park Riffle,NA,NA,96 97 98,NA,59,clear,0
+251,2016-08-23,0,Aleck Riffle,NA,NA,119 120,NA,62.6,clear,0
+252,2016-08-24,0,Robinson Riffle,NA,NA,169 170 171 173 174 175,NA,59,clear,0
+253,2016-08-24,0,Steep Riffle,NA,NA,185 189,NA,60.8,NA,0
+254,2016-08-24,0,Eye Riffle,NA,NA,210 217 216 215A 215B,NA,62.6,clear,0
+255,2016-08-25,1600,Gateway Riffle,NA,NA,226 228 229 221,NA,59.9,clear,0
+79,2012-05-02,620,NA,NA,NA,NA,NA,13,clear,1.1
+318,2018-03-19,800,Hatchery Riffle,NA,NA,33 26,NA,46.4,clear,0
+389,2018-07-23,1400,Robinson Riffle,NA,NA,"169, 170, 171, 173, 174, 175",NA,59,clear,0
+390,2018-07-23,1400,Aleck Riffle,NA,NA,119 120,NA,59.9,clear,3
+391,2018-07-23,1400,Matthews Riffle,NA,NA,"103,104, 105",NA,61.7,clear,3
+392,2018-07-23,1400,Trailer Park Riffle,NA,NA,"96, 97, 98",NA,61.7,clear,2.5
+393,2018-07-24,1400,Hatchery Riffle,NA,NA,19 23 24 25,NA,60.35,clear,0
+394,2018-07-24,1400,Auditorium Riffle,NA,NA,29 30 31 32,NA,0,clear,0
+395,2018-07-24,1400,Hatchery Ditch,NA,NA,33 26 28,NA,62.6,clear,0
+396,2018-07-24,1400,Bedrock Riffle,NA,NA,55 56,NA,60.8,clear,3
+397,2018-08-14,6000,Junkyard Riffle,NA,NA,499,NA,66.2,clear,0
+398,2018-08-14,6020,Gridley Riffle,NA,NA,486 487,NA,65.3,clear,0
+399,2018-08-14,6020,McFarland,NA,NA,450,NA,65.3,clear,0
+400,2018-08-14,6000,Big Riffle,NA,NA,424 426,NA,65.3,clear,0
+401,2018-08-15,1200,Steep Riffle,NA,NA,185 189,NA,59.9,clear,0
+402,2018-08-15,1200,Eye Riffle,NA,NA,215A 215B 216 217 210,NA,60.8,clear,0
+403,2018-08-15,1200,Gateway Riffle,NA,NA,228 221 225 226 228,NA,62.6,clear,0
+404,2018-08-20,1200,Robinson Riffle,NA,NA,169 170 171 173 175 175,NA,57.2,clear,1.5
+405,2018-08-20,1200,Aleck Riffle,NA,NA,119 120,NA,59,clear,0
+406,2018-08-20,1200,Matthews Riffle,NA,NA,103 104 105,NA,59,clear,0
+407,2018-08-20,1200,Trailer Park Riffle,NA,NA,96 97 98,NA,0,clear,0
+408,2018-08-20,1200,Bedrock Riffle,NA,NA,55 56,NA,59.9,clear,0
+409,2018-08-21,6000,Vance Riffle,NA,NA,260,NA,62.6,NA,0
+410,2018-08-21,6020,G95,NA,NA,323A 323B,NA,64.4,clear,0
+411,2018-08-21,6000,Kiester Riffle,NA,NA,402,NA,64.4,clear,1.5
+412,2018-08-21,6000,Goose Riffle,NA,NA,408,NA,64.4,clear,1.5
+256,2016-08-25,0,Hatchery Riffle,NA,NA,All,NA,62.6,clear,0
+257,2016-08-25,1300,Bedrock Riffle,NA,NA,55 56,NA,63.5,clear,0
+258,2016-08-29,6600,Gridley Riffle,NA,NA,HGSC,NA,65.3,NA,0
+259,2016-08-29,0,Big Riffle,NA,NA,BRB,NA,65.3,NA,0
+260,2016-09-01,6300,Goose Riffle,NA,NA,408,NA,63.5,clear,0
+262,2017-07-17,0,Steep Riffle,NA,NA,"185, 189",NA,62.6,clear,0
+263,2017-07-17,0,Eye Riffle,NA,NA,"215A, 215B, 216, 217",NA,64.4,clear,0
+264,2017-07-17,0,Gateway Riffle,NA,NA,"221, 225, 226, 228, 229",NA,64.4,clear,0
+265,2017-07-17,0,Vance Riffle,NA,NA,266 268,NA,68,clear,0
+267,2017-07-18,0,Kiester Riffle,NA,NA,402 403 397,NA,68,clear,0
+269,2017-07-18,0,Big Riffle,NA,NA,424 426,NA,68,clear,0
+270,2017-07-20,0,Hatchery Riffle,NA,NA,19 23 24 25,NA,62.6,clear,0
+271,2017-07-20,0,Auditorium Riffle,NA,NA,29-32,NA,62.6,clear,0
+272,2017-07-20,0,Hatchery Ditch,NA,NA,33 26 28,NA,60.8,clear,0
+273,2017-07-24,0,Bedrock Riffle,NA,NA,55 56,NA,59,clear,0
+275,2017-07-24,0,Matthews Riffle,NA,NA,105 104 103,NA,60.8,clear,0
+276,2017-07-24,0,Aleck Riffle,NA,NA,119 120,NA,61.7,clear,0
+277,2017-07-24,0,Robinson Riffle,NA,NA,169 170 173 174 175,NA,64.4,clear,0
+278,2017-07-25,0,McFarland,NA,NA,441 445,NA,67.1,clear,0
+279,2017-07-25,0,McFarland,NA,NA,450,NA,68,clear,0
+281,2017-07-25,0,Junkyard Riffle,NA,NA,499 502,NA,69.8,clear,0
+282,2017-08-07,0,Hatchery Riffle,NA,NA,19 23-25,NA,59.9,clear,0
+283,2017-08-07,0,Auditorium Riffle,NA,NA,29-32,NA,59.9,clear,0
+250,2016-08-23,0,Matthews Riffle,NA,NA,103-105,NA,62.6,clear,0
+284,2017-08-07,0,Hatchery Ditch,NA,NA,33 28,NA,67.1,clear,1.5
+285,2017-08-07,0,Bedrock Riffle,NA,NA,55 56,NA,60.8,clear,0
+286,2017-08-08,0,Trailer Park Riffle,NA,NA,96 97 98,NA,58.1,clear,0
+289,2017-08-08,0,Robinson Riffle,NA,NA,173 174 175 171 170169,NA,60.8,clear,1.3
+290,2017-08-09,0,Steep Riffle,NA,NA,185 189,NA,59,clear,0
+291,2017-08-09,0,Eye Riffle,NA,NA,215A 215B 216 217 210,NA,60.8,clear,0
+292,2017-08-09,0,Gateway Riffle,NA,NA,221 225 226 228 229,NA,61.7,clear,0
+293,2017-08-09,0,Vance Riffle,NA,NA,268,NA,66.2,clear,0
+294,2017-08-10,0,G95,NA,NA,323B,NA,63.5,clear,0.9
+295,2017-08-10,0,Kiester Riffle,NA,NA,403,NA,66.2,clear,1.1
+297,2017-08-10,0,Big Riffle,NA,NA,424,NA,66.2,clear,0
+298,2017-08-14,0,Gridley Riffle,NA,NA,486 487,NA,65.3,clear,1.3
+299,2017-08-14,0,Junkyard Riffle,NA,NA,499 502,NA,65.3,clear,0
+300,2018-02-12,1000,Hatchery Ditch,NA,NA,33 26,NA,47.6,clear,2
+301,2018-02-12,1000,Hatchery Ditch,NA,NA,28,NA,46.4,clear,1.5
+1,2007-06-27,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3,2007-07-16,NA,NA,NA,NA,"26,33,30,31,31a,32,32a",NA,NA,clear,NA
+12,2005-05-26,NA,NA,NA,NA,NA,NA,NA,NA,NA
+17,2005-05-23,NA,NA,NA,NA,NA,NA,NA,NA,NA
+23,2004-08-24,NA,NA,NA,NA,NA,NA,NA,NA,NA
+28,2004-08-12,NA,NA,NA,NA,NA,NA,NA,NA,NA
+34,2004-05-26,NA,NA,NA,NA,NA,NA,NA,NA,NA
+39,2004-04-28,NA,NA,NA,NA,NA,NA,NA,NA,NA
+202,2016-05-16,1700,Bedrock Riffle,NA,NA,55 56,NA,53.6,clear,0
+121,2015-07-30,0,Gateway Riffle,NA,NA,"221,225,226,228,229",NA,61.3,clear,0
+41,2004-04-21,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47,2010-08-16,620,NA,NA,NA,NA,NA,61,clear,0
+50,2010-09-13,620,NA,NA,NA,NA,NA,56,sunny,0
+54,2011-04-19,620,NA,NA,NA,NA,NA,0,cloudy,0
+57,2011-04-26,620,NA,NA,NA,NA,NA,10.5,sunny,1.68
+60,2011-05-03,620,NA,NA,NA,NA,NA,12.5,sunny,2.56
+67,2011-06-30,620,NA,NA,NA,NA,NA,15,sunny,0.33
+85,2012-06-07,0,NA,NA,NA,NA,NA,59,clear,2.5
+90,2012-07-11,1000,NA,NA,NA,NA,NA,15,sunny,0.93
+99,2012-08-14,5500,NA,NA,NA,NA,NA,18,NA,1.08
+103,2013-07-16,2500,NA,NA,NA,NA,NA,60,sunny,0
+152,2015-08-20,1500,Vance Riffle,NA,NA,"266,268",NA,63.5,NA,0
+160,2015-08-24,1500,Junkyard Riffle,NA,NA,"499,502",NA,68,clear,0
+169,2015-09-10,800,Steep Riffle,NA,NA,"189,185",NA,58.8,clear,0
+175,2015-09-14,1200,Goose Riffle,NA,NA,408,NA,60.8,cloudy,0
+177,2015-09-15,1200,McFarland,NA,NA,"441, 445",NA,60.4,cloudy,0
+183,2016-04-18,0,Bedrock Riffle,NA,NA,55 56,NA,57.2,clear,0
+191,2016-04-20,0,Vance Riffle,NA,NA,266 268,NA,59,clear,0
+197,2016-04-26,0,McFarland,NA,NA,450,NA,55.4,clear,0
+211,2016-05-18,4500,G95,NA,NA,323A/B,NA,62.6,clear,0
+219,2016-06-22,5500,Vance Riffle,NA,NA,266 268,NA,57.2,clear,0
+225,2016-06-23,5500,McFarland,NA,NA,450,NA,59,clear,0
+234,2016-07-26,4000,Hatchery Riffle,NA,NA,23 24,NA,59,clear,0
+244,2016-08-22,1600,Hatchery Riffle,NA,NA,23 24 25,NA,59.9,clear,0
+122,2015-07-30,0,G95,NA,NA,323A/B,NA,65.3,clear,0
+261,2016-09-01,6300,G95,NA,NA,323A 323B,NA,64,clear,0
+268,2017-07-18,0,Goose Riffle,NA,NA,408,NA,66.2,clear,0
+274,2017-07-24,0,Trailer Park Riffle,NA,NA,96 97 98,NA,59.9,clear,0
+280,2017-07-25,0,Gridley Riffle,NA,NA,487 486,NA,68.9,clear,0
+287,2017-08-08,0,Matthews Riffle,NA,NA,103 104 105,NA,59,clear,0
+296,2017-08-10,0,Goose Riffle,NA,NA,408,NA,62.6,clear,0
+413,2018-08-22,0,Hatchery Riffle,NA,NA,19 23-25,NA,59,clear,2.2
+415,2018-08-22,1200,Hatchery Ditch,NA,NA,26 33 28,NA,59.9,clear,0
+416,2018-09-11,800,Robinson Riffle,NA,NA,169-171 173-175,NA,56.3,clear,1.8
+418,2018-09-11,800,Trailer Park Riffle,NA,NA,96 97 98,NA,58.1,clear,0
+420,2018-09-12,6000,Junkyard Riffle,NA,NA,499,NA,60.8,NA,0
+421,2018-09-12,6000,Gridley Riffle,NA,NA,486 487,NA,60.8,NA,NA
+426,2018-09-17,800,Gateway Riffle,NA,NA,221 225 226 228 229,NA,54.5,clear,0
+427,2018-09-17,800,Steep Riffle,NA,NA,189 185,NA,54.5,clear,0
+428,2018-09-17,800,Eye Riffle,NA,NA,215A 215B 216 210,NA,55.4,clear,0
+429,2018-09-17,6000,Vance Riffle,NA,NA,268,NA,60.8,clear,0
+430,2018-09-18,800,Hatchery Riffle,NA,NA,19 23 24 25,NA,52.7,clear,0
+123,2015-07-30,0,Kiester Riffle,NA,NA,"397,402,403",NA,67.1,clear,0
+431,2018-09-18,800,Auditorium Riffle,NA,NA,29 30 31 32,NA,51.8,clear,0
+432,2018-09-18,800,Hatchery Ditch,NA,NA,33 26 28,NA,NA,clear,0
+433,2019-03-20,1800,Aleck Riffle,NA,NA,119,NA,0,cloudy,2
+434,2019-03-20,0,Hatchery Ditch,NA,NA,26 33,NA,0,precipitation,0
+435,2019-03-21,8000,Junkyard Riffle,NA,NA,499,NA,0,clear,1
+436,2019-05-13,3500,Hatchery Ditch,NA,NA,26 33,NA,51.3,clear,0
+437,2019-05-13,3500,Hatchery Ditch,NA,NA,28,NA,53.6,clear,0
+440,2019-05-13,3500,Bedrock Riffle,NA,NA,"55, 56",NA,53.6,clear,0
+442,2019-05-14,3500,Matthews Riffle,NA,NA,"103, 104, 105",NA,52.7,NA,0
+443,2019-05-14,3500,Aleck Riffle,NA,NA,"119, 120",NA,53.6,cloudy,0
+444,2019-05-14,3500,Robinson Riffle,NA,NA,"169,170,171,173,174,175",NA,53.6,NA,0
+445,2019-05-15,3500,Gateway Riffle,NA,NA,"221, 225, 225, 228, 229",NA,51.8,precipitation,0
+446,2019-05-15,3500,Steep Riffle,NA,NA,"189, 185",NA,51.8,precipitation,0
+447,2019-05-15,3500,Eye Riffle,NA,NA,"210, 217, 215A, 216",NA,51.8,precipitation,0
+448,2019-05-16,0,Vance Riffle,NA,NA,268,NA,55.4,precipitation,0
+449,2019-05-16,7500,G95,NA,NA,323B,NA,53.6,cloudy,0
+450,2019-05-16,7500,Big Riffle,NA,NA,424,NA,55.4,cloudy,0
+124,2015-07-30,0,Goose Riffle,NA,NA,408,NA,67.6,clear,0
+454,2019-07-08,1400,Bedrock Riffle,NA,NA,"55,56",NA,60.8,clear,0
+455,2019-07-09,1220,Steep Riffle,NA,NA,"189,185",NA,62.6,clear,2
+456,2019-07-10,1200,Robinson Riffle,NA,NA,"169,170,171,173,174,175",NA,60.8,clear,0
+458,2019-07-10,1200,Matthews Riffle,NA,NA,"103,104,105",NA,62.6,clear,0
+459,2019-07-10,1200,Trailer Park Riffle,NA,NA,"96,97,98",NA,60.8,clear,0
+460,2019-07-15,5300,Vance Riffle,NA,NA,"266,268",NA,64.4,clear,0
+461,2019-07-15,5300,G95,NA,NA,"323A, 323B",NA,NA,clear,0
+463,2019-07-16,1800,Eye Riffle,NA,NA,"210,217,216,215A,215B",NA,59.9,clear,0
+464,2019-07-16,1800,Gateway Riffle,NA,NA,"225,2228,229,221",NA,60.8,clear,0
+465,2019-07-16,5300,Junkyard Riffle,NA,NA,"499,502",NA,68,clear,0
+467,2019-07-17,5800,McFarland,NA,NA,441,NA,66.56,clear,0
+468,2019-07-17,5300,Big Riffle,NA,NA,"426,424",NA,66.2,clear,0
+469,2019-07-18,5300,Goose Riffle,NA,NA,408,NA,66.2,NA,0
+471,2019-08-06,4850,Hatchery Ditch,NA,NA,33,NA,60.8,clear,3
+473,2019-08-07,4620,Auditorium Riffle,NA,NA,"30,31,29",NA,60.8,clear,0
+474,2019-08-07,4620,Hatchery Riffle,NA,NA,"23,24",NA,60.8,clear,0
+475,2019-08-07,0,Hatchery Ditch,NA,NA,"33,26,28",NA,61.7,clear,3
+476,2019-08-08,0,Trailer Park Riffle,NA,NA,"98,97",NA,60.8,clear,4
+477,2019-08-08,4100,Matthews Riffle,NA,NA,"103,104,105",NA,60.8,clear,4
+478,2019-08-08,4100,Robinson Riffle,NA,NA,"171,173,174,175",NA,61.7,clear,4
+145,2015-08-18,1100,Trailer Park Riffle,NA,NA,96-98,NA,59.9,clear,0
+480,2019-08-09,0,Steep Riffle,NA,NA,"185,189",NA,58.1,clear,0
+482,2019-08-12,7600,Vance Riffle,NA,NA,268,NA,62.6,clear,0
+485,2019-08-12,7600,Gridley Riffle,NA,NA,"486,487",NA,64.4,clear,3
+486,2019-08-13,7500,Junkyard Riffle,NA,NA,"499,502",NA,62.6,clear,0
+487,2019-08-13,7500,Big Riffle,NA,NA,"424,426",NA,66.2,clear,0
+489,2020-02-24,800,Auditorium Riffle,NA,NA,29-31,NA,10,clear,0
+490,2020-02-24,0,Hatchery Ditch,NA,NA,"33,26,28",NA,10.5,clear,0
+491,2020-02-25,800,Bedrock Riffle,NA,NA,55 56,NA,10,clear,0
+492,2020-02-25,830,Trailer Park Riffle,NA,NA,96 97 98,NA,10,clear,0
+493,2020-02-25,830,Aleck Riffle,NA,NA,119 120,NA,10.5,clear,0
+494,2020-02-25,0,Robinson Riffle,NA,NA,169-175,NA,11,clear,0
+495,2020-02-26,830,Eye Riffle,NA,NA,210 215A/B 216,NA,11,clear,0
+496,2020-02-26,830,Steep Riffle,NA,NA,189 185,NA,11,clear,0
+497,2020-02-26,830,Matthews Riffle,NA,NA,103 104 105,NA,10,clear,0
+498,2020-02-27,830,Gateway Riffle,NA,NA,221 225 226 228 229,NA,10.75,clear,0
+499,2020-02-27,0,G95,NA,NA,323A/B,NA,12,clear,0
+500,2020-02-27,2280,Kiester Riffle,NA,NA,403 397 402,NA,0,clear,0
+501,2020-02-27,2200,Goose Riffle,NA,NA,408,NA,13,clear,0
+502,2020-02-27,2200,Vance Riffle,NA,NA,266 268,NA,12.5,clear,0
+503,2020-02-28,2200,Junkyard Riffle,NA,NA,502 499,NA,12.5,clear,0
+504,2020-02-28,2200,Gridley Riffle,NA,NA,487 486,NA,12,clear,0
+125,2015-08-03,0,Big Riffle,NA,NA,"424,426",NA,66.2,clear,0
+505,2020-02-28,2200,McFarland,NA,NA,450,NA,12.5,clear,0
+506,2020-02-28,2200,Big Riffle,NA,NA,424 426,NA,12.5,clear,0
+508,2020-06-19,1100,Bedrock Riffle,NA,NA,55 56,NA,15.5,clear,NA
+509,2020-06-19,1100,Hatchery Riffle,NA,NA,19 23 24 25,NA,15.3,clear,0
+510,2020-06-19,1100,Auditorium Riffle,NA,NA,30 31 32 29,NA,15.3,clear,0
+511,2020-06-23,1240,Trailer Park Riffle,NA,NA,96 97 98,NA,15.3,clear,0
+512,2020-06-23,1240,Matthews Riffle,NA,NA,103 104 105,NA,15.5,clear,0
+513,2020-06-23,1240,Aleck Riffle,NA,NA,NA,NA,16,clear,0
+514,2020-06-23,1240,Robinson Riffle,NA,NA,169 170 171 173 174 175,NA,17.5,clear,0
+515,2020-06-24,1240,Gateway Riffle,NA,NA,221 225 226 228 229,NA,16.5,clear,0
+517,2020-06-24,1240,Eye Riffle,NA,NA,210 216 215A/B,NA,18.5,clear,0
+518,2020-06-26,3310,Vance Riffle,NA,NA,266 268,NA,19.5,clear,0
+519,2020-06-26,3310,G95,NA,NA,323A/B,NA,19,clear and hot,0
+520,2020-06-26,3310,Kiester Riffle,NA,NA,397 402 403,NA,21,clear,0
+521,2020-06-26,3300,Goose Riffle,NA,NA,408,NA,20,clear,0
+522,2020-06-26,3310,Big Riffle,NA,NA,424 426,NA,20,clear and hot,0
+525,2020-06-30,4250,Gridley Riffle,NA,NA,486 487,NA,20.5,clear,0
+526,2020-06-30,4400,McFarland,NA,NA,450,NA,21,clear,0
+527,2020-07-20,1250,Hatchery Riffle,NA,NA,NA,NA,11.5,clear,0
+528,2020-07-20,1250,Auditorium Riffle,NA,NA,29 30 31 32,NA,16.5,clear,0
+529,2020-07-20,1450,Hatchery Ditch,NA,NA,33 26 28,NA,18,clear,0
+530,2020-07-20,0,Bedrock Riffle,NA,NA,55 56,NA,19,clear,0
+126,2015-08-03,0,McFarland,NA,NA,"441,445",NA,66.2,clear,0
+531,2020-07-21,1250,Trailer Park Riffle,NA,NA,96 97 98,NA,14,clear,0
+532,2020-07-21,1100,Matthews Riffle,NA,NA,103 104 105,NA,15,clear,0
+533,2020-07-21,1100,Aleck Riffle,NA,NA,119 120,NA,15,clear,0
+534,2020-07-21,1100,Robinson Riffle,NA,NA,173 169 170 175,NA,16.5,clear,0
+535,2020-07-22,950,Gateway Riffle,NA,NA,221 226 225 228 229,NA,16,clear,0
+536,2020-07-22,950,Eye Riffle,NA,NA,215A/B 216 210,NA,15.8,clear,0
+537,2020-07-22,950,Steep Riffle,NA,NA,185 189,NA,17,clear,0
+539,2020-07-23,3010,G95,NA,NA,323A/B,NA,18,clear,0
+540,2020-07-23,3010,Kiester Riffle,NA,NA,402 397 402,NA,20,clear,0
+541,2020-07-23,3010,Goose Riffle,NA,NA,408,NA,20,clear,0
+542,2020-07-23,3010,Big Riffle,NA,NA,424 426,NA,20,clear,0
+543,2020-07-24,3010,Junkyard Riffle,NA,NA,502 499,NA,19.5,clear,0
+544,2020-07-23,3003,Gridley Riffle,NA,NA,486 487,NA,19,clear,0
+545,2020-07-24,3003,McFarland,NA,NA,450,NA,19,clear,0
+546,2020-08-10,1550,Hatchery Ditch,NA,NA,33 26 28,NA,15,clear and hot,0
+547,2020-08-10,1550,Hatchery Riffle,NA,NA,19 23 24 25,NA,14,clear,0
+548,2020-08-10,1550,Auditorium Riffle,NA,NA,29 30 31 32,NA,14.5,clear,0
+549,2020-08-10,1550,Bedrock Riffle,NA,NA,55 56,NA,15,clear,0
+550,2020-08-11,1550,Trailer Park Riffle,NA,NA,96 97 98,NA,15,clear and hot,NA
+551,2020-08-11,1550,Matthews Riffle,NA,NA,103 104 105,NA,15,clear and hot,0
+552,2020-08-11,1550,Aleck Riffle,NA,NA,119 120,NA,15.5,clear and hot,0
+553,2020-08-11,1550,Robinson Riffle,NA,NA,175 171 170 174,NA,16,clear,0
+554,2020-08-12,1550,Gateway Riffle,NA,NA,221 225 226 228 229,NA,15.5,clear,0
+555,2020-08-12,1550,Eye Riffle,NA,NA,215A 215B 216 210 217,NA,16,clear,0
+146,2015-08-18,1100,Aleck Riffle,NA,NA,"119,120",NA,60.8,clear,0
+556,2020-08-12,1550,Steep Riffle,NA,NA,189 185,NA,16.5,clear,0
+557,2020-08-13,0,Vance Riffle,NA,NA,266 268,NA,17,clear,0
+558,2020-08-13,2335,G95,NA,NA,323A 323B,NA,17,clear,0
+559,2020-08-13,2335,Kiester Riffle,NA,NA,397 402 403,NA,19,clear,0
+560,2020-08-13,2335,Goose Riffle,NA,NA,408,NA,19,clear,0
+561,2020-08-14,2300,Junkyard Riffle,NA,NA,499 502,NA,19,clear,0
+562,2020-08-14,NA,Gridley Riffle,NA,NA,486 487,NA,18,clear,0
+563,2020-08-14,2300,Big Riffle,NA,NA,424 426,NA,18,clear,0
+564,2020-08-14,0,McFarland,NA,NA,450,NA,19,clear,0
+565,2020-09-22,850,Hatchery Riffle,NA,NA,19 23 24 25,NA,11,clear,0
+566,2020-09-22,840,Auditorium Riffle,NA,NA,30 31 32 29,NA,11.5,clear,0
+567,2020-09-22,840,Hatchery Riffle,NA,NA,33 26 28,NA,11,clear,0
+568,2020-09-22,840,Bedrock Riffle,NA,NA,55 56,NA,13,clear,0
+569,2020-09-22,840,Trailer Park Riffle,NA,NA,97 98 96,NA,13,clear,0
+570,2020-09-23,800,Matthews Riffle,NA,NA,103 - 105,NA,11,clear,0
+571,2020-09-23,800,Aleck Riffle,NA,NA,119 120,NA,11.5,clear,0
+572,2020-09-23,800,Robinson Riffle,NA,NA,169 170 171 173 174 175,NA,11.5,clear,0
+573,2020-09-23,840,Steep Riffle,NA,NA,185 189,NA,13,clear,0
+574,2020-09-23,800,Eye Riffle,NA,NA,215 215A 215B 210 217,NA,13,clear,0
+575,2020-09-24,840,Gateway Riffle,NA,NA,221 225 229 226 228,NA,13,clear,0
+576,2020-09-24,2641,Vance Riffle,NA,NA,266 268,NA,15,clear,0
+577,2020-09-24,2641,Goose Riffle,NA,NA,408,NA,16,clear,0
+578,2020-09-24,2641,G95,NA,NA,323A 323B,NA,15,clear,0
+579,2020-09-24,2641,Kiester Riffle,NA,NA,402 403 397,NA,16,clear,0
+580,2020-09-25,2641,Junkyard Riffle,NA,NA,499 502,NA,16,clear,0
+581,2020-09-25,2641,Gridley Riffle,NA,NA,486 487,NA,15.5,clear,0
+127,2015-08-03,0,McFarland,NA,NA,450,NA,67.1,clear,0
+582,2020-09-25,2640,McFarland,NA,NA,450,NA,15,clear,0
+583,2020-09-25,2641,Big Riffle,NA,NA,424 426,NA,16,clear,0
+584,2021-03-24,800,Hatchery Riffle,NA,NA,26 33 28,NA,50,NA,0
+585,2021-03-24,800,Hatchery Riffle,NA,NA,19 23 24 25,NA,10.5,NA,0
+586,2021-03-24,800,Auditorium Riffle,NA,NA,29 30 31 32,NA,10.5,NA,0
+587,2021-03-25,800,Bedrock Riffle,NA,NA,55 56,NA,11.5,clear,0
+588,2021-03-25,800,Trailer Park Riffle,NA,NA,96 97 98,NA,11.5,clear,0
+589,2021-03-25,800,Matthews Riffle,NA,NA,103 104 105,NA,12,clear,0
+590,2021-03-25,800,Robinson Riffle,NA,NA,169 170 171 173 174 175,NA,11.5,clear,0
+591,2021-03-25,800,Aleck Riffle,NA,NA,119 120,NA,11.5,clear,0
+592,2021-03-26,800,Gateway Riffle,NA,NA,221 225 226 229 228,NA,12,clear,0
+593,2021-03-26,800,Steep Riffle,NA,NA,185 189,NA,12,clear,0
+594,2021-03-26,800,Eye Riffle,NA,NA,215A/B 216 210,NA,13,clear,0
+595,2021-03-29,1050,Vance Riffle,NA,NA,266 268,NA,13.5,clear,0
+596,2021-03-29,1050,G95,NA,NA,323A/B,NA,13.5,clear,0
+597,2021-03-29,1050,Kiester Riffle,NA,NA,397 402 403,NA,14,clear,0
+598,2021-03-29,1050,Goose Riffle,NA,NA,408,NA,14.5,NA,0
+599,2021-03-30,1050,Junkyard Riffle,NA,NA,499 502,NA,14.5,NA,0
+600,2021-03-30,NA,Gridley Riffle,NA,NA,486 487,NA,16,NA,0
+601,2021-03-30,0,McFarland,NA,NA,450,NA,12.5,NA,0
+602,2021-03-30,1050,Big Riffle,NA,NA,424 426,NA,13.5,NA,0
+603,2021-04-19,800,Robinson Riffle,NA,NA,169 170 171 173 174 175,NA,14,clear,0
+128,2015-08-03,0,Gridley Riffle,NA,NA,"486,487",NA,67.1,clear,0
+604,2021-04-19,800,Aleck Riffle,NA,NA,119 120,NA,13.5,clear,0
+605,2021-04-19,800,Matthews Riffle,NA,NA,103 104 105,NA,14,clear,0
+606,2021-04-19,800,Trailer Park Riffle,NA,NA,96 97 98,NA,14,clear,0
+607,2021-04-20,700,Hatchery Riffle,NA,NA,26 33,NA,13,clear,0
+608,2021-04-20,700,Hatchery Riffle,NA,NA,19 23 24 25,NA,0,clear,0
+609,2021-04-20,700,Auditorium Riffle,NA,NA,NA,NA,13.5,clear,0
+610,2021-04-20,700,Bedrock Riffle,NA,NA,55 56,NA,15,clear,0
+611,2021-04-26,810,Gateway Riffle,NA,NA,221 225 226 228 229,NA,12,clear,0
+613,2021-04-26,810,Eye Riffle,NA,NA,215A 215B 210,NA,13,clear,0
+614,2021-04-27,1000,Vance Riffle,NA,NA,266 268,NA,14,clear,0
+615,2021-04-27,0,G95,NA,NA,323A 323B,NA,14,clear,0
+616,2021-04-27,0,Big Riffle,NA,NA,NA,NA,15,clear,0
+618,2021-04-27,1000,Kiester Riffle,NA,NA,397 403 402,NA,16,NA,0
+619,2021-04-28,1000,Junkyard Riffle,NA,NA,502 499,NA,16.5,clear,0
+620,2021-04-28,1000,Gridley Riffle,NA,NA,486 487,NA,17.5,clear,0
+621,2021-04-28,1000,McFarland,NA,NA,450,NA,15.5,clear,0
+622,2021-05-18,650,Hatchery Riffle,NA,NA,19 23-25,NA,13,clear,0
+623,2021-05-18,650,Auditorium Riffle,NA,NA,29 30-32,NA,13,clear,0
+624,2021-05-18,650,Hatchery Ditch,NA,NA,28,NA,13,clear,0
+147,2015-08-18,1100,Robinson Riffle,NA,NA,"169-171,173-175",NA,62.6,clear,0
+627,2021-05-19,710,Aleck Riffle,NA,NA,19 20,NA,12.75,clear,0
+628,2021-05-19,710,Matthews Riffle,NA,NA,103 104 105,NA,13,clear,0
+629,2021-05-19,710,Trailer Park Riffle,NA,NA,96 97 98,NA,14,clear,0
+630,2021-05-21,710,Gateway Riffle,NA,NA,221 225 226 228 229,NA,13.5,NA,0
+632,2021-05-21,710,Steep Riffle,NA,NA,185 189,NA,15,NA,0
+634,2021-05-25,2500,G95,NA,NA,323A/B,NA,18,clear,0
+635,2021-05-25,2500,Kiester Riffle,NA,NA,397 402 403,NA,18.5,clear,0
+636,2021-05-25,2500,Goose Riffle,NA,NA,408,NA,19,clear,0
+637,2021-05-26,2110,Junkyard Riffle,NA,NA,502 499,NA,18.5,cloudy,0
+638,2021-05-26,2110,Gridley Riffle,NA,NA,NA,NA,18.5,cloudy,0
+639,2021-05-26,2110,McFarland,NA,NA,450,NA,18.5,clear,0
+640,2021-05-26,2110,Big Riffle,NA,NA,424 426,NA,19.5,clear,0
+643,2021-06-22,2750,Auditorium Riffle,NA,NA,29 30 31 32,NA,16,clear,0
+644,2021-06-22,2750,Bedrock Riffle,NA,NA,55 56,NA,16.5,clear,0
+646,2021-06-23,2400,Matthews Riffle,NA,NA,103 104 105,NA,16,clear,0
+647,2021-06-23,2400,Robinson Riffle,NA,NA,169-175,NA,17,clear,0
+648,2021-06-23,2400,Aleck Riffle,NA,NA,119 120,NA,17,clear,0
+649,2021-06-25,2750,Junkyard Riffle,NA,NA,502 499,NA,18.5,clear,0
+140,2015-08-03,0,Junkyard Riffle,NA,NA,"499,502",NA,68,clear,0
+651,2021-06-25,2750,McFarland,NA,NA,450,NA,19.5,clear,0
+652,2021-06-25,2750,Big Riffle,NA,NA,424 426,NA,19.5,clear,0
+653,2021-06-29,2160,Gateway Riffle,NA,NA,226 225 221 228 229,NA,16.5,clear,0
+654,2021-06-29,2160,Steep Riffle,NA,NA,185 189,NA,16,clear,0
+655,2021-06-29,2160,Eye Riffle,NA,NA,210 215A 215B 216,NA,17,clear,0
+656,2021-06-30,3010,Vance Riffle,NA,NA,268 266,NA,17,clear,0
+657,2021-06-30,3010,G95,NA,NA,323 A & B,NA,17,clear,0
+659,2021-06-30,3010,Goose Riffle,NA,NA,408,NA,18.5,clear,0
+660,2021-07-14,1550,Hatchery Riffle,NA,NA,19 23 24 25,NA,16.5,clear,0
+661,2021-07-14,1550,Auditorium Riffle,NA,NA,29-32,NA,16.5,clear,0
+663,2021-07-14,1550,Hatchery Ditch,NA,NA,28,NA,16.5,clear,0
+665,2021-07-15,2050,Trailer Park Riffle,NA,NA,96 97 98,NA,16.5,clear,0
+666,2021-07-15,2050,Matthews Riffle,NA,NA,103 104 105,NA,17,clear,0
+667,2021-07-15,2050,Aleck Riffle,NA,NA,119 120,NA,17,clear,0
+668,2021-07-15,2050,Robinson Riffle,NA,NA,169 170 171 173 174 175,NA,17.5,clear,0
+669,2021-07-16,2070,Gateway Riffle,NA,NA,221 225 226 228 229,NA,17,clear,0
+671,2021-07-16,2050,Steep Riffle,NA,NA,185 189,NA,17.2,clear,0
+672,2021-07-19,2990,Vance Riffle,NA,NA,266 268,NA,17.5,NA,2
+673,2021-07-19,2990,G95,NA,NA,NA,NA,17.5,cloudy,0
+141,2015-08-17,1100,Hatchery Riffle,NA,NA,"19,23-25",NA,59.4,clear,0
+674,2021-07-19,2050,Kiester Riffle,NA,NA,402 403,NA,18,clear,0
+675,2021-07-19,2050,Goose Riffle,NA,NA,408,NA,18.5,clear,0
+676,2021-07-19,2050,Big Riffle,NA,NA,424 426,NA,19,clear,2
+677,2021-07-20,2990,Junkyard Riffle,NA,NA,499 502,NA,18,clear,0
+678,2021-07-20,2990,Gridley Riffle,NA,NA,486 487,NA,18.5,clear,0
+680,2021-08-25,670,Hatchery Riffle,NA,NA,19 24 23 25,NA,10,NA,0
+681,2021-08-25,670,Auditorium Riffle,NA,NA,29 30 31 32,NA,10,NA,0
+682,2021-08-25,670,Hatchery Riffle,NA,NA,33 26,NA,10,NA,0
+684,2021-08-25,670,Bedrock Riffle,NA,NA,55 56,NA,10.5,clear,0
+686,2021-08-26,670,Matthews Riffle,NA,NA,104 105 103,NA,10,clear,0
+687,2021-08-26,650,Robinson Riffle,NA,NA,169 170 171 173 175 175,NA,12,clear,0
+688,2021-08-26,670,Aleck Riffle,NA,NA,119 120,NA,11.7,clear,0
+689,2021-08-27,0,Gateway Riffle,NA,NA,221 225 226 228 229,NA,13,NA,0
+690,2021-08-27,650,Steep Riffle,NA,NA,185 189,NA,13,clear,0
+691,2021-08-27,650,Eye Riffle,NA,NA,210 215A 215B 216 217,NA,12.5,NA,0
+692,2021-08-30,1320,Vance Riffle,NA,NA,266 268,NA,14,NA,0
+693,2021-08-30,1320,G95,NA,NA,323 A and B,NA,14,NA,0
+695,2021-08-30,1320,Goose Riffle,NA,NA,408,NA,15.5,clear,0
+148,2015-08-18,1100,Matthews Riffle,NA,NA,"103,104,105",NA,64.4,clear,0
+697,2021-08-31,1280,Gridley Riffle,NA,NA,486 487,NA,21,clear,0
+700,2021-09-13,680,Hatchery Riffle,NA,NA,19 23 24 25,NA,11,clear,0
+702,2021-09-13,600,Hatchery Riffle,NA,NA,28,NA,0,clear,0
+703,2021-09-13,0,Hatchery Riffle,NA,NA,26 33,NA,0,clear,0
+704,2021-09-13,680,Bedrock Riffle,NA,NA,55 56,NA,0,clear,0
+705,2021-09-14,680,Robinson Riffle,NA,NA,175 174 173 171 170 169,NA,11.5,clear,0
+706,2021-09-14,680,Aleck Riffle,NA,NA,119 120,NA,11.5,clear,0
+707,2021-09-14,680,Matthews Riffle,NA,NA,103 104 105,NA,11.5,clear,0
+708,2021-09-14,680,Trailer Park Riffle,NA,NA,96 97 98,NA,11.5,clear,0
+709,2021-09-15,600,Gateway Riffle,NA,NA,221 225 226 228 229,NA,12,NA,0
+710,2021-09-15,680,Eye Riffle,NA,NA,215A 215B 216 210 217,NA,12,clear,0
+711,2021-09-15,600,Steep Riffle,NA,NA,185 189,NA,12,clear,0
+712,2021-09-20,1290,Vance Riffle,NA,NA,268 266,NA,15,NA,0
+715,2021-09-20,1290,Kiester Riffle,NA,NA,397 402 403,NA,17,clear,0
+716,2021-09-21,1290,Junkyard Riffle,NA,NA,502 499,NA,16,clear,0
+718,2021-09-21,1290,McFarland,NA,NA,450,NA,16,clear,0
+142,2015-08-17,0,Auditorium Riffle,NA,NA,29-32,NA,59,clear,0
+720,2022-01-19,650,Bedrock Riffle,NA,NA,"55, 56",NA,8.5,clear,0.5
+721,2022-01-19,650,Trailer Park Riffle,NA,NA,"96, 97, 98",NA,8.5,clear,1
+722,2021-01-19,650,Matthews Riffle,NA,NA,"103, 104, 105",NA,9,clear,NA
+723,2022-01-19,650,Robinson Riffle,NA,NA,"169, 170, 171, 173, 174, 175",NA,9,clear,1
+724,2022-01-20,NA,Hatchery Ditch,NA,NA,"26, 33",NA,6.5,clear,1
+725,2022-01-20,0,Hatchery Riffle,NA,NA,"19, 23, 24, 25",NA,8.5,clear,1
+726,2022-01-20,0,Aleck Riffle,NA,NA,"119, 120",NA,9.5,clear,0
+727,2022-01-21,650,Gateway Riffle,NA,NA,"221, 225, 226, 228, 229",NA,9,NA,1
+728,2022-01-21,650,Eye Riffle,NA,NA,"210, 215A,B, 216",NA,9,NA,0
+729,2022-01-21,650,Steep Riffle,NA,NA,"189, 185",NA,9,NA,1
+730,2022-02-22,670,Hatchery Riffle,NA,NA,"19, 23, 24, 25",NA,9,clear,1.2
+731,2022-02-22,670,Auditorium Riffle,NA,NA,"29, 30, 31, 32",NA,9,clear,0
+732,2022-02-22,670,Hatchery Ditch,NA,NA,28,NA,9.5,clear,0
+733,2022-02-22,670,Hatchery Ditch,NA,NA,"26,33",NA,0,clear,0
+734,2022-02-22,670,Bedrock Riffle,NA,NA,"55, 56",NA,10,cloudy,0.5
+735,2022-02-23,670,Trailer Park Riffle,NA,NA,"96, 97, 98",NA,9,clear,1
+736,2022-02-23,670,Matthews Riffle,NA,NA,"103, 104, 105",NA,0,clear,0
+737,2022-02-23,650,Robinson Riffle,NA,NA,"169, 171, 173, 175",NA,10,clear,0.5
+739,2022-02-24,670,Eye Riffle,NA,NA,"210, 215A,B, 216",NA,9,clear,0.65
+740,2022-02-24,650,Steep Riffle,NA,NA,"185, 189",NA,9,clear,0.6
+741,2022-02-24,670,Gateway Riffle,NA,NA,"221, 225, 226, 228, 229",NA,9.5,clear,0.5
+742,2022-02-25,4560,Vance Riffle,NA,NA,"266, 268",NA,9.5,clear,0.5
+150,2015-08-19,1100,Eye Riffle,NA,NA,"210,215,217,215A/B",NA,62.6,clear,0
+743,2022-02-25,4560,G95,NA,NA,323AB,NA,10,clear,0
+744,2022-02-25,4560,Kiester Riffle,NA,NA,"397, 402, 403",NA,10,clear,0.5
+745,2022-02-25,4560,Goose Riffle,NA,NA,408,NA,10,clear,0.5
+746,2022-01-26,960,Vance Riffle,NA,NA,"266, 268",NA,9,clear,1.5
+747,2022-01-26,960,G95,NA,NA,323AB,NA,10,clear,0
+748,2022-01-26,960,Kiester Riffle,NA,NA,"397, 402",NA,10,clear,0
+749,2022-01-26,960,Goose Riffle,NA,NA,408,NA,10.5,clear,0
+750,2022-01-27,960,Junkyard Riffle,NA,NA,"499, 502",NA,9.5,clear,0
+751,2022-01-27,960,McFarland,NA,NA,450,NA,8.5,clear,0
+752,2022-01-27,960,Big Riffle,NA,NA,"424, 426",NA,9,clear,0
+753,2022-01-27,960,NA,NA,NA,NA,NA,0,clear,0
+754,2022-02-28,4500,Junkyard Riffle,NA,NA,"499, 502",NA,0,clear,0.75
+755,2022-02-28,4500,Gridley Riffle,NA,NA,"486, 487",NA,0,clear,0.75
+756,2022-02-28,4500,Big Riffle,NA,NA,"424, 426",NA,0,clear,0
+757,2022-02-28,4500,McFarland,NA,NA,450,NA,0,clear,0
+758,2022-03-23,650,Bedrock Riffle,NA,NA,"55, 56",NA,0,clear,2
+759,2022-03-23,650,Trailer Park Riffle,NA,NA,"96, 97, 98",NA,0,NA,2
+760,2022-03-23,650,Hatchery Riffle,NA,NA,28,NA,0,clear,2
+761,2022-03-23,0,Hatchery Ditch,NA,NA,"26, 33",NA,0,clear,2
+762,2022-03-23,650,Auditorium Riffle,NA,NA,"29, 30, 31, 32",NA,0,clear,2
+763,2022-03-24,650,Robinson Riffle,NA,NA,"169, 170, 171, 173, 174, 175",NA,0,clear,1.5
+764,2022-03-24,650,Matthews Riffle,NA,NA,"103, 104, 105",NA,0,clear,1.5
+765,2022-03-24,650,Aleck Riffle,NA,NA,"119, 120",NA,0,clear,1.5
+766,2022-03-24,650,Hatchery Riffle,NA,NA,"19, 23, 24, 25",NA,0,clear,1.5
+143,2015-08-17,1100,Hatchery Ditch,NA,NA,"33,26,28",NA,59.9,clear,0
+768,2022-03-25,650,Eye Riffle,NA,NA,"215A, 215B, 216, 210",NA,13.5,clear,0
+769,2022-03-25,650,Steep Riffle,NA,NA,"185, 189",NA,14.5,clear,2
+771,2022-03-28,3500,G95,NA,NA,"323A,B",NA,15,precipitation,1.2
+772,2022-03-28,3500,Kiester Riffle,NA,NA,"397, 403, 402",NA,15,precipitation,1.2
+773,2022-03-28,3500,Goose Riffle,NA,NA,408,NA,15,precipitation,1.2
+774,2022-03-29,3500,Junkyard Riffle,NA,NA,"499, 502",NA,15,clear,2
+775,2022-03-29,3500,Gridley Riffle,NA,NA,"486, 487",NA,15,clear,1
+777,2022-03-29,3500,Big Riffle,NA,NA,"424, 426",NA,0,clear,1.5
+778,2022-04-25,650,Bedrock Riffle,NA,NA,"55, 56",NA,13,clear,NA
+779,2022-04-25,650,Trailer Park Riffle,NA,NA,"96, 97, 98",NA,13,cloudy,2
+781,2022-04-25,650,Hatchery Ditch,NA,NA,"33, 26",NA,13,clear,2
+782,2022-04-25,650,Hatchery Riffle,NA,NA,"19, 23, 24, 25",NA,13,clear,0
+783,2022-04-25,650,Auditorium Riffle,NA,NA,"29, 30, 31, 32",NA,13,clear,2
+784,2022-04-26,650,Robinson Riffle,NA,NA,"169, 170, 171, 173, 174, 174",NA,14,clear,1.5
+785,2022-04-26,650,Aleck Riffle,NA,NA,"119, 120",NA,14,clear,1.5
+786,2022-04-26,650,Matthews Riffle,NA,NA,"103, 104, 105",NA,14,clear,1.5
+788,2022-04-27,650,Eye Riffle,NA,NA,"210, 215A,B, 216",NA,14.5,clear,1
+789,2022-04-27,800,Vance Riffle,NA,NA,"266, 268",NA,15.5,clear,1.5
+790,2022-04-27,800,G95,NA,NA,"323A, 323B",NA,15.5,clear,0
+791,2022-04-28,650,Steep Riffle,NA,NA,"189, 185",NA,14,clear,2
+144,2015-08-17,1100,Bedrock Riffle,NA,NA,"55,56",NA,61.7,clear,0
+792,2022-04-28,800,Goose Riffle,NA,NA,408,NA,14.5,clear,2
+794,2022-04-29,800,Big Riffle,NA,NA,"424, 426",NA,14.5,clear,1.2
+795,2022-04-29,800,McFarland,NA,NA,450,NA,14.5,clear,1.75
+796,2022-04-29,800,Junkyard Riffle,NA,NA,"499, 502",NA,18,clear,3
+797,2022-04-29,800,Gridley Riffle,NA,NA,"486, 487",NA,18.5,clear,0
+798,2022-05-03,650,Trailer Park Riffle,NA,NA,"96, 97, 98",NA,14,clear,2
+799,2022-05-23,650,Matthews Riffle,NA,NA,"103, 104, 105",NA,15,clear,1
+800,2022-05-23,650,Robinson Riffle,NA,NA,"169, 170, 171, 173, 174, 175",NA,15.75,clear,1
+801,2022-05-23,650,Hatchery Riffle,NA,NA,"19, 23, 24, 25",NA,15,clear,2
+802,2022-05-23,650,Auditorium Riffle,NA,NA,"29, 30, 31, 32",NA,14.5,clear,1.5
+803,2022-05-24,650,Hatchery Ditch,NA,NA,"26, 33",NA,0,NA,0.5
+804,2022-05-24,650,Hatchery Ditch,NA,NA,28,NA,0,NA,1.35
+806,2022-05-24,650,Aleck Riffle,NA,NA,"119, 120",NA,16,NA,0.55
+807,2022-05-25,650,Steep Riffle,NA,NA,"189, 185",NA,16.5,NA,0
+808,2022-05-25,600,Eye Riffle,NA,NA,"215AB, 216, 217",NA,16.5,clear,2
+809,2022-05-26,650,Gateway Riffle,NA,NA,"226, 228, 229, 221, 225",NA,17,clear,1.5
+810,2022-05-26,2200,G95,NA,NA,"323A,B",NA,19,cloudy,0.8
+811,2022-05-26,2200,Kiester Riffle,NA,NA,"397, 402, 403",NA,20,cloudy,1.5
+812,2022-05-26,2200,Vance Riffle,NA,NA,"266, 268",NA,19,cloudy,1.75
+813,2022-05-27,2200,Junkyard Riffle,NA,NA,"499, 502",NA,18.5,NA,1.25
+814,2022-05-27,2200,Gridley Riffle,NA,NA,"486, 487",NA,19,NA,2
+158,2015-08-24,1500,McFarland,NA,NA,450,NA,65.3,clear,0
+815,2022-05-27,2200,McFarland,NA,NA,450,NA,19.5,clear,2
+816,2022-05-27,2200,Big Riffle,NA,NA,"424, 426",NA,20,clear,1
+817,2022-05-27,2200,Goose Riffle,NA,NA,408,NA,20,NA,1
+818,2022-06-01,3500,Junkyard Riffle,NA,NA,"499, 502",NA,20,clear,0
+819,2022-06-21,3500,Gridley Riffle,NA,NA,"486, 487",NA,20,clear,2
+820,2022-06-21,3500,McFarland,NA,NA,450,NA,20,clear,1
+821,2022-06-22,3500,Big Riffle,NA,NA,"424, 426",NA,18,clear,1
+822,2022-06-22,3500,Goose Riffle,NA,NA,408,NA,19,clear,2
+825,2022-06-22,3500,Vance Riffle,NA,NA,"266, 268",NA,18.5,clear,2
+826,2022-06-23,1480,Robinson Riffle,NA,NA,"169, 170, 171, 173, 174, 175",NA,15,cloudy,1
+828,2022-06-23,1480,Matthews Riffle,NA,NA,"103, 104, 105",NA,16,clear,2
+829,2022-06-23,1480,Trailer Park Riffle,NA,NA,"96, 97, 98",NA,16,clear,2
+830,2022-06-23,1480,Bedrock Riffle,NA,NA,"55, 56",NA,16.5,clear,2
+831,2022-06-23,1480,Auditorium Riffle,NA,NA,"29, 30, 31, 32",NA,15,clear,2
+832,2022-06-23,1480,Hatchery Riffle,NA,NA,"19, 23, 24, 25",NA,15,clear,2
+833,2022-06-24,1480,Hatchery Ditch,NA,NA,28,NA,15,clear,2
+834,2022-06-24,1480,Hatchery Riffle,NA,NA,"33, 26",NA,15,clear,0.5
+835,2022-06-24,1480,Steep Riffle,NA,NA,"185, 189",NA,16,clear,1.5
+836,2022-06-24,1480,Eye Riffle,NA,NA,"210, 215A,B, 216",NA,17,clear,1.5
+838,2022-07-21,1500,Hatchery Ditch,NA,NA,"26, 33",NA,16,clear,0.5
+839,2022-07-21,1550,Hatchery Ditch,NA,NA,28,NA,16,clear,1.5
+108,2015-07-27,1898,Hatchery Riffle,NA,NA,"19, 23-25",NA,59.9,clear,0
+840,2022-07-21,1550,Hatchery Riffle,NA,NA,"19, 23, 24, 25",NA,16,clear,1.5
+841,2022-07-21,1550,Auditorium Riffle,NA,NA,"29, 30, 31, 32",NA,16,clear,2
+842,2022-07-21,1550,Bedrock Riffle,NA,NA,"55, 56",NA,17,clear,1
+843,2022-07-22,1560,Robinson Riffle,NA,NA,"169, 170, 171, 173, 174, 175",NA,16,clear,2.75
+844,2022-07-22,1560,Aleck Riffle,NA,NA,"119, 120",NA,16,clear,3
+845,2022-07-22,1550,Matthews Riffle,NA,NA,"103, 104, 105",NA,16,clear,3
+846,2022-07-22,1550,Trailer Park Riffle,NA,NA,"96, 97, 98",NA,16,clear,3
+847,2022-07-25,1300,Eye Riffle,NA,NA,"215A,B, 216, 210",NA,15.5,clear,2
+848,2022-07-25,1300,Steep Riffle,NA,NA,"189, 185",NA,16,clear,2.5
+849,2022-07-26,3740,G95,NA,NA,"323A,B",NA,17.5,cloudy,1
+850,2022-07-26,3740,Kiester Riffle,NA,NA,"397, 402, 403",NA,18,cloudy,2.5
+851,2022-07-26,3740,Vance Riffle,NA,NA,"266, 268",NA,18,cloudy,1
+852,2022-07-26,0,Gateway Riffle,NA,NA,"221, 225, 226, 228, 229",NA,16,cloudy,2
+854,2022-07-27,3750,McFarland,NA,NA,450,NA,18,clear,0
+855,2022-07-27,3750,Big Riffle,NA,NA,"424, 426",NA,18.5,NA,0
+856,2022-07-27,3750,Goose Riffle,NA,NA,408,NA,18.5,NA,0
+857,2022-07-28,3750,Gridley Riffle,NA,NA,"486, 487",NA,18.5,clear,0
+858,2022-08-22,1020,Hatchery Riffle,NA,NA,"26, 33",NA,17,clear,0.8
+859,2022-08-22,1020,Hatchery Ditch,NA,NA,28,NA,16,clear,3
+861,2022-08-22,1020,Auditorium Riffle,NA,NA,"29, 30, 31, 32",NA,15,clear,2
+862,2022-08-22,1020,Bedrock Riffle,NA,NA,"55, 56",NA,16,clear,1.5
+863,2022-08-24,1020,Gateway Riffle,NA,NA,"221, 225, 226, 228, 229",NA,0,clear,0
+864,2022-08-24,1020,Steep Riffle,NA,NA,"185, 189",NA,15,clear,3
+111,2015-07-27,2009,Auditorium Riffle,NA,NA,29-31,NA,59,clear,0
+865,2022-08-24,1020,Eye Riffle,NA,NA,"210, 215A,B, 216, 217",NA,16.5,clear,3
+866,2022-08-25,3010,Vance Riffle,NA,NA,"266, 268",NA,18.75,NA,2
+867,2022-08-25,3010,G95,NA,NA,"323A,B",NA,18.75,clear,2
+869,2022-08-25,3010,Goose Riffle,NA,NA,408,NA,19,clear,3
+870,2022-08-26,3010,Big Riffle,NA,NA,"424, 426",NA,19,clear,2.5
+871,2022-08-26,3010,McFarland,NA,NA,450,NA,19,clear,3
+874,2023-02-06,980,Junkyard Riffle,NA,NA,499 502,NA,10,clear,3
+875,2023-02-06,980,Gridley Riffle,NA,NA,486 487,NA,10.5,clear,3
+877,2023-02-06,980,Big Riffle,NA,NA,424 426,NA,9,clear,1
+878,2023-02-06,980,Goose Riffle,NA,NA,408,NA,10,clear,1.5
+879,2023-02-07,980,Kiester Riffle,NA,NA,"397, 402, 403",NA,9,clear,1
+880,2023-02-07,980,G95,NA,NA,"323A, 323B",NA,9.5,clear,0.75
+881,2023-02-07,980,Vance Riffle,NA,NA,"266, 268",NA,9.5,clear,0.75
+882,2023-02-08,650,Gateway Riffle,NA,NA,"221, 225, 226, 228, 229",NA,8.5,clear,1
+883,2023-02-08,650,Eye Riffle,NA,NA,"215A, 215B, 216, 210",NA,9,clear,1.5
+884,2023-02-08,650,Steep Riffle,NA,NA,"185, 189",NA,9,clear,1.5
+885,2023-02-09,650,Trailer Park Riffle,NA,NA,"96, 97, 98",NA,8.5,clear,1
+886,2023-02-09,680,Matthews Riffle,NA,NA,"103, 104, 105",NA,8.5,clear,1
+887,2023-02-09,680,Robinson Riffle,NA,NA,"169, 170, 171, 173, 174, 175",NA,8.5,clear,1
+888,2023-02-09,680,Aleck Riffle,NA,NA,"119, 120",NA,8.5,clear,1
+890,2023-02-10,680,Hatchery Ditch,NA,NA,"26, 33",NA,8.5,clear,1.5
+112,2015-07-27,2009,Bedrock Riffle,NA,NA,"55, 56",NA,NA,clear,0
+891,2023-02-10,680,Hatchery Riffle,NA,NA,"23, 24, 25, 19",NA,8.5,clear,0.75
+892,2023-02-10,680,Auditorium Riffle,NA,NA,"29, 30, 31, 32",NA,8.5,clear,0.75
+893,2023-02-10,680,Bedrock Riffle,NA,NA,"55, 56",NA,8.5,clear,0.7
+894,2023-05-26,10000,Junkyard Riffle,NA,NA,"499, 502",NA,15.5,clear,1.5
+896,2023-05-26,9000,McFarland,NA,NA,441,NA,16,clear,0
+897,2023-05-25,11000,Vance Riffle,NA,NA,"266, 268",NA,14.5,clear,0.2
+898,2023-05-25,11000,G95,NA,NA,"323A, 323B",NA,15,clear,0
+899,2023-05-25,10000,Kiester Riffle,NA,NA,"402, 403, 397",NA,15.5,clear,0
+901,2023-05-24,3650,Eye Riffle,NA,NA,"217, 215A",NA,13.5,clear,1.5
+902,2023-05-24,3650,Steep Riffle,NA,NA,"189,185",NA,13,clear,1.5
+903,2023-05-24,4650,Gateway Riffle,NA,NA,"221,225,226,228,229",NA,13,clear,1.5
+905,2023-05-23,4660,Trailer Park Riffle,NA,NA,99,NA,13,clear,2
+906,2023-05-23,4660,Matthews Riffle,NA,NA,103,NA,13,clear,1.5
+907,2023-05-23,4660,Trailer Park Riffle,NA,NA,98,NA,13,clear,1
+908,2023-05-23,5660,Aleck Riffle,NA,NA,"119,121,118",NA,12.5,clear,1
+909,2023-05-22,5650,Hatchery Ditch,NA,NA,"33, 26",NA,12,clear,1.5
+910,2023-05-22,5650,Hatchery Riffle,NA,NA,28,NA,12,clear,1
+113,2015-07-28,2000,Trailer Park Riffle,NA,NA,96-98,NA,59.9,clear,0
+912,2023-05-22,5650,Bedrock Riffle,NA,NA,"55, 56",NA,12.5,clear,1.5
+913,2023-06-12,8000,Junkyard Riffle,NA,NA,"499, 502",NA,17.5,cloudy,1.75
+914,2023-06-12,8000,Gridley Riffle,NA,NA,"486, 487",NA,17.5,cloudy,1
+915,2023-06-13,8000,McFarland,NA,NA,441,NA,17,clear,1.5
+916,2023-06-13,8000,Big Riffle,NA,NA,"424, 426",NA,18,clear,1.25
+917,2023-06-13,8000,Goose Riffle,NA,NA,408,NA,16,clear,1.2
+918,2023-06-13,8000,Kiester Riffle,NA,NA,"402, 403, 397",NA,17.5,clear,1
+919,2023-06-16,1000,Hatchery Riffle,NA,NA,"19, 23, 24, 25",NA,14,clear,2
+920,2023-06-16,1000,Auditorium Riffle,NA,NA,"30, 31, 32, 29",NA,14,clear,2
+921,2023-06-16,1000,Hatchery Ditch,NA,NA,"33, 26",NA,14.5,clear,0.5
+922,2023-06-16,1000,Hatchery Riffle,NA,NA,28,NA,14.5,clear,2.5
+923,2023-06-16,1000,Bedrock Riffle,NA,NA,"55, 56",NA,15,clear,0
+924,2023-06-15,1300,Steep Riffle,NA,NA,"185, 189",NA,15,clear,0
+925,2023-06-14,1600,Eye Riffle,NA,NA,"210, 216, 215A, 215B",NA,16.5,clear,1.5
+926,2023-06-14,0,Gateway Riffle,NA,NA,"221, 225, 226, 228, 229",NA,15,NA,0
+927,2023-06-14,7000,Vance Riffle,NA,NA,"266, 268",NA,18,cloudy,1
+928,2023-06-14,0,G95,NA,NA,"323A, 323B",NA,0,clear,0.7
+929,2023-06-15,1350,Trailer Park Riffle,NA,NA,"96, 97, 98",NA,14.9,clear,0
+930,2023-06-15,1350,Matthews Riffle,NA,NA,"103, 104, 105",NA,15,clear,0
+931,2023-06-15,1350,Aleck Riffle,NA,NA,"119, 120",NA,16,clear,1
+932,2023-06-15,1350,Robinson Riffle,NA,NA,"169,170,171,173,174,175",NA,15.5,clear,0.75
+933,2023-07-17,1500,Bedrock Riffle,NA,NA,"55,56",NA,17,clear,2
+934,2023-07-17,1500,Hatchery Riffle,NA,NA,28,NA,NA,clear,NA
+114,2015-07-28,2000,Matthews Riffle,NA,NA,103-105,NA,61.2,clear,0
+935,2023-07-17,1500,Hatchery Ditch,NA,NA,"33, 26",NA,17,clear,1.5
+936,2023-07-17,1500,Auditorium Riffle,NA,NA,"30,32,31,29",NA,15.5,clear,1.75
+938,2023-07-18,2000,Aleck Riffle,NA,NA,"119,120",NA,17,NA,1
+939,2023-07-18,2000,Robinson Riffle,NA,NA,"170,169,171,175,174,173",NA,17.5,clear,1
+940,2023-07-18,2000,Matthews Riffle,NA,NA,"103,104,105",NA,16.5,clear,1
+941,2023-07-18,2000,Trailer Park Riffle,NA,NA,"96,97,98",NA,NA,clear,NA
+942,2023-07-19,5000,Vance Riffle,NA,NA,NA,NA,17.5,clear,1.25
+944,2023-07-19,2000,Steep Riffle,NA,NA,"185,189",NA,16.5,clear,1.5
+945,2023-07-19,2000,Gateway Riffle,NA,NA,"221,225,226,228,229",NA,16,clear,1.5
+946,2023-07-20,5000,Big Riffle,NA,NA,"424,426",NA,21,clear,1.5
+949,2023-07-20,5000,G95,NA,NA,"323A, 323B",NA,19,clear,1.5
+950,2023-07-21,5000,McFarland,NA,NA,450,NA,20,clear,1.25
+951,2023-07-21,5000,Gridley Riffle,NA,NA,"486,487",NA,20,clear,1
+952,2023-07-21,5000,Junkyard Riffle,NA,NA,"499, 502",NA,19.5,clear,1.5
+953,2023-04-12,4000,Steep Riffle,NA,NA,"188,189",NA,10,clear,0.75
+954,2023-04-12,4000,Eye Riffle,NA,NA,"215A,215B,210",NA,10,clear,0.7
+955,2023-04-12,4000,Gateway Riffle,NA,NA,"221,225,226,228,229",NA,9.5,clear,0.75
+956,2023-04-10,1000,Hatchery Ditch,NA,NA,"26,33",NA,10,clear,2
+957,2023-04-10,1000,Hatchery Riffle,NA,NA,28,NA,10,clear,1.5
+958,2023-04-10,1000,Bedrock Riffle,NA,NA,"55,56",NA,10,clear,1
+115,2015-07-28,2000,Aleck Riffle,NA,NA,120 and 119,NA,61.7,clear,0
+959,2023-04-10,1000,Robinson Riffle,NA,NA,"169,170,171,173,174,175",NA,10,clear,1
+960,2023-04-07,1300,Aleck Riffle,NA,NA,"119,120",NA,10,precipitation,0.5
+961,2023-04-07,1300,Matthews Riffle,NA,NA,"103,104,105",NA,10,precipitation,1.75
+962,2023-04-07,1300,Trailer Park Riffle,NA,NA,"96,97,98",NA,NA,cloudy,NA
+963,2023-04-07,1300,Auditorium Riffle,NA,NA,"29,30,31,32",NA,10,precipitation,1
+964,2023-04-07,1300,Hatchery Riffle,NA,NA,"19,23,24,25",NA,9.5,precipitation,1.25
+965,2023-03-08,1000,Steep Riffle,NA,NA,"185, 189",NA,8,cloudy,0.5
+966,2023-03-08,1000,Eye Riffle,NA,NA,"210,215A,215B,216",NA,8.5,cloudy,0.6
+967,2023-03-08,1000,Robinson Riffle,NA,NA,"169,170,171,173,174,175",NA,8.5,cloudy,0.5
+968,2023-03-06,650,Hatchery Ditch,NA,NA,"33,26",NA,8,precipitation,1
+969,2023-03-08,1000,Gateway Riffle,NA,NA,"221,225,226,228,229",NA,8.5,cloudy,0.5
+970,2023-03-06,650,Hatchery Riffle,NA,NA,"19,23,24,25",NA,8,precipitation,NA
+971,2023-03-06,650,Hatchery Riffle,NA,NA,28,NA,8,precipitation,1.5
+972,2023-03-06,650,Auditorium Riffle,NA,NA,"29,30,31,32",NA,8,precipitation,1.25
+973,2023-03-06,650,Bedrock Riffle,NA,NA,"55,56",NA,8,precipitation,0.5
+116,2015-07-28,0,Robinson Riffle,NA,NA,"169, 170, 171, 173, 174, 175",NA,62.6,clear,0
+117,2015-07-29,2000,Steep Riffle,NA,NA,"185, 189",NA,60.8,clear,0
+118,2015-07-29,2000,Eye Riffle,NA,NA,"210, 217",NA,62.6,clear,0
+119,2015-07-29,2000,Eye Riffle,NA,NA,"215A/B, 216",NA,62.6,clear,0
+120,2015-07-29,3260,Vance Riffle,NA,NA,"268, 266",NA,68,clear,0
+110,2015-07-27,1898,Hatchery Ditch,NA,NA,28,NA,60.3,clear,0
+312,2018-02-14,1000,Steep Riffle,NA,NA,189 185,NA,46.4,partly cloudy,0
+208,2016-05-18,1700,Eye Riffle,NA,NA,216 217 210,NA,52.7,clear,0
+314,2018-02-15,1750,Gateway Riffle,NA,NA,221 226 229 228,NA,50,clear,0
+315,2018-02-15,1750,Vance Riffle,NA,NA,266 268,NA,49.1,clear and windy,0
+243,2016-07-28,4000,River Bend Upstream Beach,NA,NA,RBUB,NA,64.4,clear,0
+242,2016-07-28,4000,Hatchery Ditch,NA,NA,26,NA,61.7,clear,0
+233,2016-07-19,0,Hour Side Channel,NA,NA,UHSC,NA,65.3,clear,0
+232,2016-07-19,0,Hour Side Channel,NA,NA,HTPSC,NA,65.3,clear,0
+241,2016-07-28,4000,Hatchery Ditch,NA,NA,SEC2,NA,61.7,clear,0
+231,2016-07-19,0,Big Riffle,NA,NA,BRB,NA,63.5,clear,0
+230,2016-07-18,0,Cox Flat,NA,NA,CF,NA,65.3,clear,0
+351,2018-05-10,800,Eye Riffle,NA,NA,215A 215B 216 217 210,NA,55.4,partly cloudy,0
+325,2018-03-29,0,G95,NA,NA,323B 323A,NA,57.2,hazy,0.75
+326,2018-04-10,3500,Hatchery Riffle,NA,NA,33 26,NA,50,cloudy,0
+321,2018-03-20,1050,Big Riffle,NA,NA,424 426,NA,50.9,precipitation,0
+319,2018-03-20,1050,Junkyard Riffle,NA,NA,499 502,NA,51.8,precipitation,0
+353,2018-05-14,800,Hatchery Riffle,NA,NA,19 23 24 25,NA,0,clear,0
+507,2020-06-19,950,Hatchery Riffle,NA,NA,"33, 26, 28",NA,59.9,clear,0
+488,2020-02-24,800,Hatchery Riffle,NA,NA,"19, 23-25",NA,10,clear,NA
+524,2020-06-30,4250,Junkyard Riffle,NA,NA,499 502,NA,20.5,clear,0
+366,2018-06-13,1650,Gateway Riffle,NA,NA,221 225 226 228 229,NA,64.4,clear,0
+367,2018-06-14,1400,Robinson Riffle,NA,NA,NA,NA,16.8,clear,1
+368,2018-06-14,1400,Aleck Riffle,NA,NA,120 119,NA,60.8,clear,0
+370,2018-06-14,1400,Trailer Park Riffle,NA,NA,96 97 98,NA,61.7,clear,0
+385,2018-07-18,4500,Vance Riffle,NA,NA,268,NA,68.9,clear,1.4
+472,2019-08-07,4620,Bedrock Riffle,NA,NA,"55,56",NA,0,clear,0
+451,2019-07-08,1400,Hatchery Ditch,NA,NA,"33,26,28",NA,61.7,clear,0
+414,2018-08-22,0,Auditorium Riffle,NA,NA,29-32,NA,59,clear,0
+417,2018-09-11,800,Aleck Riffle,NA,NA,119 120,NA,58.1,clear,0
+419,2018-09-11,800,Matthews Riffle,NA,NA,103 104 105,NA,59,clear,0
+422,2018-09-12,6000,McFarland,NA,NA,450,NA,60.4,NA,0
+423,2018-09-12,6000,Big Riffle,NA,NA,424 426,NA,60.4,cloudy,1.1
+424,2018-09-13,6000,Goose Riffle,NA,NA,408,NA,60.8,clear,0
+425,2018-09-13,6000,Kiester Riffle,NA,NA,402,NA,60.8,clear,0
+438,2019-05-13,3500,Hatchery Riffle,NA,NA,"23,24,25",NA,53.6,cloudy,0
+452,2019-07-08,1400,Hatchery Riffle,NA,NA,"19,23,24,25",NA,60.8,clear,0
+484,2019-08-12,7600,Big Riffle,NA,NA,NA,NA,64.4,clear,0
+453,2019-07-08,1400,Auditorium Riffle,NA,NA,"29,31,32",NA,61.7,clear,0
+481,2019-08-09,4120,Eye Riffle,NA,NA,"210,215A,215B,216,217",NA,58.1,cloudy,0
+483,2019-08-12,7600,G95,NA,NA,323A,NA,62.6,clear,0
+439,2019-05-13,3500,Auditorium Riffle,NA,NA,"29,31,32,30",NA,53.6,cloudy,0
+457,2019-07-10,1200,Aleck Riffle,NA,NA,"119, 120",NA,61.7,clear,0
+516,2020-06-24,1240,Steep Riffle,NA,NA,189 185,NA,16.5,clear,0
+462,2019-07-15,5300,Kiester Riffle,NA,NA,"397,402,403",NA,68.9,clear,0
+466,2019-07-17,5300,Gridley Riffle,NA,NA,"486, 487A, 487B",NA,66.2,clear,NA
+470,2019-08-06,4580,Aleck Riffle,NA,NA,"119, 120",NA,62.6,cloudy,3
+479,2019-08-09,4120,Gateway Riffle,NA,NA,"221,225,226,228,229",NA,59,cloudy,0
+441,2019-05-14,3500,Trailer Park Riffle,NA,NA,"96,97,98",NA,51.8,cloudy,0
+612,2021-04-26,810,Steep Riffle,NA,NA,189 185,NA,13,partly cloudy,0
+670,2021-07-16,2070,Eye Riffle,NA,NA,210 215A&B 216,NA,17,clear,1.5
+633,2021-05-25,2500,Vance Riffle,NA,NA,266 268,NA,17,clear,0
+538,2020-07-22,0,Vance Riffle,NA,NA,NA,NA,19,clear,0
+617,2021-04-27,0,Goose Riffle,NA,NA,408,NA,16,clear,0
+625,2021-05-18,750,Hatchery Riffle,NA,NA,26 33,NA,13.5,clear,0
+626,2021-05-18,750,Bedrock Riffle,NA,NA,55 56,NA,14,clear,0
+641,2021-06-22,2750,Hatchery Riffle,NA,NA,26 33 28,NA,15.5,clear,0
+631,2021-05-21,710,Eye Riffle,NA,NA,210 215A/B 216,NA,14,clear,0
+642,2021-06-22,2750,Hatchery Riffle,NA,NA,19 23 24 25,NA,15.5,clear,0
+650,2021-06-25,2750,Gridley Riffle,NA,NA,486 487,NA,18.5,clear,0
+645,2021-06-23,2400,Trailer Park Riffle,NA,NA,NA,NA,16,clear,0
+658,2021-06-30,3010,Kiester Riffle,NA,NA,397 402 403,NA,18.5,clear,0
+713,2021-09-20,1290,G95,NA,NA,323A 323B,NA,15.5,clear,0
+714,2021-09-20,1290,Goose Riffle,NA,NA,408,NA,13,clear,0
+860,2022-08-22,1020,Hatchery Riffle,NA,NA,"19, 23, 24, 25",NA,15,clear,2
+679,2021-07-20,2990,McFarland,NA,NA,450,NA,18.5,clear,0
+662,2021-07-14,1550,Hatchery Riffle,NA,NA,26 33,NA,16.5,clear,0
+683,2021-08-25,670,Hatchery Riffle,NA,NA,28,NA,10,NA,0
+664,2021-07-14,1550,Bedrock Riffle,NA,NA,55 56,NA,18,clear,0
+685,2021-08-26,650,Trailer Park Riffle,NA,NA,96 97 98,NA,10,clear,0
+694,2021-08-30,1320,Kiester Riffle,NA,NA,402 397 403,NA,15.5,clear,0
+696,2021-08-31,1280,Junkyard Riffle,NA,NA,499 502,NA,16,clear,0
+698,2021-08-31,1320,McFarland,NA,NA,450,NA,15.4,clear,0
+699,2021-08-31,1320,Big Riffle,NA,NA,424 426,NA,15.3,clear,0
+701,2021-09-13,680,Auditorium Riffle,NA,NA,29 30 31 32,NA,11,clear,0
+717,2021-09-21,1290,Gridley Riffle,NA,NA,486 487,NA,17.5,clear,0
+719,2021-09-21,1290,Big Riffle,NA,NA,424 426,NA,16,clear,0
+738,2022-02-23,670,Aleck Riffle,NA,NA,"119, 120",NA,9.5,clear,NA
+853,2022-07-27,3750,Junkyard Riffle,NA,NA,"499, 502",NA,18.5,clear,0
+770,2022-03-28,3500,Vance Riffle,NA,NA,"226, 268",NA,14.75,precipitation,1.5
+767,2022-03-25,650,Gateway Riffle,NA,NA,"221, 225, 226, 228, 229",NA,13.5,clear,2
+776,2022-03-29,3500,McFarland,NA,NA,450,NA,0,clear,1.5
+780,2022-04-25,650,Hatchery Ditch,NA,NA,28,NA,13,clear,0
+787,2022-04-27,650,Gateway Riffle,NA,NA,"226, 228, 229, 221, 225",NA,14.5,clear,2
+793,2022-04-28,800,Kiester Riffle,NA,NA,"397, 403, 402",NA,0,clear,2
+823,2022-06-22,3500,Kiester Riffle,NA,NA,"402, 403",NA,18.5,clear,1.5
+824,2022-06-22,3500,G95,NA,NA,323ab,NA,19,clear,1.5
+827,2022-06-23,1480,Aleck Riffle,NA,NA,"119, 120",NA,16,clear,0
+837,2022-06-24,1480,Gateway Riffle,NA,NA,"221, 225, 226, 228, 229",NA,17.5,clear,1.5
+868,2022-08-25,3010,Kiester Riffle,NA,NA,"397, 402, 403",NA,19,clear,2
+872,2022-08-26,3010,Gridley Riffle,NA,NA,"486, 487",NA,19,clear,3.5
+805,2022-05-24,650,Bedrock Riffle,NA,NA,"55, 56",NA,15,NA,0.75
+873,2022-08-26,3010,Junkyard Riffle,NA,NA,"499, 502",NA,19.5,clear,3
+876,2023-02-06,980,McFarland,NA,NA,450,NA,9,clear,1.5
+937,2023-07-17,1500,Hatchery Riffle,NA,NA,"19,23,24,25",NA,15.5,clear,1.75
+889,2023-02-10,680,Hatchery Riffle,NA,NA,28,NA,8.5,clear,0.75
+943,2023-07-19,2000,Eye Riffle,NA,NA,"215A,215B,216,210",NA,17,clear,1.25
+911,2023-05-22,5650,Hatchery Riffle,NA,NA,"23, 25, 24, 19",NA,11,clear,1.5
+895,2023-05-26,10000,Gridley Riffle,NA,NA,"487, 486",NA,16,clear,1
+948,2023-07-20,5000,Kiester Riffle,NA,NA,"397,402,403",NA,19.5,clear,1.5
+947,2023-07-20,5000,Goose Riffle,NA,NA,408,NA,20,clear,1.5
+900,2023-05-25,10000,Big Riffle,NA,NA,"424, 426",NA,16,clear,2
+904,2023-05-23,4660,Robinson Riffle,NA,NA,"176,177,178(ABC),173",NA,12.5,clear,1.5

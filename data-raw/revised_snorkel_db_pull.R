@@ -60,8 +60,11 @@ cleaner_snorkel_observations <- raw_snorkel_observations |>
   select(-size_class, -lwd, -comments) |> # Remove size because post processing, duplication of FL, TODO check on lwd, remove comments
   left_join(species_lookup, by = c("species" = "SpeciesCode")) |>
   select(-species, -observer) |>
-  rename(species = Species, observation_id = obs_id, survey_id = sid,
-         hydrology = hydrology_code, fork_length = est_size,
+  rename(species = Species,
+         observation_id = obs_id,
+         survey_id = sid,
+         channel_geomorphic_unit = hydrology_code,
+         fork_length = est_size,
          depth = water_depth_m) |>
   mutate(clipped = case_when(species == "O. mykiss (not clipped)" ~ FALSE,
                              species == "O. Mykiss (clipped)" ~ TRUE,
@@ -89,11 +92,11 @@ cleaner_snorkel_observations <- raw_snorkel_observations |>
                                           species %in% c("Sacramento Squawfish or Hardhead", "Pikeminnow/Hardhead") ~ "Sacramento Pikeminnow or hardhead",
                                           species == "NO FISH CAUGHT" ~ NA,
                                           TRUE ~ species)),
-         hydrology = case_when(hydrology %in% c("Riffle Edgewater", "Riffle Margin") ~ "Riffle Margin",
-                               hydrology %in% c("Glide Edgewater", "Glide Margin", "GM") ~ "Glide Margin",
-                               hydrology %in% c("Backwater", "W") ~ "Backwater",
-                               hydrology %in% c("Glide", "G") ~ "Glide",
-                               TRUE ~ hydrology),
+         channel_geomorphic_unit = case_when(channel_geomorphic_unit %in% c("Riffle Edgewater", "Riffle Margin") ~ "Riffle Margin",
+                                             channel_geomorphic_unit %in% c("Glide Edgewater", "Glide Margin", "GM") ~ "Glide Margin",
+                                             channel_geomorphic_unit %in% c("Backwater", "W") ~ "Backwater",
+                                             channel_geomorphic_unit %in% c("Glide", "G") ~ "Glide",
+                               TRUE ~ channel_geomorphic_unit),
          instream_cover = ifelse(is.na(instream_cover), NA, str_arrange(toupper(instream_cover))),
          instream_cover = case_when(instream_cover == "VCDE" ~ "CDE", # V is not an instream cover code, remove
                                     instream_cover == "BEV" ~ "BE", # V is not an instream cover code, remove
@@ -261,6 +264,21 @@ random_coordinates <- read_csv("data-raw/Coordinates_Random_Snorkel_Sites.csv") 
 # 1. Should we fill in all with missing section_name as "random"
 # 2. We have created lat/long based on the kmz provided. Do we have lat/long for the units?
 
+# This chunk attempts to pull together all known survey locations and coordinates
+# from both the ongoing snorkel survey and the mini snorkely survey
+
+mini_snorkel_survey_locations <- read_csv("data-raw/survey_locations_mini_snorkel.csv") |>
+  select(location, river_mile, longitude, latitude, coordinate_method, channel_type) |>
+  rename(section_name = location) |>
+  mutate(source = "mini snorkel")
+
+current_years_survey_locations <- read_csv("data-raw/clean_location_lookup_current.csv") |>
+  mutate(section_name = tolower(section_name),
+         source = "ongoing snorkel")
+
+survey_location_lookup_combined <- bind_rows(mini_snorkel_survey_locations,
+                                             current_years_survey_locations)
+
 sampling_unit_lookup_coordinates <- sampling_unit_lookup |>
   left_join(kmz_coordinate |>
               rename(section_name = Name,
@@ -271,8 +289,19 @@ sampling_unit_lookup_coordinates <- sampling_unit_lookup |>
                         latitude = mean(latitude))) |>
   left_join(random_coordinates) |>
   mutate(longitude = ifelse(is.na(longitude) & !is.na(Longitude), Longitude, longitude),
-         latitude = ifelse(is.na(latitude) & !is.na(Latitude), Latitude, latitude)) |>
-  select(-c(Longitude, Latitude))
+         latitude = ifelse(is.na(latitude) & !is.na(Latitude), Latitude, latitude),
+         section_name = tolower(section_name)) |>
+  select(-c(Longitude, Latitude)) |>
+  rename(channel_type = channel) |>
+  left_join(mini_snorkel_survey_locations |>
+              group_by(location) |>
+              slice_head() |>
+              select(section_name = location,
+                     mini_latitude = latitude,
+                     mini_longitude = longitude)) |>
+  mutate(latitude = ifelse(is.na(latitude), mini_latitude, latitude),
+         longitude = ifelse(is.na(longitude), mini_longitude, longitude)) |>
+  select(-c(mini_latitude, mini_longitude))
 
 # Write clean CSVS -------------------------------------------------------------
 # writing to data raw because we need to join with other years

@@ -47,6 +47,20 @@ format_site_name <- function(string) {
     stringr::str_to_title()
 }
 
+# snorkel instream cover codes
+# A = "no apparent cover"
+# B = "small instream objects/small-medium woody debris"
+# C = "large instream objects/large woody debris"
+# D = "overhead objects"
+# E = "submerged vegetation"
+# F = "under cut bank"
+
+# overhead cover
+# 0 = "no apparent overhead cover"
+# 1 = "overhanging vegetation <0.5m above water surface"
+# 2 = "overhanging vegetation 0.5-2m above water surface"
+# 4 = "surface turbulence, bubble curtain"
+
 # Join tables to lookup and & clean --------------------------------------------
 # Clean snorkel observations
 cleaner_snorkel_data_early <- snorkel_raw_early |>
@@ -54,7 +68,9 @@ cleaner_snorkel_data_early <- snorkel_raw_early |>
   select(-bank_distance, -max_fl, -comments, -snorkler) |> # Remove size because post processing, duplication of FL, TODO check on lwd, remove comments
   left_join(lookup_species, by = c("species" = "OrganismCode")) |>
   select(-species) |>
-  rename(species = CommonName, observation_id = obs_id,  hydrology = hu_cunit,
+  rename(species = CommonName,
+         observation_id = obs_id,
+         channel_geomorphic_unit = hu_cunit,
          instream_cover = huc_icover,
          overhead_cover = huc_ocover,
          substrate = hu_csubstrate,
@@ -90,14 +106,14 @@ cleaner_snorkel_data_early <- snorkel_raw_early |>
          instream_cover = ifelse(is.na(instream_cover), NA, str_arrange(toupper(instream_cover))),
          instream_cover = case_when(instream_cover == "AG" ~ "A", # G is not an instream cover code, remove
                                     TRUE ~ instream_cover),
-         hydrology = case_when(hydrology == "RM" ~ "Riffle Margin",
-                               hydrology == "GM" ~ "Glide Margin",
-                               hydrology == "W" ~ "Backwater",
-                               hydrology == "G" ~ "Glide",
-                               hydrology == "R" ~ "Riffle",
-                               hydrology == "P" ~ "Pool",
-                               hydrology == "M" ~ "Riffle Margin Eddy",
-                               TRUE ~ hydrology),
+         channel_geomorphic_unit = tolower(case_when(channel_geomorphic_unit == "RM" ~ "Riffle Margin",
+                                             channel_geomorphic_unit == "GM" ~ "Glide Margin",
+                                             channel_geomorphic_unit == "W" ~ "Backwater",
+                                             channel_geomorphic_unit == "G" ~ "Glide",
+                                             channel_geomorphic_unit == "R" ~ "Riffle",
+                                             channel_geomorphic_unit == "P" ~ "Pool",
+                                             channel_geomorphic_unit == "M" ~ "Riffle Margin Eddy",
+                               TRUE ~ channel_geomorphic_unit)),
          overhead_cover = case_when(overhead_cover %in% c("e", "be", "b", "o", "O", "I") ~ NA,
                                     TRUE ~ as.numeric(overhead_cover)),
          unit = toupper(unit),
@@ -121,18 +137,18 @@ cleaner_snorkel_data_early <- snorkel_raw_early |>
                           unit == "487B" ~ "487",
                           TRUE  ~ unit)) |>
   select(-run, -fish_depth, -adj_velocity) |>
-  filter(species != "Sacramento Squawfish",
-         !is.na(unit) # if there is no unit, it is not useful
+  filter(!is.na(unit) # if there is no unit, it is not useful, 386 with NA units
          ) |> glimpse()
 
 cleaner_snorkel_data_early$substrate |> unique()
-cleaner_snorkel_data_early$hydrology |> unique()
+cleaner_snorkel_data_early$channel_geomorphic_unit |> unique()
 cleaner_snorkel_data_early$species |> table()
 
 # TODO, major issue with location / section_name. does not appear to be following any standard section naming conventions here
 # TODO these section names still need to be cleaned up
 # use unit lookup table and above units to clean up as we can
 # Pull in cleaned name lookup table
+# created based on mapbook from casey
 raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx") |>
   mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
   glimpse()
@@ -151,22 +167,49 @@ cleaner_snorkel_metadata_early <- snorkel_metadata_raw_early |>
   left_join(lookup_weather, by = c("weather" = "WeatherCode")) |>
   select(-c(visibility_comments, x_of_divers, x_of_center_passes, pass_width, comments,
             temp_time, snorkel_time_start, snorkel_time_stop, weather,
-            snorkel_crew, shore_crew, recorder, survey_type, section_type)) |>
+            snorkel_crew, shore_crew, recorder)) |>
   mutate(location = str_to_title(location),
          Weather = str_to_lower(Weather)) |>
-  rename(flow = river_flow, units_covered = units,
+  rename(flow = river_flow,
+         units_covered = units,
          section_name = location,
          weather = Weather) |>
   left_join(units_per_survey) |>
   mutate(section_name = ifelse(!is.na(updated_section_name), updated_section_name, section_name)) |>
   select(-updated_section_name) |>
   # update additional section_names, concern with manual update is that section_names will be associated with units not contained within that section...
-  # mutate(section_name = case_when())
+  mutate(section_name = case_when(section_name %in% c("Above Eye Riffle", "Eye To Gateway", "Lower Eye-Pool") ~ "Eye Riffle",
+                                  section_name %in% c("Auditorium", "Lower Auditorium To Upper Bedrock Pool") ~ "Auditorium Riffle",
+                                  grepl("G95", section_name) | section_name %in% c("G-95  East Channel") ~ "G95",
+                                  grepl("Macfarland", section_name) ~ "McFarland",
+                                  grepl("Mcfarland", section_name) ~ "McFarland",
+                                  section_name %in% c("Big Bar Riffle", "Big Bar, Mcfarland") ~ "Big Bar",
+                                  section_name %in% c("Island @ Bottom Of Big Hole Island", "Big Hole Boat Launch", "Big Hole Island", "Big Hole Island To G95", "Big Hole Islands @ R.m 57", "Big Hole Islands, 1/4 Mile Below R.m 58") ~ "Big Hole",
+                                  section_name %in% c("Fish Barrier Dam To Hatchery Riffle", "Table Mtn Bridge To Hatchery Riffle", "Tble Mountain Bridge To Hatchery  Riffle") ~ "Hatchery Riffle",
+                                  section_name %in% c("Gateway Pool - Thermalito Pool") ~ "Gateway Riffle",
+                                  section_name %in% c("Goose Backwater To Big Bar Riffle") ~ "Goose Riffle",
+                                  section_name %in% c("Gridely Riffle Side Channel", "Gridley Riffle Side Channel (See Comments)") ~ "Gridley Riffle",
+                                  section_name %in% c("Hatchery Riffle To  Upper Bedrock Pool", "Fish Barrier Dam To Hatchery Riffle") ~ "Hatchery Riffle",
+                                  section_name %in% c("Herring Side/Main Channel", "Herringer Side Channel", "Herringer Side Channel/Main Channel", "Cox Riffle, Upper Herringer") ~ "Herringer Riffle",
+                                  section_name %in% c("Hour", "Hour Bar Pool") ~ "Hour Bars",
+                                  section_name %in% c("Hour Glide") ~ "Hour Riffle",
+                                  section_name %in% c("Junkyard") ~ "Junkyard Riffle",
+                                  section_name %in% c("Keister Riffle") ~ "Kiester Riffle",
+                                  section_name %in% c("Lower  Hour Riffle", "Lower Hour") ~ "Lower Hour",
+                                  section_name %in% c("Lower Robinson", "Robinson", "Robinson Pond Outlet Channel", "Robinson Side", "Robinson Side Channel", "Robinson To Steep") ~ "Robinson Riffle",
+                                  section_name %in% c("Matthews To Aleck") ~ "Matthews Riffle",
+                                  section_name %in% c("Montgomery St. Park To Trailer Park Riffle", "Trailer Park To Aleck", "Trailer Park To Matthews") ~ "Trailer Park Riffle",
+                                  section_name %in% c("Steep To Eye", "Steep To Weir") ~ "Steep Riffle",
+                                  section_name %in% c("Vance Ave To Big Hole Bw", "Vance Ave. Boat Ramp") ~ "Vance Avenue",
+                                  T ~ section_name),
+         section_name = tolower(section_name),
+         section_type = tolower(section_type),
+         survey_type = tolower(survey_type)) |>
   glimpse()
 
 # still more clean up to do
 # Initially ~ 200 unique section names, after join with units_per_survey table we get down to ~100
 cleaner_snorkel_metadata_early$section_name |> unique() |> sort()
-
-
+names_to_fix <- filter(cleaner_snorkel_metadata_early, is.na(section_number))
+names_to_fix$section_name |> unique() |> sort()
 
