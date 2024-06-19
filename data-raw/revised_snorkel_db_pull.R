@@ -66,7 +66,11 @@ cleaner_snorkel_observations <- raw_snorkel_observations |>
          channel_geomorphic_unit = hydrology_code,
          fork_length = est_size,
          depth = water_depth_m) |>
-  mutate(clipped = case_when(species == "O. mykiss (not clipped)" ~ FALSE,
+  mutate(run = case_when(species == "Chinook Salmon- Fall" ~ "fall",
+                         species == "Chinook Salmon- Late Fall" ~ "late fall",
+                         species %in% c("Chinook Salmon - Spring", "Chjnook Salmon- Spring") ~ "spring",
+                         TRUE ~ NA_character_),
+         clipped = case_when(species == "O. mykiss (not clipped)" ~ FALSE,
                              species == "O. Mykiss (clipped)" ~ TRUE,
                              species == "Chinook Salmon - Clipped" ~ TRUE,
                              T ~ NA),
@@ -294,10 +298,9 @@ sampling_unit_lookup_coordinates <- sampling_unit_lookup |>
   select(-c(Longitude, Latitude)) |>
   rename(channel_type = channel) |>
   left_join(mini_snorkel_survey_locations |>
-              group_by(location) |>
+              group_by(section_name) |>
               slice_head() |>
-              select(section_name = location,
-                     mini_latitude = latitude,
+              select(mini_latitude = latitude,
                      mini_longitude = longitude)) |>
   mutate(latitude = ifelse(is.na(latitude), mini_latitude, latitude),
          longitude = ifelse(is.na(longitude), mini_longitude, longitude)) |>

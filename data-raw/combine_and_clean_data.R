@@ -34,7 +34,11 @@ combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |> mutate(
                                            cleaner_snorkel_observations) |>
   filter(!unit %in% c("77-80", "86-89",
                       "104, 106, 112", "104 106  112",
-                      "104 106 112", "446/449")) |> glimpse() # filtered out these messy units for now, alternatively we can see if casey can assign a non messy unit
+                      "104 106 112", "446/449")) |>
+  mutate(channel_geomorphic_unit = tolower(channel_geomorphic_unit)) |>
+  # run is all NA so removed
+  select(observation_id, survey_id, unit, count, species, fork_length, clipped, substrate, instream_cover, overhead_cover, channel_geomorphic_unit, depth, velocity) |>
+  glimpse() # filtered out these messy units for now, alternatively we can see if casey can assign a non messy unit
 
 combined_snorkel_observations$unit |> unique() |> length() #395 in this
 combined_snorkel_observations$count |> summary() # 750000 is high, leaving in for now but noting
@@ -49,12 +53,14 @@ combined_snorkel_observations$species |> sort() |> unique() # still a lot of spe
 combined_snorkel_observations$clipped |> table() # clean
 
 # write csv
-write_csv(combined_snorkel_observations, "data/feather_snorkel_observations.csv")
+write_csv(combined_snorkel_observations, "data/fish_observations.csv")
 
 # FEATHER SNORKEL METADATA -----------------------------------------------------
 combined_snorkel_metadata <- bind_rows(cleaner_snorkel_metadata_early,
                                        cleaner_snorkel_survey_metadata) |>
   select(-section_number) |> # removing because you can get this from the site lookup
+  mutate(section_type = ifelse(section_type == "n/a", NA, section_type)) |>
+  select(survey_id, date, section_name, units_covered, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
   glimpse()
 
 combined_snorkel_metadata$date |> summary() # Data from April 1999 - July 2023
@@ -66,15 +72,17 @@ combined_snorkel_metadata$temperature |> summary()
 combined_snorkel_metadata$weather |> table()
 
 # write csv
-write_csv(combined_snorkel_metadata, "data/feather_snorkel_metadata.csv")
+write_csv(combined_snorkel_metadata, "data/survey_characteristics.csv")
 
 
 # FEATHER LOCATION LOOKUP TABLE ------------------------------------------------
-sampling_unit_lookup |> glimpse()
+location_lookup <- sampling_unit_lookup_coordinates |>
+  select(section_name, section_type, channel_type, section_number, unit, river_mile, latitude, longitude) |>
+  glimpse()
 
 
 # write csv
-write_csv(sampling_unit_lookup_coordinates, "data/feather_location_lookup.csv")
+write_csv(sampling_unit_lookup_coordinates, "data/locations_lookup.csv")
 
 
 # Data checks -------------------------------------------------------------

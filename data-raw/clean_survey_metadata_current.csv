@@ -68,7 +68,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 316,2018-02-15,1750,clear and windy,49.1,0,G95,323A 323B,14
 317,2018-03-19,800,clear,47.6,0.8,Hatchery Riffle,19 23 24 25,1
 320,2018-03-20,1050,precipitation,50.9,0,McFarland,450,18
-322,2018-03-28,800,clear,48.2,0.3,Bedrock Park Riffle,55 56,5
+322,2018-03-28,800,clear,48.2,0.3,Bedrock Riffle,55 56,NA
 323,2018-03-28,800,clear,66.2,0,Aleck Riffle,119,8
 324,2018-03-29,NA,clear,56.3,0.75,Vance Riffle,268,13
 327,2018-04-10,3250,cloudy,50,0,Hatchery Riffle,28,1
@@ -97,7 +97,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 352,2018-05-10,800,cloudy,0,0,Gateway Riffle,221 225 226 228 229,12
 354,2018-05-14,800,clear,0,0,Hatchery Riffle,33 26 28,1
 355,2018-05-15,800,clear,53.6,1,Auditorium Riffle,29 30 31 32,4
-356,2018-05-15,800,clear,55.4,1,Bedrock Park Riffle,55 56,5
+356,2018-05-15,800,clear,55.4,1,Bedrock Riffle,55 56,NA
 357,2018-05-16,1050,NA,59,2,Vance Riffle,266 268,13
 358,2018-06-12,0,clear,68,0,Junkyard Riffle,502 499,20
 331,2018-04-16,5000,cloudy,68,0,Gridley Riffle,486 487,19
@@ -113,7 +113,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 372,2018-06-18,1450,clear,60.8,0,Auditorium Riffle,30 31 32 29,4
 373,2018-06-18,1450,clear,61.7,0,Hatchery Ditch,26 33,2
 374,2018-06-18,1450,clear,61.5,0,Hatchery Ditch,28,2
-375,2018-06-18,1400,clear,61.5,2,Bedrock Park Riffle,55 56,5
+375,2018-06-18,1400,clear,61.5,2,Bedrock Riffle,55 56,NA
 376,2018-06-19,1450,clear,62.6,0,Steep Riffle,185 189,10
 377,2018-06-19,1450,clear,64.4,1.5,Eye Riffle,"215 A,B 216 210 217",11
 378,2018-07-17,4500,clear,68,0,Junkyard Riffle,499,20
@@ -123,7 +123,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 382,2018-07-18,4500,NA,68,1.2,Kiester Riffle,403 397 402,15
 383,2018-07-18,4500,NA,68,1.2,Goose Riffle,408,16
 302,2018-02-12,1000,clear,47.48,1.5,Hatchery Riffle,19 23 24 25,1
-303,2018-02-12,1000,clear,47.3,1.5,Bedrock Park Riffle,55 56,5
+303,2018-02-12,1000,clear,47.3,1.5,Bedrock Riffle,55 56,NA
 304,2018-02-13,1000,clear,47.48,0,Trailer Park Riffle,96 97 98,6
 305,2018-02-13,1000,clear,48.2,0,Matthews Riffle,103 104 105,7
 311,2018-02-13,1000,clear,48.56,0,Aleck Riffle,119 120,8
@@ -166,7 +166,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 161,2015-09-08,830,clear,58.1,0,Hatchery Riffle,"19,23,24,25",1
 162,2015-09-08,835,clear,56.3,0,Auditorium Riffle,"29,30,31,32",4
 163,2015-09-08,830,clear,56.3,0,Hatchery Ditch,"26,33,28",2
-164,2015-09-09,800,clear,56.3,0,Bedrock Park Riffle,"55,56",5
+164,2015-09-09,800,clear,56.3,0,Bedrock Riffle,"55,56",NA
 165,2015-09-09,800,clear,57.2,0,Trailer Park Riffle,"96,97,98",6
 166,2015-09-09,800,clear,58.1,0,Aleck Riffle,"119,120",8
 167,2015-09-09,800,clear,57.6,0,Matthews Riffle,"103,104,105",7
@@ -222,13 +222,13 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 228,2016-07-18,0,clear,63.5,0,Gridley Riffle,HGSC,19
 229,2016-07-18,0,clear,63.9,0,Herringer Pond Rl,HPRL,NA
 235,2016-07-26,4000,clear,59,0,Auditorium Riffle,29 31,4
-237,2016-07-26,4000,clear,59.9,0,Bedrock Park Riffle,55 56,5
+237,2016-07-26,4000,clear,59.9,0,Bedrock Riffle,55 56,NA
 238,2016-07-26,4000,clear,59.9,0,Trailer Park Riffle,97 98,6
 239,2016-07-27,4000,clear,62.6,0,Robinson Riffle,170 174,9
 240,2016-07-27,4000,clear,62.6,0,Gateway Riffle,226,12
 246,2016-08-22,0,clear,14.8,0,Hatchery Ditch,33 26,2
 247,2016-08-22,0,clear,59,0,Hatchery Ditch,28,2
-248,2016-08-22,1600,clear,59.9,0,Bedrock Park Riffle,55 56,5
+248,2016-08-22,1600,clear,59.9,0,Bedrock Riffle,55 56,NA
 249,2016-08-23,1600,clear,59,0,Trailer Park Riffle,96 97 98,6
 251,2016-08-23,0,clear,62.6,0,Aleck Riffle,119 120,8
 252,2016-08-24,0,clear,59,0,Robinson Riffle,169 170 171 173 174 175,9
@@ -244,7 +244,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 393,2018-07-24,1400,clear,60.35,0,Hatchery Riffle,19 23 24 25,1
 394,2018-07-24,1400,clear,0,0,Auditorium Riffle,29 30 31 32,4
 395,2018-07-24,1400,clear,62.6,0,Hatchery Ditch,33 26 28,2
-396,2018-07-24,1400,clear,60.8,3,Bedrock Park Riffle,55 56,5
+396,2018-07-24,1400,clear,60.8,3,Bedrock Riffle,55 56,NA
 397,2018-08-14,6000,clear,66.2,0,Junkyard Riffle,499,20
 398,2018-08-14,6020,clear,65.3,0,Gridley Riffle,486 487,19
 399,2018-08-14,6020,clear,65.3,0,McFarland,450,18
@@ -256,13 +256,13 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 405,2018-08-20,1200,clear,59,0,Aleck Riffle,119 120,8
 406,2018-08-20,1200,clear,59,0,Matthews Riffle,103 104 105,7
 407,2018-08-20,1200,clear,0,0,Trailer Park Riffle,96 97 98,6
-408,2018-08-20,1200,clear,59.9,0,Bedrock Park Riffle,55 56,5
+408,2018-08-20,1200,clear,59.9,0,Bedrock Riffle,55 56,NA
 409,2018-08-21,6000,NA,62.6,0,Vance Riffle,260,13
 410,2018-08-21,6020,clear,64.4,0,G95,323A 323B,14
 411,2018-08-21,6000,clear,64.4,1.5,Kiester Riffle,402,15
 412,2018-08-21,6000,clear,64.4,1.5,Goose Riffle,408,16
 256,2016-08-25,0,clear,62.6,0,Hatchery Riffle,All,1
-257,2016-08-25,1300,clear,63.5,0,Bedrock Park Riffle,55 56,5
+257,2016-08-25,1300,clear,63.5,0,Bedrock Riffle,55 56,NA
 258,2016-08-29,6600,NA,65.3,0,Gridley Riffle,HGSC,19
 259,2016-08-29,0,NA,65.3,0,Big Riffle,BRB,17
 260,2016-09-01,6300,clear,63.5,0,Goose Riffle,408,16
@@ -275,7 +275,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 270,2017-07-20,0,clear,62.6,0,Hatchery Riffle,19 23 24 25,1
 271,2017-07-20,0,clear,62.6,0,Auditorium Riffle,29-32,4
 272,2017-07-20,0,clear,60.8,0,Hatchery Ditch,33 26 28,2
-273,2017-07-24,0,clear,59,0,Bedrock Park Riffle,55 56,5
+273,2017-07-24,0,clear,59,0,Bedrock Riffle,55 56,NA
 275,2017-07-24,0,clear,60.8,0,Matthews Riffle,105 104 103,7
 276,2017-07-24,0,clear,61.7,0,Aleck Riffle,119 120,8
 277,2017-07-24,0,clear,64.4,0,Robinson Riffle,169 170 173 174 175,9
@@ -286,7 +286,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 283,2017-08-07,0,clear,59.9,0,Auditorium Riffle,29-32,4
 250,2016-08-23,0,clear,62.6,0,Matthews Riffle,103-105,7
 284,2017-08-07,0,clear,67.1,1.5,Hatchery Ditch,33 28,2
-285,2017-08-07,0,clear,60.8,0,Bedrock Park Riffle,55 56,5
+285,2017-08-07,0,clear,60.8,0,Bedrock Riffle,55 56,NA
 286,2017-08-08,0,clear,58.1,0,Trailer Park Riffle,96 97 98,6
 289,2017-08-08,0,clear,60.8,1.3,Robinson Riffle,173 174 175 171 170169,9
 290,2017-08-09,0,clear,59,0,Steep Riffle,185 189,10
@@ -308,7 +308,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 28,2004-08-12,NA,NA,NA,NA,NA,NA,NA
 34,2004-05-26,NA,NA,NA,NA,NA,NA,NA
 39,2004-04-28,NA,NA,NA,NA,NA,NA,NA
-202,2016-05-16,1700,clear,53.6,0,Bedrock Park Riffle,55 56,5
+202,2016-05-16,1700,clear,53.6,0,Bedrock Riffle,55 56,NA
 121,2015-07-30,0,clear,61.3,0,Gateway Riffle,"221,225,226,228,229",12
 41,2004-04-21,NA,NA,NA,NA,NA,NA,NA
 47,2010-08-16,620,clear,61,0,NA,NA,NA
@@ -326,7 +326,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 169,2015-09-10,800,clear,58.8,0,Steep Riffle,"189,185",10
 175,2015-09-14,1200,cloudy,60.8,0,Goose Riffle,408,16
 177,2015-09-15,1200,cloudy,60.4,0,McFarland,"441, 445",18
-183,2016-04-18,0,clear,57.2,0,Bedrock Park Riffle,55 56,5
+183,2016-04-18,0,clear,57.2,0,Bedrock Riffle,55 56,NA
 191,2016-04-20,0,clear,59,0,Vance Riffle,266 268,13
 197,2016-04-26,0,clear,55.4,0,McFarland,450,18
 211,2016-05-18,4500,clear,62.6,0,G95,323A/B,14
@@ -360,7 +360,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 435,2019-03-21,8000,clear,0,1,Junkyard Riffle,499,20
 436,2019-05-13,3500,clear,51.3,0,Hatchery Ditch,26 33,2
 437,2019-05-13,3500,clear,53.6,0,Hatchery Ditch,28,2
-440,2019-05-13,3500,clear,53.6,0,Bedrock Park Riffle,"55, 56",5
+440,2019-05-13,3500,clear,53.6,0,Bedrock Riffle,"55, 56",NA
 442,2019-05-14,3500,NA,52.7,0,Matthews Riffle,"103, 104, 105",7
 443,2019-05-14,3500,cloudy,53.6,0,Aleck Riffle,"119, 120",8
 444,2019-05-14,3500,NA,53.6,0,Robinson Riffle,"169,170,171,173,174,175",9
@@ -371,7 +371,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 449,2019-05-16,7500,cloudy,53.6,0,G95,323B,14
 450,2019-05-16,7500,cloudy,55.4,0,Big Riffle,424,17
 124,2015-07-30,0,clear,67.6,0,Goose Riffle,408,16
-454,2019-07-08,1400,clear,60.8,0,Bedrock Park Riffle,"55,56",5
+454,2019-07-08,1400,clear,60.8,0,Bedrock Riffle,"55,56",NA
 455,2019-07-09,1220,clear,62.6,2,Steep Riffle,"189,185",10
 456,2019-07-10,1200,clear,60.8,0,Robinson Riffle,"169,170,171,173,174,175",9
 458,2019-07-10,1200,clear,62.6,0,Matthews Riffle,"103,104,105",7
@@ -399,7 +399,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 487,2019-08-13,7500,clear,66.2,0,Big Riffle,"424,426",17
 489,2020-02-24,800,clear,10,0,Auditorium Riffle,29-31,4
 490,2020-02-24,0,clear,10.5,0,Hatchery Ditch,"33,26,28",2
-491,2020-02-25,800,clear,10,0,Bedrock Park Riffle,55 56,5
+491,2020-02-25,800,clear,10,0,Bedrock Riffle,55 56,NA
 492,2020-02-25,830,clear,10,0,Trailer Park Riffle,96 97 98,6
 493,2020-02-25,830,clear,10.5,0,Aleck Riffle,119 120,8
 494,2020-02-25,0,clear,11,0,Robinson Riffle,169-175,9
@@ -416,7 +416,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 125,2015-08-03,0,clear,66.2,0,Big Riffle,"424,426",17
 505,2020-02-28,2200,clear,12.5,0,McFarland,450,18
 506,2020-02-28,2200,clear,12.5,0,Big Riffle,424 426,17
-508,2020-06-19,1100,clear,15.5,NA,Bedrock Park Riffle,55 56,5
+508,2020-06-19,1100,clear,15.5,NA,Bedrock Riffle,55 56,NA
 509,2020-06-19,1100,clear,15.3,0,Hatchery Riffle,19 23 24 25,1
 510,2020-06-19,1100,clear,15.3,0,Auditorium Riffle,30 31 32 29,4
 511,2020-06-23,1240,clear,15.3,0,Trailer Park Riffle,96 97 98,6
@@ -435,7 +435,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 527,2020-07-20,1250,clear,11.5,0,Hatchery Riffle,NA,1
 528,2020-07-20,1250,clear,16.5,0,Auditorium Riffle,29 30 31 32,4
 529,2020-07-20,1450,clear,18,0,Hatchery Ditch,33 26 28,2
-530,2020-07-20,0,clear,19,0,Bedrock Park Riffle,55 56,5
+530,2020-07-20,0,clear,19,0,Bedrock Riffle,55 56,NA
 126,2015-08-03,0,clear,66.2,0,McFarland,"441,445",18
 531,2020-07-21,1250,clear,14,0,Trailer Park Riffle,96 97 98,6
 532,2020-07-21,1100,clear,15,0,Matthews Riffle,103 104 105,7
@@ -454,7 +454,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 546,2020-08-10,1550,clear and hot,15,0,Hatchery Ditch,33 26 28,2
 547,2020-08-10,1550,clear,14,0,Hatchery Riffle,19 23 24 25,1
 548,2020-08-10,1550,clear,14.5,0,Auditorium Riffle,29 30 31 32,4
-549,2020-08-10,1550,clear,15,0,Bedrock Park Riffle,55 56,5
+549,2020-08-10,1550,clear,15,0,Bedrock Riffle,55 56,NA
 550,2020-08-11,1550,clear and hot,15,NA,Trailer Park Riffle,96 97 98,6
 551,2020-08-11,1550,clear and hot,15,0,Matthews Riffle,103 104 105,7
 552,2020-08-11,1550,clear and hot,15.5,0,Aleck Riffle,119 120,8
@@ -474,7 +474,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 565,2020-09-22,850,clear,11,0,Hatchery Riffle,19 23 24 25,1
 566,2020-09-22,840,clear,11.5,0,Auditorium Riffle,30 31 32 29,4
 567,2020-09-22,840,clear,11,0,Hatchery Riffle,33 26 28,1
-568,2020-09-22,840,clear,13,0,Bedrock Park Riffle,55 56,5
+568,2020-09-22,840,clear,13,0,Bedrock Riffle,55 56,NA
 569,2020-09-22,840,clear,13,0,Trailer Park Riffle,97 98 96,6
 570,2020-09-23,800,clear,11,0,Matthews Riffle,103 - 105,7
 571,2020-09-23,800,clear,11.5,0,Aleck Riffle,119 120,8
@@ -494,7 +494,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 584,2021-03-24,800,NA,50,0,Hatchery Riffle,26 33 28,1
 585,2021-03-24,800,NA,10.5,0,Hatchery Riffle,19 23 24 25,1
 586,2021-03-24,800,NA,10.5,0,Auditorium Riffle,29 30 31 32,4
-587,2021-03-25,800,clear,11.5,0,Bedrock Park Riffle,55 56,5
+587,2021-03-25,800,clear,11.5,0,Bedrock Riffle,55 56,NA
 588,2021-03-25,800,clear,11.5,0,Trailer Park Riffle,96 97 98,6
 589,2021-03-25,800,clear,12,0,Matthews Riffle,103 104 105,7
 590,2021-03-25,800,clear,11.5,0,Robinson Riffle,169 170 171 173 174 175,9
@@ -518,7 +518,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 607,2021-04-20,700,clear,13,0,Hatchery Riffle,26 33,1
 608,2021-04-20,700,clear,0,0,Hatchery Riffle,19 23 24 25,1
 609,2021-04-20,700,clear,13.5,0,Auditorium Riffle,NA,4
-610,2021-04-20,700,clear,15,0,Bedrock Park Riffle,55 56,5
+610,2021-04-20,700,clear,15,0,Bedrock Riffle,55 56,NA
 611,2021-04-26,810,clear,12,0,Gateway Riffle,221 225 226 228 229,12
 613,2021-04-26,810,clear,13,0,Eye Riffle,215A 215B 210,11
 614,2021-04-27,1000,clear,14,0,Vance Riffle,266 268,13
@@ -545,7 +545,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 639,2021-05-26,2110,clear,18.5,0,McFarland,450,18
 640,2021-05-26,2110,clear,19.5,0,Big Riffle,424 426,17
 643,2021-06-22,2750,clear,16,0,Auditorium Riffle,29 30 31 32,4
-644,2021-06-22,2750,clear,16.5,0,Bedrock Park Riffle,55 56,5
+644,2021-06-22,2750,clear,16.5,0,Bedrock Riffle,55 56,NA
 646,2021-06-23,2400,clear,16,0,Matthews Riffle,103 104 105,7
 647,2021-06-23,2400,clear,17,0,Robinson Riffle,169-175,9
 648,2021-06-23,2400,clear,17,0,Aleck Riffle,119 120,8
@@ -579,7 +579,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 680,2021-08-25,670,NA,10,0,Hatchery Riffle,19 24 23 25,1
 681,2021-08-25,670,NA,10,0,Auditorium Riffle,29 30 31 32,4
 682,2021-08-25,670,NA,10,0,Hatchery Riffle,33 26,1
-684,2021-08-25,670,clear,10.5,0,Bedrock Park Riffle,55 56,5
+684,2021-08-25,670,clear,10.5,0,Bedrock Riffle,55 56,NA
 686,2021-08-26,670,clear,10,0,Matthews Riffle,104 105 103,7
 687,2021-08-26,650,clear,12,0,Robinson Riffle,169 170 171 173 175 175,9
 688,2021-08-26,670,clear,11.7,0,Aleck Riffle,119 120,8
@@ -594,7 +594,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 700,2021-09-13,680,clear,11,0,Hatchery Riffle,19 23 24 25,1
 702,2021-09-13,600,clear,0,0,Hatchery Riffle,28,1
 703,2021-09-13,0,clear,0,0,Hatchery Riffle,26 33,1
-704,2021-09-13,680,clear,0,0,Bedrock Park Riffle,55 56,5
+704,2021-09-13,680,clear,0,0,Bedrock Riffle,55 56,NA
 705,2021-09-14,680,clear,11.5,0,Robinson Riffle,175 174 173 171 170 169,9
 706,2021-09-14,680,clear,11.5,0,Aleck Riffle,119 120,8
 707,2021-09-14,680,clear,11.5,0,Matthews Riffle,103 104 105,7
@@ -607,7 +607,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 716,2021-09-21,1290,clear,16,0,Junkyard Riffle,502 499,20
 718,2021-09-21,1290,clear,16,0,McFarland,450,18
 142,2015-08-17,0,clear,59,0,Auditorium Riffle,29-32,4
-720,2022-01-19,650,clear,8.5,0.5,Bedrock Park Riffle,"55, 56",5
+720,2022-01-19,650,clear,8.5,0.5,Bedrock Riffle,"55, 56",NA
 721,2022-01-19,650,clear,8.5,1,Trailer Park Riffle,"96, 97, 98",6
 722,2021-01-19,650,clear,9,NA,Matthews Riffle,"103, 104, 105",7
 723,2022-01-19,650,clear,9,1,Robinson Riffle,"169, 170, 171, 173, 174, 175",9
@@ -621,7 +621,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 731,2022-02-22,670,clear,9,0,Auditorium Riffle,"29, 30, 31, 32",4
 732,2022-02-22,670,clear,9.5,0,Hatchery Ditch,28,2
 733,2022-02-22,670,clear,0,0,Hatchery Ditch,"26,33",2
-734,2022-02-22,670,cloudy,10,0.5,Bedrock Park Riffle,"55, 56",5
+734,2022-02-22,670,cloudy,10,0.5,Bedrock Riffle,"55, 56",NA
 735,2022-02-23,670,clear,9,1,Trailer Park Riffle,"96, 97, 98",6
 736,2022-02-23,670,clear,0,0,Matthews Riffle,"103, 104, 105",7
 737,2022-02-23,650,clear,10,0.5,Robinson Riffle,"169, 171, 173, 175",9
@@ -645,7 +645,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 755,2022-02-28,4500,clear,0,0.75,Gridley Riffle,"486, 487",19
 756,2022-02-28,4500,clear,0,0,Big Riffle,"424, 426",17
 757,2022-02-28,4500,clear,0,0,McFarland,450,18
-758,2022-03-23,650,clear,0,2,Bedrock Park Riffle,"55, 56",5
+758,2022-03-23,650,clear,0,2,Bedrock Riffle,"55, 56",NA
 759,2022-03-23,650,NA,0,2,Trailer Park Riffle,"96, 97, 98",6
 760,2022-03-23,650,clear,0,2,Hatchery Riffle,28,1
 761,2022-03-23,0,clear,0,2,Hatchery Ditch,"26, 33",2
@@ -663,7 +663,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 774,2022-03-29,3500,clear,15,2,Junkyard Riffle,"499, 502",20
 775,2022-03-29,3500,clear,15,1,Gridley Riffle,"486, 487",19
 777,2022-03-29,3500,clear,0,1.5,Big Riffle,"424, 426",17
-778,2022-04-25,650,clear,13,NA,Bedrock Park Riffle,"55, 56",5
+778,2022-04-25,650,clear,13,NA,Bedrock Riffle,"55, 56",NA
 779,2022-04-25,650,cloudy,13,2,Trailer Park Riffle,"96, 97, 98",6
 781,2022-04-25,650,clear,13,2,Hatchery Ditch,"33, 26",2
 782,2022-04-25,650,clear,13,0,Hatchery Riffle,"19, 23, 24, 25",1
@@ -675,7 +675,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 789,2022-04-27,800,clear,15.5,1.5,Vance Riffle,"266, 268",13
 790,2022-04-27,800,clear,15.5,0,G95,"323A, 323B",14
 791,2022-04-28,650,clear,14,2,Steep Riffle,"189, 185",10
-144,2015-08-17,1100,clear,61.7,0,Bedrock Park Riffle,"55,56",5
+144,2015-08-17,1100,clear,61.7,0,Bedrock Riffle,"55,56",NA
 792,2022-04-28,800,clear,14.5,2,Goose Riffle,408,16
 794,2022-04-29,800,clear,14.5,1.2,Big Riffle,"424, 426",17
 795,2022-04-29,800,clear,14.5,1.75,McFarland,450,18
@@ -710,7 +710,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 826,2022-06-23,1480,cloudy,15,1,Robinson Riffle,"169, 170, 171, 173, 174, 175",9
 828,2022-06-23,1480,clear,16,2,Matthews Riffle,"103, 104, 105",7
 829,2022-06-23,1480,clear,16,2,Trailer Park Riffle,"96, 97, 98",6
-830,2022-06-23,1480,clear,16.5,2,Bedrock Park Riffle,"55, 56",5
+830,2022-06-23,1480,clear,16.5,2,Bedrock Riffle,"55, 56",NA
 831,2022-06-23,1480,clear,15,2,Auditorium Riffle,"29, 30, 31, 32",4
 832,2022-06-23,1480,clear,15,2,Hatchery Riffle,"19, 23, 24, 25",1
 833,2022-06-24,1480,clear,15,2,Hatchery Ditch,28,2
@@ -722,7 +722,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 108,2015-07-27,1898,clear,59.9,0,Hatchery Riffle,"19, 23-25",1
 840,2022-07-21,1550,clear,16,1.5,Hatchery Riffle,"19, 23, 24, 25",1
 841,2022-07-21,1550,clear,16,2,Auditorium Riffle,"29, 30, 31, 32",4
-842,2022-07-21,1550,clear,17,1,Bedrock Park Riffle,"55, 56",5
+842,2022-07-21,1550,clear,17,1,Bedrock Riffle,"55, 56",NA
 843,2022-07-22,1560,clear,16,2.75,Robinson Riffle,"169, 170, 171, 173, 174, 175",9
 844,2022-07-22,1560,clear,16,3,Aleck Riffle,"119, 120",8
 845,2022-07-22,1550,clear,16,3,Matthews Riffle,"103, 104, 105",7
@@ -740,7 +740,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 858,2022-08-22,1020,clear,17,0.8,Hatchery Riffle,"26, 33",1
 859,2022-08-22,1020,clear,16,3,Hatchery Ditch,28,2
 861,2022-08-22,1020,clear,15,2,Auditorium Riffle,"29, 30, 31, 32",4
-862,2022-08-22,1020,clear,16,1.5,Bedrock Park Riffle,"55, 56",5
+862,2022-08-22,1020,clear,16,1.5,Bedrock Riffle,"55, 56",NA
 863,2022-08-24,1020,clear,0,0,Gateway Riffle,"221, 225, 226, 228, 229",12
 864,2022-08-24,1020,clear,15,3,Steep Riffle,"185, 189",10
 111,2015-07-27,2009,clear,59,0,Auditorium Riffle,29-31,4
@@ -765,10 +765,10 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 887,2023-02-09,680,clear,8.5,1,Robinson Riffle,"169, 170, 171, 173, 174, 175",9
 888,2023-02-09,680,clear,8.5,1,Aleck Riffle,"119, 120",8
 890,2023-02-10,680,clear,8.5,1.5,Hatchery Ditch,"26, 33",2
-112,2015-07-27,2009,clear,NA,0,Bedrock Park Riffle,"55, 56",5
+112,2015-07-27,2009,clear,NA,0,Bedrock Riffle,"55, 56",NA
 891,2023-02-10,680,clear,8.5,0.75,Hatchery Riffle,"23, 24, 25, 19",1
 892,2023-02-10,680,clear,8.5,0.75,Auditorium Riffle,"29, 30, 31, 32",4
-893,2023-02-10,680,clear,8.5,0.7,Bedrock Park Riffle,"55, 56",5
+893,2023-02-10,680,clear,8.5,0.7,Bedrock Riffle,"55, 56",NA
 894,2023-05-26,10000,clear,15.5,1.5,Junkyard Riffle,"499, 502",20
 896,2023-05-26,9000,clear,16,0,McFarland,441,18
 897,2023-05-25,11000,clear,14.5,0.2,Vance Riffle,"266, 268",13
@@ -784,7 +784,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 909,2023-05-22,5650,clear,12,1.5,Hatchery Ditch,"33, 26",2
 910,2023-05-22,5650,clear,12,1,Hatchery Riffle,28,1
 113,2015-07-28,2000,clear,59.9,0,Trailer Park Riffle,96-98,6
-912,2023-05-22,5650,clear,12.5,1.5,Bedrock Park Riffle,"55, 56",5
+912,2023-05-22,5650,clear,12.5,1.5,Bedrock Riffle,"55, 56",NA
 913,2023-06-12,8000,cloudy,17.5,1.75,Junkyard Riffle,"499, 502",20
 914,2023-06-12,8000,cloudy,17.5,1,Gridley Riffle,"486, 487",19
 915,2023-06-13,8000,clear,17,1.5,McFarland,441,18
@@ -795,7 +795,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 920,2023-06-16,1000,clear,14,2,Auditorium Riffle,"30, 31, 32, 29",4
 921,2023-06-16,1000,clear,14.5,0.5,Hatchery Ditch,"33, 26",2
 922,2023-06-16,1000,clear,14.5,2.5,Hatchery Riffle,28,1
-923,2023-06-16,1000,clear,15,0,Bedrock Park Riffle,"55, 56",5
+923,2023-06-16,1000,clear,15,0,Bedrock Riffle,"55, 56",NA
 924,2023-06-15,1300,clear,15,0,Steep Riffle,"185, 189",10
 925,2023-06-14,1600,clear,16.5,1.5,Eye Riffle,"210, 216, 215A, 215B",11
 926,2023-06-14,0,NA,15,0,Gateway Riffle,"221, 225, 226, 228, 229",12
@@ -805,7 +805,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 930,2023-06-15,1350,clear,15,0,Matthews Riffle,"103, 104, 105",7
 931,2023-06-15,1350,clear,16,1,Aleck Riffle,"119, 120",8
 932,2023-06-15,1350,clear,15.5,0.75,Robinson Riffle,"169,170,171,173,174,175",9
-933,2023-07-17,1500,clear,17,2,Bedrock Park Riffle,"55,56",5
+933,2023-07-17,1500,clear,17,2,Bedrock Riffle,"55,56",NA
 934,2023-07-17,1500,clear,NA,NA,Hatchery Riffle,28,1
 114,2015-07-28,2000,clear,61.2,0,Matthews Riffle,103-105,7
 935,2023-07-17,1500,clear,17,1.5,Hatchery Ditch,"33, 26",2
@@ -827,7 +827,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 955,2023-04-12,4000,clear,9.5,0.75,Gateway Riffle,"221,225,226,228,229",12
 956,2023-04-10,1000,clear,10,2,Hatchery Ditch,"26,33",2
 957,2023-04-10,1000,clear,10,1.5,Hatchery Riffle,28,1
-958,2023-04-10,1000,clear,10,1,Bedrock Park Riffle,"55,56",5
+958,2023-04-10,1000,clear,10,1,Bedrock Riffle,"55,56",NA
 115,2015-07-28,2000,clear,61.7,0,Aleck Riffle,120 and 119,8
 959,2023-04-10,1000,clear,10,1,Robinson Riffle,"169,170,171,173,174,175",9
 960,2023-04-07,1300,precipitation,10,0.5,Aleck Riffle,"119,120",8
@@ -843,7 +843,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 970,2023-03-06,650,precipitation,8,NA,Hatchery Riffle,"19,23,24,25",1
 971,2023-03-06,650,precipitation,8,1.5,Hatchery Riffle,28,1
 972,2023-03-06,650,precipitation,8,1.25,Auditorium Riffle,"29,30,31,32",4
-973,2023-03-06,650,precipitation,8,0.5,Bedrock Park Riffle,"55,56",5
+973,2023-03-06,650,precipitation,8,0.5,Bedrock Riffle,"55,56",NA
 116,2015-07-28,0,clear,62.6,0,Robinson Riffle,"169, 170, 171, 173, 174, 175",9
 117,2015-07-29,2000,clear,60.8,0,Steep Riffle,"185, 189",10
 118,2015-07-29,2000,clear,62.6,0,Eye Riffle,"210, 217",11
@@ -875,7 +875,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 368,2018-06-14,1400,clear,60.8,0,Aleck Riffle,120 119,8
 370,2018-06-14,1400,clear,61.7,0,Trailer Park Riffle,96 97 98,6
 385,2018-07-18,4500,clear,68.9,1.4,Vance Riffle,268,13
-472,2019-08-07,4620,clear,0,0,Bedrock Park Riffle,"55,56",5
+472,2019-08-07,4620,clear,0,0,Bedrock Riffle,"55,56",NA
 451,2019-07-08,1400,clear,61.7,0,Hatchery Ditch,"33,26,28",2
 414,2018-08-22,0,clear,59,0,Auditorium Riffle,29-32,4
 417,2018-09-11,800,clear,58.1,0,Aleck Riffle,119 120,8
@@ -904,7 +904,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 538,2020-07-22,0,clear,19,0,Vance Riffle,NA,13
 617,2021-04-27,0,clear,16,0,Goose Riffle,408,16
 625,2021-05-18,750,clear,13.5,0,Hatchery Riffle,26 33,1
-626,2021-05-18,750,clear,14,0,Bedrock Park Riffle,55 56,5
+626,2021-05-18,750,clear,14,0,Bedrock Riffle,55 56,NA
 641,2021-06-22,2750,clear,15.5,0,Hatchery Riffle,26 33 28,1
 631,2021-05-21,710,clear,14,0,Eye Riffle,210 215A/B 216,11
 642,2021-06-22,2750,clear,15.5,0,Hatchery Riffle,19 23 24 25,1
@@ -917,7 +917,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 679,2021-07-20,2990,clear,18.5,0,McFarland,450,18
 662,2021-07-14,1550,clear,16.5,0,Hatchery Riffle,26 33,1
 683,2021-08-25,670,NA,10,0,Hatchery Riffle,28,1
-664,2021-07-14,1550,clear,18,0,Bedrock Park Riffle,55 56,5
+664,2021-07-14,1550,clear,18,0,Bedrock Riffle,55 56,NA
 685,2021-08-26,650,clear,10,0,Trailer Park Riffle,96 97 98,6
 694,2021-08-30,1320,clear,15.5,0,Kiester Riffle,402 397 403,15
 696,2021-08-31,1280,clear,16,0,Junkyard Riffle,499 502,20
@@ -940,7 +940,7 @@ survey_id,date,flow,weather,temperature,turbidity,section_name,units_covered,sec
 837,2022-06-24,1480,clear,17.5,1.5,Gateway Riffle,"221, 225, 226, 228, 229",12
 868,2022-08-25,3010,clear,19,2,Kiester Riffle,"397, 402, 403",15
 872,2022-08-26,3010,clear,19,3.5,Gridley Riffle,"486, 487",19
-805,2022-05-24,650,NA,15,0.75,Bedrock Park Riffle,"55, 56",5
+805,2022-05-24,650,NA,15,0.75,Bedrock Riffle,"55, 56",NA
 873,2022-08-26,3010,clear,19.5,3,Junkyard Riffle,"499, 502",20
 876,2023-02-06,980,clear,9,1.5,McFarland,450,18
 937,2023-07-17,1500,clear,15.5,1.75,Hatchery Riffle,"19,23,24,25",1

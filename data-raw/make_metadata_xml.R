@@ -5,22 +5,22 @@ library(readxl)
 library(EML)
 
 datatable_metadata <-
-  dplyr::tibble(filepath = c("data/feather_snorkel_metadata.csv",
-                             "data/feather_location_lookup.csv",
-                             "data/feather_snorkel_observations.csv"),
-                attribute_info = c("data-raw/metadata/feather_snorkel_survey_charachteristics_metadata.xlsx",
-                                   "data-raw/metadata/feather_snorkel_lookup_metadata.xlsx",
-                                   "data-raw/metadata/feather_snorkel_fish_observations_metadata.xlsx"),
-                datatable_description = c("Survey metadata from feather river snorkel survey data",
-                                          "Location lookup feather river snorkel survey data",
-                                          "Fish observations from feather river snorkel survey data"),
+  dplyr::tibble(filepath = c("data/survey_characteristics.csv",
+                             "data/locations_lookup.csv",
+                             "data/fish_observations.csv"),
+                attribute_info = c("data-raw/metadata/survey_characteristics_metadata.xlsx",
+                                   "data-raw/metadata/locations_lookup_metadata.xlsx",
+                                   "data-raw/metadata/fish_observations_metadata.xlsx"),
+                datatable_description = c("Survey metadata from Feather River snorkel survey data",
+                                          "Location lookup for Feather River snorkel survey data",
+                                          "Fish observations from Feather River snorkel survey data"),
                 datatable_url = paste0("https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/data",
-                                       c("feather_snorkel_metadata.csv",
-                                         "feather_location_lookup.csv",
-                                         "feather_snorkel_observations.csv")))
+                                       c("survey_characteristics.csv",
+                                         "locations_lookup.csv",
+                                         "fish_observations.csv")))
 
 # save cleaned data to `data/`
-excel_path <- "data-raw/metadata/feather_metadata.xlsx" #TODO check this excel path/name
+excel_path <- "data-raw/metadata/feather_ongoing_snorkel_metadata.xlsx" #TODO check this excel path/name
 sheets <- readxl::excel_sheets(excel_path)
 metadata <- lapply(sheets, function(x) readxl::read_excel(excel_path, sheet = x))
 names(metadata) <- sheets
