@@ -45,11 +45,11 @@ dataset <- list() %>%
   add_datatable(datatable_metadata)
 
 # GO through and check on all units
-custom_units <- data.frame(id = c("count of fish", "NTU"),
-                           unitType = c("dimensionless", "dimensionless"),
-                           parentSI = c(NA, NA),
-                           multiplierToSI = c(NA, NA),
-                           description = c("number of fish counted", "NTU"))
+custom_units <- data.frame(id = c("parr marks", "decimal degrees", "decimal degrees", "count of fish", "NTU"),
+                           unitType = c("dimensionless", "dimensionless", "dimensionless", "dimensionless", "dimensionless"),
+                           parentSI = c(NA, NA, NA, NA, NA),
+                           multiplierToSI = c(NA, NA, NA, NA,NA),
+                           description = c("parr marks", "decimal degrees", "decimal degrees","number of fish counted", "NTU"))
 
 
 unitList <- EML::set_unitList(custom_units)
