@@ -1,0 +1,48 @@
+
+```{r}
+library(readxl)
+library(lubridate)
+library(leaflet)
+library(RColorBrewer)
+library(viridis)
+library(tidyverse)
+```
+
+This markdown reads in the coordinates of river miles from feather river snorkel data 
+
+```{r}
+river_miles_raw <- read_xlsx("data-raw/featherrivermile_coordinates.xlsx")
+```
+
+
+```{r}
+river_miles <- river_miles_raw |> 
+  mutate(latitude = jitter(Latitude, factor = 10),
+    longitude = jitter(Longitude, factor = 10)) |> 
+  select(-Latitude, -Longitude, -OBJECTID)  |> 
+  glimpse()
+
+# Define a color palette mapping each RIVER_MILE to a color
+palette <- viridis(n = nlevels(factor(river_miles$RIVER_MILE)))
+
+```
+
+## Map
+
+
+```{r}
+# Create a leaflet map
+leaflet(river_miles)  |> 
+  addTiles() |> 
+  addCircleMarkers(
+    ~longitude, ~latitude,
+    popup = ~paste0("River_Mile: ", RIVER_MILE),
+    radius = 2,
+    color = ~palette[as.numeric(factor(RIVER_MILE))],
+    label = ~RIVER_MILE,
+    labelOptions = labelOptions(noHide = TRUE, textOnly = TRUE)
+  )
+```
+
+```
+
