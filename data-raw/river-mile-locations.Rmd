@@ -1,0 +1,47 @@
+---
+title: "River Mile Locations Check - Feather River"
+date: "2024-06-25"
+author: "Badhia Yunes Katz"
+---
+
+```{r, include=FALSE, warning=FALSE}
+library(readxl)
+library(lubridate)
+library(leaflet)
+library(RColorBrewer)
+library(viridis)
+library(tidyverse)
+```
+
+This markdown reads in the coordinates of river miles from Feather River snorkel data to check if they match the Feather River PDF Map Book shared with us.
+
+The location of the river mile points looks the same when comparing the coordinates in the map created on this markdown, and the PDF Map Book.  Since the Map Book is a PDF, it is hard to asses every location, but overall looks similar; mile 0 is located at the confluence of the Sacramento River, and mile 67 by Oroville Dam. Note that some of the points plotted using the coordinates are slightly off the river, but the overall location of the end matches the area where that river mile is on the river.
+
+```{r}
+river_miles_raw <- read_xlsx("data-raw/featherrivermile_coordinates.xlsx")
+```
+
+```{r}
+river_miles <- river_miles_raw |> 
+  mutate(latitude = jitter(Latitude, factor = 10),
+    longitude = jitter(Longitude, factor = 10)) |> 
+  select(-Latitude, -Longitude, -OBJECTID)  |> 
+  glimpse()
+```
+
+## Map
+
+```{r}
+# Create a leaflet map
+leaflet(river_miles)  |> 
+  addTiles() |> 
+  addCircleMarkers(
+    ~longitude, ~latitude,
+    popup = ~paste0("River_Mile: ", RIVER_MILE),
+    radius = 2,
+    label = ~RIVER_MILE,
+    labelOptions = labelOptions(noHide = TRUE, textOnly = TRUE)
+  )
+```
+
+\`\`\`
