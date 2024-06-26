@@ -18,13 +18,13 @@ lookup_species <- mdb.get(db_filepath, "OrganismCodeLU")
 detach(package:Hmisc)
 
 # write to csvs
-write_csv(snorkel_obsv_early, here::here("data-raw", "raw_pre_2004_snorkel_data_feather.csv"))
-write_csv(snorkel_survey_metadata_early, here::here("data-raw", "raw_pre_2004_snorkel_data_feather_metadata.csv"))
+write_csv(snorkel_obsv_early, here::here("data-raw", "db-tables", "raw_pre_2004_snorkel_data_feather.csv"))
+write_csv(snorkel_survey_metadata_early, here::here("data-raw", "db-tables", "raw_pre_2004_snorkel_data_feather_metadata.csv"))
 
 # read in csvs -----------------------------------------------------------------
 # need this step to deal with "labeled" column types, update if we come up with a cleaner solution
-snorkel_raw_early <- read_csv(here::here("data-raw", "raw_pre_2004_snorkel_data_feather.csv"))
-snorkel_metadata_raw_early <- read_csv(here::here("data-raw","raw_pre_2004_snorkel_data_feather_metadata.csv"))
+snorkel_raw_early <- read_csv(here::here("data-raw", "db-tables", "raw_pre_2004_snorkel_data_feather.csv"))
+snorkel_metadata_raw_early <- read_csv(here::here("data-raw","db-tables", "raw_pre_2004_snorkel_data_feather_metadata.csv"))
 
 # Create helper function -------------------------------------------------------
 # str_arrange created to arrange instream cover in alphabetical order

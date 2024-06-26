@@ -7,14 +7,14 @@ db_filepath <- here::here("data-raw", "Snorkel_Revised.mdb")
 mdb.get(db_filepath, tables = TRUE)
 
 snorkel_obsv <- mdb.get(db_filepath, "Observation") |> glimpse()
-write_csv(snorkel_obsv, "data-raw/snorkel_observations.csv")
+write_csv(snorkel_obsv, "data-raw/db-tables/snorkel_observations.csv")
 
 snorkel_survey_metadata <- mdb.get(db_filepath, "Survey") |> glimpse()
-write_csv(snorkel_survey_metadata, "data-raw/snorkel_survey_metadata.csv")
+write_csv(snorkel_survey_metadata, "data-raw/db-tables/snorkel_survey_metadata.csv")
 
 # Other
 river_miles <- mdb.get(db_filepath, "SnorkelSections_RiverMiles") |> glimpse()
-write_csv(river_miles, "data-raw/river_miles_lookup.csv")
+write_csv(river_miles, "data-raw/db-tables/river_miles_lookup.csv")
 # Lookup tables
 species_lookup <- mdb.get(db_filepath, "SpeciesLU")  |> glimpse()
 lookup_cover <- mdb.get(db_filepath, "ICoverLookUp") |> glimpse()
@@ -27,10 +27,10 @@ detach(package:Hmisc) # detach
 
 # read in csvs -----------------------------------------------------------------
 # need this step to deal with "labeled" column types, update if we come up with a cleaner solution
-raw_snorkel_observations <- read_csv("data-raw/snorkel_observations.csv")
-raw_snorkel_survey_metadata <- read_csv("data-raw/snorkel_survey_metadata.csv")
+raw_snorkel_observations <- read_csv("data-raw/db-tables/snorkel_observations.csv")
+raw_snorkel_survey_metadata <- read_csv("data-raw/db-tables/snorkel_survey_metadata.csv")
 
-river_mile_lookup <- read_csv("data-raw/river_miles_lookup.csv")
+river_mile_lookup <- read_csv("data-raw/db-tables/river_miles_lookup.csv")
 
 # Create helper function -------------------------------------------------------
 # str_arrange created to arrange instream cover in alphabetical order
@@ -276,7 +276,7 @@ mini_snorkel_survey_locations <- read_csv("data-raw/survey_locations_mini_snorke
   rename(section_name = location) |>
   mutate(source = "mini snorkel")
 
-current_years_survey_locations <- read_csv("data-raw/clean_location_lookup_current.csv") |>
+current_years_survey_locations <- read_csv("data-raw/processed-tables/clean_location_lookup_current.csv") |>
   mutate(section_name = tolower(section_name),
          source = "ongoing snorkel")
 
@@ -309,6 +309,6 @@ sampling_unit_lookup_coordinates <- sampling_unit_lookup |>
 # Write clean CSVS -------------------------------------------------------------
 # writing to data raw because we need to join with other years
 # observations
-write_csv(cleaner_snorkel_observations, "data-raw/clean_snorkel_observations_current.csv")
-write_csv(cleaner_snorkel_survey_metadata, "data-raw/clean_survey_metadata_current.csv")
-write_csv(sampling_unit_lookup_coordinates, "data-raw/clean_location_lookup_current.csv")
+write_csv(cleaner_snorkel_observations, "data-raw/processed-tables/clean_snorkel_observations_current.csv")
+write_csv(cleaner_snorkel_survey_metadata, "data-raw/processed-tables/clean_survey_metadata_current.csv")
+write_csv(sampling_unit_lookup_coordinates, "data-raw/processed-tables/clean_location_lookup_current.csv")
