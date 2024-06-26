@@ -1,0 +1,137 @@
+
+```{r, include=FALSE}
+library(tidyverse)
+library(googleCloudStorageR)
+library(ggplot2)
+```
+
+```{r, include=FALSE}
+# google cloud set up
+gcs_auth(json_file = Sys.getenv("GCS_AUTH_FILE"))
+gcs_global_bucket(bucket = Sys.getenv("GCS_DEFAULT_BUCKET"))
+```
+
+```{r, include=FALSE}
+# get data from google cloud
+gcs_get_object(object_name = "juvenile-rearing-monitoring/seine-and-snorkel-data/feather-river/data/combined_feather_snorkel_data.csv",
+               bucket = gcs_get_global_bucket(),
+               saveToDisk =  here::here("data-raw", "combined_feather_snorkel_data.csv"),
+               overwrite = TRUE)
+combined_snorkel <- read_csv(here::here("data-raw", "combined_feather_snorkel_data.csv"))
+```
+
+
+## Fields that still need clarification from Casey or team:
+ - section_name
+ - location
+ - hydrology
+ - unit_type
+ 
+
+## Comparing section_name and location
+These two variables have similar descriptions
+
+## section_name
+
+```{r, echo=FALSE}
+table(combined_snorkel$section_name)
+```
+
+
+### Plot showing section_name distribution
+
+```{r, echo=FALSE}
+ggplot(combined_snorkel, aes(x = section_name)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 8))
+```
+
+
+### location
+```{r, echo=FALSE}
+table(combined_snorkel$location)
+```
+
+```{r,include=FALSE}
+#hard to read distributioinn of location
+ggplot(combined_snorkel, aes(x = location)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 8))
+```
+
+
+### Plot showing location distribution
+
+Notice that location has many more fields than section_name
+```{r,echo=FALSE}
+#plot with NAs removed, still hard to read
+ggplot(combined_snorkel[!is.na(combined_snorkel$location),], aes(x = location)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 8))
+```
+
+
+### Names that are consistent between section_name and location:
+
+```{r, echo=FALSE}
+intersect(combined_snorkel$section_name, combined_snorkel$location)
+```
+
+### Fields that are different between section_name and location
+
+```{r, echo=FALSE}
+setdiff(combined_snorkel$section_name, combined_snorkel$location)
+```
+
+## Comparing unit_type and hydrology
+ 
+ 
+### unit_type
+```{r, echo=FALSE}
+table(combined_snorkel$unit_type)
+```
+
+
+### Plot showing unit_type distribution
+```{r, echo=FALSE}
+ggplot(combined_snorkel, aes(x = unit_type)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 8))
+```
+
+
+
+### hydrology
+```{r, echo=FALSE}
+table(combined_snorkel$hydrology)
+```
+
+### Plot showing hydrology distribution
+```{r, echo=FALSE}
+ggplot(combined_snorkel, aes(x = hydrology)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 8))
+```
+
+
+### Plot showing overlap between hydrology and unit_type
+```{r, echo=FALSE}
+ggplot(combined_snorkel, aes(x = hydrology, fill = "hydrology")) +
+  geom_bar(position = position_dodge(width = 0.9)) +
+  geom_bar(aes(x = unit_type, fill = "unit_type"), position = "dodge", alpha = 0.7) +
+  scale_fill_manual(values = c("hydrology" = "red", "unit_type" = "black"))
+```
+
+
+### Names that are consistent between unit_tyoe and hydrology:
+```{r, echo=FALSE}
+intersect(combined_snorkel$unit_type, combined_snorkel$hydrology)
+```
+
+
+### Fields that are different between unit_tyoe and hydrology
+```{r, echo=FALSE}
+setdiff(combined_snorkel$section_name, combined_snorkel$location)
+```
+
+
