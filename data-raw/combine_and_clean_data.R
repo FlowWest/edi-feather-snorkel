@@ -36,8 +36,10 @@ combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |> mutate(
                       "104, 106, 112", "104 106  112",
                       "104 106 112", "446/449")) |>
   mutate(channel_geomorphic_unit = tolower(channel_geomorphic_unit)) |>
+  mutate(count = ifelse(is.na(count), 0, count)) |> # if count is NA, changed to zero
   # run is all NA so removed
-  select(observation_id, survey_id, unit, count, species, fork_length, clipped, substrate, instream_cover, overhead_cover, channel_geomorphic_unit, depth, velocity) |>
+  select(observation_id, survey_id, unit, count, species, fork_length, clipped, substrate, instream_cover, overhead_cover,
+         channel_geomorphic_unit, depth, velocity) |>
   glimpse() # filtered out these messy units for now, alternatively we can see if casey can assign a non messy unit
 
 combined_snorkel_observations$unit |> unique() |> length() #395 in this
@@ -46,13 +48,13 @@ combined_snorkel_observations$fork_length |> summary() # a few big ones here as 
 combined_snorkel_observations$substrate |> table() # still a lot of variation in substrate but ordered and removed weird values
 combined_snorkel_observations$overhead_cover |> table() # removed letterd variables because no lookup (only < 10 of these, so not a big removal, they were in the early data)
 combined_snorkel_observations$instream_cover |> table() # looks as good as we are going to get
-combined_snorkel_observations$channel_geomorhic_unit |> table() # clean
+combined_snorkel_observations$channel_geomorphic_unit |> table() # clean
 combined_snorkel_observations$velocity |> summary() # Only exists for early data, lots of NAs
 combined_snorkel_observations$depth |> summary() # clean
 combined_snorkel_observations$species |> sort() |> unique() # still a lot of species, could potentially refine some of the unidentified ones...or get. abiologiest to imrpve, but probably fine for now
 combined_snorkel_observations$clipped |> table() # clean
 
-# write csv
+# write csv for fish_observations
 write_csv(combined_snorkel_observations, "data/fish_observations.csv")
 
 # FEATHER SNORKEL METADATA -----------------------------------------------------
@@ -71,7 +73,7 @@ combined_snorkel_metadata$turbidity |> summary()
 combined_snorkel_metadata$temperature |> summary()
 combined_snorkel_metadata$weather |> table()
 
-# write csv
+# write csv for survey_characteristics
 write_csv(combined_snorkel_metadata, "data/survey_characteristics.csv")
 
 
@@ -81,7 +83,7 @@ location_lookup <- sampling_unit_lookup_coordinates |>
   glimpse()
 
 
-# write csv
+# write csv for locations_lookup
 write_csv(sampling_unit_lookup_coordinates, "data/locations_lookup.csv")
 
 
