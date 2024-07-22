@@ -2,7 +2,7 @@ library(tidyverse)
 library(Hmisc)
 
 # pull database tables ---------------------------------------------------------
-db_filepath <- here::here("data-raw", "Snorkel_Revised.mdb")
+db_filepath <- here::here("data-raw", "db-files", "Snorkel_Revised.mdb")
 
 mdb.get(db_filepath, tables = TRUE)
 
@@ -225,7 +225,7 @@ cleaner_snorkel_survey_metadata <- raw_snorkel_survey_metadata |>
 
 
 # Pull in cleaned name lookup table
-raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx") |>
+raw_created_lookup <- readxl::read_excel("data-raw/processed-tables/snorkel_built_lookup_table.xlsx") |>
   mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
   glimpse()
 
@@ -251,7 +251,7 @@ cleaner_snorkel_observations |> filter(unit %in% messy_units)
 
 # last step is to associate lat/long with the survey locations
 # Badhia is extracting lat/long from kmzs that Casey provided
-kmz_coordinates_raw <- read_csv("data-raw/Coordinates_Snorkel_Survey_Locations.csv")
+kmz_coordinates_raw <- read_csv("data-raw/processed-tables/Coordinates_Snorkel_Survey_Locations.csv")
 # update the names so they will match with the survey location names
 kmz_coordinate <- kmz_coordinates_raw |>
   mutate(Name = case_when(Name == "Alec Riffle" ~ "Aleck Riffle",
@@ -261,7 +261,7 @@ kmz_coordinate <- kmz_coordinates_raw |>
                           Name %in% c("Lower McFarland", "Upper McFarland") ~ "McFarland",
                           Name == "Vance West" ~ "Vance Riffle",
                           T ~ Name))
-random_coordinates <- read_csv("data-raw/Coordinates_Random_Snorkel_Sites.csv") |>
+random_coordinates <- read_csv("data-raw/processed-tables/Coordinates_Random_Snorkel_Sites.csv") |>
   rename(unit = Name)
 
 # Questions -
@@ -271,7 +271,7 @@ random_coordinates <- read_csv("data-raw/Coordinates_Random_Snorkel_Sites.csv") 
 # This chunk attempts to pull together all known survey locations and coordinates
 # from both the ongoing snorkel survey and the mini snorkely survey
 
-mini_snorkel_survey_locations <- read_csv("data-raw/survey_locations_mini_snorkel.csv") |>
+mini_snorkel_survey_locations <- read_csv("data-raw/processed-tables/survey_locations_mini_snorkel.csv") |>
   select(location, river_mile, longitude, latitude, coordinate_method, channel_type) |>
   rename(section_name = location) |>
   mutate(source = "mini snorkel")

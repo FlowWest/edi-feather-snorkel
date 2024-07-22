@@ -2,7 +2,7 @@ library(tidyverse)
 library(Hmisc)
 library(stringr)
 # pull database tables ---------------------------------------------------------
-db_filepath <- here::here("data-raw", "feather-river-db.mdb")
+db_filepath <- here::here("data-raw", "db-files", "feather-river-db.mdb")
 
 mdb.get(db_filepath, tables = TRUE)
 
