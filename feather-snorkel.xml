@@ -21,7 +21,7 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-06-19</pubDate>
+    <pubDate>2024-07-22</pubDate>
     <abstract>
       <para>
     Since 1999, the California Department of Water Resources (DWR) has
@@ -41,13 +41,18 @@
   </para>
     </abstract>
     <keywordSet>
-      <keyword>chinook</keyword>
+      <keyword>chinook salmon</keyword>
       <keyword>habitat</keyword>
       <keyword>Oncorhynchus tshawytscha</keyword>
       <keyword>California</keyword>
       <keyword>Central Valley</keyword>
       <keyword>Feather River</keyword>
-      <keyword>HR&amp;L</keyword>
+      <keyword>Healthy Rivers and Landscapes</keyword>
+      <keyword>o. mykiss</keyword>
+      <keyword>pikeminnow</keyword>
+      <keyword>sacramento sucker</keyword>
+      <keyword>cypriniform</keyword>
+      <keyword>tule perch</keyword>
     </keywordSet>
     <intellectualRights>
       <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.</para>
@@ -222,6 +227,10 @@
     surveyed sites and these coordinates were associated with the
     dataset by section name.
   </para>
+          <para>
+    The methods throughout the study did not remain consistent but it is
+    not well-documented when they were modified.
+  </para>
           <para>&lt;emphasis role="strong"&gt;Attachments&lt;/emphasis&gt;</para>
         </description>
       </methodStep>
@@ -237,14 +246,20 @@
         <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
         <role>Project Lead</role>
       </personnel>
+      <award>
+        <funderName>California Department of Water Resources</funderName>
+        <funderIdentifier>DWR</funderIdentifier>
+        <awardNumber>NA</awardNumber>
+        <title>NA</title>
+      </award>
     </project>
     <dataTable>
       <entityName>survey_characteristics.csv</entityName>
       <entityDescription>Survey metadata from Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>survey_characteristics.csv</objectName>
-        <size unit="bytes">158747</size>
-        <authentication method="MD5">25d02c9cffb85566fa2312a9bf0b904b</authentication>
+        <size unit="bytes">166844</size>
+        <authentication method="MD5">5bbec1e7ba1e96591dbd16b9de686543</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -446,8 +461,8 @@
       <entityDescription>Location lookup for Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>locations_lookup.csv</objectName>
-        <size unit="bytes">158667</size>
-        <authentication method="MD5">a290142b4097729ebf667e2760454b50</authentication>
+        <size unit="bytes">166766</size>
+        <authentication method="MD5">953f524439fb6cb5049c39b48ccf4f32</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -466,20 +481,6 @@
       </physical>
       <attributeList>
         <attribute>
-          <attributeName>unit</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Unit associated with specific record observed</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Unit associated with specific record observed</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>section_name</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Location were snorkel data was collected.</attributeDefinition>
@@ -494,20 +495,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>section_number</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Number corresponding to section name.</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Number corresponding to section name.</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>section_type</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey</attributeDefinition>
@@ -516,20 +503,6 @@
               <nonNumericDomain>
                 <textDomain>
                   <definition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>river_mile</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>River mile associated with specific record observed</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>River mile associated with specific record observed</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -550,22 +523,45 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>longitude</attributeName>
-          <attributeLabel>mini-snorkel-survey</attributeLabel>
-          <attributeDefinition>Longitude of the survey location reported in decimal degrees</attributeDefinition>
+          <attributeName>section_number</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Number corresponding to section name.</attributeDefinition>
           <measurementScale>
-            <interval>
-              <unit>
-                <customUnit>decimal degrees</customUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">-121.639</minimum>
-                  <maximum exclusive="false">-121.5535</maximum>
-                </bounds>
-              </numericDomain>
-            </interval>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Number corresponding to section name.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>unit</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Unit associated with specific record observed</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unit associated with specific record observed</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>river_mile</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>River mile associated with specific record observed</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>River mile associated with specific record observed</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -587,6 +583,25 @@
             </interval>
           </measurementScale>
         </attribute>
+        <attribute>
+          <attributeName>longitude</attributeName>
+          <attributeLabel>mini-snorkel-survey</attributeLabel>
+          <attributeDefinition>Longitude of the survey location reported in decimal degrees</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>decimal degrees</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">-121.639</minimum>
+                  <maximum exclusive="false">-121.5535</maximum>
+                </bounds>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
       </attributeList>
       <numberOfRecords>559</numberOfRecords>
     </dataTable>
@@ -595,8 +610,8 @@
       <entityDescription>Fish observations from Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>fish_observations.csv</objectName>
-        <size unit="bytes">158684</size>
-        <authentication method="MD5">fff978607032edb27fb4dbe7e088f2f6</authentication>
+        <size unit="bytes">166779</size>
+        <authentication method="MD5">437ec2f6bc55c526699ecf99d197e30b</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -725,12 +740,12 @@
         <attribute>
           <attributeName>substrate</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Substrate associated with observation. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement)</attributeDefinition>
+          <attributeDefinition>Substrate associated with observation. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement, NA). Value is NA when no fish is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Substrate associated with observation. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement)</definition>
+                  <definition>Substrate associated with observation. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement, NA). Value is NA when no fish is observed.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -739,12 +754,12 @@
         <attribute>
           <attributeName>instream_cover</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Instream cover associated with observation. If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank</attributeDefinition>
+          <attributeDefinition>Instream cover associated with observation. If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank. Value is NA when no fish is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Instream cover associated with observation. If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank</definition>
+                  <definition>Instream cover associated with observation. If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank. Value is NA when no fish is observed.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -753,12 +768,12 @@
         <attribute>
           <attributeName>overhead_cover</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Overhead cover associated with observation.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae</attributeDefinition>
+          <attributeDefinition>Overhead cover associated with observation.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae. Value is NA when no fish is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Overhead cover associated with observation.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae</definition>
+                  <definition>Overhead cover associated with observation.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae. Value is NA when no fish is observed.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -767,13 +782,13 @@
         <attribute>
           <attributeName>channel_geomorphic_unit</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Channel geomorphology associated with observation. Levels = c("backwater", "glide", "glide margin", "pool", "riffle", "riffle margin"&#13;
+          <attributeDefinition>Channel geomorphology associated with observation. Levels = c("backwater", "glide", "glide margin", "pool", "riffle", "riffle margin", NA). Value is NA when no fish is observed. &#13;
 )</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Channel geomorphology associated with observation. Levels = c("backwater", "glide", "glide margin", "pool", "riffle", "riffle margin"&#13;
+                  <definition>Channel geomorphology associated with observation. Levels = c("backwater", "glide", "glide margin", "pool", "riffle", "riffle margin", NA). Value is NA when no fish is observed. &#13;
 )</definition>
                 </textDomain>
               </nonNumericDomain>

@@ -1,7 +1,7 @@
 library(tidyverse)
 
-source("data-raw/early_snorkel_db_pull.R")
-source("data-raw/revised_snorkel_db_pull.R")
+source("data-raw/data-prep-scripts/early_snorkel_db_pull.R")
+source("data-raw/data-prep-scripts/revised_snorkel_db_pull.R")
 
 # look at data early
 glimpse(cleaner_snorkel_data_early)
@@ -31,17 +31,19 @@ sampling_unit_lookup |> glimpse()
 # combine and clean
 # FEATHER SNORKEL OBS ----------------------------------------------------------
 combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |>
-                                             mutate(instream_cover = as.character(instream_cover),
-                                                    database = "early"),
-                                           cleaner_snorkel_observations |>
-                                             mutate(database = "current")) |>
+                                             mutate(instream_cover = as.character(instream_cover)
+                                                    #database = "early"
+                                                    ),
+                                           cleaner_snorkel_observations
+                                             #mutate(database = "current")
+                                             ) |>
   filter(!unit %in% c("77-80", "86-89",
                       "104, 106, 112", "104 106  112",
                       "104 106 112", "446/449")) |>
   mutate(channel_geomorphic_unit = tolower(channel_geomorphic_unit)) |>
   mutate(count = ifelse(is.na(count), 0, count)) |> # if count is NA, changed to zero
   # run is all NA so removed
-  select(observation_id, survey_id, database, unit, count, species, fork_length, clipped, substrate, instream_cover, overhead_cover, channel_geomorphic_unit, depth, velocity) |>
+  select(observation_id, survey_id, unit, count, species, fork_length, clipped, substrate, instream_cover, overhead_cover, channel_geomorphic_unit, depth, velocity) |>
   glimpse() # filtered out these messy units for now, alternatively we can see if casey can assign a non messy unit
 
 combined_snorkel_observations$unit |> unique() |> length() #395 in this
@@ -60,13 +62,14 @@ combined_snorkel_observations$clipped |> table() # clean
 write_csv(combined_snorkel_observations, "data/fish_observations.csv")
 
 # FEATHER SNORKEL METADATA -----------------------------------------------------
-combined_snorkel_metadata <- bind_rows(cleaner_snorkel_metadata_early |>
-                                         mutate(database = "early"),
-                                       cleaner_snorkel_survey_metadata |>
-                                         mutate(database = "current")) |>
+combined_snorkel_metadata <- bind_rows(cleaner_snorkel_metadata_early,
+                                         #mutate(database = "early"),
+                                       cleaner_snorkel_survey_metadata
+                                         #mutate(database = "current")
+                                       ) |>
   select(-section_number) |> # removing because you can get this from the site lookup
   mutate(section_type = ifelse(section_type == "n/a", NA, section_type)) |>
-  select(survey_id, database, date, section_name, units_covered, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
+  select(survey_id, date, section_name, units_covered, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
   glimpse()
 
 combined_snorkel_metadata$date |> summary() # Data from April 1999 - July 2023
@@ -84,7 +87,7 @@ write_csv(combined_snorkel_metadata, "data/survey_characteristics.csv")
 # FEATHER LOCATION LOOKUP TABLE ------------------------------------------------
 
 # pull in coordinates of river miles
-river_mile_coordinates <- readxl::read_xlsx("data-raw/featherrivermile_coordinates.xlsx")
+river_mile_coordinates <- readxl::read_xlsx("data-raw/processed-tables/featherrivermile_coordinates.xlsx")
 location_lookup <- sampling_unit_lookup_coordinates |>
   select(section_name, section_type, channel_type, section_number, unit, river_mile, latitude, longitude) |>
   left_join(river_mile_coordinates |>
