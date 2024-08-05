@@ -21,7 +21,7 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-07-22</pubDate>
+    <pubDate>2024-08-05</pubDate>
     <abstract>
       <para>
     Since 1999, the California Department of Water Resources (DWR) has
@@ -258,8 +258,8 @@
       <entityDescription>Survey metadata from Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>survey_characteristics.csv</objectName>
-        <size unit="bytes">166844</size>
-        <authentication method="MD5">5bbec1e7ba1e96591dbd16b9de686543</authentication>
+        <size unit="bytes">168810</size>
+        <authentication method="MD5">679c2292ae7bebed2eb962cec39d0302</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -461,8 +461,8 @@
       <entityDescription>Location lookup for Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>locations_lookup.csv</objectName>
-        <size unit="bytes">166766</size>
-        <authentication method="MD5">953f524439fb6cb5049c39b48ccf4f32</authentication>
+        <size unit="bytes">168731</size>
+        <authentication method="MD5">ed7800ea808ebe542897b9e9cb6e112f</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -481,64 +481,7 @@
       </physical>
       <attributeList>
         <attribute>
-          <attributeName>section_name</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Location were snorkel data was collected.</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Location were snorkel data was collected.</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>section_type</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>channel_type</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Channel associated with specific reccord observed (HFC - high flow channel, LFC - low flow channel)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Channel associated with specific reccord observed (HFC - high flow channel, LFC - low flow channel)</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>section_number</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Number corresponding to section name.</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Number corresponding to section name.</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>unit</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Unit associated with specific record observed</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -551,23 +494,91 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>river_mile</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>River mile associated with specific record observed</attributeDefinition>
+          <attributeName>unit_sub_level</attributeName>
+          <attributeDefinition>Sub-level associated with a unit. In some cases unit are broken down into two. Levels = c("A", "B", NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>River mile associated with specific record observed</definition>
+                  <definition>Sub-level associated with a unit. In some cases unit are broken down into two. Levels = c("A", "B", NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
           </measurementScale>
         </attribute>
         <attribute>
+          <attributeName>section_name</attributeName>
+          <attributeDefinition>Name associated with the unit and location of the survey. Section names do not exist for all units.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name associated with the unit and location of the survey. Section names do not exist for all units.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>channel_type</attributeName>
+          <attributeDefinition>Channel associated with specific reccord observed (HFC - high flow channel, LFC - low flow channel)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Channel associated with specific reccord observed (HFC - high flow channel, LFC - low flow channel)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>section_type</attributeName>
+          <attributeDefinition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey. When the section type was not included we assumed it was "random"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Survey site type. Site types include: permanent - site surveyed repetedly, Random - site surveyed as a proxy if "permanent site" not feasible to survey. When the section type was not included we assumed it was "random"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>river_mile</attributeName>
+          <attributeDefinition>River mile associated with specific record observed as recorded by the survey crew.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>River mile associated with specific record observed as recorded by the survey crew.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>area_sq_m</attributeName>
+          <attributeDefinition>This represents the area of the unit in square meters. This was calculated in ArcMap during the unit digitization process.</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>square meters</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">559.3835</minimum>
+                  <maximum exclusive="false">67118.94</maximum>
+                </bounds>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
           <attributeName>latitude</attributeName>
-          <attributeLabel>mini-snorkel-survey</attributeLabel>
-          <attributeDefinition>Latitude of the survey location reported in decimal degrees</attributeDefinition>
+          <attributeDefinition>Latitude of the survey unit reported in decimal degrees. Units were originally manually mapped and were then digitized. The latitude and longitude represent the centroid of the unit. In the few cases where units were unable to be digitized, the latitude and longitude is associated with the river mile location.</attributeDefinition>
           <measurementScale>
             <interval>
               <unit>
@@ -585,8 +596,7 @@
         </attribute>
         <attribute>
           <attributeName>longitude</attributeName>
-          <attributeLabel>mini-snorkel-survey</attributeLabel>
-          <attributeDefinition>Longitude of the survey location reported in decimal degrees</attributeDefinition>
+          <attributeDefinition>Longitude of the survey location reported in decimal degrees. Units were originally manually mapped and were then digitized. The latitude and longitude represent the centroid of the unit. In the few cases where units were unable to be digitized, the latitude and longitude is associated with the river mile location.</attributeDefinition>
           <measurementScale>
             <interval>
               <unit>
@@ -603,15 +613,15 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>559</numberOfRecords>
+      <numberOfRecords>609</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>fish_observations.csv</entityName>
       <entityDescription>Fish observations from Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>fish_observations.csv</objectName>
-        <size unit="bytes">166779</size>
-        <authentication method="MD5">437ec2f6bc55c526699ecf99d197e30b</authentication>
+        <size unit="bytes">168745</size>
+        <authentication method="MD5">d4adb9d1e04565228ca951eb54060175</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -836,6 +846,26 @@
       </attributeList>
       <numberOfRecords>32855</numberOfRecords>
     </dataTable>
+    <otherEntity>
+      <entityName>unit_spatial_data.zip</entityName>
+      <entityDescription>Kmz and GIS files for survey units</entityDescription>
+      <physical>
+        <objectName>unit_spatial_data.zip</objectName>
+        <size unit="bytes">296721</size>
+        <authentication method="MD5">0b6907435cd1825a14dc92179573db8f</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>zip</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/blob/edits-and-cleanup/data-raw/metadata/unit_spatial_data.zip</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>zip</entityType>
+    </otherEntity>
   </dataset>
   <additionalMetadata>
     <metadata>
@@ -851,6 +881,9 @@
         </unit>
         <unit id="NTU" name="NTU" unitType="dimensionless">
           <description>NTU</description>
+        </unit>
+        <unit id="square meters" name="square meters" unitType="dimensionless">
+          <description>square meters</description>
         </unit>
       </unitList>
     </metadata>
