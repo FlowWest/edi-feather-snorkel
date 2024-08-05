@@ -95,11 +95,37 @@ location_lookup <- sampling_unit_lookup_coordinates |>
               mutate(river_mile = as.numeric(river_mile)) |>
               select(river_mile, Latitude, Longitude)) |>
   mutate(latitude = ifelse(is.na(latitude), Latitude, latitude),
-         longitude = ifelse(is.na(longitude), Longitude, longitude)) |>
+         longitude = ifelse(is.na(longitude), Longitude, longitude),
+         unit_sub_level = case_when(grepl("A", unit) ~ "A",
+                                    grepl("B", unit) ~ "B"),
+         unit = case_when(unit == "215A" ~ "215",
+                          unit == "215B" ~ "215",
+                          unit == "323A" ~ "323",
+                          unit == "323B" ~ "323",
+                          unit == "29A" ~ "29",
+                          unit == "31A" ~ "31",
+                          unit == "121A" ~ "121",
+                          unit == "30A" ~ "30",
+                          T ~ unit)) |>
   select(-c(Latitude, Longitude))
 
+#filter(location_lookup, grepl("A", unit) | grepl("B", unit))
+
+# Katie Lentz at DWR digitized the survey locations. Pulling this in and combining with information we have about location
+digital_units <- read_csv("data-raw/processed-tables/Snorkel_Centroid_ExportFeatures_TableToExcel.csv")
+
+full_location_lookup <- full_join(location_lookup , digital_units |>
+                  rename(lat_katie = latitude,
+                         long_katie = longitude) |>
+                  mutate(unit = as.character(unit))) |>
+  mutate(section_type = ifelse(is.na(section_type), "random", section_type), # assume that if not labelled then random
+         latitude = ifelse(!is.na(lat_katie), lat_katie, latitude),
+         longitude = ifelse(!is.na(long_katie), long_katie, longitude)) |>
+  select(unit, unit_sub_level, section_name, channel_type, section_type, river_mile, area_sq_m, latitude, longitude)
+min(full_location_lookup$area_sq_m, na.rm = T)
+max(full_location_lookup$area_sq_m, na.rm = T)
 # write csv
-write_csv(location_lookup, "data/locations_lookup.csv")
+write_csv(full_location_lookup, "data/locations_lookup.csv")
 
 
 # Data checks -------------------------------------------------------------
