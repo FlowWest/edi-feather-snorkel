@@ -32602,8 +32602,8 @@ observation_id,survey_id,unit,count,species,fork_length,clipped,substrate,instre
 16205,722,105,2,unidentified micropterous spp.,40,NA,1,E,0,glide margin,0.3,NA
 16206,722,105,825,chinook salmon,35,NA,1,DE,0,glide margin,0.2,NA
 16489,734,56,10,chinook salmon,35,NA,345,B,0,riffle margin,0.4,NA
-16208,722,105,100,z. nada,30,NA,1,DE,0,glide margin,0.2,NA
-16207,722,105,400,z. nada,40,NA,1,DE,0,glide margin,0.2,NA
+16208,722,105,100,chinook salmon,30,NA,1,DE,0,glide margin,0.2,NA
+16207,722,105,400,chinook salmon,40,NA,1,DE,0,glide margin,0.2,NA
 16209,722,105,4,wakasagi,50,NA,1,DE,0,glide margin,0.2,NA
 16210,722,105,380,chinook salmon,35,NA,2,A,0,glide margin,0.1,NA
 16211,722,105,50,chinook salmon,40,NA,2,A,0,glide margin,0.1,NA

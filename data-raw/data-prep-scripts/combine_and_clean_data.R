@@ -40,6 +40,8 @@ combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |>
   filter(!unit %in% c("77-80", "86-89",
                       "104, 106, 112", "104 106  112",
                       "104 106 112", "446/449")) |>
+  mutate(species = case_when(observation_id %in% c(16208, 16207) ~ 'chinook salmon',
+                             .default = as.character(species))) |> View()
   mutate(channel_geomorphic_unit = tolower(channel_geomorphic_unit)) |>
   mutate(count = ifelse(is.na(count), 0, count)) |> # if count is NA, changed to zero
   # run is all NA so removed
