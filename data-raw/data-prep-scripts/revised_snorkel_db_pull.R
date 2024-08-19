@@ -57,7 +57,7 @@ format_site_name <- function(string) {
 # Clean snorkel observations
 cleaner_snorkel_observations <- raw_snorkel_observations |>
   janitor::clean_names() |>
-  select(-size_class, -lwd, -comments) |> # Remove size because post processing, duplication of FL, TODO check on lwd, remove comments
+  select(-lwd, -comments) |> # keeping size class per comments; TODO check on lwd, remove comments
   left_join(species_lookup, by = c("species" = "SpeciesCode")) |>
   select(-species, -observer) |>
   rename(species = Species,

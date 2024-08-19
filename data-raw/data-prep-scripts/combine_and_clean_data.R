@@ -40,12 +40,12 @@ combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |>
   filter(!unit %in% c("77-80", "86-89",
                       "104, 106, 112", "104 106  112",
                       "104 106 112", "446/449")) |>
-  mutate(species = case_when(observation_id %in% c(16208, 16207) ~ 'chinook salmon',
-                             .default = as.character(species))) |> View()
+  mutate(species = case_when(observation_id %in% c(16208, 16207) ~ 'chinook salmon', # change z.nada to chinook for these two observations per Casey comment
+                             .default = as.character(species))) |>
   mutate(channel_geomorphic_unit = tolower(channel_geomorphic_unit)) |>
   mutate(count = ifelse(is.na(count), 0, count)) |> # if count is NA, changed to zero
   # run is all NA so removed
-  select(observation_id, survey_id, unit, count, species, fork_length, clipped, substrate, instream_cover, overhead_cover, channel_geomorphic_unit, depth, velocity) |>
+  select(observation_id, survey_id, unit, count, species, fork_length, size_class, clipped, substrate, instream_cover, overhead_cover, channel_geomorphic_unit, depth, velocity) |>
   glimpse() # filtered out these messy units for now, alternatively we can see if casey can assign a non messy unit
 
 combined_snorkel_observations$unit |> unique() |> length() #395 in this
@@ -59,6 +59,7 @@ combined_snorkel_observations$velocity |> summary() # Only exists for early data
 combined_snorkel_observations$depth |> summary() # clean
 combined_snorkel_observations$species |> sort() |> unique() # still a lot of species, could potentially refine some of the unidentified ones...or get. abiologiest to imrpve, but probably fine for now
 combined_snorkel_observations$clipped |> table() # clean
+combined_snorkel_observations$size_class |> table(useNA = "always")
 
 # write csv for fish_observations
 write_csv(combined_snorkel_observations, "data/fish_observations.csv")
@@ -108,7 +109,9 @@ location_lookup <- sampling_unit_lookup_coordinates |>
                           unit == "31A" ~ "31",
                           unit == "121A" ~ "121",
                           unit == "30A" ~ "30",
-                          T ~ unit)) |>
+                          T ~ unit),
+         section_name = case_when(unit == "28" ~ "moe's side channel",
+                                  T ~ section_name)) |>
   select(-c(Latitude, Longitude))
 
 #filter(location_lookup, grepl("A", unit) | grepl("B", unit))
@@ -123,7 +126,9 @@ full_location_lookup <- full_join(location_lookup , digital_units |>
   mutate(section_type = ifelse(is.na(section_type), "random", section_type), # assume that if not labelled then random
          latitude = ifelse(!is.na(lat_katie), lat_katie, latitude),
          longitude = ifelse(!is.na(long_katie), long_katie, longitude)) |>
-  select(unit, unit_sub_level, section_name, channel_type, section_type, river_mile, area_sq_m, latitude, longitude)
+  select(unit, unit_sub_level, section_name, channel_type, section_type, river_mile, area_sq_m, latitude, longitude) |>
+  mutate(section_name = case_when(unit == "28" ~ "moe's side channel",
+                                  T ~ section_name))
 min(full_location_lookup$area_sq_m, na.rm = T)
 max(full_location_lookup$area_sq_m, na.rm = T)
 # write csv
