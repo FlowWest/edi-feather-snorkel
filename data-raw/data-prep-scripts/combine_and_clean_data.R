@@ -42,7 +42,7 @@ combined_snorkel_metadata <- bind_rows(cleaner_snorkel_metadata_early |>
          section_type = ifelse(section_type == "n/a", NA, section_type),
          section_name = tolower(section_name),
          survey_type = ifelse(year(date) > 2001 & is.na(survey_type), "unit", survey_type)) |>
-  select(survey_id, date, section_name, section_number, units_covered, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
+  select(survey_id, date, section_name, units_covered, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
   glimpse()
 
 combined_snorkel_metadata |> group_by(survey_id) |> tally() |> filter(n > 1)
@@ -140,9 +140,7 @@ full_location_lookup <- full_join(location_lookup , digital_units |>
   mutate(section_type = ifelse(is.na(section_type), "random", section_type), # assume that if not labelled then random
          latitude = ifelse(!is.na(lat_katie), lat_katie, latitude),
          longitude = ifelse(!is.na(long_katie), long_katie, longitude)) |>
-  select(unit, unit_sub_level, section_name, channel_type, section_type, river_mile, area_sq_m, latitude, longitude) |>
-  mutate(section_name = case_when(unit == "28" ~ "moe's side channel",
-                                  T ~ section_name))
+  select(unit, unit_sub_level, channel_type, river_mile, area_sq_m, latitude, longitude)
 min(full_location_lookup$area_sq_m, na.rm = T)
 max(full_location_lookup$area_sq_m, na.rm = T)
 # write csv
