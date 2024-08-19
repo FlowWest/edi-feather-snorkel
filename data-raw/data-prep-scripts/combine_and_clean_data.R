@@ -31,12 +31,14 @@ sampling_unit_lookup |> glimpse()
 # combine and clean
 # FEATHER SNORKEL OBS ----------------------------------------------------------
 combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |>
-                                             mutate(instream_cover = as.character(instream_cover)
-                                                    #database = "early"
+                                             mutate(instream_cover = as.character(instream_cover),
+                                                    database = "historical"
                                                     ),
-                                           cleaner_snorkel_observations
-                                             #mutate(database = "current")
+                                           cleaner_snorkel_observations |>
+                                             mutate(database = "contemporary")
                                              ) |>
+  mutate(observation_id = paste0(observation_id, "_", database),
+         survey_id = paste0(survey_id, "_", database)) |>
   filter(!unit %in% c("77-80", "86-89",
                       "104, 106, 112", "104 106  112",
                       "104 106 112", "446/449")) |>
@@ -45,7 +47,7 @@ combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |>
   mutate(channel_geomorphic_unit = tolower(channel_geomorphic_unit)) |>
   mutate(count = ifelse(is.na(count), 0, count)) |> # if count is NA, changed to zero
   # run is all NA so removed
-  select(observation_id, survey_id, unit, count, species, fork_length, size_class, clipped, substrate, instream_cover, overhead_cover, channel_geomorphic_unit, depth, velocity) |>
+  select(observation_id, survey_id, database, unit, count, species, fork_length, size_class, clipped, substrate, instream_cover, overhead_cover, channel_geomorphic_unit, depth, velocity) |>
   glimpse() # filtered out these messy units for now, alternatively we can see if casey can assign a non messy unit
 
 combined_snorkel_observations$unit |> unique() |> length() #395 in this
@@ -73,7 +75,7 @@ combined_snorkel_metadata <- bind_rows(cleaner_snorkel_metadata_early,
   select(-section_number) |> # removing because you can get this from the site lookup
   mutate(section_type = ifelse(section_type == "n/a", NA, section_type)) |>
   select(survey_id, date, section_name, units_covered, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
-  glimpse()
+  View()
 
 combined_snorkel_metadata$date |> summary() # Data from April 1999 - July 2023
 combined_snorkel_metadata$flow |> summary()
