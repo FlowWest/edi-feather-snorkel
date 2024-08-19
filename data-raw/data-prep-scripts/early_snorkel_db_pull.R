@@ -161,6 +161,11 @@ units_per_survey  <- cleaner_snorkel_data_early |>
   distinct() |>
   glimpse()
 
+manual_ck <- units_per_survey |>
+  group_by(survey_id) |>
+  tally() |>
+  filter(n > 1)
+
 # clean snorkel metadat
 cleaner_snorkel_metadata_early <- snorkel_metadata_raw_early |>
   janitor::clean_names() |>
@@ -174,9 +179,10 @@ cleaner_snorkel_metadata_early <- snorkel_metadata_raw_early |>
          units_covered = units,
          section_name = location,
          weather = Weather) |>
-  left_join(units_per_survey) |>
-  mutate(section_name = ifelse(!is.na(updated_section_name), updated_section_name, section_name)) |>
-  select(-updated_section_name) |>
+  # removing this chunk because we end up with duplicates!
+  # left_join(units_per_survey) |>
+  # mutate(section_name = ifelse(!is.na(updated_section_name), updated_section_name, section_name)) |>
+  # select(-updated_section_name) |>
   # update additional section_names, concern with manual update is that section_names will be associated with units not contained within that section...
   mutate(section_name = case_when(section_name %in% c("Above Eye Riffle", "Eye To Gateway", "Lower Eye-Pool") ~ "Eye Riffle",
                                   section_name %in% c("Auditorium", "Lower Auditorium To Upper Bedrock Pool") ~ "Auditorium Riffle",

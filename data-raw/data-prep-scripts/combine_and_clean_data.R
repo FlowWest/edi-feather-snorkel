@@ -28,6 +28,35 @@ sort(colnames(cleaner_snorkel_survey_metadata))
 # unit lookup - table to join sampling unit to river mile/section/section type/channel
 sampling_unit_lookup |> glimpse()
 
+# FEATHER SNORKEL METADATA -----------------------------------------------------
+# in the historical data there are 41 records where there are duplicate survey_ids
+# they are duplicate because they have different section names. the section name
+# data is pretty messy and not useful so decided to remove the section name and number
+# from this metadata
+combined_snorkel_metadata <- bind_rows(cleaner_snorkel_metadata_early |>
+                                         mutate(database = "historical"),
+                                       cleaner_snorkel_survey_metadata |>
+                                         mutate(database = "current")
+) |>
+  mutate(survey_id = paste0(survey_id, "_", database),
+         section_type = ifelse(section_type == "n/a", NA, section_type),
+         section_name = tolower(section_name),
+         survey_type = ifelse(year(date) > 2001 & is.na(survey_type), "unit", survey_type)) |>
+  select(survey_id, date, section_name, section_number, units_covered, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
+  glimpse()
+
+combined_snorkel_metadata |> group_by(survey_id) |> tally() |> filter(n > 1)
+combined_snorkel_metadata$date |> summary() # Data from April 1999 - July 2023
+combined_snorkel_metadata$flow |> summary()
+combined_snorkel_metadata$section_name |> table() # TODO section name is still messy, I think this is all coming from the location field in early table
+combined_snorkel_metadata$units_covered |> table() # messy but not sure if there is anything to do with this
+combined_snorkel_metadata$turbidity |> summary()
+combined_snorkel_metadata$temperature |> summary()
+combined_snorkel_metadata$weather |> table()
+
+# write csv for survey_characteristics
+write_csv(combined_snorkel_metadata, "data/survey_characteristics.csv")
+
 # combine and clean
 # FEATHER SNORKEL OBS ----------------------------------------------------------
 combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |>
@@ -42,11 +71,14 @@ combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |>
                       "104, 106, 112", "104 106  112",
                       "104 106 112", "446/449")) |>
   mutate(species = case_when(observation_id %in% c(16208, 16207) ~ 'chinook salmon', # change z.nada to chinook for these two observations per Casey comment
-                             .default = as.character(species))) |>
-  mutate(channel_geomorphic_unit = tolower(channel_geomorphic_unit)) |>
-  mutate(count = ifelse(is.na(count), 0, count)) |> # if count is NA, changed to zero
+                             .default = as.character(species)),
+         channel_geomorphic_unit = tolower(channel_geomorphic_unit),
+         count = ifelse(is.na(count), 0, count)) |> # if count is NA, changed to zero
   # run is all NA so removed
-  select(observation_id, survey_id, unit, count, species, fork_length, size_class, clipped, substrate, instream_cover, overhead_cover, channel_geomorphic_unit, depth, velocity) |>
+  left_join(combined_snorkel_metadata |>
+              select(survey_id, date)) |>
+  filter(!is.na(date)) |> # filter out NA dates because not useful
+  select(observation_id, survey_id, date, unit, count, species, fork_length, size_class, clipped, substrate, instream_cover, overhead_cover, channel_geomorphic_unit, depth, velocity) |>
   glimpse() # filtered out these messy units for now, alternatively we can see if casey can assign a non messy unit
 
 combined_snorkel_observations$unit |> unique() |> length() #395 in this
@@ -65,28 +97,7 @@ combined_snorkel_observations$size_class |> table(useNA = "always")
 # write csv for fish_observations
 write_csv(combined_snorkel_observations, "data/fish_observations.csv")
 
-# FEATHER SNORKEL METADATA -----------------------------------------------------
-combined_snorkel_metadata <- bind_rows(cleaner_snorkel_metadata_early |>
-                                         mutate(database = "historical"),
-                                       cleaner_snorkel_survey_metadata |>
-                                         mutate(database = "current")
-                                       ) |>
-  mutate(survey_id = paste0(survey_id, "_", database)) |>
-  select(-section_number) |> # removing because you can get this from the site lookup
-  mutate(section_type = ifelse(section_type == "n/a", NA, section_type)) |>
-  select(survey_id, date, section_name, units_covered, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
-  glimpse()
 
-combined_snorkel_metadata$date |> summary() # Data from April 1999 - July 2023
-combined_snorkel_metadata$flow |> summary()
-combined_snorkel_metadata$section_name |> table() # TODO section name is still messy, I think this is all coming from the location field in early table
-combined_snorkel_metadata$units_covered |> table() # messy but not sure if there is anything to do with this
-combined_snorkel_metadata$turbidity |> summary()
-combined_snorkel_metadata$temperature |> summary()
-combined_snorkel_metadata$weather |> table()
-
-# write csv for survey_characteristics
-write_csv(combined_snorkel_metadata, "data/survey_characteristics.csv")
 
 
 # FEATHER LOCATION LOOKUP TABLE ------------------------------------------------
