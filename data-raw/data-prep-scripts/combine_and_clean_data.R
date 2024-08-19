@@ -54,8 +54,7 @@ combined_snorkel_metadata$turbidity |> summary()
 combined_snorkel_metadata$temperature |> summary()
 combined_snorkel_metadata$weather |> table()
 
-# write csv for survey_characteristics
-write_csv(combined_snorkel_metadata, "data/survey_characteristics.csv")
+
 
 # combine and clean
 # FEATHER SNORKEL OBS ----------------------------------------------------------
@@ -97,8 +96,10 @@ combined_snorkel_observations$size_class |> table(useNA = "always")
 # write csv for fish_observations
 write_csv(combined_snorkel_observations, "data/fish_observations.csv")
 
-
-
+combined_snorkel_metadata_na_rm <- combined_snorkel_metadata |>
+  filter(!is.na(date))
+# write csv for survey_characteristics
+write_csv(combined_snorkel_metadata_na_rm, "data/survey_characteristics.csv")
 
 # FEATHER LOCATION LOOKUP TABLE ------------------------------------------------
 

@@ -342,7 +342,6 @@ survey_id,date,section_name,section_number,units_covered,survey_type,section_typ
 468_historical,2003-04-23,robinson riffle,NA,169-175,unit,NA,600,cloudy/partially cloudy,NA,55.4,2
 469_historical,2003-04-23,aleck riffle,NA,"119, 120, 121A",unit,NA,600,cloudy/partially cloudy,NA,NA,2
 471_historical,2003-04-28,eye riffle,NA,"205,210,215a,215b,216,215,217",unit,NA,600,rain,NA,54,0.5
-472_historical,NA,"robinson riffle,steep",NA,"172.,185.189",NA,NA,600,rain,NA,54,0.5
 473_historical,2003-04-30,mcfarland,NA,449-452,unit,NA,NA,clear,NA,59,0.7
 474_historical,2003-04-30,goose riffle,NA,"408,409,410",unit,NA,NA,clear,NA,58,0.7
 475_historical,2003-04-30,g-95,NA,323a-323b,unit,NA,NA,clear,NA,58,0.7
@@ -570,7 +569,6 @@ survey_id,date,section_name,section_number,units_covered,survey_type,section_typ
 101_current,2013-07-16,NA,NA,NA,unit,NA,2500,sunny,0,60,NA
 102_current,2013-07-16,NA,NA,NA,unit,NA,2500,sunny,0,60,NA
 104_current,2013-07-23,NA,NA,NA,unit,NA,5500,NA,0,64,NA
-106_current,NA,NA,NA,NA,NA,NA,0,NA,0,62,NA
 107_current,2013-08-13,NA,NA,NA,unit,NA,2500,NA,0,0,NA
 109_current,2015-07-27,hatchery ditch,2,"33, 26",unit,NA,1898,clear,0,60.3,NA
 149_current,2015-08-19,steep riffle,10,"185,189",unit,NA,1100,clear,0,61.2,NA
