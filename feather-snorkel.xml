@@ -21,7 +21,7 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-08-05</pubDate>
+    <pubDate>2024-08-19</pubDate>
     <abstract>
       <para>
     Since 1999, the California Department of Water Resources (DWR) has
@@ -173,39 +173,51 @@
           <para>
     This study was conducted using a hierarchical sampling design where
     the survey section represented the general location where a survey
-    was done and a survey unit represented the specific area within the
-    survey section that was sampled.
+    was done, and a survey unit represented the specific area within the
+    survey section that was sampled (Level 1: Section, Level 2: Unit).
   </para>
           <para>
-    Level 1: Section
+    Two types of snorkel surveys were conducted over the period of
+    record, comprehensive and section-based surveys. From 1999 through
+    2001 comprehensive surveys were conducted in addition to the
+    section-based surveys. The comprehensive surveys were designed to
+    cover a large extent of the lower Feather River in a relatively
+    short amount of time. These early comprehensive surveys were
+    generally conducted from the Fish Barrier Dam in downtown Oroville,
+    downstream to the confluence with Honcut Creek. The data collected
+    during the comprehensive surveys was limited to the number and size
+    of the different species observed in each unit. The section-based
+    surveys were conducted concurrently with the comprehensive surveys
+    from 1999 through 2001 and were continued after the comprehensive
+    surveys ended.
   </para>
           <para>
-    Level 2: Unit
-  </para>
-          <para>
-    Snorkel surveys are conducted each year between January and
-    September at 20 sampling sections along the Feather River (12 in the
-    Low Flow Channel and 8 in the High Flow Channel). At each section,
-    snorkeling units were identified by aerial maps and transects were
-    assigned to each snorkeler. Three to six divers are distributed
-    along three transects (left side of river, right side of river,
-    center of river). The center transect is typically done in the
-    downstream direction because currents are too strong to swim
-    upstream whereas the other transects along the riverbanks are done
-    in the upstream direction. Divers use plastic slates to mark
+    The section-based surveys are conducted each year between January
+    and September at 20 sampling sections along the Feather River (12 in
+    the Low Flow Channel and 8 in the High Flow Channel) as conditions
+    and staffing considerations allowed. At each section, snorkeling
+    units were identified by aerial maps and transects were assigned to
+    each snorkeler. Three to six divers are distributed along three
+    transects (left side of river, right side of river, center of
+    river). The center transect is typically done in the downstream
+    direction because currents are too strong to swim upstream whereas
+    the other transects along the riverbanks are done in the upstream
+    direction. Often divers will complete multiple transects to ensure
+    adequate coverage of each section. Divers use plastic slates to mark
     observations of fish.
   </para>
           <para>
     Attributes collected include species, number of fish of a given size
     (groups of similar sized fish that were observed in a 1 square meter
-    or less are treated as a single observation), substrate type
-    (presence of every type of substrate is recorded), cover (presence
-    of every type of cover is recorded), habitat type, approximate fork
-    length (fish identification and size estimation are calibrated by
-    training divers with tethered fishing lures in a controlled
-    setting). The accuracy of size estimates is enhanced by comparing
-    observed fish to nearby objects whose dimensions are measured using
-    the scales mounted on plastic writing slates.
+    or less, or are occupying similar habitat are treated as a single
+    observation), substrate type (presence of every type of substrate is
+    recorded), cover (presence of every type of cover is recorded),
+    habitat type, approximate fork length (fish identification and size
+    estimation are calibrated by training divers with tethered fishing
+    lures in a controlled setting). The accuracy of size estimates is
+    enhanced by comparing observed fish to nearby objects whose
+    dimensions are measured using the scales mounted on plastic writing
+    slates.
   </para>
           <para>&lt;emphasis role="strong"&gt;Caveats&lt;/emphasis&gt;</para>
           <para>
@@ -218,18 +230,18 @@
     This study relies on river miles for spatial information and the
     majority of observations can be associated with a river mile.
     Specific coordinates were not recorded for survey sections and
-    units, though in an effort to add more spatial information to the
-    dataset coordinates were included where feasible and may be
-    iteratively improved. In order, to associate coordinates with survey
-    sections we relied on section names. Section names were not
-    standardized and were cleaned to group all sections with common
-    names. DWR maintains a mapbook of the coordinates for frequently
-    surveyed sites and these coordinates were associated with the
-    dataset by section name.
+    units. DWR maintains a mapbook of the coordinates for all survey
+    units which was digitized and included in this data package. The
+    coordinates represent the centroid of the unit and shapefiles can be
+    found in the attachments.
   </para>
           <para>
-    The methods throughout the study did not remain consistent but it is
+    The methods throughout the study did not remain consistent and it is
     not well-documented when they were modified.
+  </para>
+          <para>
+    Section-based surveys conducted between 2004 and 2007 recorded the
+    size of the observed fish using a size class bin assignment.
   </para>
           <para>&lt;emphasis role="strong"&gt;Attachments&lt;/emphasis&gt;</para>
         </description>
@@ -258,8 +270,8 @@
       <entityDescription>Survey metadata from Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>survey_characteristics.csv</objectName>
-        <size unit="bytes">168810</size>
-        <authentication method="MD5">679c2292ae7bebed2eb962cec39d0302</authentication>
+        <size unit="bytes">169658</size>
+        <authentication method="MD5">27aa3ee75f6f3cda85b3d2dabb6c252b</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -324,12 +336,12 @@
         <attribute>
           <attributeName>units_covered</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Units surveyed on a given snorkel suvey</attributeDefinition>
+          <attributeDefinition>Units in the section that were surveyed</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Units surveyed on a given snorkel suvey</definition>
+                  <definition>Units in the section that were surveyed</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -338,12 +350,12 @@
         <attribute>
           <attributeName>survey_type</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Describes if survey was conducted for the entire section or for a specific unit. Levels = c("comp", "unit")</attributeDefinition>
+          <attributeDefinition>Describes if survey was conducted for the entire section or for a specific unit. Levels = c("comp", "unit") where 'comp' refers to the comprehensive snorkel surveys version section or unit based surveys.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Describes if survey was conducted for the entire section or for a specific unit. Levels = c("comp", "unit")</definition>
+                  <definition>Describes if survey was conducted for the entire section or for a specific unit. Levels = c("comp", "unit") where 'comp' refers to the comprehensive snorkel surveys version section or unit based surveys.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -399,7 +411,7 @@
         <attribute>
           <attributeName>turbidity</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Turbidity measured at survey location</attributeDefinition>
+          <attributeDefinition>Turbidity measured at survey location measured in NTU through 2013. Values in the turbidity field after 2013 are measures of visibility using "fish on a stick" method. Values of 0 after 2013 in the turbidity field indicate good visibility</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -418,7 +430,7 @@
         <attribute>
           <attributeName>temperature</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Temperature of water</attributeDefinition>
+          <attributeDefinition>Temperature of water measured using a handheld thermometer</attributeDefinition>
           <measurementScale>
             <interval>
               <unit>
@@ -461,8 +473,8 @@
       <entityDescription>Location lookup for Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>locations_lookup.csv</objectName>
-        <size unit="bytes">168731</size>
-        <authentication method="MD5">ed7800ea808ebe542897b9e9cb6e112f</authentication>
+        <size unit="bytes">169607</size>
+        <authentication method="MD5">7135784d3cda845301039637e3ed884f</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -620,8 +632,8 @@
       <entityDescription>Fish observations from Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>fish_observations.csv</objectName>
-        <size unit="bytes">168745</size>
-        <authentication method="MD5">d4adb9d1e04565228ca951eb54060175</authentication>
+        <size unit="bytes">169594</size>
+        <authentication method="MD5">fb259fa617668b46b2dad56684e5e7be</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -717,7 +729,7 @@
         <attribute>
           <attributeName>fork_length</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Fork length of observed fish</attributeDefinition>
+          <attributeDefinition>Fork length of observed fish. Size class range (I - 0-50 mm, II - 51-75 mm, III - 76-100 mm, IV - 101-150 mm, V - 151-300 mm, VI - 301-499 mm, VII - 500+ mm)</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -731,6 +743,20 @@
                 </bounds>
               </numericDomain>
             </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>size_class</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Size class range (I - 0-50 mm, II - 51-75 mm, III - 76-100 mm, IV - 101-150 mm, V - 151-300 mm, VI - 301-499 mm, VII - 500+ mm)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Size class range (I - 0-50 mm, II - 51-75 mm, III - 76-100 mm, IV - 101-150 mm, V - 151-300 mm, VI - 301-499 mm, VII - 500+ mm)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -750,12 +776,12 @@
         <attribute>
           <attributeName>substrate</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Substrate associated with observation. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement, NA). Value is NA when no fish is observed.</attributeDefinition>
+          <attributeDefinition>Substrate associated with observation. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Organic Fines, Mud (0.05 mm) 2- Sand (0.05 to 2 mm), 3- Small Gravel (2 to 50 mm), 4- Large Gravel (50 to 150 mm), 5-Cobble (150 to 300 mm), 6-Boulder (&gt;300 mm), NA). Value is NA when no fish is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Substrate associated with observation. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Fine, 2- Small/medium gravel, 3- Medium/large cobble, 4- Boulder, 5- Pavement, NA). Value is NA when no fish is observed.</definition>
+                  <definition>Substrate associated with observation. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Organic Fines, Mud (0.05 mm) 2- Sand (0.05 to 2 mm), 3- Small Gravel (2 to 50 mm), 4- Large Gravel (50 to 150 mm), 5-Cobble (150 to 300 mm), 6-Boulder (&gt;300 mm), NA). Value is NA when no fish is observed.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -764,12 +790,12 @@
         <attribute>
           <attributeName>instream_cover</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Instream cover associated with observation. If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank. Value is NA when no fish is observed.</attributeDefinition>
+          <attributeDefinition>Instream cover associated with observation. If multiple cover types are observed at one observation site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank. Value is NA when no fish is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Instream cover associated with observation. If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank. Value is NA when no fish is observed.</definition>
+                  <definition>Instream cover associated with observation. If multiple cover types are observed at one observation site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank. Value is NA when no fish is observed.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -778,12 +804,12 @@
         <attribute>
           <attributeName>overhead_cover</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Overhead cover associated with observation.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae. Value is NA when no fish is observed.</attributeDefinition>
+          <attributeDefinition>Overhead cover associated with observation.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae. Value is NA when no fish are is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Overhead cover associated with observation.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae. Value is NA when no fish is observed.</definition>
+                  <definition>Overhead cover associated with observation.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae. Value is NA when no fish are is observed.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -792,13 +818,13 @@
         <attribute>
           <attributeName>channel_geomorphic_unit</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Channel geomorphology associated with observation. Levels = c("backwater", "glide", "glide margin", "pool", "riffle", "riffle margin", NA). Value is NA when no fish is observed. &#13;
+          <attributeDefinition>Channel geomorphology associated with observation. Levels = c(backwater, glide, glide margin, pool, riffle, riffle margin, NA). Value is NA when no fish is observed. &#13;
 )</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Channel geomorphology associated with observation. Levels = c("backwater", "glide", "glide margin", "pool", "riffle", "riffle margin", NA). Value is NA when no fish is observed. &#13;
+                  <definition>Channel geomorphology associated with observation. Levels = c(backwater, glide, glide margin, pool, riffle, riffle margin, NA). Value is NA when no fish is observed. &#13;
 )</definition>
                 </textDomain>
               </nonNumericDomain>
@@ -851,8 +877,8 @@
       <entityDescription>Kmz and GIS files for survey units</entityDescription>
       <physical>
         <objectName>unit_spatial_data.zip</objectName>
-        <size unit="bytes">296721</size>
-        <authentication method="MD5">0b6907435cd1825a14dc92179573db8f</authentication>
+        <size unit="bytes">302630</size>
+        <authentication method="MD5">2063a9f753bf49ee74b730fe03582f52</authentication>
         <dataFormat>
           <externallyDefinedFormat>
             <formatName>zip</formatName>
