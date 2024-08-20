@@ -42,7 +42,7 @@ combined_snorkel_metadata <- bind_rows(cleaner_snorkel_metadata_early |>
          section_type = ifelse(section_type == "n/a", NA, section_type),
          section_name = tolower(section_name),
          survey_type = ifelse(year(date) > 2001 & is.na(survey_type), "unit", survey_type)) |>
-  select(survey_id, date, section_name, units_covered, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
+  select(survey_id, date, section_name, section_number, units_covered, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
   glimpse()
 
 combined_snorkel_metadata |> group_by(survey_id) |> tally() |> filter(n > 1)
