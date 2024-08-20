@@ -2,7 +2,7 @@ library(tidyverse)
 library(Hmisc)
 library(stringr)
 # pull database tables ---------------------------------------------------------
-db_filepath <- here::here("data-raw", "feather-river-db.mdb")
+db_filepath <- here::here("data-raw", "db-files", "feather-river-db.mdb")
 
 mdb.get(db_filepath, tables = TRUE)
 
@@ -18,13 +18,13 @@ lookup_species <- mdb.get(db_filepath, "OrganismCodeLU")
 detach(package:Hmisc)
 
 # write to csvs
-write_csv(snorkel_obsv_early, here::here("data-raw", "raw_pre_2004_snorkel_data_feather.csv"))
-write_csv(snorkel_survey_metadata_early, here::here("data-raw", "raw_pre_2004_snorkel_data_feather_metadata.csv"))
+write_csv(snorkel_obsv_early, here::here("data-raw", "db-tables", "raw_pre_2004_snorkel_data_feather.csv"))
+write_csv(snorkel_survey_metadata_early, here::here("data-raw", "db-tables", "raw_pre_2004_snorkel_data_feather_metadata.csv"))
 
 # read in csvs -----------------------------------------------------------------
 # need this step to deal with "labeled" column types, update if we come up with a cleaner solution
-snorkel_raw_early <- read_csv(here::here("data-raw", "raw_pre_2004_snorkel_data_feather.csv"))
-snorkel_metadata_raw_early <- read_csv(here::here("data-raw","raw_pre_2004_snorkel_data_feather_metadata.csv"))
+snorkel_raw_early <- read_csv(here::here("data-raw", "db-tables", "raw_pre_2004_snorkel_data_feather.csv"))
+snorkel_metadata_raw_early <- read_csv(here::here("data-raw","db-tables", "raw_pre_2004_snorkel_data_feather_metadata.csv"))
 
 # Create helper function -------------------------------------------------------
 # str_arrange created to arrange instream cover in alphabetical order
@@ -149,7 +149,7 @@ cleaner_snorkel_data_early$species |> table()
 # use unit lookup table and above units to clean up as we can
 # Pull in cleaned name lookup table
 # created based on mapbook from casey
-raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx") |>
+raw_created_lookup <- readxl::read_excel("data-raw/processed-tables/snorkel_built_lookup_table.xlsx") |>
   mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
   glimpse()
 
@@ -160,6 +160,11 @@ units_per_survey  <- cleaner_snorkel_data_early |>
   filter(!is.na(updated_section_name)) |>
   distinct() |>
   glimpse()
+
+manual_ck <- units_per_survey |>
+  group_by(survey_id) |>
+  tally() |>
+  filter(n > 1)
 
 # clean snorkel metadat
 cleaner_snorkel_metadata_early <- snorkel_metadata_raw_early |>
@@ -174,9 +179,10 @@ cleaner_snorkel_metadata_early <- snorkel_metadata_raw_early |>
          units_covered = units,
          section_name = location,
          weather = Weather) |>
-  left_join(units_per_survey) |>
-  mutate(section_name = ifelse(!is.na(updated_section_name), updated_section_name, section_name)) |>
-  select(-updated_section_name) |>
+  # removing this chunk because we end up with duplicates!
+  # left_join(units_per_survey) |>
+  # mutate(section_name = ifelse(!is.na(updated_section_name), updated_section_name, section_name)) |>
+  # select(-updated_section_name) |>
   # update additional section_names, concern with manual update is that section_names will be associated with units not contained within that section...
   mutate(section_name = case_when(section_name %in% c("Above Eye Riffle", "Eye To Gateway", "Lower Eye-Pool") ~ "Eye Riffle",
                                   section_name %in% c("Auditorium", "Lower Auditorium To Upper Bedrock Pool") ~ "Auditorium Riffle",

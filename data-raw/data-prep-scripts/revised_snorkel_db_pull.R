@@ -2,19 +2,19 @@ library(tidyverse)
 library(Hmisc)
 
 # pull database tables ---------------------------------------------------------
-db_filepath <- here::here("data-raw", "Snorkel_Revised.mdb")
+db_filepath <- here::here("data-raw", "db-files", "Snorkel_Revised.mdb")
 
 mdb.get(db_filepath, tables = TRUE)
 
 snorkel_obsv <- mdb.get(db_filepath, "Observation") |> glimpse()
-write_csv(snorkel_obsv, "data-raw/snorkel_observations.csv")
+write_csv(snorkel_obsv, "data-raw/db-tables/snorkel_observations.csv")
 
 snorkel_survey_metadata <- mdb.get(db_filepath, "Survey") |> glimpse()
-write_csv(snorkel_survey_metadata, "data-raw/snorkel_survey_metadata.csv")
+write_csv(snorkel_survey_metadata, "data-raw/db-tables/snorkel_survey_metadata.csv")
 
 # Other
 river_miles <- mdb.get(db_filepath, "SnorkelSections_RiverMiles") |> glimpse()
-write_csv(river_miles, "data-raw/river_miles_lookup.csv")
+write_csv(river_miles, "data-raw/db-tables/river_miles_lookup.csv")
 # Lookup tables
 species_lookup <- mdb.get(db_filepath, "SpeciesLU")  |> glimpse()
 lookup_cover <- mdb.get(db_filepath, "ICoverLookUp") |> glimpse()
@@ -27,10 +27,10 @@ detach(package:Hmisc) # detach
 
 # read in csvs -----------------------------------------------------------------
 # need this step to deal with "labeled" column types, update if we come up with a cleaner solution
-raw_snorkel_observations <- read_csv("data-raw/snorkel_observations.csv")
-raw_snorkel_survey_metadata <- read_csv("data-raw/snorkel_survey_metadata.csv")
+raw_snorkel_observations <- read_csv("data-raw/db-tables/snorkel_observations.csv")
+raw_snorkel_survey_metadata <- read_csv("data-raw/db-tables/snorkel_survey_metadata.csv")
 
-river_mile_lookup <- read_csv("data-raw/river_miles_lookup.csv")
+river_mile_lookup <- read_csv("data-raw/db-tables/river_miles_lookup.csv")
 
 # Create helper function -------------------------------------------------------
 # str_arrange created to arrange instream cover in alphabetical order
@@ -40,6 +40,11 @@ str_arrange <- function(x){
     stringr::str_split("") %>% # Split string into letters
     purrr::map(~sort(.) %>% paste(collapse = "")) %>% # Sort and re-combine
     as_vector() # Convert list into vector
+}
+
+# helps with removal of duplicates for LWD
+remove_duplicates <- function(x) {
+  str_replace_all(x, "(.)\\1+", "\\1")
 }
 
 # initial clean of site names
@@ -57,7 +62,7 @@ format_site_name <- function(string) {
 # Clean snorkel observations
 cleaner_snorkel_observations <- raw_snorkel_observations |>
   janitor::clean_names() |>
-  select(-size_class, -lwd, -comments) |> # Remove size because post processing, duplication of FL, TODO check on lwd, remove comments
+  select(-comments) |> # keeping size class per comments; TODO check on lwd, remove comments
   left_join(species_lookup, by = c("species" = "SpeciesCode")) |>
   select(-species, -observer) |>
   rename(species = Species,
@@ -75,32 +80,32 @@ cleaner_snorkel_observations <- raw_snorkel_observations |>
                              species == "Chinook Salmon - Clipped" ~ TRUE,
                              T ~ NA),
          species = tolower(case_when(species %in% c("Chinook Salmon- Fall",
-                                                         "Chinook Salmon- Late Fall",
-                                                         "Chinook Salmon- Spring",
-                                                         "Chjnook Salmon- Spring",
-                                                         "Chinook Salmon - Clipped",
-                                                         "Chinook salmon - Unknown",
-                                                         "Chinook salmon - Tagged") ~ "Chinook Salmon",
-                                          species %in% c("O. mykiss (not clipped)",
-                                                         "O. mykiss (unknown)",
-                                                         "O. Mykiss (Unknown)",
-                                                         "O. mykiss (clipped)") ~ "O. Mykiss",
-                                          species == "Unid Juvenile Sculpin" ~ "Unidentified Juvenile Sculpin",
-                                          species == "Unid Juvenile Bass (Micropterus sp.)" ~ "Unidentified Juvenile Bass",
-                                          species == "Unid Juvenile Lamprey" ~ "Unidentified Juvenile Lamprey",
-                                          species == "Unid Juvenile Minnow" ~ "Unidentified Juvenile Minnow",
-                                          species == "UNID Sunfish"   ~ "Unidentified Sunfish",
-                                          species == "Unid Juvenile non-Micropterus Sunfish" ~ "Unidentified Juvenile non-Micropterus Sunfish",
-                                          species == "Unid Juvenile Fish" ~ "Unidentified Juvenile Fish",
-                                          species == "Sacramento Squawfish" ~ "Sacramento Pikeminnow",
-                                          species %in% c("Sacramento Squawfish or Hardhead", "Pikeminnow/Hardhead") ~ "Sacramento Pikeminnow or hardhead",
-                                          species == "NO FISH CAUGHT" ~ NA,
-                                          TRUE ~ species)),
+                                                    "Chinook Salmon- Late Fall",
+                                                    "Chinook Salmon- Spring",
+                                                    "Chjnook Salmon- Spring",
+                                                    "Chinook Salmon - Clipped",
+                                                    "Chinook salmon - Unknown",
+                                                    "Chinook salmon - Tagged") ~ "Chinook Salmon",
+                                     species %in% c("O. mykiss (not clipped)",
+                                                    "O. mykiss (unknown)",
+                                                    "O. Mykiss (Unknown)",
+                                                    "O. mykiss (clipped)") ~ "O. Mykiss",
+                                     species == "Unid Juvenile Sculpin" ~ "Unidentified Juvenile Sculpin",
+                                     species == "Unid Juvenile Bass (Micropterus sp.)" ~ "Unidentified Juvenile Bass",
+                                     species == "Unid Juvenile Lamprey" ~ "Unidentified Juvenile Lamprey",
+                                     species == "Unid Juvenile Minnow" ~ "Unidentified Juvenile Minnow",
+                                     species == "UNID Sunfish"   ~ "Unidentified Sunfish",
+                                     species == "Unid Juvenile non-Micropterus Sunfish" ~ "Unidentified Juvenile non-Micropterus Sunfish",
+                                     species == "Unid Juvenile Fish" ~ "Unidentified Juvenile Fish",
+                                     species == "Sacramento Squawfish" ~ "Sacramento Pikeminnow",
+                                     species %in% c("Sacramento Squawfish or Hardhead", "Pikeminnow/Hardhead") ~ "Sacramento Pikeminnow or hardhead",
+                                     species == "NO FISH CAUGHT" ~ NA,
+                                     TRUE ~ species)),
          channel_geomorphic_unit = case_when(channel_geomorphic_unit %in% c("Riffle Edgewater", "Riffle Margin") ~ "Riffle Margin",
                                              channel_geomorphic_unit %in% c("Glide Edgewater", "Glide Margin", "GM") ~ "Glide Margin",
                                              channel_geomorphic_unit %in% c("Backwater", "W") ~ "Backwater",
                                              channel_geomorphic_unit %in% c("Glide", "G") ~ "Glide",
-                               TRUE ~ channel_geomorphic_unit),
+                                             TRUE ~ channel_geomorphic_unit),
          instream_cover = ifelse(is.na(instream_cover), NA, str_arrange(toupper(instream_cover))),
          instream_cover = case_when(instream_cover == "VCDE" ~ "CDE", # V is not an instream cover code, remove
                                     instream_cover == "BEV" ~ "BE", # V is not an instream cover code, remove
@@ -112,25 +117,31 @@ cleaner_snorkel_observations <- raw_snorkel_observations |>
                                     TRUE ~ instream_cover),
          substrate = ifelse(is.na(substrate), NA, str_arrange(substrate)),
          substrate = as.numeric(case_when(substrate == "2344" ~ "234",
-                               substrate == "350" ~ "35",
-                               TRUE ~ substrate)),
+                                          substrate == "350" ~ "35",
+                                          TRUE ~ substrate)),
          unit = case_when(unit == "32A" ~ "32", # cleaning up these units because they are not in the snorkel_section_river_miles table
-                                 unit == "329.5" ~ "329",
-                                 unit == "255A" ~ "255",
-                                 unit == "266A" ~ "266",
-                                 unit == "172B" ~ "172",
-                                 unit == "26A" ~ "26",
-                                 unit == "329B" ~ "329",
-                                 unit == "111A" ~ "111",
-                                 unit %in% c("274B", "274A") ~ "274",
-                                 unit == "448A" ~ "448",
-                                 unit == "271B" ~ "271",
-                                 unit %in% c("272A", "272B") ~ "272",
-                                 unit == "273B" ~ "273",
-                                 unit == "118A" ~ "118",
-                                 unit == "335B" ~ "335",
-                                 unit == "487B" ~ "487",
-                                 TRUE  ~ unit)) |>  glimpse()
+                          unit == "329.5" ~ "329",
+                          unit == "255A" ~ "255",
+                          unit == "266A" ~ "266",
+                          unit == "172B" ~ "172",
+                          unit == "26A" ~ "26",
+                          unit == "329B" ~ "329",
+                          unit == "111A" ~ "111",
+                          unit %in% c("274B", "274A") ~ "274",
+                          unit == "448A" ~ "448",
+                          unit == "271B" ~ "271",
+                          unit %in% c("272A", "272B") ~ "272",
+                          unit == "273B" ~ "273",
+                          unit == "118A" ~ "118",
+                          unit == "335B" ~ "335",
+                          unit == "487B" ~ "487",
+                          TRUE  ~ unit)) |>
+  mutate(lwd_present  = ifelse(lwd > 0, "C", "")) |>
+  mutate(instream_cover = case_when(lwd_present == "C" ~ paste0(lwd_present, instream_cover),
+                                    TRUE ~ as.character(lwd_present)),
+         instream_cover = remove_duplicates(instream_cover)) |>
+  select(-lwd_present, -lwd) |>
+  glimpse()
 
 # Clean snorkel survey metadata
 # TODO are mos and hatchery ditches the same thing? There is no slide for Mos riffle but it is on the map, making mos hatchery for now
@@ -198,34 +209,34 @@ cleaner_snorkel_survey_metadata <- raw_snorkel_survey_metadata |>
                                                       "Hatchery Side Channel And Moes", "Hatchery Side Channel And Moes Side Channel") ~ "Hatchery Riffle",
                                   .default = as.character(section_name)),
          # section numbers come from map in 2012 report that numbers the sections
-                  section_number = case_when(section_name == "Aleck Riffle" ~ 8,
-                                           section_name == "Auditorium Riffle" ~ 4,
-                                           section_name == "Bedrock Park Riffle" ~ 5,
-                                           #section_name == "Bedrock Riffle" ~ 10, not sure why we had this here
-                                           section_name == "Big Riffle" ~ 17,
-                                           section_name == "Eye Riffle" ~ 11,
-                                           section_name == "G95" ~ 14,
-                                           section_name == "Gateway Riffle" ~ 12,
-                                           section_name == "Goose Riffle" ~ 16,
-                                           section_name == "Gridley Riffle" ~ 19,
-                                           section_name == "Hatchery Ditch" ~ 2,
-                                           section_name == "Hatchery Riffle" ~ 1,
-                                           section_name == "Junkyard Riffle" ~ 20,
-                                           section_name == "Kiester Riffle" ~ 15,
-                                           section_name == "Matthews Riffle" ~ 7,
-                                           section_name == "McFarland" ~ 18,
-                                           # section_name == "Mo's Ditch" ~ 3, # mos will always be lumped with hatchery ditch
-                                           section_name == "Robinson Riffle" ~ 9,
-                                           section_name == "Steep Riffle" ~ 10,
-                                           section_name == "Trailer Park Riffle" ~ 6,
-                                           section_name == "Vance Riffle" ~ 13,
-                                           T ~ NA)) |>
+         section_number = case_when(section_name == "Aleck Riffle" ~ 8,
+                                    section_name == "Auditorium Riffle" ~ 4,
+                                    section_name == "Bedrock Park Riffle" ~ 5,
+                                    #section_name == "Bedrock Riffle" ~ 10, not sure why we had this here
+                                    section_name == "Big Riffle" ~ 17,
+                                    section_name == "Eye Riffle" ~ 11,
+                                    section_name == "G95" ~ 14,
+                                    section_name == "Gateway Riffle" ~ 12,
+                                    section_name == "Goose Riffle" ~ 16,
+                                    section_name == "Gridley Riffle" ~ 19,
+                                    section_name == "Hatchery Ditch" ~ 2,
+                                    section_name == "Hatchery Riffle" ~ 1,
+                                    section_name == "Junkyard Riffle" ~ 20,
+                                    section_name == "Kiester Riffle" ~ 15,
+                                    section_name == "Matthews Riffle" ~ 7,
+                                    section_name == "McFarland" ~ 18,
+                                    # section_name == "Mo's Ditch" ~ 3, # mos will always be lumped with hatchery ditch
+                                    section_name == "Robinson Riffle" ~ 9,
+                                    section_name == "Steep Riffle" ~ 10,
+                                    section_name == "Trailer Park Riffle" ~ 6,
+                                    section_name == "Vance Riffle" ~ 13,
+                                    T ~ NA)) |>
 
   glimpse()
 
 
 # Pull in cleaned name lookup table
-raw_created_lookup <- readxl::read_excel("data-raw/snorkel_built_lookup_table.xlsx") |>
+raw_created_lookup <- readxl::read_excel("data-raw/processed-tables/snorkel_built_lookup_table.xlsx") |>
   mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
   glimpse()
 
@@ -251,7 +262,7 @@ cleaner_snorkel_observations |> filter(unit %in% messy_units)
 
 # last step is to associate lat/long with the survey locations
 # Badhia is extracting lat/long from kmzs that Casey provided
-kmz_coordinates_raw <- read_csv("data-raw/Coordinates_Snorkel_Survey_Locations.csv")
+kmz_coordinates_raw <- read_csv("data-raw/processed-tables/Coordinates_Snorkel_Survey_Locations.csv")
 # update the names so they will match with the survey location names
 kmz_coordinate <- kmz_coordinates_raw |>
   mutate(Name = case_when(Name == "Alec Riffle" ~ "Aleck Riffle",
@@ -261,7 +272,7 @@ kmz_coordinate <- kmz_coordinates_raw |>
                           Name %in% c("Lower McFarland", "Upper McFarland") ~ "McFarland",
                           Name == "Vance West" ~ "Vance Riffle",
                           T ~ Name))
-random_coordinates <- read_csv("data-raw/Coordinates_Random_Snorkel_Sites.csv") |>
+random_coordinates <- read_csv("data-raw/processed-tables/Coordinates_Random_Snorkel_Sites.csv") |>
   rename(unit = Name)
 
 # Questions -
@@ -271,12 +282,12 @@ random_coordinates <- read_csv("data-raw/Coordinates_Random_Snorkel_Sites.csv") 
 # This chunk attempts to pull together all known survey locations and coordinates
 # from both the ongoing snorkel survey and the mini snorkely survey
 
-mini_snorkel_survey_locations <- read_csv("data-raw/survey_locations_mini_snorkel.csv") |>
+mini_snorkel_survey_locations <- read_csv("data-raw/processed-tables/survey_locations_mini_snorkel.csv") |>
   select(location, river_mile, longitude, latitude, coordinate_method, channel_type) |>
   rename(section_name = location) |>
   mutate(source = "mini snorkel")
 
-current_years_survey_locations <- read_csv("data-raw/clean_location_lookup_current.csv") |>
+current_years_survey_locations <- read_csv("data-raw/processed-tables/clean_location_lookup_current.csv") |>
   mutate(section_name = tolower(section_name),
          source = "ongoing snorkel")
 
@@ -309,6 +320,6 @@ sampling_unit_lookup_coordinates <- sampling_unit_lookup |>
 # Write clean CSVS -------------------------------------------------------------
 # writing to data raw because we need to join with other years
 # observations
-write_csv(cleaner_snorkel_observations, "data-raw/clean_snorkel_observations_current.csv")
-write_csv(cleaner_snorkel_survey_metadata, "data-raw/clean_survey_metadata_current.csv")
-write_csv(sampling_unit_lookup_coordinates, "data-raw/clean_location_lookup_current.csv")
+write_csv(cleaner_snorkel_observations, "data-raw/processed-tables/clean_snorkel_observations_current.csv")
+write_csv(cleaner_snorkel_survey_metadata, "data-raw/processed-tables/clean_survey_metadata_current.csv")
+write_csv(sampling_unit_lookup_coordinates, "data-raw/processed-tables/clean_location_lookup_current.csv")
