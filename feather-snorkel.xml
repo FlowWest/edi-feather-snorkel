@@ -230,19 +230,19 @@
             <para>
       There were some cases where survey sections could not be safely
       surveyed (e.g. high flow events) and other locations were chosen
-      as substitute. These can be identified in the dataset as
-      <quote>random</quote> survey sections and likely do not have a
-      section name or number. This study relies on river miles for
-      spatial information and the majority of observations can be
-      associated with a river mile. Specific coordinates were not
-      recorded for survey sections and units. DWR maintains a mapbook of
-      the coordinates for all survey units which was digitized and
-      included in this data package. The coordinates represent the
-      centroid of the unit and shapefiles can be found in the
-      attachments. The methods throughout the study did not remain
-      consistent and it is not well-documented when they were modified.
-      Section-based surveys conducted between 2004 and 2007 recorded the
-      size of the observed fish using a size class bin assignment.
+      as substitute. These can be identified in the dataset as random
+      survey sections and likely do not have a section name or number.
+      This study relies on river miles for spatial information and the
+      majority of observations can be associated with a river mile.
+      Specific coordinates were not recorded for survey sections and
+      units. DWR maintains a mapbook of the coordinates for all survey
+      units which was digitized and included in this data package. The
+      coordinates represent the centroid of the unit and shapefiles can
+      be found in the attachments. The methods throughout the study did
+      not remain consistent and it is not well-documented when they were
+      modified. Section-based surveys conducted between 2004 and 2007
+      recorded the size of the observed fish using a size class bin
+      assignment.
     </para>
           </section>
           <section>
@@ -278,8 +278,8 @@
       <entityDescription>Survey metadata from Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>survey_characteristics.csv</objectName>
-        <size unit="bytes">169496</size>
-        <authentication method="MD5">2ae7030143e98bb705ad85db04fccf8c</authentication>
+        <size unit="bytes">107198</size>
+        <authentication method="MD5">a41fb5fb73bf64d531b2db628ba55997</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -292,28 +292,26 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datasurvey_characteristics.csv</url>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/edi-feather-snorkel/main/data/survey_characteristics.csv</url>
           </online>
         </distribution>
       </physical>
       <attributeList>
         <attribute>
           <attributeName>survey_id</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Identification number of survey representing a unique survey event. This field can be used to join with the other data tables.</attributeDefinition>
           <measurementScale>
-            <ordinal>
+            <nominal>
               <nonNumericDomain>
                 <textDomain>
                   <definition>Identification number of survey representing a unique survey event. This field can be used to join with the other data tables.</definition>
                 </textDomain>
               </nonNumericDomain>
-            </ordinal>
+            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
           <attributeName>date</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Date of survey event</attributeDefinition>
           <measurementScale>
             <dateTime>
@@ -329,7 +327,6 @@
         </attribute>
         <attribute>
           <attributeName>section_name</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Section name describing location where snorkel data was collected.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -343,7 +340,6 @@
         </attribute>
         <attribute>
           <attributeName>section_number</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Section number describing the location where snorkel data was collected</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -357,7 +353,6 @@
         </attribute>
         <attribute>
           <attributeName>units_covered</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Units in the section that were surveyed</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -371,7 +366,6 @@
         </attribute>
         <attribute>
           <attributeName>survey_type</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Describes if survey was conducted for the entire section or for a specific unit. Levels = c("comp", "unit") where 'comp' refers to the comprehensive snorkel surveys version section or unit based surveys.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -385,7 +379,6 @@
         </attribute>
         <attribute>
           <attributeName>section_type</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Describes whether survey was conducted in standard protocol locations or if due to environmental conditions was conducted in another location. Levels = c("permanent", "random")</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -399,7 +392,6 @@
         </attribute>
         <attribute>
           <attributeName>flow</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Flow in cubic feet per second (cfs)</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -418,7 +410,6 @@
         </attribute>
         <attribute>
           <attributeName>weather</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Weather conditions when data was collected. Weather conditions include: clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -432,7 +423,6 @@
         </attribute>
         <attribute>
           <attributeName>turbidity</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Turbidity measured at survey location measured in NTU through 2013. Values in the turbidity field after 2013 are measures of visibility using "fish on a stick" method. Values of 0 after 2013 in the turbidity field indicate good visibility</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -451,7 +441,6 @@
         </attribute>
         <attribute>
           <attributeName>temperature</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Temperature of water measured using a handheld thermometer</attributeDefinition>
           <measurementScale>
             <interval>
@@ -470,7 +459,6 @@
         </attribute>
         <attribute>
           <attributeName>visibility</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Measured using a lure with parr marks</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -495,8 +483,8 @@
       <entityDescription>Location lookup for Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>locations_lookup.csv</objectName>
-        <size unit="bytes">169423</size>
-        <authentication method="MD5">2d0a93c960871cb0e8b6dc02ce9a34ad</authentication>
+        <size unit="bytes">30161</size>
+        <authentication method="MD5">ea1dfced1ccce9ad35f0130ee9e6fed5</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -509,7 +497,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datalocations_lookup.csv</url>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/edi-feather-snorkel/main/data/locations_lookup.csv</url>
           </online>
         </distribution>
       </physical>
@@ -628,8 +616,8 @@
       <entityDescription>Fish observations from Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>fish_observations.csv</objectName>
-        <size unit="bytes">169436</size>
-        <authentication method="MD5">9f23ffd9429e71f2c6bfda12ff9c6610</authentication>
+        <size unit="bytes">2772732</size>
+        <authentication method="MD5">a845a34a0c2ecd97e1302912b3ab7055</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -642,14 +630,13 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/datafish_observations.csv</url>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/edi-feather-snorkel/main/data/fish_observations.csv</url>
           </online>
         </distribution>
       </physical>
       <attributeList>
         <attribute>
           <attributeName>observation_id</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Identification number of observation representing a unique data record</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -663,7 +650,6 @@
         </attribute>
         <attribute>
           <attributeName>survey_id</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Identification number of survey representing a unique survey event. This field can be used to join with the survey metadata and location lookup tables</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -677,7 +663,6 @@
         </attribute>
         <attribute>
           <attributeName>date</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Date of survey event</attributeDefinition>
           <measurementScale>
             <dateTime>
@@ -693,7 +678,6 @@
         </attribute>
         <attribute>
           <attributeName>unit</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Unit associated with specific area surveyed. The unit represents a unique physical location within the Feather River.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -707,7 +691,6 @@
         </attribute>
         <attribute>
           <attributeName>count</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Number of fish observed</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -726,7 +709,6 @@
         </attribute>
         <attribute>
           <attributeName>species</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Fish species observed based on visual observation</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -740,7 +722,6 @@
         </attribute>
         <attribute>
           <attributeName>fork_length</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Fork length of observed fish. Size class range (I - 0-50 mm, II - 51-75 mm, III - 76-100 mm, IV - 101-150 mm, V - 151-300 mm, VI - 301-499 mm, VII - 500+ mm)</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -759,7 +740,6 @@
         </attribute>
         <attribute>
           <attributeName>size_class</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Size class range (I - 0-50 mm, II - 51-75 mm, III - 76-100 mm, IV - 101-150 mm, V - 151-300 mm, VI - 301-499 mm, VII - 500+ mm)</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -773,7 +753,6 @@
         </attribute>
         <attribute>
           <attributeName>clipped</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>If adipose fin is clipped (TRUE, FALSE)</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -787,7 +766,6 @@
         </attribute>
         <attribute>
           <attributeName>substrate</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Substrate associated with observation. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Organic Fines, Mud (0.05 mm) 2- Sand (0.05 to 2 mm), 3- Small Gravel (2 to 50 mm), 4- Large Gravel (50 to 150 mm), 5-Cobble (150 to 300 mm), 6-Boulder (&gt;300 mm), NA). Value is NA when no fish is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -801,7 +779,6 @@
         </attribute>
         <attribute>
           <attributeName>instream_cover</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Instream cover associated with observation. If multiple cover types are observed at one observation site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank. Value is NA when no fish is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -815,7 +792,6 @@
         </attribute>
         <attribute>
           <attributeName>overhead_cover</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Overhead cover associated with observation.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae. Value is NA when no fish are is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -829,7 +805,6 @@
         </attribute>
         <attribute>
           <attributeName>channel_geomorphic_unit</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Channel geomorphology associated with observation. Levels = c(backwater, glide, glide margin, pool, riffle, riffle margin, NA). Value is NA when no fish is observed. &#13;
 )</attributeDefinition>
           <measurementScale>
@@ -845,7 +820,6 @@
         </attribute>
         <attribute>
           <attributeName>depth</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Depth of water in meters</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -864,7 +838,6 @@
         </attribute>
         <attribute>
           <attributeName>velocity</attributeName>
-          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Velocity of water in feet per seccond</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -889,8 +862,8 @@
       <entityDescription>Kmz and GIS files for survey units</entityDescription>
       <physical>
         <objectName>unit_spatial_data.zip</objectName>
-        <size unit="bytes">169930</size>
-        <authentication method="MD5">d1bc8c976501801d97091f5af2b7d98c</authentication>
+        <size unit="bytes">329917</size>
+        <authentication method="MD5">37b46a534d37b239ed8869c4fbdd12af</authentication>
         <dataFormat>
           <externallyDefinedFormat>
             <formatName>zip</formatName>
@@ -898,7 +871,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://github.com/FlowWest/edi-feather-snorkel/blob/edits-and-cleanup/data-raw/metadata/unit_spatial_data.zip</url>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/edi-feather-snorkel/main/data-raw/metadata/unit_spatial_data.zip</url>
           </online>
         </distribution>
       </physical>

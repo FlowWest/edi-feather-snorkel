@@ -14,7 +14,7 @@ datatable_metadata <-
                 datatable_description = c("Survey metadata from Feather River snorkel survey data",
                                           "Location lookup for Feather River snorkel survey data",
                                           "Fish observations from Feather River snorkel survey data"),
-                datatable_url = paste0("https://github.com/FlowWest/edi-feather-snorkel/tree/create-metadata/data",
+                datatable_url = paste0("https://raw.githubusercontent.com/FlowWest/edi-feather-snorkel/main/data/",
                                        c("survey_characteristics.csv",
                                          "locations_lookup.csv",
                                          "fish_observations.csv")))
@@ -23,7 +23,7 @@ other_entity_metadata_1 <- list("file_name" = "unit_spatial_data.zip",
                                 "file_description" = "Kmz and GIS files for survey units",
                                 "file_type" = "zip",
                                 "physical" = create_physical("data-raw/metadata/unit_spatial_data.zip",
-                                                             data_url = "https://github.com/FlowWest/edi-feather-snorkel/blob/edits-and-cleanup/data-raw/metadata/unit_spatial_data.zip"))
+                                                             data_url = "https://raw.githubusercontent.com/FlowWest/edi-feather-snorkel/main/data-raw/metadata/unit_spatial_data.zip"))
 
 other_entity_metadata_1$physical$dataFormat <- list("externallyDefinedFormat" = list("formatName" = "zip"))
 
