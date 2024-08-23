@@ -54,7 +54,7 @@ combined_snorkel_metadata$turbidity |> summary()
 combined_snorkel_metadata$temperature |> summary()
 combined_snorkel_metadata$weather |> table()
 
-
+sort(unique(combined_snorkel_metadata$section_name))
 
 # combine and clean
 # FEATHER SNORKEL OBS ----------------------------------------------------------
