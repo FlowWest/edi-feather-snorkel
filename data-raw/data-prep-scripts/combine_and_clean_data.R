@@ -33,27 +33,34 @@ sampling_unit_lookup |> glimpse()
 # they are duplicate because they have different section names. the section name
 # data is pretty messy and not useful so decided to remove the section name and number
 # from this metadata
+
+# update the section_type field. we are not sure what this field means for the historical data. we decided to
+# update this field using the following logic, if a survey on a given day includes units in this table then they are permanent,
+# if not then random. This logic only applies to 2015 and onwards. For years before 2015 we will have to make NA.
+snorkel_built_lookup <- readxl::read_excel(here::here('data-raw', 'processed-tables', 'snorkel_built_lookup_table.xlsx')) |>
+    select(-section_name) |>
+    glimpse()
+
 combined_snorkel_metadata <- bind_rows(cleaner_snorkel_metadata_early |>
                                          mutate(database = "historical"),
                                        cleaner_snorkel_survey_metadata |>
-                                         mutate(database = "current")
-) |>
+                                         mutate(database = "current")) |>
+  select(-section_type) |>
+  left_join(snorkel_built_lookup) |>
   mutate(survey_id = paste0(survey_id, "_", database),
-         section_type = ifelse(section_type == "n/a", NA, section_type),
-         section_name = tolower(section_name),
+         section_type = ifelse(year(date) > 2015 & is.na(section_type), "random", section_type),
          survey_type = ifelse(year(date) > 2001 & is.na(survey_type), "unit", survey_type)) |>
-  select(survey_id, date, section_name, units_covered, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
-  glimpse()
+  select(survey_id, date, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
+  View()
 
 combined_snorkel_metadata |> group_by(survey_id) |> tally() |> filter(n > 1)
 combined_snorkel_metadata$date |> summary() # Data from April 1999 - July 2023
 combined_snorkel_metadata$flow |> summary()
-combined_snorkel_metadata$section_name |> table() # TODO section name is still messy, I think this is all coming from the location field in early table
-combined_snorkel_metadata$units_covered |> table() # messy but not sure if there is anything to do with this
+#combined_snorkel_metadata$section_name |> table() # TODO section name is still messy, I think this is all coming from the location field in early table; decided to remove
+#combined_snorkel_metadata$units_covered |> table() # messy but not sure if there is anything to do with this
 combined_snorkel_metadata$turbidity |> summary()
 combined_snorkel_metadata$temperature |> summary()
 combined_snorkel_metadata$weather |> table()
-
 
 
 # combine and clean
@@ -92,6 +99,24 @@ combined_snorkel_observations$depth |> summary() # clean
 combined_snorkel_observations$species |> sort() |> unique() # still a lot of species, could potentially refine some of the unidentified ones...or get. abiologiest to imrpve, but probably fine for now
 combined_snorkel_observations$clipped |> table() # clean
 combined_snorkel_observations$size_class |> table(useNA = "always")
+
+
+# exploratory on units_covered
+# decision: remove units_covered
+# unit_eda <- combined_snorkel_metadata |>
+#   # separate_rows(units_covered, sep = ",") |>
+#   # separate_rows(units_covered, sep = " ") |>
+#   # separate_rows(units_covered, sep = "-") |>
+#   left_join(combined_snorkel_observations) |>
+#   select(survey_id, date, count, units_covered, unit)
+#
+# unit_eda |>
+#   filter(!is.na(unit) & count > 0) |>
+#   View()
+#
+# unit_eda |>
+#   filter(!is.na(unit) & count == 0) |>
+#   View()
 
 # write csv for fish_observations
 write_csv(combined_snorkel_observations, "data/fish_observations.csv")
@@ -141,6 +166,8 @@ full_location_lookup <- full_join(location_lookup , digital_units |>
          latitude = ifelse(!is.na(lat_katie), lat_katie, latitude),
          longitude = ifelse(!is.na(long_katie), long_katie, longitude)) |>
   select(unit, unit_sub_level, channel_type, river_mile, area_sq_m, latitude, longitude)
+
+
 min(full_location_lookup$area_sq_m, na.rm = T)
 max(full_location_lookup$area_sq_m, na.rm = T)
 # write csv

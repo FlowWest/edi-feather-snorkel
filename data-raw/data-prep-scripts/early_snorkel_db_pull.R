@@ -215,7 +215,7 @@ cleaner_snorkel_metadata_early <- snorkel_metadata_raw_early |>
 
 # still more clean up to do
 # Initially ~ 200 unique section names, after join with units_per_survey table we get down to ~100
-cleaner_snorkel_metadata_early$section_name |> unique() |> sort()
-names_to_fix <- filter(cleaner_snorkel_metadata_early, is.na(section_number))
-names_to_fix$section_name |> unique() |> sort()
+# cleaner_snorkel_metadata_early$section_name |> unique() |> sort()
+# names_to_fix <- filter(cleaner_snorkel_metadata_early, is.na(section_number))
+# names_to_fix$section_name |> unique() |> sort()
 
