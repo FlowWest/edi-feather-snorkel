@@ -50,8 +50,7 @@ combined_snorkel_metadata <- bind_rows(cleaner_snorkel_metadata_early |>
   mutate(survey_id = paste0(survey_id, "_", database),
          section_type = ifelse(year(date) > 2015 & is.na(section_type), "random", section_type),
          survey_type = ifelse(year(date) > 2001 & is.na(survey_type), "unit", survey_type)) |>
-  select(survey_id, date, survey_type, section_type, flow, weather, turbidity, temperature, visibility) |>
-  View()
+  select(survey_id, date, survey_type, section_type, flow, weather, turbidity, temperature, visibility)
 
 combined_snorkel_metadata |> group_by(survey_id) |> tally() |> filter(n > 1)
 combined_snorkel_metadata$date |> summary() # Data from April 1999 - July 2023
@@ -84,7 +83,8 @@ combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |>
   left_join(combined_snorkel_metadata |>
               select(survey_id, date)) |>
   filter(!is.na(date)) |> # filter out NA dates because not useful
-  select(observation_id, survey_id, date, unit, count, species, fork_length, size_class, clipped, substrate, instream_cover, overhead_cover, channel_geomorphic_unit, depth, velocity) |>
+  select(observation_id, survey_id, date, unit, count, species, fork_length, size_class, clipped, substrate, instream_cover, overhead_cover,
+         channel_geomorphic_unit, depth, velocity) |>
   glimpse() # filtered out these messy units for now, alternatively we can see if casey can assign a non messy unit
 
 combined_snorkel_observations$unit |> unique() |> length() #395 in this
