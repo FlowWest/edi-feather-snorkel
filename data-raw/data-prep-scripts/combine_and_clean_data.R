@@ -63,7 +63,6 @@ combined_snorkel_metadata$turbidity |> summary()
 combined_snorkel_metadata$temperature |> summary()
 combined_snorkel_metadata$weather |> table()
 
-
 # combine and clean
 # FEATHER SNORKEL OBS ----------------------------------------------------------
 combined_snorkel_observations <- bind_rows(cleaner_snorkel_data_early |>
