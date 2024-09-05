@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="feather-snorkel" system="EDI" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="edi.1764.1" system="EDI" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
   <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
     <allow>
       <principal>public</principal>
@@ -313,13 +313,13 @@
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Identification number of survey representing a unique survey event. This field can be used to join with the other data tables.</attributeDefinition>
           <measurementScale>
-            <ordinal>
+            <nominal>
               <nonNumericDomain>
                 <textDomain>
                   <definition>Identification number of survey representing a unique survey event. This field can be used to join with the other data tables.</definition>
                 </textDomain>
               </nonNumericDomain>
-            </ordinal>
+            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -332,7 +332,7 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">36259</minimum>
-                  <maximum exclusive="false">44099</maximum>
+                  <maximum exclusive="false">45128</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -379,7 +379,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">9564</maximum>
+                  <maximum exclusive="false">11000</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -412,7 +412,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">4</maximum>
+                  <maximum exclusive="false">4.18</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -431,7 +431,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">21.67</maximum>
+                  <maximum exclusive="false">71.6</maximum>
                 </bounds>
               </numericDomain>
             </interval>
@@ -621,13 +621,13 @@
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Identification number of observation representing a unique data record</attributeDefinition>
           <measurementScale>
-            <ordinal>
+            <nominal>
               <nonNumericDomain>
                 <textDomain>
                   <definition>Identification number of observation representing a unique data record</definition>
                 </textDomain>
               </nonNumericDomain>
-            </ordinal>
+            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -635,13 +635,13 @@
           <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Identification number of survey representing a unique survey event. This field can be used to join with the survey metadata and location lookup tables</attributeDefinition>
           <measurementScale>
-            <ordinal>
+            <nominal>
               <nonNumericDomain>
                 <textDomain>
                   <definition>Identification number of survey representing a unique survey event. This field can be used to join with the survey metadata and location lookup tables</definition>
                 </textDomain>
               </nonNumericDomain>
-            </ordinal>
+            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -653,8 +653,8 @@
               <formatString>YYYY-MM-DD</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false">36259</minimum>
-                  <maximum exclusive="false">44099</maximum>
+                  <minimum exclusive="false">36297</minimum>
+                  <maximum exclusive="false">45128</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -687,7 +687,7 @@
                 <numberType>integer</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">30000</maximum>
+                  <maximum exclusive="false">50000</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -720,7 +720,7 @@
                 <numberType>whole</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">900</maximum>
+                  <maximum exclusive="false">1524</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -824,7 +824,7 @@
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">0.05</minimum>
+                  <minimum exclusive="false">0</minimum>
                   <maximum exclusive="false">5</maximum>
                 </bounds>
               </numericDomain>
@@ -844,7 +844,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0.05</minimum>
-                  <maximum exclusive="false">5</maximum>
+                  <maximum exclusive="false">5.85</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
