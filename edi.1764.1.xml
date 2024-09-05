@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="feather-snorkel" system="EDI" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="edi.1764.1" system="EDI" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
   <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
     <allow>
       <principal>public</principal>
@@ -21,7 +21,7 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-08-20</pubDate>
+    <pubDate>2024-09-05</pubDate>
     <abstract>
       <para>
     Since 1999, the California Department of Water Resources (DWR) has
@@ -209,7 +209,9 @@
       upstream whereas the other transects along the riverbanks are done
       in the upstream direction. Often divers will complete multiple
       transects to ensure adequate coverage of each section. Divers use
-      plastic slates to mark observations of fish.
+      plastic slates to mark observations of fish. Environmental
+      attributes were collected for each section though protocols do not
+      specify where within the section these data were collected.
     </para>
             <para>
       Attributes collected include species, number of fish of a given
@@ -231,18 +233,27 @@
       There were some cases where survey sections could not be safely
       surveyed (e.g. high flow events) and other locations were chosen
       as substitute. These can be identified in the dataset as random
-      survey sections and likely do not have a section name or number.
+      survey sections. In the survey metadata, the survey type
+      represents if the survey was comprehensive or section/unit based.
+      All surveys after 2001 are unit surveys. Section type represents
+      whether the survey was for a permanent or random section. If this
+      field was not recorded and collected in 2015 and onwards, it was
+      assumed to be a random section.
+    </para>
+            <para>
       This study relies on river miles for spatial information and the
       majority of observations can be associated with a river mile.
       Specific coordinates were not recorded for survey sections and
       units. DWR maintains a mapbook of the coordinates for all survey
       units which was digitized and included in this data package. The
       coordinates represent the centroid of the unit and shapefiles can
-      be found in the attachments. The methods throughout the study did
-      not remain consistent and it is not well-documented when they were
-      modified. Section-based surveys conducted between 2004 and 2007
-      recorded the size of the observed fish using a size class bin
-      assignment.
+      be found in the attachments.
+    </para>
+            <para>
+      The methods throughout the study did not remain consistent and it
+      is not well-documented when they were modified. Section-based
+      surveys conducted between 2004 and 2007 recorded the size of the
+      observed fish using a size class bin assignment.
     </para>
           </section>
           <section>
@@ -299,6 +310,7 @@
       <attributeList>
         <attribute>
           <attributeName>survey_id</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Identification number of survey representing a unique survey event. This field can be used to join with the other data tables.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -312,6 +324,7 @@
         </attribute>
         <attribute>
           <attributeName>date</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Date of survey event</attributeDefinition>
           <measurementScale>
             <dateTime>
@@ -319,53 +332,15 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">36259</minimum>
-                  <maximum exclusive="false">44099</maximum>
+                  <maximum exclusive="false">45128</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>section_name</attributeName>
-          <attributeDefinition>Section name describing location where snorkel data was collected.</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Section name describing location where snorkel data was collected.</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>section_number</attributeName>
-          <attributeDefinition>Section number describing the location where snorkel data was collected</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Section number describing the location where snorkel data was collected</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>units_covered</attributeName>
-          <attributeDefinition>Units in the section that were surveyed</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Units in the section that were surveyed</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>survey_type</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Describes if survey was conducted for the entire section or for a specific unit. Levels = c("comp", "unit") where 'comp' refers to the comprehensive snorkel surveys version section or unit based surveys.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -379,12 +354,13 @@
         </attribute>
         <attribute>
           <attributeName>section_type</attributeName>
-          <attributeDefinition>Describes whether survey was conducted in standard protocol locations or if due to environmental conditions was conducted in another location. Levels = c("permanent", "random")</attributeDefinition>
+          <attributeLabel>snorkel_survey</attributeLabel>
+          <attributeDefinition>Describes whether survey was conducted in standard protocol locations or if due to environmental conditions was conducted in another location. Levels = c("permanent", "random", NA). All years prior to 2015 are marked as NA.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Describes whether survey was conducted in standard protocol locations or if due to environmental conditions was conducted in another location. Levels = c("permanent", "random")</definition>
+                  <definition>Describes whether survey was conducted in standard protocol locations or if due to environmental conditions was conducted in another location. Levels = c("permanent", "random", NA). All years prior to 2015 are marked as NA.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -392,6 +368,7 @@
         </attribute>
         <attribute>
           <attributeName>flow</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Flow in cubic feet per second (cfs)</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -402,7 +379,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">9564</maximum>
+                  <maximum exclusive="false">11000</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -410,6 +387,7 @@
         </attribute>
         <attribute>
           <attributeName>weather</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Weather conditions when data was collected. Weather conditions include: clear, sunny, clear and windy, cloudy, partly cloudy, precipitation, hazy, windy, clear and hot, overcast</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -423,6 +401,7 @@
         </attribute>
         <attribute>
           <attributeName>turbidity</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Turbidity measured at survey location measured in NTU through 2013. Values in the turbidity field after 2013 are measures of visibility using "fish on a stick" method. Values of 0 after 2013 in the turbidity field indicate good visibility</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -433,7 +412,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">4</maximum>
+                  <maximum exclusive="false">4.18</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -441,6 +420,7 @@
         </attribute>
         <attribute>
           <attributeName>temperature</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Temperature of water measured using a handheld thermometer</attributeDefinition>
           <measurementScale>
             <interval>
@@ -451,7 +431,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">21.67</maximum>
+                  <maximum exclusive="false">71.6</maximum>
                 </bounds>
               </numericDomain>
             </interval>
@@ -459,6 +439,7 @@
         </attribute>
         <attribute>
           <attributeName>visibility</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Measured using a lure with parr marks</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -637,6 +618,7 @@
       <attributeList>
         <attribute>
           <attributeName>observation_id</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Identification number of observation representing a unique data record</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -650,6 +632,7 @@
         </attribute>
         <attribute>
           <attributeName>survey_id</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Identification number of survey representing a unique survey event. This field can be used to join with the survey metadata and location lookup tables</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -663,14 +646,15 @@
         </attribute>
         <attribute>
           <attributeName>date</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Date of survey event</attributeDefinition>
           <measurementScale>
             <dateTime>
               <formatString>YYYY-MM-DD</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false">36259</minimum>
-                  <maximum exclusive="false">44099</maximum>
+                  <minimum exclusive="false">36297</minimum>
+                  <maximum exclusive="false">45128</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -678,6 +662,7 @@
         </attribute>
         <attribute>
           <attributeName>unit</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Unit associated with specific area surveyed. The unit represents a unique physical location within the Feather River.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -691,6 +676,7 @@
         </attribute>
         <attribute>
           <attributeName>count</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Number of fish observed</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -701,7 +687,7 @@
                 <numberType>integer</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">30000</maximum>
+                  <maximum exclusive="false">50000</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -709,6 +695,7 @@
         </attribute>
         <attribute>
           <attributeName>species</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Fish species observed based on visual observation</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -722,6 +709,7 @@
         </attribute>
         <attribute>
           <attributeName>fork_length</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Fork length of observed fish. Size class range (I - 0-50 mm, II - 51-75 mm, III - 76-100 mm, IV - 101-150 mm, V - 151-300 mm, VI - 301-499 mm, VII - 500+ mm)</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -732,7 +720,7 @@
                 <numberType>whole</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">900</maximum>
+                  <maximum exclusive="false">1524</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -740,6 +728,7 @@
         </attribute>
         <attribute>
           <attributeName>size_class</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Size class range (I - 0-50 mm, II - 51-75 mm, III - 76-100 mm, IV - 101-150 mm, V - 151-300 mm, VI - 301-499 mm, VII - 500+ mm)</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -753,6 +742,7 @@
         </attribute>
         <attribute>
           <attributeName>clipped</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>If adipose fin is clipped (TRUE, FALSE)</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -766,6 +756,7 @@
         </attribute>
         <attribute>
           <attributeName>substrate</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Substrate associated with observation. If multiple substrates are observed at one site, all substrate types are reccorded. Levels = c( 1- Organic Fines, Mud (0.05 mm) 2- Sand (0.05 to 2 mm), 3- Small Gravel (2 to 50 mm), 4- Large Gravel (50 to 150 mm), 5-Cobble (150 to 300 mm), 6-Boulder (&gt;300 mm), NA). Value is NA when no fish is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -779,6 +770,7 @@
         </attribute>
         <attribute>
           <attributeName>instream_cover</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Instream cover associated with observation. If multiple cover types are observed at one observation site, all cover types are reccorded. Types of cover include: E - Submerged Aquatic Veg/Algae, B - Small Instream Objects/Woody Debris, C - Large Instream Objects/Woody Debris, A - No apparent Cover, F - undercut bank. Value is NA when no fish is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -792,6 +784,7 @@
         </attribute>
         <attribute>
           <attributeName>overhead_cover</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Overhead cover associated with observation.  If multiple cover types are observed at one site, all cover types are reccorded. Types of cover include: 0 - no apparent cover, 1 - overhead object/veg 0 - 0.5 meters, 2 - overhead object/veg 0.5 - 2 meters, 3 - submerged aquatic veg/algae. Value is NA when no fish are is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -805,6 +798,7 @@
         </attribute>
         <attribute>
           <attributeName>channel_geomorphic_unit</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Channel geomorphology associated with observation. Levels = c(backwater, glide, glide margin, pool, riffle, riffle margin, NA). Value is NA when no fish is observed. &#13;
 )</attributeDefinition>
           <measurementScale>
@@ -820,6 +814,7 @@
         </attribute>
         <attribute>
           <attributeName>depth</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Depth of water in meters</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -829,7 +824,7 @@
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">0.05</minimum>
+                  <minimum exclusive="false">0</minimum>
                   <maximum exclusive="false">5</maximum>
                 </bounds>
               </numericDomain>
@@ -838,6 +833,7 @@
         </attribute>
         <attribute>
           <attributeName>velocity</attributeName>
+          <attributeLabel>snorkel_survey</attributeLabel>
           <attributeDefinition>Velocity of water in feet per seccond</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -848,7 +844,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0.05</minimum>
-                  <maximum exclusive="false">5</maximum>
+                  <maximum exclusive="false">5.85</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
