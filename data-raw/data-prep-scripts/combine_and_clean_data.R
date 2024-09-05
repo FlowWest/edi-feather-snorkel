@@ -46,10 +46,12 @@ combined_snorkel_metadata <- bind_rows(cleaner_snorkel_metadata_early |>
                                        cleaner_snorkel_survey_metadata |>
                                          mutate(database = "current")) |>
   select(-section_type) |>
-  left_join(snorkel_built_lookup) |>
+  left_join(snorkel_built_lookup |>
+              select(section_number, section_type) |>
+              distinct()) |>
   mutate(survey_id = paste0(survey_id, "_", database),
-         section_type = ifelse(year(date) > 2015 & is.na(section_type), "random", section_type),
-         survey_type = ifelse(year(date) > 2001 & is.na(survey_type), "unit", survey_type)) |>
+         section_type = ifelse(year(date) >= 2015 & is.na(section_type), "random", section_type),
+         survey_type = ifelse(year(date) >= 2001 & is.na(survey_type), "unit", survey_type)) |>
   select(survey_id, date, survey_type, section_type, flow, weather, turbidity, temperature, visibility)
 
 combined_snorkel_metadata |> group_by(survey_id) |> tally() |> filter(n > 1)
