@@ -21,7 +21,7 @@
       <organizationName>California Department of Water Resources</organizationName>
       <electronicMailAddress>casey.campos@water.ca.gov</electronicMailAddress>
     </creator>
-    <pubDate>2024-09-05</pubDate>
+    <pubDate>2024-09-27</pubDate>
     <abstract>
       <para>
     Since 1999, the California Department of Water Resources (DWR) has
@@ -214,17 +214,23 @@
       specify where within the section these data were collected.
     </para>
             <para>
-      Attributes collected include species, number of fish of a given
-      size (groups of similar sized fish that were observed in a 1
-      square meter or less, or are occupying similar habitat are treated
-      as a single observation), substrate type (presence of every type
-      of substrate is recorded), cover (presence of every type of cover
-      is recorded), habitat type, approximate fork length (fish
-      identification and size estimation are calibrated by training
-      divers with tethered fishing lures in a controlled setting). The
-      accuracy of size estimates is enhanced by comparing observed fish
-      to nearby objects whose dimensions are measured using the scales
-      mounted on plastic writing slates.
+      Attributes collected include species (since 2015, all species
+      encountered received complementary data; before 2015, the amount
+      of data collected for other or not chinook or steelhead is
+      inconsistent), number of fish of a given size (groups of similar
+      sized fish that were observed in a 1 square meter or less, or are
+      occupying similar habitat are treated as a single observation),
+      substrate type (presence of every type of substrate is recorded),
+      cover (presence of every type of cover is recorded), habitat type,
+      approximate fork length (fish identification and size estimation
+      are calibrated by training divers with tethered fishing lures in a
+      controlled setting). The accuracy of size estimates is enhanced by
+      comparing observed fish to nearby objects whose dimensions are
+      measured using the scales mounted on plastic writing slates. When
+      multiple individuals of a similar size (+/2 5 mm for salmonids
+      under 150 mm with adipose clipped) are encountered, they are
+      grouped. Juvenile salmonids with adipose clipped are rarely
+      encountered.
     </para>
           </section>
           <section>
@@ -251,9 +257,11 @@
     </para>
             <para>
       The methods throughout the study did not remain consistent and it
-      is not well-documented when they were modified. Section-based
-      surveys conducted between 2004 and 2007 recorded the size of the
-      observed fish using a size class bin assignment.
+      is not well-documented when they were modified.
+    </para>
+            <para>
+      Section-based surveys conducted between 2004 and 2007 recorded the
+      size of the observed fish using a size class bin assignment.
     </para>
           </section>
           <section>
@@ -289,8 +297,8 @@
       <entityDescription>Survey metadata from Feather River snorkel survey data</entityDescription>
       <physical>
         <objectName>survey_characteristics.csv</objectName>
-        <size unit="bytes">107198</size>
-        <authentication method="MD5">a41fb5fb73bf64d531b2db628ba55997</authentication>
+        <size unit="bytes">76616</size>
+        <authentication method="MD5">6f431258182370f6321fa5421f1b0cb1</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -341,12 +349,12 @@
         <attribute>
           <attributeName>survey_type</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Describes if survey was conducted for the entire section or for a specific unit. Levels = c("comp", "unit") where 'comp' refers to the comprehensive snorkel surveys version section or unit based surveys.</attributeDefinition>
+          <attributeDefinition>Levels = c("comp", "unit") where 'comp' refers to the comprehensive snorkel surveys version section or ‘unit’ refers to section-based surveys. Comprehensive snorkel surveys cover a large extent while unit snorkel surveys are made up of 20 smaller sampling sections.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Describes if survey was conducted for the entire section or for a specific unit. Levels = c("comp", "unit") where 'comp' refers to the comprehensive snorkel surveys version section or unit based surveys.</definition>
+                  <definition>Levels = c("comp", "unit") where 'comp' refers to the comprehensive snorkel surveys version section or ‘unit’ refers to section-based surveys. Comprehensive snorkel surveys cover a large extent while unit snorkel surveys are made up of 20 smaller sampling sections.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -498,12 +506,12 @@
         </attribute>
         <attribute>
           <attributeName>unit_sub_level</attributeName>
-          <attributeDefinition>Sub-level associated with a unit. In some cases unit are broken down into two. Levels = c("A", "B", NA)</attributeDefinition>
+          <attributeDefinition>Sub-level associated with a unit and with a unique latitude and longitude. In some cases the unit is broken down into two which is a legacy of when the unts were originally mapped. Levels = c("A", "B", NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Sub-level associated with a unit. In some cases unit are broken down into two. Levels = c("A", "B", NA)</definition>
+                  <definition>Sub-level associated with a unit and with a unique latitude and longitude. In some cases the unit is broken down into two which is a legacy of when the unts were originally mapped. Levels = c("A", "B", NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -799,14 +807,12 @@
         <attribute>
           <attributeName>channel_geomorphic_unit</attributeName>
           <attributeLabel>snorkel_survey</attributeLabel>
-          <attributeDefinition>Channel geomorphology associated with observation. Levels = c(backwater, glide, glide margin, pool, riffle, riffle margin, NA). Value is NA when no fish is observed. &#13;
-)</attributeDefinition>
+          <attributeDefinition>Channel geomorphology associated with observation. Levels = c(backwater, glide, glide margin, pool, riffle, riffle margin, NA). Value is NA when no fish is observed.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Channel geomorphology associated with observation. Levels = c(backwater, glide, glide margin, pool, riffle, riffle margin, NA). Value is NA when no fish is observed. &#13;
-)</definition>
+                  <definition>Channel geomorphology associated with observation. Levels = c(backwater, glide, glide margin, pool, riffle, riffle margin, NA). Value is NA when no fish is observed.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
