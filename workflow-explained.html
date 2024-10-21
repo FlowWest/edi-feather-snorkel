@@ -363,33 +363,70 @@ providing timely and automated access to data for Feather River</p>
 <p>This repository cleans Fether River monitoring data:</p>
 <div id="data-pull-and-checks" class="section level2">
 <h2>Data pull and checks</h2>
-<p>Ad-hoc analysis and QC</p>
-<div id="highlights" class="section level3">
-<h3>highlights</h3>
+<p>Workflow outsources two main scripts:</p>
 <ul>
-<li><p><a href="https://github.com/FlowWest/edi-feather-snorkel/tree/main/data-raw/data-prep-scripts/combine_and_clean_data.R"><strong>combine_and_clean_data.R</strong></a>
-data analysis and QC. Combines earlier data, joins look up tables,
-creates “processed tables” (csv)</p>
+<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/edi-workflow-documentation/data-raw/data-prep-scripts/early_snorkel_db_pull.R"><strong>early_snorkel_db_pull.R</strong></a>:
+pulls data from early historical snorkel database
 <ul>
-<li>cleans <code>unit</code> to be consistent -<a href="https://github.com/FlowWest/edi-feather-snorkel/tree/main/data-raw/data-prep-scripts/revised_snorkel_db_pull.R"><strong>revised_snorkel_db_pull.R</strong></a></li>
-<li>General cleaning of fields, for example: cleans species names,
-channel_geomorphic_unit, cleans instream_cover, etc</li>
+<li>Pulls data and cleans it. Inspects the structure of early snorkel
+observations and metadata, ensuring that all columns are formatted as
+expected</li>
+<li>a unit lookup table (<code>sampling_unit_lookup</code>) is created
+to help joining sampling units to river mile, section and channel
+type</li>
 </ul></li>
-<li><p><a href="https://github.com/FlowWest/edi-feather-snorkel/tree/main/data-raw/data-prep-scripts"><strong>data
-pull/checks</strong></a> data analysis and QC.</p></li>
-<li><p>once data data tables are processed and combined as necessary,
-they are written onto the <a href="data"><strong>data
-folder</strong></a> to start uploading process</p></li>
-</ul>
-</div>
-</div>
-<div id="clean-data-tables" class="section level2">
-<h2>Clean data tables</h2>
+<li><a href="https://github.com/FlowWest/edi-feather-snorkel/tree/main/data-raw/data-prep-scripts/revised_snorkel_db_pull.R"><strong>revised_snorkel_db_pull.R</strong></a>:
+pulls more recent snorkel data, representing revised version
 <ul>
-<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/fish_observations.csv">survey_characteristics.csv</a>,</li>
-<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/locations_lookup.csv">locations_lookup.csv</a></li>
-<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/fish_observations.csv">fish_observations.csv</a></li>
+<li>Similar to first script, data checks are done to verify the
+integrity of the current observations and metadata</li>
+<li>Column inconsistencies are identified.</li>
+</ul></li>
+<li><a href="https://github.com/FlowWest/edi-feather-snorkel/tree/main/data-raw/data-prep-scripts/combine_and_clean_data.R"><strong>combine_and_clean_data.R</strong></a>:
+Script consolidates the cleaned data from previous two scripts and
+transforms data to ensure consistency and accuracy across datasets
+<ul>
+<li>early and current snorkel data metadata are combines
+(<code>combined_snorkel_metadata</code>)</li>
+<li>duplicates and missing data are addressed by filtering out or
+categorizing properly
+<ul>
+<li>cleaned metadata is saved as csv
+<code>survey_characteristics.csv</code></li>
+</ul></li>
+<li><em>early snorkel observations</em> and current observations are
+merged to create <code>combined_snorkel_observations</code></li>
+<li>Rows with messy unit identifiers are filtered out, and missing
+counts are replaced with zeros
+<ul>
+<li>cleaned observations is saved as csv
+<code>fish_observations.csv</code></li>
+</ul></li>
+<li><em>lookup table</em> is created that combines information about
+river miles and survey locations
+<ul>
+<li>table is saved as csv <code>locations_lookup.csv</code></li>
+</ul></li>
+</ul></li>
 </ul>
+<div id="summary-of-csv-generation-for-edi-upload" class="section level3">
+<h3>Summary of CSV Generation for EDI Upload:</h3>
+<ul>
+<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/fish_observations.csv">fish_observations.csv</a>:
+Generated from combined_snorkel_observations in
+combine_and_clean_data.R.</li>
+<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/fish_observations.csv">survey_characteristics.csv</a>:
+Created from combined_snorkel_metadata in combine_and_clean_data.R.</li>
+<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/locations_lookup.csv">locations_lookup.csv</a>:
+Generated from full_location_lookup in combine_and_clean_data.R.</li>
+</ul>
+<p><strong>Conclusion</strong></p>
+<p>This workflow efficiently pulls, cleans, and combines snorkel survey
+data from historical and current sources, ensuring that clean and
+consistent datasets are saved for future analysis. Once data data tables
+are processed and combined as necessary, they are written onto the <a href="data"><strong>data folder</strong></a> to start uploading
+process</p>
+</div>
 </div>
 <div id="edi-make_metadataupload" class="section level2">
 <h2>EDI make_metadata/upload</h2>
