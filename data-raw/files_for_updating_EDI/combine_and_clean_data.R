@@ -11,16 +11,14 @@ cleaner_snorkel_data_early <- read_csv("data/cleaner_snorkel_data_early.csv")
 
 # Pull and clean 2004-current data ----------------------------------------
 operating_system <- ifelse(grepl("Windows", Sys.info()['sysname']), "windows", "mac")
-db_filepath <- here::here("data-raw", "db-files", "Snorkel_Revised.mdb")
+
 
 if(operating_system == "windows") {
   library(RODBC)
+  db_filepath <- here::here("data-raw", "db-files", "Snorkel_Revised_PC.accdb")
   con <- odbcConnectAccess2007(db_filepath)
   snorkel_obsv <- sqlFetch(con, "Observation") |> glimpse()
   write_csv(snorkel_obsv, "data-raw/db-tables/snorkel_observations.csv")
-
-  snorkel_survey_metadata <- sqlFetch(con, "Survey") |> glimpse()
-  write_csv(snorkel_survey_metadata, "data-raw/db-tables/snorkel_survey_metadata.csv")
 
   # Other
   river_miles <- sqlFetch(con, "SnorkelSections_RiverMiles") |> glimpse()
@@ -34,6 +32,7 @@ if(operating_system == "windows") {
   lookup_weather <- sqlFetch(con, "WeatherCodeLookUp") |> glimpse()
 } else{
   library(Hmisc)
+  db_filepath <- here::here("data-raw", "db-files", "Snorkel_Revised.mdb")
   mdb.get(db_filepath, tables = TRUE)
 
   snorkel_obsv <- mdb.get(db_filepath, "Observation") |> glimpse()
