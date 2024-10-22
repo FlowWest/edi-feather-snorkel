@@ -3,7 +3,6 @@
 # (2) does some initial cleaning and then combines data.
 
 library(tidyverse)
-library(Hmisc)
 
 # Read in cleaned pre-2004 data -------------------------------------------
 # Read in data files from the earlier database (pre 2004) which are created in "early_snorkel_db_pull.R"
@@ -11,28 +10,53 @@ cleaner_snorkel_metadata_early <- read_csv("data/cleaner_snorkel_metadata_early.
 cleaner_snorkel_data_early <- read_csv("data/cleaner_snorkel_data_early.csv")
 
 # Pull and clean 2004-current data ----------------------------------------
+operating_system <- ifelse(grepl("Windows", Sys.info()['sysname']), "windows", "mac")
 db_filepath <- here::here("data-raw", "db-files", "Snorkel_Revised.mdb")
 
-mdb.get(db_filepath, tables = TRUE)
+if(operating_system == "windows") {
+  library(RODBC)
+  con <- odbcConnectAccess2007(db_filepath)
+  snorkel_obsv <- sqlFetch(con, "Observation") |> glimpse()
+  write_csv(snorkel_obsv, "data-raw/db-tables/snorkel_observations.csv")
 
-snorkel_obsv <- mdb.get(db_filepath, "Observation") |> glimpse()
-write_csv(snorkel_obsv, "data-raw/db-tables/snorkel_observations.csv")
+  snorkel_survey_metadata <- sqlFetch(con, "Survey") |> glimpse()
+  write_csv(snorkel_survey_metadata, "data-raw/db-tables/snorkel_survey_metadata.csv")
 
-snorkel_survey_metadata <- mdb.get(db_filepath, "Survey") |> glimpse()
-write_csv(snorkel_survey_metadata, "data-raw/db-tables/snorkel_survey_metadata.csv")
+  # Other
+  river_miles <- sqlFetch(con, "SnorkelSections_RiverMiles") |> glimpse()
+  write_csv(river_miles, "data-raw/db-tables/river_miles_lookup.csv")
+  # Lookup tables
+  species_lookup <- sqlFetch(con, "SpeciesLU")  |> glimpse()
+  lookup_cover <- sqlFetch(con, "ICoverLookUp") |> glimpse()
+  lookup_o_cover <- sqlFetch(con, "OCoverLookUp") |> glimpse()
+  lookup_substrate <- sqlFetch(con, "SubstrateCodeLookUp") |> glimpse()
+  lookup_hydrology <- sqlFetch(con, "CGUCodeLookUp") |> glimpse()
+  lookup_weather <- sqlFetch(con, "WeatherCodeLookUp") |> glimpse()
+} else{
+  library(Hmisc)
+  mdb.get(db_filepath, tables = TRUE)
 
-# Other
-river_miles <- mdb.get(db_filepath, "SnorkelSections_RiverMiles") |> glimpse()
-write_csv(river_miles, "data-raw/db-tables/river_miles_lookup.csv")
-# Lookup tables
-species_lookup <- mdb.get(db_filepath, "SpeciesLU")  |> glimpse()
-lookup_cover <- mdb.get(db_filepath, "ICoverLookUp") |> glimpse()
-lookup_o_cover <- mdb.get(db_filepath, "OCoverLookUp") |> glimpse()
-lookup_substrate <- mdb.get(db_filepath, "SubstrateCodeLookUp") |> glimpse()
-lookup_hydrology <- mdb.get(db_filepath, "CGUCodeLookUp") |> glimpse()
-lookup_weather <- mdb.get(db_filepath, "WeatherCodeLookUp") |> glimpse()
+  snorkel_obsv <- mdb.get(db_filepath, "Observation") |> glimpse()
+  write_csv(snorkel_obsv, "data-raw/db-tables/snorkel_observations.csv")
 
-detach(package:Hmisc) # detach
+  snorkel_survey_metadata <- mdb.get(db_filepath, "Survey") |> glimpse()
+  write_csv(snorkel_survey_metadata, "data-raw/db-tables/snorkel_survey_metadata.csv")
+
+  # Other
+  river_miles <- mdb.get(db_filepath, "SnorkelSections_RiverMiles") |> glimpse()
+  write_csv(river_miles, "data-raw/db-tables/river_miles_lookup.csv")
+  # Lookup tables
+  species_lookup <- mdb.get(db_filepath, "SpeciesLU")  |> glimpse()
+  lookup_cover <- mdb.get(db_filepath, "ICoverLookUp") |> glimpse()
+  lookup_o_cover <- mdb.get(db_filepath, "OCoverLookUp") |> glimpse()
+  lookup_substrate <- mdb.get(db_filepath, "SubstrateCodeLookUp") |> glimpse()
+  lookup_hydrology <- mdb.get(db_filepath, "CGUCodeLookUp") |> glimpse()
+  lookup_weather <- mdb.get(db_filepath, "WeatherCodeLookUp") |> glimpse()
+
+  detach(package:Hmisc) # detach
+
+
+}
 
 # read in csvs -----------------------------------------------------------------
 # need this step to deal with "labeled" column types, update if we come up with a cleaner solution
