@@ -429,13 +429,9 @@ to match information of updates</li>
 <div id="summary-of-csv-generated-for-edi-upload" class="section level3">
 <h3>Summary of CSV Generated for EDI Upload:</h3>
 <ul>
-<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/fish_observations.csv">fish_observations.csv</a>:
-Generated from combined_snorkel_observations in
-combine_and_clean_data.R.</li>
-<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/fish_observations.csv">survey_characteristics.csv</a>:
-Created from combined_snorkel_metadata in combine_and_clean_data.R.</li>
-<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/locations_lookup.csv">locations_lookup.csv</a>:
-Generated from full_location_lookup in combine_and_clean_data.R.</li>
+<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/fish_observations.csv">fish_observations.csv</a></li>
+<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/fish_observations.csv">survey_characteristics.csv</a></li>
+<li><a href="https://github.com/FlowWest/edi-feather-snorkel/blob/main/data/locations_lookup.csv">locations_lookup.csv</a></li>
 </ul>
 </div>
 </div>
@@ -455,6 +451,11 @@ by changing the edi package number that will be updated. On this
 example, package version 1764.1 will be updated. For the next update,
 this code will have the next most recent package version number (i.e
 1764.2, 1764.3, 1764.4, etc).</li>
+<li>Uncomment this code line and run. (note: running this code will
+automatically upload the EDI package. Packages can not be overwritten,
+so if any changes are needed, both (1) new edi number on line 40 and (2)
+update_edi_package on line 75 will have to be updated, and script has to
+be ran again)</li>
 </ul>
 </div>
 <div id="edi-upload-check" class="section level2">
