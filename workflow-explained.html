@@ -366,20 +366,22 @@ repository</a> and clone it to your local machine.</p>
 <div id="adding-data" class="section level2">
 <h2>Adding Data</h2>
 <ol style="list-style-type: decimal">
-<li>Add the new data to the Microsoft Access Database
-(<code>Snorkel_Revised.mdb</code>), located in the
-<code>data-raw/db-files</code> folder.</li>
-<li>After entering the data, save the updated <code>.mdb</code>
-file.</li>
-<li>Save the Access database as an <code>.accdb</code> file with
-<code>*_PC*</code> appended to the file name. This new file should be
-named <code>Snorkel_Revised_PC.accdb</code>.</li>
+<li>After adding new data to the Microsoft Access Database
+(<code>Snorkel_Revised.mdb</code>), make sure updates are also located
+in the <code>data-raw/db-files</code> folder.</li>
+<li>In addition to saving the Access database, save as an
+<code>.accdb</code> file with <code>*_PC*</code> appended to the file
+name. This new file should be named
+<code>Snorkel_Revised_PC.accdb</code>. The reason we are doing this is
+because the existing .mdb file can not be accessed using the functions
+we developed for Windows machines.</li>
 </ol>
 </div>
 <div id="processing-data" class="section level2">
 <h2>Processing Data</h2>
-<p>Data processing and uploading are handled by two scripts located in
-the <code>files_for_uploading_EDI</code> folder.</p>
+<p>Data processing is handled by one script located in the
+<code>files_for_uploading_EDI</code> folder:
+<code>combine_and_clean_data.R</code></p>
 <ol style="list-style-type: decimal">
 <li>Run <code>combine_and_clean_data.R</code> (located <a href="https://github.com/FlowWest/edi-feather-snorkel/tree/main/data-raw/data-prep-scripts/combine_and_clean_data.R">here</a>).
 <ul>
@@ -406,6 +408,9 @@ temperature, and visibility.</li>
 (<code>fish_observations_metadata.xlsx</code>): Update the minimum and
 maximum values for fields like date, count, fork length, depth, and
 velocity.</li>
+<li><strong>Locations Lookup</strong> will most likely not change,
+unless a new location is added. If so, then metadata will also need to
+be updated.</li>
 <li>If the time range of the data has changed, update the
 <strong>project metadata</strong> in
 <code>feather_ongoing_snorkel_metadata.xlsx</code> (under the Coverage
@@ -425,6 +430,15 @@ the latest updates.</li>
 </div>
 <div id="edi-updateupload" class="section level2">
 <h2>EDI Update/Upload</h2>
+<ul>
+<li>Before starting this process, make sure you have an EDI account
+setup</li>
+<li>Create or edit your .Renviron file to incluse your EDI username and
+password. To do this, enter the following code:
+<code>usethis::edit_r_environ()</code>. This will open your .Renviron
+file. Add a line for<code>edi_user_id = [enter your user name]</code>,
+and <code>edi_password = [enter your password]</code></li>
+</ul>
 <p>The data upload to EDI is handled in the
 <code>make_metadata_xml.R</code> script. The necessary modifications
 include:</p>
@@ -433,7 +447,16 @@ include:</p>
 (<code>edi_number &lt;- &quot;edi.1764.1&quot;</code>) to the new version number.
 For example, if the current version is <code>edi.1764.1</code>, change
 it to <code>edi.1764.2</code>.</li>
-<li>After successfully running the script, update line 75 to the version
+<li>After successfully running the script, manually evaluate the package
+by logging in to the <a href="https://portal.edirepository.org/nis/login.jsp">EDI website</a>
+portal, and navigating to the Tools tab and click on Evaluate/Upload
+Data Packages.</li>
+<li>Add .xml file under EML Metadata File, select “manually upload data”
+under Data Upload Options. Click “Evaluate” button.</li>
+<li>Attach corresponding csv file and click “Evaluate”. Check for any
+errors, warning messages are generally okay.</li>
+<li>After evaluating the package without any errors, return back to
+<code>make_metadata_xml</code> script and update line 75 to the version
 number that will be updated. On this example, package version 1764.1
 will be updated. For the next update, this code will have the next most
 recent package version number (i.e 1764.2, 1764.3, 1764.4, etc):
