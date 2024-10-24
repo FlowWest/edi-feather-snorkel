@@ -1,0 +1,418 @@
+survey_id,date,flow,section_name,survey_type,section_type,units_covered,visibility,temperature,weather
+3,1999-06-30,7788,g95,unit,permanent,NA,NA,64,sunny
+4,1999-06-30,7788,big hole,unit,permanent,NA,NA,64,sunny
+5,1999-07-01,8050,mcfarland,unit,permanent,NA,1.5,65,sunny
+6,1999-07-01,8050,big riffle,unit,random,NA,1.5,64,sunny
+7,1999-07-01,8050,lower hour,unit,random,NA,NA,64.5,sunny
+10,1999-06-28,621,robinson riffle,unit,permanent,NA,3.5,61.5,sunny
+11,1999-06-28,621,below great western riffle,unit,random,NA,3.5,60.5,sunny
+12,1999-06-25,628,aleck riffle,unit,permanent,NA,4.09999990463257,62,sunny
+13,1999-06-25,628,bedrock park,unit,random,NA,4.09999990463257,58.5,sunny
+14,1999-06-23,650,moes ditch,unit,permanent,NA,NA,56,sunny
+15,1999-06-22,661,hatchery riffle,unit,permanent,NA,NA,56.5,sunny
+17,1999-06-04,1876,mcfarland,unit,random,NA,1.70000004768372,64.5,overcast
+18,1999-06-03,1752,mcfarland,unit,random,NA,1,63,overcast
+19,1999-06-01,1870,hour riffle,unit,random,NA,1.5,67,overcast
+21,1999-05-25,1886,vance ave boatramp to big hole boatramp,comp,NA,NA,NA,64,sunny
+22,1999-05-25,1886,g95,comp,NA,NA,NA,66,sunny
+23,1999-05-24,1886,thermalito bar to vance ave riffle,comp,NA,NA,0.600000023841858,65,sunny
+25,1999-05-20,627,lower eye to gateway,comp,NA,NA,3.5,58,sunny
+26,1999-05-20,627,steep riffle,comp,NA,NA,2.79999995231628,56.5,overcast
+28,1999-05-20,627,weir to eye riffle,comp,NA,NA,2.59999990463257,57.5,sunny
+29,1999-04-09,3297,g95,comp,NA,NA,NA,51,sunny
+31,1999-04-12,600,hatchery riffle,comp,NA,NA,NA,NA,NA
+32,1999-04-12,600,hatchery riffle,comp,NA,NA,NA,NA,NA
+34,1999-04-13,600,matthews riffle,comp,NA,NA,NA,NA,NA
+35,1999-04-13,600,robinson riffle,comp,NA,NA,NA,NA,NA
+36,1999-04-14,4019,g95,comp,NA,NA,NA,NA,NA
+37,1999-04-14,4019,g95,comp,NA,NA,NA,NA,NA
+40,1999-04-27,621,hatchery riffle,comp,NA,NA,NA,51,NA
+41,1999-04-27,621,hatchery riffle,comp,NA,NA,NA,52,NA
+42,1999-04-27,621,auditorium rifle,comp,NA,NA,NA,52,NA
+43,1999-04-27,621,auditorium riffle,comp,NA,NA,NA,53,NA
+44,1999-04-27,621,upper bedrock pool to h70 bridge,comp,NA,NA,NA,53,NA
+47,1999-04-29,621,steep riffle,comp,NA,NA,NA,52.5,NA
+49,1999-04-29,621,eye riffle,comp,NA,NA,NA,55.5,NA
+51,1999-04-30,614,trailer park riffle,comp,NA,NA,NA,53,NA
+52,1999-04-30,614,aleck riffle,comp,NA,NA,NA,55,NA
+53,1999-04-30,614,robinson riffle,comp,NA,NA,NA,NA,NA
+56,1999-05-03,5025,big hole,comp,NA,NA,NA,56.5,NA
+58,1999-05-04,4293,kiester riffle,comp,NA,NA,NA,57,NA
+60,1999-05-04,4293,lower hour,comp,NA,NA,NA,56,NA
+61,1999-05-04,4293,hour riffle,comp,NA,NA,NA,56,NA
+62,1999-05-05,620,66.75-67,comp,NA,NA,NA,50.5,NA
+63,1999-05-05,620,66.6-66.75,comp,NA,NA,NA,52,NA
+64,1999-05-05,620,auditorium riffle,comp,NA,NA,NA,52,NA
+65,1999-05-13,620,hatchery riffle,unit,permanent,NA,NA,52,sunny
+67,1999-05-17,615,auditorium to bedrock,comp,NA,NA,NA,55,sunny
+69,1999-05-17,615,hatchery  to auditorium,comp,NA,NA,NA,54.5,sunny
+70,1999-05-18,620,bedrock to montgomery,unit,permanent,NA,NA,NA,sunny
+71,1999-05-18,620,montgomery st access to mathews riffle,unit,permanent,NA,NA,NA,sunny
+72,1999-05-18,620,matthews to alec,unit,permanent,NA,NA,NA,sunny
+73,1999-05-19,622,gravel mine to n. robinson riffle,unit,permanent,NA,NA,57,sunny
+74,1999-05-19,622,great western to gravel mine,unit,permanent,NA,3.5,63,sunny
+76,1999-05-20,627,robinsons riffle to robinsons pool,unit,permanent,NA,NA,56,sunny
+77,1999-06-22,661,auditrium riffle,unit,permanent,NA,NA,57,sunny
+78,1999-07-21,627,hatchery riffle,unit,permanent,NA,NA,59,sunny
+79,1999-07-21,627,hatchery  riffle,unit,permanent,NA,NA,59,sunny
+80,1999-07-21,627,auditorium riffle,unit,permanent,NA,NA,61,sunny
+82,1999-07-22,624,"hatchery riffle, bottom moes ditch to middle moes",unit,permanent,NA,NA,60,sunny
+84,1999-06-24,663,lower end moe's ditch,unit,permanent,NA,2,57.5,sunny
+85,1999-06-24,663,middle of moe's ditch,unit,permanent,NA,2,56,sunny
+86,1999-07-26,623,montgomery street,unit,random,NA,NA,61,sunny
+89,1999-07-28,9564,g95,unit,random,NA,NA,63,sunny
+91,1999-07-28,9564,above big hole boat launch,comp,NA,NA,2.40000009536743,63,sunny
+92,1999-07-28,9564,g95,unit,permanent,NA,NA,62.5,sunny
+93,1999-07-29,9315,mcfarland,unit,permanent,NA,3.09999990463257,63,sunny
+94,1999-07-29,9315,swampy bend to gridley bridge,unit,random,NA,3.09999990463257,64,sunny
+95,1999-08-23,600,"hatchery riffle,  auditorium riffle",unit,permanent,NA,NA,55,sunny
+97,1999-08-26,4500,g95,unit,permanent,NA,NA,63,overcast
+98,1999-08-30,5500,mcfarland,unit,permanent,NA,2.90000009536743,65,sunny
+99,1999-08-26,4500,goose riffle,unit,permanent,NA,NA,64,overcast
+100,1999-08-26,4500,hour riffle,unit,random,NA,NA,64,overcast
+102,1999-08-25,NA,eye riffle,unit,permanent,NA,NA,61,overcast
+103,1999-08-25,NA,eye riffle,unit,random,NA,NA,58,overcast
+104,1999-08-25,NA,eye side channels,unit,permanent,NA,NA,58,overcast
+105,1999-08-24,600,above hatchery,unit,random,NA,NA,56,overcast
+106,1999-08-24,600,aleck riffle,unit,permanent,NA,NA,58,overcast
+107,1999-08-24,600,robinson riffle,unit,permanent,NA,NA,59,overcast
+110,1999-10-06,600,steep riffle,unit,random,NA,NA,60,overcast
+111,1999-10-06,600,"weir, eye  riffle",unit,permanent,NA,NA,58,sunny
+112,1999-10-06,600,robinson riffle,unit,permanent,NA,NA,56.5,overcast
+113,1999-10-06,600,aleck riffle,unit,permanent,NA,NA,61,sunny
+114,1999-10-27,2450,g-95,comp,NA,NA,NA,56,precipitation
+116,1999-10-27,2450,eye riffle main channel,comp,NA,NA,4.80000019073486,54,overcast
+117,1999-10-27,2450,big hole,comp,NA,NA,NA,NA,precipitation
+119,1999-10-27,2450,vance avenue boat launch,comp,NA,NA,NA,NA,precipitation
+120,1999-10-26,600,eye side channels,comp,NA,NA,NA,55,overcast
+121,1999-10-26,600,steep side channel,comp,NA,NA,NA,58.5,overcast
+122,1999-10-26,600,robinson riffle,comp,NA,NA,NA,58,sunny
+123,1999-10-26,600,"robinson pond side channels, steep side channel",comp,NA,NA,NA,NA,overcast
+124,1999-09-27,3500,mcfarland,unit,permanent,NA,1,NA,sunny
+125,1999-09-27,3500,big bar,unit,random,NA,1,NA,sunny
+128,1999-10-07,600,mathews riffle,comp,NA,NA,NA,53.5,sunny
+129,1999-10-07,600,trailer park riffle,comp,NA,NA,NA,53.5,sunny
+130,1999-10-07,3900,riffle below vance avenue boat launch,comp,NA,NA,NA,58.5,sunny
+131,1999-10-25,600,hatchery riffle,comp,NA,NA,NA,NA,sunny
+133,1999-10-25,600,bedrock park,comp,random,NA,NA,NA,sunny
+134,1999-10-25,600,trailer park,comp,random,NA,NA,NA,sunny
+247,2000-06-05,600,hatchery riffle,comp,NA,NA,NA,56,sunny
+248,2000-06-05,600,hatchery riffle to auditorium,comp,NA,NA,NA,57,sunny
+249,2000-06-05,600,auditorium riffle to bedrock,comp,NA,NA,NA,58,sunny
+251,2000-06-06,600,hwy 162 bridge to aleck riffle,comp,NA,NA,2.5,60.5,sunny
+252,2000-06-07,600,robinson to steep riffle,comp,NA,NA,NA,63,sunny
+254,2000-06-08,600,steep riffle to eye riffle,comp,NA,NA,NA,60,overcast
+255,2000-06-08,600,lower eye riffle to gateway riffle,comp,NA,NA,NA,60,overcast
+256,2000-06-12,4000,vance ave to big hole boat launch,comp,NA,NA,1,65,sunny
+257,2000-06-13,4000,g-95 to keister backwater,comp,NA,NA,NA,68,sunny
+258,2000-06-14,4000,upper hatchery ditch,comp,NA,NA,NA,55.5,sunny
+259,2000-06-19,NA,hatchery ditch,comp,NA,NA,NA,57,sunny
+260,1999-12-16,600,robinson riffle/steep riffle,unit,permanent,NA,NA,NA,sunny
+261,1999-12-16,600,trailer park to mathew's riffle,unit,random,NA,NA,NA,sunny
+262,1999-12-16,600,hatchery riffle to lower auditorium,unit,permanent,NA,NA,NA,sunny
+263,2000-01-06,NA,hatchery ditch,unit,permanent,NA,NA,50,overcast
+264,2000-01-19,600,robinson riffle,unit,permanent,NA,1.5,NA,overcast
+265,2000-01-19,600,eye riffle,unit,permanent,NA,1.5,NA,overcast
+268,2000-02-29,NA,hatchery ditch,unit,permanent,NA,NA,NA,precipitation
+269,2000-03-02,NA,hatchery ditch,unit,permanent,NA,NA,46.5,precipitation
+270,2000-03-02,NA,moes ditch,unit,random,NA,NA,47.5,overcast
+271,2000-03-21,NA,hatchery ditch,unit,permanent,NA,NA,48.5,sunny
+272,2000-03-21,NA,moes ditch,unit,random,NA,NA,NA,sunny
+274,2000-03-22,600,"river mile 66.9; units 5,6,7,8",unit,random,NA,NA,49.5,sunny
+276,2000-03-22,600,upper auditorium,unit,random,NA,NA,51,sunny
+277,2000-03-22,600,bedrock riffle,unit,random,NA,NA,52.5,sunny
+282,2000-04-04,600,robinson riffle,unit,random,NA,NA,NA,sunny
+283,2000-04-04,600,robinson riffle,unit,random,NA,NA,NA,sunny
+284,2000-04-04,600,steep side channels,unit,random,NA,NA,NA,sunny
+285,2000-04-04,600,eye riffle,unit,permanent,NA,NA,NA,sunny
+287,2000-04-06,2500,big hole,unit,random,NA,NA,58,sunny
+288,2000-04-06,2500,big hole,unit,random,NA,NA,58,sunny
+289,2000-04-06,NA,vance avenue,unit,random,NA,NA,58,sunny
+290,2000-04-06,NA,g-95,unit,permanent,NA,NA,58,sunny
+291,2000-04-06,NA,keister,unit,random,NA,NA,58,sunny
+293,2000-04-06,2500,hour riffle,unit,random,NA,NA,60,sunny
+294,2000-04-26,600,hatchery riffle,unit,permanent,NA,NA,53.5,sunny
+296,2000-04-26,600,bedrock,unit,random,NA,NA,NA,sunny
+297,2000-04-27,NA,hatchery ditch,unit,permanent,NA,NA,55,overcast
+298,2000-04-27,NA,hatchery ditch,unit,permanent,NA,NA,54,overcast
+299,2000-05-02,NA,moe's ditch,unit,random,NA,NA,57,sunny
+300,2000-05-02,NA,hatchery ditch - upper half,unit,permanent,NA,NA,54.5,sunny
+303,2000-05-03,600,aleck riffle,unit,permanent,NA,NA,56.5,sunny
+304,2000-05-03,600,robinson riffle,unit,permanent,NA,NA,58.5,sunny
+305,2000-05-04,600,steep riffle,unit,random,NA,NA,59,sunny
+306,2000-05-04,600,steep riffle,unit,random,NA,NA,59,sunny
+307,2000-05-04,600,eye riffle,unit,permanent,NA,NA,60.5,sunny
+308,2000-05-04,600,gateway riffle,unit,random,NA,NA,60.5,overcast
+309,2000-05-15,2500,herringer riffle,unit,random,NA,NA,59,precipitation
+311,2000-05-15,2500,gridley riffle,unit,random,NA,NA,59,precipitation
+312,2000-05-16,2500,g95,unit,permanent,NA,NA,58,overcast
+314,2000-05-16,2500,mcfarland,unit,permanent,NA,NA,57.5,overcast
+315,2000-05-17,600,fish barrier dam to bedrock,comp,permanent,NA,NA,54,sunny
+316,2000-05-24,600,bedrock park,unit,random,NA,NA,NA,sunny
+317,2000-05-24,600,bedrock and trailer park,unit,random,NA,NA,NA,sunny
+318,2000-05-24,600,aleck,unit,permanent,NA,NA,NA,sunny
+320,2000-05-25,600,steep main and side,unit,random,NA,NA,61.5,sunny
+321,2000-05-25,600,steep main and side,unit,random,NA,NA,61.5,sunny
+323,2000-06-08,600,gateway riffle,comp,n/a,NA,NA,61,precipitation
+324,2000-06-12,4000,g95,comp,random,NA,NA,66,sunny
+326,2000-06-15,NA,goose riffle,comp,NA,NA,NA,71,sunny
+327,2000-06-20,4000,mcfarland,comp,NA,NA,NA,68,sunny
+328,2000-06-20,4000,mcfarland,comp,NA,NA,NA,71,sunny
+329,2000-06-21,NA,mcfarland,comp,NA,NA,NA,70,sunny
+330,2000-06-22,4000,gridley riffle,comp,NA,NA,NA,67,sunny
+332,2000-06-22,4000,herringer riffle,comp,NA,NA,NA,69,sunny
+333,2000-07-17,NA,hatchery ditch - lower half,unit,permanent,NA,NA,66,sunny
+335,2000-07-17,NA,auditorium riffle,unit,permanent,NA,NA,64.5,sunny
+336,2000-07-17,NA,hatchery riffle,unit,permanent,NA,NA,64,NA
+338,2000-07-18,600,robinson riffle,unit,permanent,NA,NA,NA,sunny
+339,2000-07-18,600,steep,unit,random,NA,NA,NA,sunny
+340,2000-07-18,600,eye riffle,unit,permanent,NA,NA,67,sunny
+341,2000-07-19,7000,g95,unit,permanent,NA,NA,65.5,sunny
+344,2000-08-14,NA,lower hatchery ditch,unit,permanent,NA,NA,64,sunny
+345,2000-08-14,NA,upper hatchery ditch,unit,permanent,NA,NA,62.5,sunny
+346,2000-08-14,600,hatchery riffle,unit,permanent,NA,NA,NA,sunny
+347,2000-08-15,600,auditorium riffle,unit,permanent,NA,NA,NA,sunny
+348,2000-08-15,600,bedrock riffle,unit,random,NA,NA,NA,sunny
+349,2000-08-15,600,trailer park,unit,random,NA,NA,64,sunny
+351,2000-08-15,6000,aleck riffle,unit,permanent,NA,NA,NA,sunny
+352,2000-08-16,600,robinson riffle,unit,random,NA,NA,64,sunny
+353,2000-08-16,600,steep riffle,unit,random,NA,1.20000004768372,66,sunny
+355,2000-08-16,600,eye riffle,unit,permanent,NA,1.10000002384186,65,sunny
+357,2000-08-17,NA,goose riffle,unit,permanent,NA,NA,NA,overcast
+358,2000-08-17,NA,g95,unit,permanent,NA,NA,66.5,overcast
+360,2000-08-21,NA,gridley riffle,unit,random,NA,NA,65,sunny
+361,2000-08-21,NA,gridley riffle,unit,random,NA,NA,65,sunny
+362,2000-08-21,NA,herringer riffle,unit,random,NA,NA,66.5,sunny
+363,2000-08-21,NA,herringer riffle,unit,random,NA,NA,65,sunny
+364,2000-09-11,600,bedrock park riffle,unit,random,NA,NA,NA,sunny
+367,2000-09-11,600,hatchery riffle and auditorium riffle,unit,permanent,NA,NA,NA,sunny
+368,2000-09-11,600,hatchery riffle and auditorium riffle,unit,permanent,NA,NA,NA,sunny
+369,2000-09-11,600,trailer park riffle and robinson riffle,unit,random,NA,NA,NA,sunny
+370,2000-09-11,600,robinson riffle,unit,permanent,NA,NA,NA,sunny
+371,2000-09-11,600,steep side channel,unit,random,NA,NA,NA,sunny
+372,2001-03-06,NA,hatchery ditch,unit,permanent,NA,NA,44,sunny
+373,2001-03-06,NA,hatchery ditch,unit,permanent,NA,NA,44,sunny
+374,2001-03-07,600,trailer park riffle and matthews riffle,unit,random,NA,1,51,sunny
+375,2001-03-07,600,aleck riffle,unit,permanent,NA,NA,51,sunny
+377,2001-03-07,600,hatchery to auditorium,unit,permanent,NA,1.5,48.5,sunny
+379,2001-03-08,1700,goose riffle,unit,permanent,NA,NA,NA,overcast
+380,2001-03-08,NA,mcfarland,unit,permanent,NA,NA,54,overcast
+381,2001-03-08,600,robinson to eye,unit,permanent,NA,NA,50,overcast
+382,2001-04-02,NA,hatchery ditch,unit,permanent,NA,NA,NA,sunny
+385,2001-04-03,600,hatchery riffle,unit,permanent,NA,NA,NA,sunny
+386,2001-04-03,600,aleck riffle,unit,permanent,NA,NA,NA,sunny
+387,2001-04-04,600,robinson riffle,unit,permanent,NA,NA,NA,sunny
+388,2001-04-04,600,steep riffle,unit,random,NA,NA,NA,sunny
+389,2001-04-04,600,eye riffle,unit,permanent,NA,NA,NA,sunny
+390,2001-07-03,600,aleck riffle,unit,permanent,NA,NA,NA,sunny
+391,2001-07-03,600,eye riffle,unit,permanent,NA,NA,NA,sunny
+393,2001-04-05,1550,mcfarland,unit,permanent,NA,NA,NA,sunny
+394,2001-04-05,1550,g'95,unit,permanent,NA,NA,NA,sunny
+396,2001-05-02,600,bedrock riffle to hwy 70 bridge,comp,random,NA,NA,52,sunny
+397,2001-07-09,1900,goose riffle,unit,permanent,NA,NA,NA,sunny
+398,2001-07-09,NA,keister,unit,random,NA,NA,NA,sunny
+399,2001-07-09,NA,g95,unit,permanent,NA,NA,NA,sunny
+402,2001-07-02,600,steep riffle and side channel,unit,random,NA,NA,NA,sunny
+403,2001-06-06,NA,g'95,unit,permanent,NA,NA,NA,sunny
+404,2001-06-06,600,steep riffle,unit,random,NA,NA,NA,sunny
+405,2001-06-06,600,eye riffle,unit,permanent,NA,NA,NA,sunny
+407,2001-06-05,600,NA,unit,permanent,NA,NA,NA,sunny
+408,2001-06-05,600,auditorium riffle,unit,permanent,NA,NA,NA,sunny
+409,2001-06-05,600,hatchery riffle,unit,permanent,NA,NA,NA,sunny
+410,2001-05-30,NA,hatchery ditch (upper),unit,permanent,NA,NA,NA,sunny
+411,2001-07-10,NA,hatchery ditch,comp,permanent,NA,NA,59,sunny
+414,2001-05-09,1300,big riffle to big bar,comp,random,NA,NA,62,sunny
+415,2001-07-10,600,hatchery riffle,comp,permanent,NA,NA,60,sunny
+416,2001-07-10,600,auditoreum riffle,unit,permanent,NA,NA,57,sunny
+417,2001-05-08,NA,338,comp,random,NA,NA,65,sunny
+418,2001-05-07,1350,g95,comp,random,NA,1,63.5,sunny
+419,2001-05-02,600,trailer park to mathews,comp,permanent,NA,NA,52.5,sunny
+420,2001-05-03,600,robinson to gateway,comp,random,NA,NA,53,sunny
+421,2001-05-09,1300,mcfarland,comp,random,NA,NA,63,sunny
+424,2001-05-30,NA,hatchery ditch,unit,permanent,NA,NA,55,sunny
+426,2001-06-05,600,robinson riffle,comp,permanent,NA,NA,NA,sunny
+427,2001-07-30,600,"robinson , steep, eye",unit,permanent,NA,NA,NA,sunny
+428,2001-07-31,1900,mcfarland,unit,permanent,NA,NA,69,sunny
+429,2001-07-31,1900,goose riffle,unit,permanent,NA,NA,69,sunny
+430,2001-07-31,1900,g-95,unit,permanent,NA,NA,67,sunny
+433,2001-07-26,600,hatchery riffle,unit,permanent,NA,NA,60,sunny
+434,2001-07-26,600,bedrock park riffle,unit,permanent,NA,NA,60,sunny
+436,2001-07-27,600,mathews riffle,unit,permanent,NA,NA,NA,sunny
+437,2001-08-13,5,hatchery ditch,unit,permanent,NA,NA,60,sunny
+438,2001-08-13,700,table mt bridge to hatchery riffle,unit,permanent,NA,NA,NA,sunny
+440,2001-09-11,NA,goose rifflle,unit,NA,NA,NA,NA,overcast
+441,2001-09-11,NA,g95,unit,NA,NA,NA,NA,overcast
+442,2001-09-11,NA,g-95,unit,NA,NA,NA,NA,overcast
+443,2001-09-10,NA,hatchery ditch,unit,NA,NA,NA,NA,overcast
+444,2001-09-10,NA,auditoreum riffle,unit,permanent,NA,NA,NA,sunny
+447,2001-09-10,NA,"steep riffle, steep side",unit,permanent,NA,NA,NA,sunny
+448,2001-08-16,NA,herringer riffle,unit,random,NA,NA,NA,sunny
+449,2001-08-16,NA,shallow riffle,unit,random,NA,NA,NA,sunny
+450,2001-08-16,NA,gridley riffle,unit,random,NA,NA,NA,sunny
+451,2001-08-15,NA,vance,unit,permanent,NA,NA,NA,sunny
+452,2001-08-15,NA,g-95  g-95e,unit,permanent,NA,NA,NA,sunny
+454,2001-08-15,NA,keister,unit,permanent,NA,NA,NA,sunny
+456,2001-08-14,600,robinson riffle,unit,permanent,NA,NA,NA,sunny
+457,2001-08-14,700,steep riffle/steep side,unit,random,NA,NA,62,sunny
+458,2001-08-14,600,robinson riffle,unit,random,NA,NA,NA,sunny
+459,2001-08-14,600,robinson riffle,unit,random,NA,NA,NA,sunny
+460,2001-08-15,NA,hour riffle,unit,NA,NA,NA,NA,sunny
+462,2001-08-15,600,eye riffle,unit,NA,NA,NA,NA,sunny
+2,1999-06-30,7788,g95,unit,random,NA,NA,65,sunny
+9,1999-06-29,600,eye riffle,unit,random,NA,3.5,64.5,sunny
+16,1999-06-04,1876,swampy bend,unit,random,NA,1.70000004768372,65,overcast
+20,1999-05-26,1884,g95,comp,NA,NA,NA,66.5,sunny
+27,1999-05-20,627,steep riffle,comp,NA,NA,NA,57,overcast
+33,1999-04-12,600,upper bedrock pool to h70 bridge,comp,NA,NA,NA,NA,NA
+38,1999-04-14,4019,palm ave. access,comp,NA,NA,NA,NA,NA
+46,1999-04-29,621,trailer park riffle,comp,NA,NA,NA,49.5,NA
+55,1999-05-03,5025,vance avenue,comp,NA,NA,1.29999995231628,55,NA
+59,1999-05-04,4293,hour bars,comp,NA,NA,NA,56,NA
+66,1999-05-13,620,hatchery riffle,comp,NA,NA,NA,52,sunny
+75,1999-05-19,622,alec riffle to great western,unit,random,NA,NA,53.5,sunny
+81,1999-07-22,624,hatchery ditch,unit,permanent,NA,NA,60.5,sunny
+87,1999-07-26,623,aleck riffle,unit,permanent,NA,NA,61,sunny
+90,1999-07-28,9564,goose riffle,unit,permanent,NA,NA,65,sunny
+109,1999-08-23,600,hatchery ditch (top),unit,permanent,NA,NA,NA,sunny
+115,1999-10-27,2450,gateway riffle,comp,NA,NA,NA,54,overcast
+118,1999-10-27,2450,across from big hole boat launch,comp,NA,NA,NA,NA,precipitation
+126,1999-09-28,600,bedrock park riffle,comp,NA,NA,NA,NA,sunny
+132,1999-10-25,600,auditorium riffle,comp,NA,NA,NA,NA,sunny
+135,1999-10-25,600,mathews riffle,comp,NA,NA,NA,NA,sunny
+253,2000-06-07,600,aleck riffle to great western,comp,NA,NA,NA,57,sunny
+273,2000-03-21,NA,hatchery ditch,unit,permanent,NA,NA,NA,sunny
+275,2000-03-22,600,hatchery riffle,unit,permanent,NA,NA,50,overcast
+286,2000-04-06,2500,vance avenue,unit,random,NA,NA,58,sunny
+295,2000-04-26,600,auditorium riffle,unit,permanent,NA,NA,55,sunny
+301,2000-05-03,600,trailer park riffle,unit,random,NA,NA,55,sunny
+313,2000-05-16,2500,goose riffle,unit,permanent,NA,NA,57.5,overcast
+310,2000-05-15,2500,herringer riffle,unit,random,NA,NA,59,precipitation
+319,2000-05-25,600,eye riffle,unit,permanent,NA,NA,62,sunny
+331,2000-06-22,4000,junkyard riffle,comp,NA,NA,NA,68,sunny
+337,2000-07-18,600,aleck,unit,permanent,NA,NA,62,sunny
+342,2000-07-19,7000,goose riffle,unit,permanent,NA,NA,66,sunny
+350,2000-08-15,600,robinson riffle,unit,permanent,NA,NA,66,sunny
+354,2000-08-16,600,steep riffle,unit,random,NA,NA,67,sunny
+359,2000-08-21,NA,mcfarland,unit,permanent,NA,NA,65,sunny
+365,2000-09-11,600,steep riffle,unit,random,NA,NA,NA,sunny
+378,2001-03-08,1700,g95,unit,permanent,NA,NA,52,overcast
+383,2001-04-02,NA,hatchery ditch,unit,permanent,NA,NA,NA,sunny
+395,2001-05-01,600,NA,comp,random,NA,NA,NA,sunny
+400,2001-07-02,600,robinson main and side channel,unit,permanent,NA,2,NA,sunny
+401,2001-07-02,NA,steep riffle & side channel,unit,permanent,NA,2,NA,sunny
+406,2001-06-06,NA,goose riffle,unit,permanent,NA,NA,NA,sunny
+412,2001-05-01,600,sections 1-25,comp,random,NA,NA,50,overcast
+422,2001-05-09,1300,goose riffle to big riffle,comp,random,NA,0.5,61.5,sunny
+431,2001-07-27,600,aleck riffle,unit,permanent,NA,NA,NA,sunny
+439,2001-09-11,NA,"eye riffle,eye side",unit,NA,NA,NA,NA,overcast
+446,2001-09-10,NA,robinson riffle,unit,permanent,NA,NA,NA,sunny
+455,2001-08-14,700,mathews`,unit,permanent,NA,NA,61.5,sunny
+461,2001-08-15,NA,gateway riffle,unit,NA,NA,NA,NA,sunny
+8,1999-06-29,620,eye riffle,unit,permanent,NA,3.5,64.5,sunny
+24,1999-05-24,626,gateway to outlet,comp,NA,NA,NA,60,sunny
+48,1999-04-29,621,steep riffle,comp,NA,NA,NA,52.5,NA
+57,1999-05-03,5025,g95,comp,NA,NA,NA,56,NA
+68,1999-05-17,615,auditorium to bedrock,comp,NA,NA,NA,55.5,overcast
+83,1999-07-27,624,eye riffle -gateway to outlet,unit,permanent,NA,4.90000009536743,64,sunny
+88,1999-07-26,623,robinson riffle,unit,permanent,NA,NA,61,sunny
+96,1999-08-23,600,hatchery ditch (bottom),unit,permanent,NA,NA,55,sunny
+101,1999-08-25,NA,big hole,unit,random,NA,2.90000009536743,63,sunny
+108,1999-08-24,600,trailer park riffle,unit,random,NA,NA,59,overcast
+127,1999-09-28,600,hatchery riffle,comp,NA,NA,NA,NA,sunny
+250,2000-06-06,600,hwy 70 bridge to hwy 162 bridge,comp,NA,NA,NA,61,sunny
+266,2000-02-29,600,hatchery riffle,unit,permanent,NA,1.5,NA,precipitation
+267,2000-02-29,600,auditorium riffle,unit,permanent,NA,NA,NA,precipitation
+278,2000-03-23,600,"trailer park, aleck, robinson, mathews",unit,random,NA,NA,49,sunny
+292,2000-04-06,NA,mcfarland,unit,permanent,NA,NA,58,sunny
+302,2000-05-03,600,matthews riffle,unit,random,NA,NA,56,sunny
+322,2000-05-25,600,robinson main and side,unit,random,NA,NA,61.5,sunny
+325,2000-06-15,NA,keister riffle - before goose backwater,comp,NA,NA,NA,69,sunny
+334,2000-07-17,NA,hatchery ditch - upper half,unit,permanent,NA,NA,63,sunny
+343,2000-07-19,7000,mcfarland,unit,permanent,NA,NA,66.5,sunny
+356,2000-08-16,600,gateway riffle,unit,random,NA,1.10000002384186,NA,sunny
+366,2000-09-11,600,robinson riffle,unit,permanent,NA,NA,NA,sunny
+376,2001-03-07,600,auditorium to bedrock,unit,random,NA,NA,NA,sunny
+384,2001-04-03,600,auditorium riffle,unit,permanent,NA,NA,NA,sunny
+392,2001-04-05,1550,goose riffle,unit,permanent,NA,NA,NA,sunny
+413,2001-05-09,1300,mcfarland,comp,random,NA,NA,64.5,sunny
+423,2001-05-10,NA,hatchery ditch,comp,random,NA,NA,55,sunny
+435,2001-07-27,600,trailer park riffle,unit,permanent,NA,NA,NA,sunny
+445,2001-09-10,NA,hatchery riffle,unit,permanent,NA,NA,NA,sunny
+453,2001-08-15,NA,goose,unit,permanent,NA,NA,NA,sunny
+468,2003-04-23,600,robinson riffle,NA,NA,169-175,2,55.4,overcast
+469,2003-04-23,600,aleck riffle,NA,NA,"119, 120, 121A",2,NA,overcast
+471,2003-04-28,600,eye riffle,NA,NA,"205,210,215a,215b,216,215,217",0.5,54,precipitation
+472,NA,600,"robinson riffle,steep",NA,NA,"172.,185.189",0.5,54,precipitation
+473,2003-04-30,NA,mcfarland,NA,NA,449-452,0.7,59,sunny
+474,2003-04-30,NA,goose riffle,NA,NA,"408,409,410",0.7,58,sunny
+475,2003-04-30,NA,g-95,NA,NA,323a-323b,0.7,58,sunny
+476,2003-04-22,NA,hatchery ditch,NA,NA,26,NA,NA,sunny
+477,2003-04-22,NA,hatchery ditch,NA,NA,26,NA,NA,overcast
+478,2003-04-22,NA,hatchery ditch,NA,NA,26,NA,NA,overcast
+479,2003-04-20,1,hatchery ditch,NA,NA,26,NA,NA,overcast
+480,2003-04-22,600,auditorium riffle,NA,NA,"30,32",2,NA,overcast
+481,2003-04-22,600,auditorium riffle,NA,NA,"32a,31,31a,30",2,NA,overcast
+482,2003-04-22,600,auditorium riffle,NA,NA,"30,29.29a",2,NA,overcast
+483,2003-04-22,600,auditorium riffle,NA,NA,30.29a,2,NA,overcast
+484,2003-04-22,600,auditorium riffle,NA,NA,"30,29",2,NA,overcast
+485,2003-04-21,NA,hatchery riffle,NA,NA,19.23.24.25.,1.5,53.4,overcast
+486,2003-04-21,NA,hatchery ditch,NA,NA,"25,33",1.5,53.6,overcast
+487,2003-04-21,NA,hatchery ditch,NA,NA,33,1.5,53.6,overcast
+488,2003-04-21,NA,hatchery ditch,NA,NA,33,2,53.6,precipitation
+489,2003-04-21,NA,hatchery ditch,NA,NA,33,2,53.6,precipitation
+490,2002-08-12,5000,goose riffle,NA,NA,409.412,NA,62,sunny
+491,2002-08-12,5000,goose,NA,NA,408 410 411 413,3,62,sunny
+492,2003-08-12,5000,mcfarland,NA,NA,449 450 451 452 453,1,62,sunny
+493,2002-07-25,NA,aleck,NA,NA,119-127,2,50,sunny
+494,2002-07-15,NA,robinson riffle,NA,NA,169-171  173-177  179  183,2,58,sunny
+495,2002-07-15,700,auditorium riffle,NA,NA,29-32,2,NA,sunny
+496,2002-07-09,5500,g-95,NA,NA,323a-323b,0.5,66,sunny
+497,2002-07-09,5500,goose,NA,NA,408-413,0.3,65,sunny
+498,2002-07-09,5500,mcfarland,NA,NA,449-453,0.3,65,sunny
+499,2002-08-08,600,eye riffle,NA,NA,"217,210,215,215b, 216",4,60,sunny
+500,2002-08-08,600,eye riffle,NA,NA,"217, 210, 215,215b,216",4,60,sunny
+501,2002-08-07,600,steep,NA,NA,185 189,9,64,sunny
+502,2002-08-06,600,hatchery riffle,NA,NA,"19, 23, 24, 25",9,60.5,sunny
+503,2002-08-06,600,aleck,NA,NA,"119, 120 121a",NA,63,sunny
+504,2002-08-06,600,robinson riffle,NA,NA,"169-171, 173-177, 179, 183",9,62,sunny
+505,2003-08-05,600,hatchery riffle,NA,NA,29-33,3,NA,sunny
+506,2002-08-05,600,auditorium riffle,NA,NA,"26, 33,29-32",3,NA,sunny
+507,2002-07-15,NA,hatchery ditch,NA,NA,33 26,NA,57,sunny
+508,2002-08-05,600,hatchery ditch,NA,NA,"26, 33",3,NA,sunny
+509,2002-08-05,600,auditorium riffle,NA,NA,29-32,3,NA,sunny
+510,2002-08-06,600,robinson riffle,NA,NA,"169-171, 173-177, 179, 183",NA,62,sunny
+511,2002-08-06,600,hatchery riffle,NA,NA,"19, 23, 24, 25",NA,60.5,sunny
+512,2002-08-06,600,aleck riffle,NA,NA,"119, 120, 121A",NA,63,sunny
+513,2002-08-07,600,steep riffle,NA,NA,"185, 189",NA,64,sunny
+514,2002-08-08,600,eye riffle,NA,NA,"200, 210, 215-217",4,60,sunny
+515,2002-07-15,NA,hatchery ditch,NA,NA,"33, 26",NA,57,sunny
+516,2002-07-11,700,steep riffle,NA,NA,185,3,67,sunny
+517,2002-07-15,600,steep side channel,NA,NA,189,NA,NA,sunny
+518,2002-02-10,700,eye riffle,NA,NA,"200, 210, 215, 216, 217",3,62,sunny
+519,2002-07-10,700,eye riffle,NA,NA,"200, 210, 215, 216, 217",3,62,sunny
+520,2002-07-10,700,eye riffle,NA,NA,"215, 210",3,64.5,sunny
+521,2002-06-17,4000,NA,NA,NA,"424, 430, 433, 437, 429, 435",0.5,NA,sunny
+522,2002-06-17,4000,comp,NA,NA,"410, 413, 419, 420, 423, 444, 448A, 452, 451, 457",1,NA,sunny
+523,2002-06-17,4000,comp,NA,NA,"425, 428, 431, 434, 436, 438, 440, 445, 447, 450+",1,NA,sunny
+524,2002-06-17,NA,comp,NA,NA,"442, 443, 444, 447, 450, 456, 458, 461, 464",NA,NA,NA
+525,2002-06-15,NA,hour bars,NA,NA,"338-370, 374",0.5,NA,sunny
+526,2002-06-13,NA,lower hour,NA,NA,376-394,NA,NA,NA
+527,2002-06-13,NA,NA,NA,NA,NA,NA,NA,NA
+528,2002-06-12,3500,NA,NA,NA,NA,0.5,NA,sunny
+529,2002-06-11,NA,eye riffle,NA,NA,"215A, 215B, 205, 217, 215",NA,58,sunny
+530,2002-06-11,NA,NA,NA,NA,"200, 218, 220, 215",NA,59,sunny
+531,2002-06-11,NA,thermalito pool,NA,NA,231,NA,61,sunny
+532,2002-06-10,600,robinson riffle,NA,NA,"183, 176, 179, 180, 177, 172",NA,NA,NA
+533,2002-06-10,600,steep riffle,NA,NA,"185, 182, 190, 189, 191, 192, 193",NA,NA,sunny
+534,2002-06-06,600,NA,NA,NA,NA,2,55,sunny
+535,2002-06-05,600,auditorium to bedrock,NA,NA,"37-38, 40, 46, 54",NA,NA,sunny
+536,2002-06-05,600,NA,NA,NA,"56, 59, 51, 92, 96, 100",NA,NA,sunny
+537,2002-06-05,600,NA,NA,NA,"57, 92, 96, 100",NA,NA,sunny
+538,2002-06-05,600,auditorium to bedrock,NA,NA,"38, 42, 44, 49, 51, 52, 55",NA,NA,sunny
+539,2002-06-05,600,NA,NA,NA,"56, 94",NA,NA,sunny
+540,2002-06-05,600,matthews,NA,NA,"102, 104, 105",NA,NA,sunny
+541,2002-06-05,600,hatchery ditch,NA,NA,26,NA,NA,sunny
+542,2002-06-04,600,tbl mountn bridge to cottonwd rd,NA,NA,1-22,NA,55,sunny
+543,2001-03-07,600,aleck,NA,NA,"119, 120, 121A",NA,NA,precipitation
+544,2001-03-07,600,robinson riffle,NA,NA,"169,170,171,173,174,175",NA,NA,precipitation
+545,2001-03-07,600,"steep, steep side",NA,NA,"185, 189",NA,NA,precipitation

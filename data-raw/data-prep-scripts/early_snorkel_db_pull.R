@@ -144,15 +144,21 @@ cleaner_snorkel_data_early$substrate |> unique()
 cleaner_snorkel_data_early$channel_geomorphic_unit |> unique()
 cleaner_snorkel_data_early$species |> table()
 
+# save cleaned versions of data
+write_csv(cleaner_snorkel_data_early, "data/cleaner_snorkel_data_early.csv")
+
 # TODO, major issue with location / section_name. does not appear to be following any standard section naming conventions here
 # TODO these section names still need to be cleaned up
 # use unit lookup table and above units to clean up as we can
 # Pull in cleaned name lookup table
 # created based on mapbook from casey
+
+# this object is not being used outside this script
 raw_created_lookup <- readxl::read_excel("data-raw/processed-tables/snorkel_built_lookup_table.xlsx") |>
   mutate(section_name = ifelse(section_name == "Mo's Ditch", "Hatchery Ditch", section_name)) |> #Decided to change Mo's Ditch for unit 28 being consistent with map, but not slides (no Mo's Ditch, but located in "Hatchery Ditch)
   glimpse()
 
+# this object is not being used outside this script
 units_per_survey  <- cleaner_snorkel_data_early |>
   select(survey_id, unit) |>
   left_join(raw_created_lookup) |>
@@ -212,7 +218,7 @@ cleaner_snorkel_metadata_early <- snorkel_metadata_raw_early |>
          section_type = tolower(section_type),
          survey_type = tolower(survey_type)) |>
   glimpse()
-
+write_csv(cleaner_snorkel_metadata_early, "data/cleaner_snorkel_metadata_early.csv")
 # still more clean up to do
 # Initially ~ 200 unique section names, after join with units_per_survey table we get down to ~100
 # cleaner_snorkel_metadata_early$section_name |> unique() |> sort()
